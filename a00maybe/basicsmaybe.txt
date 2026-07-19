@@ -1,8 +1,7 @@
-know your style of learning.
-
-1. Start with the project first.
-2. Then move on to programming.
+0.know your style of learning thru data.
+1. Start with the project first. architecture, multiple files
+2. Then move on to programming. functions and variables
 3. Tolerate uncertainty and be willing to write small programs to clarify doubts about syntax or concepts.
 4. Theory is important, with a practical-to-theoretical balance of about 30:70.
 5. A 100% practical approach can lead to unlimited misery.
-6. If possible, generalize what you learn.
+6. generalize what you learn.
