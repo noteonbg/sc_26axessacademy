@@ -1,9 +1,8 @@
 know your style of learning.
 
-project first.
-program next.
-tolerate uncertainty.be willing to write small programs
-to clarity doubts on syntax or concept.
-theory is important. ..30:70...
-100% practicals means unlimited misery...
-if possible generalize your learning.
+1. Start with the project first.
+2. Then move on to programming.
+3. Tolerate uncertainty and be willing to write small programs to clarify doubts about syntax or concepts.
+4. Theory is important, with a practical-to-theoretical balance of about 30:70.
+5. A 100% practical approach can lead to unlimited misery.
+6. If possible, generalize what you learn.
