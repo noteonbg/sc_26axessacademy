@@ -1,13 +1,15 @@
 package programmingbasics.a01start;
 public class Patient {
 
-    // Private instance variables
+    // Private instance variables  content
     private String name;
     private int age;
     private String disease;
     private String patientId;
 
 
+
+    //operations
 
     // Constructor using 'this' keyword
     public Patient(String name, int age, String disease, String patientId) {

@@ -5,7 +5,13 @@ package programmingbasics.a01start;
 public class A01Main {
     public static void main(String[] args) {
 
-        System.out.println("hello how are you");
+
+        //int i;
+        Patient freak =new Patient("A",90,"abcd","1");
+
+
+        // i = i *2;
+        freak.setDisease("pqrs");   //operations
 
 
     }

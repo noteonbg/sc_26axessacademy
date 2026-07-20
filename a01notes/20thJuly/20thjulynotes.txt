@@ -1,0 +1,604 @@
+1. college 
+2. branch
+3. know your style of learning 5  
+4. how much you tolerate uncertainty 5
+5. how good are you at summarizing  lot of things into simple 5 sentences
+people who cannot summarize will work under peope who can summarize.
+
+
+culture is important... we are here to learn and not issue certificates to each of you..
+opposite of truth is not lies but myth..
+
+kids like arithemetic adults like algebra.
+
+Java..
+
+1. software setup... which we should know what we are doing "concious"
+2. we should know our folder structure..
+3. we should know environment settings for that software..
+
+look at output, output is coming is pathetic.. it does not help any project.
+
+you must know what is project folder and what each folder in it contains.
+if we dont we should not call ourselves technical people.
+
+in It industry especially
+we have to bring the ghost to earth..
+
+ghost == intent without details.
+earth == give me the details...
+
+act like a ghost... java is installed in my system.
+
+
+we have used something called Path..
+
+to really work on teh project we need X, Y, Z , P, Q, R in all the things 
+we cannot become 5/5 at the same time becoming zero in anything will kill us in
+the project. that is reason knowing your learning style is important.
+
+locate file javac.exe on windows this tells you java is installed, will it work for us
+or not... 
+
+once you know the location of javac.exe..we have to take the help of os..
+how does operating system locate some file.. answer is environment variable called Path.
+
+
+most of them need cbi help to know what software is installed on their laptop that is bad sign..
+we should be conscious of what software is installed in our laptop.. 1/5
+
+java software
+
+1.did you install it or unzip it.. consciously. ( you know the location)
+2.did you know the location of the folder which contains javac.exe or java.exe.
+3.did you tell the os hey look here is place to locate javac.exe or java.exe..
+(Robert frost speaking... hey did you set up environment variable path ...
+did you update the path to include that folder)'
+
+ in comma state programmers.. system
+java will be lower version
+and javac will be higher version, this will create non stop entertainment  in terms
+of vague messages given by system.
+
+javac version shows X
+and java version shows X+
+It is ok it will run... 
+
+javac version shows X
+and java version shows X-
+non stop entertainment will be there...
+we should avoid it.
+
+very conscious about hte version.
+
+
+jdk means they have software which has got both javac.exe and java.exe. java development environemnt
+jre means they have sotware which has only jre and not javac. exe .. java runtime
+
+IntelliJ  -- tool ide..
+make things easier for us... 
+becoming a fan of IDE is a flavor of stupidity..
+
+fans itself is a stupidity.
+
+peope who dont know their project folder structure are comma state people pathetic ..
+
+
+show patience to know how a folder structure looks like for  project and you must
+know theory for it..
+java project == ghost..
+IntelliJ java project one category
+maven java project  another category
+graddle java project another category..
+in all cases it is a java project but folder structure will change you must know
+what folder structure indicates.
+
+
+
+
+
+
+summary 
+
+1. in systems multiple things are there, you cannot be 5/5 in all things, in somethings
+we can 5/5 and in somethings we need to be atleast 1/5  and not zero....
+
+in os know what is path.
+in java world know what javac does.
+in java world know what java does.
+java is running .. ok.. java.exe is running.
+I am compiling means javac.exe file is running.
+folder structure you must know..
+
+
+we have installed java software, there can be another software which needs to use 
+java software..
+Maven needs to know where java is installed in our system.
+to tell other software where java is installed, we need a variable called JAVA_HOME
+AND THIS NEEDS TO POINT TO FOLDER  WHERE JAVA IS INSTALLED..
+F:\software\java-21-openjdk-21.0.11.0.10-1.win.jdk.x86_64
+
+we use IntelliJ , IntelliJ tells hey look once you are creating the project with me you need
+to show me where java is installed by browing .. ok.. welcome to the world "OPINIONS"
+for first week we will building java projects using IntelliJ opinions...
+
+we will attempt the following.
+
+1. read the confluence page.
+2. according to create a folder 
+3. show java is installed in your system.
+4. show intellj is installed.
+5. create a java project and run the hello world program which comes along
+with the project created.
+6. pdfs... keep the java related pdf and assignment pdf 
+
+
+those who get fascinated with just output will kill the project successfully.
+here architecture is important
+
+AC .. Archtecture to code vice versa will not work..
+
+simplest architecture is 
+
+this is very old even dinosaurs great grand mother whey they were coding were following this.
+1. keep logic
+2. keep presentation
+separate.
+
+
+platform it means somebody gives you a mechanism to write code and talk to the os.
+jvm we can think of a platform..
+
+
+how to ensure code is bug free?
+get more number people to use it.
+
+
+kids are afraid of coding.
+adults are afraid of compiling.
+recompiling is a pain...
+so in java .... 
+
+source .java compile it. .class.
+this .class file is same for windows and Linux this is meaning of portable.
+
+in java usually we dont need to recompile when we run it across os's 
+
+
+jre is a subset of jdk..
+if you want to "code" java programs  you need jdk.  == javac.exe
+if you want only to run java programs, you need jre.  == java.exe
+
+what ran
+1. project.
+2. program.
+3. function.  ( great technical people0
+4. all the above (moral science people)
+
+those who picked others.. ghosts... ( English speaking professors in IT industry)
+
+
+run walk crawl in computer science means functions only..
+
+
+running what is running
+
+
+1. function isnide .java file
+2. function inside .class file  
+a programmer who is not 5/5 in functions and variables should never call themselves programmer.
+
+
+
+what is 5/5 in functions.
+
+1. did you know.
+1.1 defining the function
+1.2 calling the function
+1.3 assigning the function.
+
+when we define a function show patience and think who is going to call it.
+NO I cannot tell ok ok stupid programmer.
+
+who is going to call it..
+
+
+1. it can be other programmer.
+2. it can be system.
+3. it can some library which is calling it.
+
+ in case of main, it is the jvm which will call the main function because of this.
+we have to agree to the opinion of jvm. jvm tells 
+
+1. that function must be public, it must be static it should not return anything to me.
+and its name should be main only.. and I will give a String array so you should take it..
+
+
+welcome to science, hell or heaven does not matter repeatability does.
+
+
+the moment you define a function . stop and think who is going to call it
+No I wont think about this, great, join the party of scrapy programmers.
+
+
+
+two important things.
+1. we are out of the misery of "one file" where my whole world is running  =="kids world"
+2. in a project multiple files will be there, what will be there in multiple files.
+multiple functions will be there, we need to call one from another..
+
+from one function we will call another function. these functions could be present
+in different files.
+
+people who dont write code in multiple files are "infants" in coding telling hey look
+at my output pathetic because in project multiple files will be there, how will multiple
+gets decided based on architecture.
+
+I expect none of your assignment to be present in one file...
+it all should be multiple files.. only..
+
+one file for presentation
+one file for logic.
+let presentation call the logic.. things..
+
+There are compilation errors. so we should fix them and run it and tell let me check..
+there is nothin to check when there is compilation errors.
+
+
+dont byheart anything you should get used to these things.
+when you want to change something, ie functionname, variable .. use the refactor option
+in your ide.. 
+Project success = culture * process * technology * tools.
+
+how to fail the project, decide which one you want to make it zero.
+
+
+Create a new class called App
+put public staic void main inside this 
+Create  new class called UI
+write a static function called start
+Create a new class called Logic.
+create a static function called businesslogic
+in main call UI.start, inside UI.Start call Logic.
+
+Kids define a function and then think where to call it, pathetic.
+in real life it is better to call a function and define it...
+
+calling requires lot of intelligence you have to think what to pass, what it shoul return
+.....
+
+You are seeing multiple files..
+welcome to real life.
+you ae seeing funtions being called across multiple files .. welcome to real life.
+these files are not written for fun.. they are written because of architecture..
+
+
+get comfortable writing this in multiple files because architecture demands it.
+if you have good ide, it will make things simpler..
+
+
+
+Useful project means just answering one question
+how many people are using it , for how long.
+if we cant answer "lot of English words are there to chew the brain"
+
+
+importance of writing things in multile files not based on mood
+but based on the architecture.
+
+
+we install java.. at this level it is distributable
+we install c++, python or js ... we need lot of addon libraries to make it distributable..
+
+distributed computing, dinosoaur great grand mother doing we are also doingbut it has 
+got way lot simplified today...
+
+history of computer science in one word... "make it easier"... Abstraction
+
+
+what is common to stupid programmer and intelligent programmer both their programs work.
+intelligent programmer can tell why it is working , stupid programmer tells enjoy
+the output as long as it comes.
+
+we need to write things in multiple files. even for hello world... that is way
+to respect the project, architecture first code next..
+
+when you talk about multiple files.
+clear about how the function call is happening is a must..
+
+
+I have three files
+WelcomeToAc
+UI
+Logic.
+
+that is ok.. but you should function call sequence that is happening.
+No I wont ok congrats on being a ghost.
+
+things start at WelcomeToAC.
+
+Programmer can we convert somebody English into functions and variables that fit into
+some architecture.
+
+
+Before doing bad things, what we should tell good things...
+
+keeping the logic and ui separate is a very old thing...
+we must follow it today also..
+
+quick summary get used to writing things in multiple files and also that means
+function calls across multiple files..
+
+
+Welcome to java opinion
+you must write things inside a class most of times... and inside the class
+only functions will be there... if that function turns out to be static.
+Classname.functionname() to call  it..
+this is syntax..
+
+variables..
+1. data type
+2. scope.
+
+what does data type indicate?
+data type indicates content + operations.
+example
+int indicates, It can store some numbers and most important I can mulply, divide, subtract...
+these are operations..
+
+how do i choose data type
+after i decide operations.
+
+
+No I dont like operations ok then comma state programmer any data type will do.
+
+
+"Hello"-"Hell"
+minus operation is not defined on string.
+
+Hello*Hell 
+
+
+"Hell"+"o"     Hello in java because   + operation is defined on string as concatenation.
+
+
+int i =3; why int..
+i = i *4; // it wont be 12 , until i is an int.
+
+on data type. learn to be patient and foucs on operations that is basis on which
+you pick a data type.
+
+operator..
+pick one interesting operator...  answer should be  =
+show me how assignment happens without using = 
+
+
+when ever we pass during function call or return from function call is assignment.
+
+
+void freak()
+{
+int x =4;
+return x;
+
+}
+
+
+main()
+{
+
+int k=freak();
+
+}
+
+
+how do you recognize kids functions, no inputs and no return types...
+kid is afraid if call a function will it go, if it goes will it come back... so write
+everything in a single function.
+
+
+
+in most of present langauges... assingments works differently if data type is simple( primitive)
+or non primitive
+
+int i=3;
+int k=i;
+k =44;
+print the value of i... it will print 3.. why ... what got assigned to k was a copy of i
+and not i.
+
+
+int x[]=new int[3];
+int y[]=x;
+y[0]=44;
+print x[0];// it will be 44 because y and x are pointing to same array.
+
+
+behavior of asisngment will change depending on what data type you are  where.
+java, python, javascript ..... except c and c++ and c and c++ older than java...
+
+
+
+variable.
+data type.. you pick based on operation.
+data type will also decide how assignment works..
+
+int i =23;
+is it a valid operation to tell find out the length of i.
+
+float f =(float)33.45;// in java compilation error why....
+33.45 is considered double in java which is bigger data type.
+and we cannot push into smaller type automatically.. 
+
+
+
+what is difference between   = and ==
+
+== is logical operators operands wont change..
+later on we will see approaching computer science with a bit of mathematics always helps..
+but this is rant...
+
+if( i==3)//z
+  if( j==4)  //y
+     if ( k ==5)  // x
+         break;
+
+
+Array.
+1. fixed size
+2. contiguous memory allocation.
+
+how do you crate an array
+promise that i need an array
+
+
+int x[];//one day it will become an araray.. declaration.
+x=new int[10];// delivery ... we tell now  x is pointing to an array.
+int y[]=x;
+
+
+1. page32.
+each asisngment you have do it in multiple files.
+one contains main
+other contains logic and returns to the main
+and main prints it.
+
+2. you complete it... pleaes go thru the pdf... 
+
+
+Ideally
+1. X.java .. main
+ there are multiple functions  startDisplayTableof10....
+where are these functions present these are in X.java only..
+
+2 inside each of these functions you will 
+
+
+Logic.getTablesof10() return... and you diplsay it..
+
+
+
+
+Main.java
+7 functions including main.
+inside each function you will call the logic.java respective function
+
+Logic.java
+6 functions
+
+
+-------------------------------------
+Oops programming little bit and stop and ask work on the assingments
+
+1. I like oops I dont like oops all this is scrap because oops is everywhere
+for the last 50 years now...
+
+
+
+
+
+what is advantage of oops, making things easier to maintain... ghost line we will see
+the details..
+
+
+how do you judge maintenance.. how many things change, when a change request comes..
+
+
+what is a class? in oops.
+
+1. class is used as a unit of encapsulation in oops. what is encapsulation
+accessing data in an organized way.  think of Depts in a company...
+
+suppose I need some information from accounts dept we go to the accounts person
+and ask him they give us... analogy..
+
+I want something from the class. ... I call a function of the class, that in turn will
+give access to the variables of that class.
+
+earthworm view.. coding view..
+Data type.. content + operations..
+
+What is a class, class is a project specific data type..
+why we should create project specific data type, so simple project demands it..
+
+what does theory tell you
+what does data type have content + operations.
+
+
+content in the class   == non static variables.
+operations == non static functions present in the class.
+
+my project.... meaning of project specific classes are going to different..
+this will be done by using a class concept..
+
+I define a class... I am teaching the system hey look here is my project specific data type.
+I want to create  variable of the class.. loosely I am going to create an object of the class.
+after you created a variable... what do you do... operations on the class.
+
+
+when you see a class how do you understand.
+
+1. project specific data type  ( non static variables, non static functions)
+2. it is used to group functions together ( earlier thing Fibonacci.. )
+
+we will create an object of the class. we are talking about 1.
+
+class as a datatype
+
+non static variables
+non static functions
+one category of non static function is constructor.
+at time of object creation if you want to enforce something, then you can consider
+constructor.
+
+example I have a data type called Process, without giving ProcessId I should
+not create an object of the class that means
+
+
+in the proess class create a constructor which will tak processId.
+
+
+
+
+member functions
+this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
