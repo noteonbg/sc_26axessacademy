@@ -1,0 +1,27 @@
+Remember you will be asked
+to explain and modify
+the code, be ready...by documenting
+the code especially the difficult part.
+
+
+
+july 21st 2026
+
+
+0. you must have only one project
+1. number1 assignment is put things in packages.
+2. ensure page 57 and page 32 is in packages and working
+
+3. start attempting pg 36 and 37 assingnments.. tolerate uncertainty.. and try
+completing it.
+4. look at the GitHub, make this thing working
+in your project
+https://github.com/noteonbg/sc_26axessacademy/tree/main/a02jaaworkspace/corejavaproject/src
+make the folder
+a01basicconcepts
+programmingbasics
+remember these are packages.. if you copy to src it will work.
+5. go thru the https://github.com/noteonbg/sc_26axessacademy/tree/main/a01notes/summaryimages and relate
+to how you are coding.
+
+
