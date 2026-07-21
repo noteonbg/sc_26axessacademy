@@ -346,17 +346,38 @@ basic.. lkg kid or 100 year old kid... revision is the way to learn.
 2. ensure page 57 and page 32
 3. start attempting pg 36 and 37 assingnments.. tolerate uncertainty.. and try
 completing it.
-4. look at the github
+4. look at the GitHub
+https://github.com/noteonbg/sc_26axessacademy/tree/main/a02jaaworkspace/corejavaproject/src
+make the folder
+a01basicconcepts
+programmingbasics
+remember these are packages.. if you copy to src it will work.
+5. go thru the https://github.com/noteonbg/sc_26axessacademy/tree/main/a01notes/summaryimages and relate
+to how you are coding.
 
 
 
 
+create a data type called Employee with empno and salary
+create an object of it and ensure empno and salary details of that object
+get printed.
+
+recurring theme is no matter what, loyalty is towards project
+respect architecture .... multile files. ... multiple function calls.
 
 
 
+write a hello world program. in java.. kid is happy ok.. is kid in the project
+or busy in a program.
+
+test without marks..
+we need a data type called REctangle with length and breadth and operations
+called perimeter and area... write a program and show..
+create an object and show its perimeter and area.
 
 
-
+please go thru pdf an cover the theory also .. it will help in multiple choice
+test coming on coming Wednesday or Thursday...
 
 
 
