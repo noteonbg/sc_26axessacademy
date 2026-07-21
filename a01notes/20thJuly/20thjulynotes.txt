@@ -566,9 +566,18 @@ this
 
 
 
+see whether you are able to download the zip. I know you are the class contents
+in your system..
+a02jaaworkspace\corejavaproject\src\programmingbasics
+copy programmingbasics folder into your src... of your exsiting project.
+
+welcome to real life if you know how to make other person program work in your project
+that is good skill to start with.
 
 
-
+1. check module 1 assingments are done.
+2. prove my programming basics in your project.
+3. spend time reading the pdf.
 
 
 

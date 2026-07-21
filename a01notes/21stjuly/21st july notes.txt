@@ -1,0 +1,389 @@
+Today topic
+
+1. variables.. (  scope, data type( content , operations))
+data type( content , operations)  -- inheritance, aggregation, composition, dependency..
+datastructures..
+ 
+2. Exception handling.
+
+3.  functions... polymorphism...
+
+know how to summarize , overload of information not worth...
+
+anybody who does not use proper nowns in their communication is going to chew
+other person brain, most useful word "for example"
+
+
+variable object... all of them have meaning.. we should be conscious if we want
+"be a" technical person and not "act like" technical person.
+
+
+variable is a superset word..
+primitive vaiable to indicate , int,char, boolean.. basic types in java
+object types...  ( reference and object)
+
+
+one of World Biggest problems is 
+all kids are happy when they see int or char or float
+their bp increases if they see a class... reason is
+very smple, they just dont recognize class also is a data type.
+
+class is  data type most of times and other times grouping mechanism.
+
+
+state word means 
+
+1. you have an object belonging to some class.
+2. value contained in its content at given point of time..
+that is state.
+for example.
+
+
+most concepts in real life, need the word "we" to understand
+and not I... for example.
+
+Ramesh wrote the Customer class.
+Suresh wrote the HospitalManagement Class.
+suresh is creating he object of customer class.
+Ramesh wants to force something on Suresh during object creation.
+then Ramesh should ensure Customer class  has got some constructor,, which will
+tell suresh what he is expecting..
+
+
+when we dont know any concept, then synax is there to chew other people brain..
+
+
+overloading.
+two functions with same name but different input types .. is overloading.
+ceo jargon polymorphism.
+
+
+IT people and Biology people two people infected with "jargon syndrome"
+ 
+stupid people argument I will confuse the computer ok dont go home at 5.30 go
+at 5.30am
+flavor of stupidity
+
+f1(int x) {}
+f1(int y) { }
+
+any function can be overloaded typically.
+tell me how to ensure I cannot overload a function. simple forget it, you cannot.
+
+class as a data type
+constructors purpose, when it gets called , syntax adventure, it can be overloaded.
+
+
+"this"
+
+
+scope of variable..
+local variable variable which is specific to function
+non local variable   variable which is indendent of functions.
+
+
+Heap and Stack.
+Heap is a memory region where a programmer can put something while running of the program.
+Stack is something which system will use and programmer cannot control anything in it..
+
+void f1()
+{
+Patient p =new Patient();
+
+}
+p is on stack
+new Patient is on heap.
+p will be removed automatically
+new Patient wil be removed by a process called garbage collection.
+
+
+non static variables == instance variables
+instance == object.
+any variable which is specific to object , what is it instance variables
+or non static variables.
+
+in real life, input is a layer.. and not a function. but in kids world
+we are all happy learning an input function...
+
+the way we accept input in java is by using Scanner.
+Scanner is a data type in java... it is a class.
+what is next question how do I create an object of Scanner.
+answer is , look at the documentation for constructors.
+Scanner sc =new Scanner(System.in);  //why person who wrote scanner, told us
+you need to give where I should scan from, I am telling scan from keyboard.. System.in
+what you want to scan
+
+I want to scan a string
+
+String s = sc.next();
+I want to scan a number
+
+int i = sc.nextInt();
+
+
+
+
+
+
+
+entertainment was expected for new people..
+int disappeared.. bp level increases, customer appeared.
+
+1. your code should be same project as yesterday.
+2. how many classes
+bp high people. -- 2 classes. Customer ( data type)  Page59  main function inside the thing.
+bp normal -- 3 classes.
+1. Customer.
+2. Page59  main
+3. Logic.
+I am interested in knowing what you functions in logic an what will you call page59
+
+high bp or normal bp does not matter, architecture first, code next.
+
+
+
+
+
+
+
+0. packages.
+1. association
+2. inheritance.
+3. String functions
+4. Datastructures. super light weight topic.
+
+
+for the whole week in java, you should not create a new project.
+you had two assignments..
+
+
+what is packages...
+folder is a os concept.
+
+packages is a folder concept in java.. what does it mean jvm will recognize it.
+
+
+when we have a doubt are we willing to write a "small program" on our doubt.
+== poc making proof of concept. best way to overcome uncertainty...
+
+
+no matter what happens show loyalty towards project and then the program ..
+many people dont know how to use the IDE... college disease.. define the function
+and then call it... not needed in todays ide.. for last 20 years..
+if you call a function, ide can define it and you fill the logic afterwards..
+try .. if possible this style it will save time..
+
+
+you will get some time to put your pg33 assignment in package pg33
+and pg5x assignment in package
+create a pacakge, drag and drop in IntelliJ.
+
+
+
+Relationship between Classes.
+
+in kids world only one Class will be there.
+in project there many classes, to interact between them we need some relationships
+those have name...
+
+Dependancy ( loose relationship we can have)
+you got two classes A and B.
+inside some function of B. you create an object of A...
+then you term them as dependency..
+you were doing it today.. 
+
+HospitalSystem (X) has got a dependency on Patient(Y) in the function main(Z)
+X=Ramesh
+Y=Electrician Suresh.
+Z=electrical work.
+
+
+
+Association  (" has a"   --- Whole -- Part  Mobile "has a " Sim
+					    Mobile "has a " battery
+					    Socket "has a"  IPAddress
+					    Window  "has a " Button
+observe we are not talking about any particular function.
+Mobile has a "sim" -- Association.
+
+
+
+	 Aggregation
+	 Composition
+Inheritance
+
+
+
+how do you recognize in the code.
+
+
+class Mobile
+{
+	there will be a reference of Battery and Sim
+	Battery b;
+        Sim s;
+
+	//observe where Battery object is getting created and where
+	// sim object is getting created.
+	Battery object is getting created inside mobile.
+	public Mobile()
+	{
+		b=new Battery();
+			
+	}
+
+
+
+}
+
+if you throw way the whole, part also is useless ... composition.  (Mobile and BAttery)
+
+if you throw way the whole, part can be used with some other thing  == Aggregation
+Mobile and Sim.
+
+class Mobile
+{
+private Sim sim  ;//object not created inside Mobile but supplied from outside
+//proof of aggregation.
+private Battery b=new Battery();// composition
+
+
+public void putSim(Sim s)
+{
+	sim =s;
+
+}
+
+}
+dont byheart ,... take time but understand the concept, it is design not syntax..
+at code what it will do, it will change teh scope of the variable..
+
+
+
+
+
+
+
+
+dependency
+aggregation and composition ( categories in Assocaition)
+
+
+Inheritance..  = Hieararchy..
+we make hierarchy to generalize our learning..
+
+Chemistry "is a" Science
+Physics " is a  Science
+
+SavingAccount is a Account
+CurrentAccount is a Account
+
+when you make hierarchy you can generalize things and most important
+you can add something at the top of the hierarchy and expect all things
+in the hierarchy to have it.
+when you have a hierarchy
+the advantage is.. first you can add something at the top of hierarchy
+and all things below are expected to have it..
+
+
+for example.
+
+Device.
+	id
+	transmitdata.
+	usbinterface
+
+PressureSensor extends Device .. subclass.
+TemparaturSEnsor extends Device  -- subclass
+
+
+IT industry is notorious for English terminology speaking people..
+English wil sound great , technically it will be scrap..
+
+
+we have a librry, library needs books.
+so let us make library as super class and books as subclass. do you agree?
+
+Libary and Book should be association and not inheritance
+
+dont abuse inheritance... put a "is a " test.
+overloading.. functions with same and different input types.
+
+overriding.. runtime polymorphism.
+
+what is it behaviouor depending on context..
+greatest college example of runtime polymorphism.
+
+
+calculate area or perimeter of a shape..
+answer it depends on the shape..
+
+
+
+
+what happens in runtime polymorphism.
+
+1. inheritance or interface scenario 
+2. you have some particular implementation which one we dont know.
+I will not know whether I will get electric or petrol or aeroplane
+3. we call a function... ( polymorphic functon... non final function)
+4. which function gets called depends on what type of implementation you have.
+this is called as runtime polymorphism.
+
+
+
+
+
+
+quick summary
+1. class as a data type get used to it..
+2. know some minimum theory on relationship between classes.
+3. runtime polymorhis, interface, ds... we will see it slowly.
+
+basic.. lkg kid or 100 year old kid... revision is the way to learn.
+
+1. number1 assignment is put things in packages.
+2. ensure page 57 and page 32
+3. start attempting pg 36 and 37 assingnments.. tolerate uncertainty.. and try
+completing it.
+4. look at the github
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

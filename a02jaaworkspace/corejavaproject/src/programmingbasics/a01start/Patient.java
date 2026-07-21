@@ -1,8 +1,12 @@
 package programmingbasics.a01start;
+
+// we taught the system hey look My projct needs a data type called Patient, here is its content
+//here are its operations.
+
 public class Patient {
 
     // Private instance variables  content
-    private String name;
+    private String name;  //non local variable
     private int age;
     private String disease;
     private String patientId;
@@ -10,6 +14,12 @@ public class Patient {
 
 
     //operations
+
+
+    public Patient(String patientId, String disease) {
+        this.patientId = patientId;
+        this.disease = disease;
+    }
 
     // Constructor using 'this' keyword
     public Patient(String name, int age, String disease, String patientId) {
@@ -21,19 +31,19 @@ public class Patient {
 
     // Getter methods
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public int getAge() {
-        return this.age;
+        return age;
     }
 
     public String getDisease() {
-        return this.disease;
+        return disease;
     }
 
     public String getPatientId() {
-        return this.patientId;
+        return patientId;
     }
 
     // Setter methods
@@ -55,10 +65,10 @@ public class Patient {
 
     // Method to display patient details
     public void displayInfo() {
-        System.out.println("Patient ID: " + this.getPatientId());
-        System.out.println("Name: " + this.getName());
-        System.out.println("Age: " + this.getAge());
-        System.out.println("Disease: " + this.getDisease());
+        System.out.println("Patient ID: " + getPatientId());
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Disease: " + getDisease());
         System.out.println("-----------------------------");
     }
 

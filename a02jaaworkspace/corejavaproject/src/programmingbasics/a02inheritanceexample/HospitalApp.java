@@ -6,5 +6,6 @@ public class HospitalApp {
         Doctor doc = new Doctor("Dr. Emily", 40, "Cardiology");
         doc.setMobileNumber(44);
         doc.displayInfo();
+        doc.addEmil("abc@def.com");
     }
 }

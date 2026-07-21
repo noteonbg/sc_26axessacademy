@@ -4,6 +4,7 @@ public class Person {
     private String name;
     private int age;
     private int mobileNumber;
+    private String email;
 
     public int getMobileNumber() {
         return mobileNumber;
@@ -16,6 +17,12 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+
+    public void addEmil(String email)
+    {
+        this.email = email;
     }
 
     // Getter methods

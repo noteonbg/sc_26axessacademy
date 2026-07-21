@@ -12,17 +12,28 @@ public class A07HospitalSystem {
         // Creating patient objects
         Patient p1 = new Patient("Alice Smith", 35, "Diabetes", "P001");
         Patient p2 = new Patient("Bob Johnson", 42, "Hypertension", "P002");
+        Patient p3 = p1;
 
-        Patient poc =getSomePatient();
-        System.out.println(poc.getDisease());
+        int x = keepBPLevelNormal();  //what is data type of the return value of the function KeepBpLeelNormal
+        x = x *2;
+
+        Patient poc =getSomePatient();   //object being created
+        System.out.println(poc.getDisease()); //operation .. calling sme function using that object.
 
 
         // Modify patient details using setters (optional)
-        p2.setDisease("Cardiac Arrest");
+        p2.setPatientId("P005");
+        p2.setDisease("Cardiac Arrest"); //operating on the Patient data type.. how did you know
+        //p2 is  patient data type
 
         // Displaying patient details
         p1.displayInfo();
         p2.displayInfo();
+    }
+
+    private static int keepBPLevelNormal() {
+
+        return 0;
     }
 
     private static Patient getSomePatient() {

@@ -13,7 +13,7 @@ package programmingbasics.a04polymorphism;
         System.out.println("vehicle moved forward");
     }
 
-    public void reversemove()
+    public  void reversemove()
     {
         System.out.println("some way of reversing");
     }

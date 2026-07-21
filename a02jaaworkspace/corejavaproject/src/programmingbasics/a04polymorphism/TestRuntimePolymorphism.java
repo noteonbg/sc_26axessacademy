@@ -14,7 +14,9 @@ public class TestRuntimePolymorphism {
         else
             v =new AeroPlane();
 
-        v.reversemove();
+        v.reversemove();  //this line is called as runtime polymorphism
+
+        //why this is polymorphic, i tis a non final function in java..
 
 
     }
