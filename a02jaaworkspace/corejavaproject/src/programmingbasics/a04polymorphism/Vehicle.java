@@ -1,6 +1,6 @@
 package programmingbasics.a04polymorphism;
 //written by Ramesh
- class Vehicle {
+ abstract class Vehicle {
 
     final public String identity(int x)
     {

@@ -1,6 +1,6 @@
 package programmingbasics.a05abstraction;
 
-public class Doctor extends MedicalProfessional implements Duties {
+public class Doctor extends MedicalProfessional  implements Duties{
     private String specialization;
 
     public Doctor(String name, int age, String specialization) {

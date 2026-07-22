@@ -13,7 +13,7 @@ July 22nd 2026
 1. ensure your customer program is working you know how it works.
 2. programmingbasics class room package works in your system, look 
 at exception handling 
-3. page 117.pdf should work
+3. page 117.pdf should work assingment which uses exception hanlding
 4. go thru the pdf slide of java.
 
 

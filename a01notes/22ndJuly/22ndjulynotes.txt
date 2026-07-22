@@ -381,6 +381,386 @@ it means System has created exception object and then thrown..
 
 
 
+whenever you are using the word
+
+Exception has occured
+throw ?
+? will be an object of a class that extends Exception.
+
+
+what you will do when exception occurs
+1) catch(?  x)
+? will be 100% classname which extends Exception.
+
+2) public void f1() throws ?
+? will be 100% classname which extends Exception.
+
+
+think of two people Ramesh and Suresh.
+
+Ramesh has written a class A, he has written a function f1.
+Suresh has written a class B, he has written a function f2.
+suresh wants to call Ramesh f1 function inside f2.
+now some exception called X occurs in f1 .Ramesh should not write try and catch and handle x
+inside his f1, because Suresh may want to handle x and decide what to do. so Ramesh
+has to use the word called throws...
+
+Ramesh job
+1. Exception occurs.
+2. dont handle it, report to Suresh.. how  public void f1() throws X.
+
+Suresh job
+inside f2 call f1.. inside f2 put try and catch and handle X and decide what to do.
+
+
+Ramesh has to decide that hey look I am owner of f1 function , X exception is occurring
+in my function only, but I dont know the context in which f1 is being called  so I will
+let the caller of f1 decide what to do with X.
+
+who is caller of f1, Suresh so suresh in his f2 function will call f1, and surround
+with try and catch and handle X.
+
+Exception occucred in Ramesh function
+handled ie caught in Suresh Function.
+
+why is this important.
+rule no 1 of problem solving, if you dont know context dont solve it report it.
+
+
+
+
+
+
+
+
+
+
+
+
+PatientAdmission class written by Ramesh.  
+processAdmission is function of PatientADmission
+
+HospitalApp class written by Suresh
+suresh is calling where in his main function.
+
+
+why STrings are there, human beings are there we like giving name for everything..
+Strings are important in programming language because humans see it..
+
+in every programming language string becomes important because we need it..
+
+in every programming strings comes in two flavours.
+
+1. immutable string  == String s="hello" how to change "Hello" to hell simple forget it you cant change it.
+String s="hello"
+s="Hell"
+ok kid be happy we did not change hello to hell rather we created amother string called hell and ensured
+s points to it.
+
+
+2. mutable String StringBuilder or StringBuffer.
+
+String s ="hi"
+s=s.toUpperCase();
+print s it will small hi only why... stirng is immutable then what did touppercase it created
+another string it will return you should it
+
+
+regular expression operations applies
+to int, char or String.
+
+only STring..
+
+DAta type = content + oprations.
+
+
+Be on track.. dont hurry... you should know priority
+
+1. Fibonacci...
+2. Customer.
+3. Customer with validations and exception handling.
+4. Customer with datastructure  -- should code.. you should refactor..
+
+
+1. Abstract class
+2. Interface.
+3. DAtastructures.
+4. misc topics..
+
+
+what is a class   --Product --this can be used by us
+what is an interface  --Standard.  -- can be used by us, by using a product whichc adhers
+to the standard.
+
+Menu   -- Interface ...contract..
+Half cooked Batter   -- Abstract class
+ready mae Dosae or Idli..  -- concrete class.. whatever you written so far..
+
+
+
+what is hardest part here.. getting rid of "I" disease..
+
+
+Abstract class 
+
+it is a class.. data type..
+what is meaning of abstract it is incomplete or it should not be used directly.
+how to use it.
+
+Create a subclass of it and implement half cooked part... and then use it.
+how create the object of subclass and use the abstract class functions.
+
+
+Those who tell abstract class is for abstraction.. ok pathetic..
+
+Abstract class is a class which is half cooked
+who will make it complete... subclass. how by implementing abstract methods.
+how do you use the functions of the abstract class.
+by creating the object of the subclass
+subclass objects can access super class functions  + subclass functions..
+that is how astract class becomes usable..
+
+all Abstract classes must be super classes.
+all abstract class will have atleast one subclass.
+no I wont have abstract class becomes useless.
+
+
+Interface think of a food menu.. not batter not ready made food.
+what is differernce between interface and class.
+
+interface is used to design standad.
+class is used to design a product.
+
+what do i get with interface , I am telling hey look I dont care who you aare but you
+must have this feature..
+
+class I have some features if you want you can improve on that, you have to give some additional
+feature.
+
+class will non static variables and functions..
+interface need not have..
+
+
+
+what will I get from the interface,,nothing. standard
+It will force you to do something...    standard works when people agree to it.
+
+kid is crying and tell me simple difference between interface and class.
+
+class will have non static variables.
+interface will never have.
+if you think why... 
+class is a product.. usable... eventually
+
+interface is standard.. standards are never used directly they are used by using products
+which claim to adher to the standard. how do you know
+
+class A implemtns the interface..
+
+
+There are many places where we want to tell hey Look I need this feature who you are does
+not matter..
+
+HDFC Bank tells hey google pay, hey phone pe I dont care who you are ,, you must agree to upi payment
+mechanism that is it.
+
+
+UPIpayment mechanism.. interface
+GooglePay impelemnts UPIPayment
+PHonePay IMplements UIPPayment.
+
+HDFC
+
+UPIPayment x =new GooglePay()
+
+
+It is very easy to design a product. very hard to design a standard
+
+show me a project without an interface and be 100% sure we have a funeral in the project.
+show me a C project without a header file and be 100% sure we have a funeral. in a project.
+
+Abstract class is used to give something and expect something. why 
+Abstract class I will give you X, Y but Z you must give beccuase I cannot take a call on Z.
+
+Intefaces tells I wont give you anything you better give X and Y. Contract
+
+
+abstract class Employee
+
+int empno
+string empname.
+
+constructor
+setter
+getter
+abstract void work();
+
+public interface EmployeeDuties  // interface design is hard job.. requires tonnes of intelligence.
+	  signContract();
+	  int getSalary();
+
+
+
+
+class SE extends Employee work.. he has to define
+class Admin extends Employe work he has to define.
+
+
+it is  never like which is good. question is what you want..
+
+in a project abstract class is also needed
+interface also is need.
+
+but pick one.. 100% interface is needed.
+why contracts re important between componetns which interact with each other..
+
+230V and 50mhz
+
+
+main point, do you appreciate importance of a standard..
+why standards are important
+when things like X , Y and Z are interating one day Z can become P, and Y can become Q ..
+so ...we should put interface between X, Y and Z
+so that Z changes Y does not chare
+Y changes X does not care.
+ 
+
+If you want an abstract class which implements an interface that is nothing wrong..
+
+
+I will give you X, Y and I am expecting P, Q, R from you , P,Q,R is being forced
+on you because I impelement an interfae called I.
+
+class VC implements I
+{
+	private int g1;
+	ptivate int g2
+	setter and getter.
+	abstract void P();
+
+
+}
+
+interface I
+	void Q,
+	void R
+
+class IAgree extends VC
+	must define P, Q, R
+
+
+
+	kids think standards are making things complicated..  kids never understand maintenance.
+kids are fascinated with "output is coming for now.."
+	
+
+
+Datastructures.
+somebody tells I like datastructures dont trust him. give a chocolate and go away.
+
+
+to serious study datastructures ... start from Maths and then go to CS...
+
+DAtastructures.
+1. we have group of things.
+2. we have some operations to perform.
+3. think which one to pick from library.
+4. know the language opinion.
+
+
+in java we have Collection which is an interface  standard.. one thing in the cell
+
+
+List can have duplicates
+Set cannot have duplicates.
+Map will have key and values.. ( Dictioary structure)
+
+
+SEt and Map are non linear structures... ie they will aid in quickly searching and sorting
+if that is done frequently.. occasionally I am doing it is not worth.. we can ue a LIst ..
+
+
+
+List is in interface
+ArrayList implementation   --growable array usually use this..
+LinkedList implementation  -- non contiguous doubly linked list, if you are inserting
+in between frequently prefer this
+
+Map is a dictionary operation..
+you key and value.
+you get value specifying the key.
+you can get keys and values both
+you can get only keys
+you can get only values..
+
+
+
+Static and non Static
+make sesnse in class.
+
+insdie class something is non static variable and functions..   datatype.
+create an object to access the functions, functions internally will access variables
+you did that with Customer.
+
+
+static. class like a grouping mechanism.
+to access the variable or function.. classname.functioname or variablename.
+
+
+Final and non Final
+you must have inheritance with you.
+final functions cannot be overridden, hence no runtime polymorphism.
+non final functions can be overridden these are meant for runtime polymorphism.
+
+
+Annotations.
+kids will cry, adults will know the advantage..
+Passport
+AdmitCard
+Badge
+Currency...
+
+X=College
+Z=your teacher
+Y=you
+
+Admit card or hallticket,passport
+
+there are three people X, Y and Z.
+X tells carry this you will get a benefit under a circumstance.
+Y likes the benefit promised by X, so Y starts carrying this.
+Z will look what Y is carrying and start giving benefits because he is a friend of X.
+
+
+quick summary
+
+1. hope you have some theory on
+1.1 runtime polymorphism.
+1.2 interfaces as standards..
+1.3 annotations
+1.4 some realistic view about datastructures..
+2. hope you have an idea about how to do exception handling.
+3. some story telling on String operations.
+
+
+what I expect from you practicaly
+0. if you ask you to do something in code like create a class, create an object hope you
+will able to do it by looking at syntax.. syntax is a function of time. so "from memory" is a danger.
+1. Fibonacci.  
+2. customer without any exception handling and validation
+3. customer with validation... and exception handling
+4. change to from Array to ArrayList..  ( practical thing pending)
+if you are smart 90% of changes will happen in Logic and minor changes will happen in main.
+
+tip explore refactor..
+
+
+
+whenever we are calling some other person function, decency demands that we open documentation
+and see how does that function behave normally and how does th efunction behave in error situationsand then write code.
+
+
+
 
 
 
