@@ -1,2 +1,420 @@
-putty connection.. think how do help..
-0.76 onwards... higher version.
+can we summarize, when we summarize everything is not important but we should know.
+we cannotbe zero in anything, but in everything 5/5 is also bad..
+
+
+
+0. keep your focus and most import keep your bp level norma.. relax..
+1. what topic we are covering today and tomorrow.
+2. some random 1 person check on theory skills.
+3. in terms of topics.   interface( Amazing thing if you like project and if we can think
+with a time perspective), Exception handling ( NOt being paranoid, not being careless),
+topic where we need to real ( Datastructures, ), as part of it, we will see this "super
+interesting thing called function assignment )  -Function as a variable.
+
+Serious one but do people realize it..
+
+1. When i want to solve a problem and multiple steps are there.
+do I want to use my "memory"   -- Pathetic noisy and will fail
+do I want to have a process with a check list...  ( will succed in most of times)
+
+
+Variables.. yesterday in assignment variables created non stop entertainment how..
+
+
+variable
+data type
+content   == array
+operations  == insret, update, delete...
+
+
+
+CustomerLogic is not a data type
+it is just used to group some functions
+customer array is just a variable which is used to store things across functions.
+
+a=b
+
+decision making requires time factor..
+
+
+
+
+multiuser.. scenario.. static things will create entertainment eventually
+so we should be careful..
+
+
+
+
+
+
+when we do  a well architecture project.
+we enjoy the pleasure of changing it because we have taken care of it in architecture.
+
+
+keep your bp level normal
+focus..
+we will join back at 11.26 AM and continue the adventure..
+
+
+
+
+
+
+super keyword..
+
+1. super keyword is used in the sub class to refer to the super class functions.. or variables.
+2. super can be also used for calling the super class constructor inside the subclass constructor.
+
+
+
+extends keyword is used to indicate that a class is going to subclass of some other things.
+
+without extends super will not have any meaning.
+
+people who are vague will suck energy from everybody .
+get into the habit of detailing things.. that is a good start..
+
+Runtime polymorphism.
+
+1. you must have inheritance or interface scenario
+No I dont have it.. ok forget polymorphism, no I will cry, to make the kid stop crying consolation
+compile time polymorphism.. pathetic .. indicates overloading.
+
+no I want runtime polymoprhiosm only
+1. you must have inheritance or interface scenario
+
+what is it.
+1. we are calling a non final function 
+2. using a super class reference
+3. which function gets called is not known until you tell me which subclass object
+we created.
+
+
+
+Window w = ?;
+w.copy(); //runtime polymorphiism
+what copy will get called depends on what is ? ...
+behaviour depending on context.. that is called runtime polymorphsm.
+
+
+
+Animal m =?
+m.eat();  // rutnime polymorphism
+m.fear(); //runtime polymorphism.
+
+Shape s =new Triangle();
+s.area();  //runtime polymorphism
+s.perimeter(); //runtime polymorphism.
+
+
+Account c =?
+c.openAccountProcess();  //RTP
+c.minimumBalance();
+
+
+Animal
+Horse.
+
+
+Animal m =new Horse(); // current Horse is ok other animal is ok for me.. runtime polymorphism can come
+Horse s =new HOrse(); // I want a horse only.  no runtime polymorphism.
+
+answer what do you want?
+I want a mobile phone
+I want a iPhone?
+
+
+Shape s =new Rectangle(); any shape is ok currently I have a rectangle.--x
+Rectangle r =new REctanlge() I need a rectangle only.   --y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+oops != class
+spend time on relationships.. then you have inheritance.. or interfaces think of runtime polymoprphism.
+
+super class
+class X
+{
+X(int a) 
+X(int a, String b)
+f1(int a)
+f1(int a, int b)
+}
+subclass
+f1(int b)
+{
+
+}
+what is encapsulation
+keep the data private and allow data access in an organized using functions
+that is purpose of class.
+
+
+variables are private.
+functions are public
+how do i access these varibles, come via functions.
+
+
+Dept
+data of the dept
+people of the dept
+
+if you want data from the dept approach the person it the Dept dont go directly and
+start searching for the data.. encpauslaiton.
+
+packages are used to organize your code in java.
+for exame you did your asisngment yesterday based on packages only..
+
+package naming convention is
+
+projectname.yourbusinesslogicname.architecure.
+
+sc.investbanking.service
+
+IT industry sERvice === logic. 
+
+we got two packages p1 and p2.  ghost talk..
+how to use one inside the other. horrible English forget it..stop
+
+
+ok you two pacakges p1 and p2.
+tell me what is there in p1. I have a class called A in p1. in that class i have a function called f1.
+in package p2. i Have a class called B in that i have a function called f2. inside f2 i want to call
+f1 of class A present in package p1. great ghost you have come to earth.. congrats. now you canswer.
+
+how come to class B.
+in that import p1.A
+then call the function f1 inside f2.how
+
+depends whether f1 is static or non static.
+it is static A.f1
+it is non static A obj =new A() obj.f1();// if this is case A is a data type.
+
+import works on classes which are public... non public classes needs to used in the same package
+only .. very rare feature dont bother..
+
+
+
+class A
+{
+
+here we can private, public, proected, default..
+
+}
+
+anything private inside, outside the class it cannot be acccseed.
+anything public, it can be ccessed outside the class irrespective of the package.
+dont write anything, it can be accessed outside the class, provided it is same paccakge.
+protected... you can access outside the class in the same package, in other packages provided
+it is a subclass.
+and demonstrate a program on this
+
+
+somebody tells that you X is a theory.
+can you write a small program to validate this theory X or not? we should.
+or else super dangerous word.. Trust.. Scinece never believes in it.
+
+
+Abstraction.
+1. give me a feature X , I know what feature X is doing, but I dont care how the feature X is 
+implemented.
+
+
+feature = function
+
+
+I need sorting in function main present in class A.
+B has got sorting in bubble sort
+C has got sorting in merge sort.
+A does not care for B or C it tells give me sort..
+that is called as abstraction.
+
+in java to do abstraction we use interfaces.
+in C to do abstraction we use header files.
+in every language including which was used by great grandmother of dinosaur during programming
+abstraction exists.
+
+
+HOw do we know our project is a scrap project. there wont be any interfaces used.
+
+
+Abstract class
+Interface.
+
+
+
+
+
+
+
+
+
+
+quick summary
+
+1. hope you have an idea class as a data type
+2. runtime polymorphism.. 
+3. some vague idea about interface.. good idea about abstraction.
+
+abstraction
+X will tell I dont care for Y because I have a Z with me.
+3 will tell I dont care for 2, Becuase I have a 1 with me.
+Z and ! are interface or.. may be Abstract class we will see.
+
+-------------------------------------------------------------------
+
+Exception handling.
+
+1. ability to deal with a runtime problem that comes when a particular function is running.
+2. so focus on function when you tell exception handling.
+3. ok I am running a function, some problem has come, judge whether it is a dead scenario
+or an injured scenario.
+4. dead scenario , feel sorry for 10milliseconds and move on..
+5. injured scenario think what solution you can do for the injury and see whether things
+become normal.. but remember injured things can die.
+
+whatyou mean dead, scnearios which you cannot recover from.
+
+
+
+
+quick introduction to Datastructures.
+
+try
+{
+some code is written whether it is your own or you are calling some functions
+some exceptions may occur..then control will swtich to the catch blok
+
+}catch()
+{	
+you try the remedial action... 
+
+}
+how did the control shift from the try block to the catch block.
+in the try block and exception object was created and then thrown.
+
+
+in IntelliJ if your project has got any compilation error in any part.
+none of our program will run, project should be free of compilation errors.
+only then it will run.
+
+
+
+int numberOfPatients = Integer.parseInt(scanner.nextLine());
+this function when it finds we have entered a string
+creates an object of NumberFormatException
+and then throw 
+NumberFomrmatException e =new NumberFormatException();
+throw e;
+
+I am not able to see, every good that is inbuitl function it is doing it.
+until that is done there is no way you can reach the catch blok.
+
+until an 
+1. exception object is created
+2. thrown
+we cant tell "exception has occurred"
+
+until exception has occurred you should not talk about catch block.
+
+in java to tell something is an exception. especially user defined ones..
+
+
+let us I want tell X is an exception the way to do it
+
+
+you should write a class X extends Exception., you should X a subclass of Exception
+only then you can call X as an exception , until you make it as subclass of Exception
+if you create an object and throw it or catch it.. both will nto work..
+
+throw
+catch 
+
+
+those who did not comlete yesterday thing.. try that.
+113.
+after a little bit of theory 15 minutes max..
+
+1.00 to 2.00PM 
+
+
+language /program/ project itself will throw error   ==English..
+only thing 
+
+1 you are calling some inbuilt function or you are doing some invalid at the operation
+level of the variable. thrn system will throw the error.
+
+
+int i =0;
+int j =1;
+
+j/i  divide operation on j which is invalid.. ArithmeticException.. what does it mean
+it means System has created exception object and then thrown..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tomorrow Linux commands...

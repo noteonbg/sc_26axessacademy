@@ -1,6 +1,6 @@
 package programmingbasics.a04polymorphism;
 
-public class AeroPlane extends Vehicle {
+class AeroPlane extends Vehicle {
 
     public void reversemove()
     {

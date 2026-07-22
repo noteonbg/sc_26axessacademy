@@ -17,7 +17,8 @@ public class MedicalBilling {
 
             // Custom validation
             if (numberOfPatients <= 0) {
-                throw new InvalidPatientCountException("Patient count must be greater than 0.");
+                InvalidPatientCountException whocares = new InvalidPatientCountException("Patient count must be greater than 0.");
+                throw whocares;
             }
 
             // Calculation

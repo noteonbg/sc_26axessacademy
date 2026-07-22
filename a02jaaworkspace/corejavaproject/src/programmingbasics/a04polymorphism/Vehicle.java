@@ -8,7 +8,7 @@ package programmingbasics.a04polymorphism;
 
     }
 
-    public void forwardmove()
+    public final  void forwardmove()
     {
         System.out.println("vehicle moved forward");
     }
