@@ -1,0 +1,162 @@
+Today is day to demonstrate 
+
+anybody who tells I have to remember less
+but generalize their learning..
+
+whatever assingemnts you you have to take
+screen shots and store in your your bootcamp
+folder week1 Linux..
+
+check Linux works in yoru system or not..
+Linux commands.. some com
+
+
+
+
+
+
+
+
+Patience first and then intelligence..
+lot of syntax... 
+1. to figure how to learn syntax..
+
+
+
+
+
+
+why are you learning Linux commands..
+
+becaue in todays world cloud is a reality.. in cloud i need Linux commands..
+avaialility of resource on demand.. all these things will be automated..
+
+
+software developer greatest anthem..  they keep telling "It was working"
+to avoid all these things we will use next week Docker.. containeraization... related to cloud..
+here Linux is the boss. cloud means rented house..how to be light weight.. light weight Linux is the boss
+hence we are learning Linux.
+
+
+Design. if we begin with intent called X. no matter whatever changes we do in design the intent cannot change..
+
+
+1. have you putty... working.
+2. do you know your Linux credential.
+3. get connected..
+
+
+paste right click.
+
+
+
+
+
+
+confluence page.
+1. Linux pdf
+2. assignment programs
+
+
+Sarayu
+Yash 
+Nistha
+
+
+os perspective Operation
+1. resource management
+2. file management
+3. scheduling.
+4...5 ..
+
+
+only way to ensure software is working properly getting more number of people to use it..
+Linux wins.. when compared to unix and other operating systems.. 
+
+
+world biggest war is between products vs standards
+
+companies want us to get addicted to products.
+customers want choice, so they tell give me standards
+fight goes on depending on mood something will win,
+
+
+windows... file system.. os feature. windows  NTFS
+Linux will have own set of file systems..
+Linux will recognize windows file systems..
+
+Linux is supposed to secure when compared to windows because how the initial design began.
+
+
+Tools are tools.. that means dont become fan of it , once we join he company ask which tools are they using
+and learnt to adapt..
+
+Imitate and then Improve.
+
+Solution can come only if we know the context..
+context is the boss.
+
+
+
+quick summary
+0. becoming a fan of anything pathetic.. not a good idea from business point of view..
+1. knowing os helps that is not our job today. but think about it 1.5/5
+2. we are going to learn lot of commands lets us generalize.
+3. Linux has an opinion, windows has an opinion. mac has an opinion how to do things..
+4. today wwe are learning Linux opinion on how to do things.. why cloud needs it..
+5. Linux by default is multi user... 
+6. know folder structure helps where does your software go by default in which folder.. are good things to know in any os.
+7. how to update the path are good things to know..
+
+
+file extensions are not that important for execution.. content of the file is what matters in Linux.
+
+know folder structures
+
+know binary files and text files
+
+know linxu commands.
+
+open documentation when 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
