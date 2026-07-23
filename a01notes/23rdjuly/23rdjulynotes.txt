@@ -119,6 +119,167 @@ know linxu commands.
 
 open documentation when 
 
+concept is not a function of time
+syntax is.
+
+
+
+
+
+
+
+what we did got a hold of how to work on Linux using this "opinionated editor 
+called vi"
+
+
+Fans of anything should be hung in the ceiling..
+
+first prove we understood the problem prove prove never trust..
+how do you this in Linux.. by using scripts logs..
+
+
+sh freak.sh junk scrap
+
+inside freak.sh
+
+$1 junk
+$2 scrap.
+
+
+
+
+
+enjoy the world of Opinions
+please keep taking page49 to 53.
+
+
+habit of dealing with multiple subjects..
+4th std kid in school is ok.
+
+social studies
+language
+maths
+science..
+
+
+
+
+constraints define real life
+complete all assignments till page 56  by 3.30PM today.
+
+
+
+
+
+
+
+
+
+1. summarize what we should understood so far
+2. you will get time to complete the Linux assingments..
+but remember to know what is happening where..
+3. boss of design again.. interfaces..
+
+
+
+1. cloud.
+2. Kubernetes.
+3. docker.
+4. Linux
+5. we are learning all the things we learnt..
+
+
+welcome to 4th std learn multiple subjects be peaceful.
+try to create the noise of "I am focused" pathetic.. most of time it means
+they are useless in the project.. rant..
+
+
+Linux.
+script writing..
+syntax.. it has got  its own syntax.
+we issued some basic os commands llike listing files  seeing text file content. 
+
+can you learn syntax on your own.. that is great skill to have.. because
+syntax is always opinionated... depending the language or tool you are using
+
+go thru the md file for the concept a litte bit ...
+
+
+Functional programming.
+1. ability to pass a function as an input argument to another function.
+very very common ever since dinosaur great grand mother..
+Ramesh  wrote f1
+void f1(verycommon)
+{
+
+
+}
+
+very common input and return type is decided by Ramesh
+what should be the name of the function Ramesh does not care..
+
+
+
+		Suresh wrote f2 and f3 and called f1 of Ramesh by passing
+		f2 as input argument.
+void f2()
+{
+
+}
+
+void f3()
+{
+   f1(f2);  //functional programming.  input of f1 is another function called f2
+}
+
+f1(f2()); //different thing.. call f2 what f2 returns pass it to f1 this is not
+functional programming.
+
+
+
+why we do it. before that people will "Illness  --I disease.." will not understand functional
+programming.]
+
+
+
+
+
+
+concept
+give an example
+talk abouit syntax
+talk about best practices
+logic building..
+
+mix all 5 and enjoy unlimited misery. or engish jargon... speaking skills.
+
+
+
+//Ramesh would have written function
+p(ohyes) // suresh will be calling it, Ramesh tells which
+ever function you are passing,  need int as input and return type
+of function should be booelan
+{
+
+}
+
+//suresh has to write functions.. becuae he wants to call Ramesh function
+destiny q(fate) //callilng will be done by Ramesh
+{
+
+}
+
+
+generalize()//anybody not an issue
+{
+   p(q);   //to call p i need some other function in this q. because Ramesh
+//p function takes another function as input..
+
+
+}
+
+
+to call a function you must be insie some other function.. True.
 
 
 
@@ -135,11 +296,80 @@ open documentation when
 
 
 
+anthing a = function definition 
+
+anytime you see lamda or function definition assigned to a variable.. usually
+it is understood that it is suresh who is doing his fate job..
+
+Ramesh will be doing the complex job
+
+
+Suresh will be using the Ramesh complex job to ensure it suits suresh.
+Ramesh is telling suresh.
+
+hey suresh 
+I can do sorting, 
+I can do searching
+I can do filtering
+I can start a Thread...
+I can start a Socket..
+
+But while I do sorting you must tell how to compare things.
+While I do searching you should tell how to match a thing.  ie  ==
+While I do filtering you should tell how to match a thing  ie   ==
+while i start a thread you must teach me what you want to do in the thread
+
+Ramesh  tells I can sort, you teach how to cmpare
+Suresh 
+has got Cars, he will teach Ramesh to compare two cars.
+Mahesh
+has got Employees he will teach Ramesh to compare two employees.
+
+
+Ramesh is telling I dont care whether it is employees or cars all i need is
+comparision on that I will sort.
+
+welcome to world of interfaces in functional programming in java.
+
+
+
+
+explain in simple way how function programming looks in java.
+
+
+you should see 3 functions.
+
+Ramesh
+1
+
+Suresh
+2
+1 function of suresh to call function of Ramesh
+2 function of suresh is fate because Ramesh has told suresh hey must give me 
+one fnction as input argument.
 
 
 
 
 
+
+
+
+
+back to Linux assingments.
+
+
+
+x
+y can be written as lambda..
+z
+
+
+z
+{
+
+
+}
 
 
 

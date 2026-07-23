@@ -9,6 +9,10 @@ package com.campus.finance.demo;
  *
  * Finance examples below: zero, one, and two parameter lambdas.
  */
+
+
+//Dedicated to all the kids in the world.
+
 public class Demo2_LambdaExpression {
 
     // Small functional interfaces so we have something for the lambdas to fill.
@@ -27,9 +31,10 @@ public class Demo2_LambdaExpression {
         double apply(double a, double b);
     }
 
+    //suresh f3 is main
     public static void main(String[] args) {
         // Zero parameters: supply today's currency.
-        NoInput currency = () -> "INR";
+        NoInput currency = () -> "INR"; // Suresh fate fnction
 
         // One parameter: 10% bonus on a salary (single line, no braces, no 'return').
         OneInput bonus = salary -> salary * 0.10;
@@ -37,6 +42,7 @@ public class Demo2_LambdaExpression {
         // Two parameters: add two amounts (e.g. two instalments).
         TwoInputs total = (a, b) -> a + b;
 
+        //no ramesh function is found so the whole program looks stupid
         System.out.println("Currency          : " + currency.get());
         System.out.println("Bonus on 50000    : " + bonus.apply(50000));
         System.out.println("Total of 1200+800 : " + total.apply(1200, 800));
