@@ -42,6 +42,8 @@ public class CollaborationDemo {
         // Here a teammate supplies the behaviour with a LAMBDA (Concept 2).
         AccountClassifier tierClassifier =
                 a -> a.getBalance() >= 100000 ? "PRIORITY" : "STANDARD";
+
+
         for (Account a : accounts) {
             System.out.println("Account#" + a.getId() + " -> " + tierClassifier.classify(a));
         }

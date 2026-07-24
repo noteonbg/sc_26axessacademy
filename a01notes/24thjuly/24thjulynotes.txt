@@ -1,0 +1,342 @@
+today topic
+
+1. functional programming
+2. Networking and Linux monitoring
+3. practicals what all is pending due on Monday ( Big list of practicals that we need to check)..
+
+
+Functional programming in java it means we need an interface.
+why in java.
+
+
+1. Function input can be only two things
+1. primitive type.
+2. object type belonging to class or interface.
+
+
+f1(int x)  {   } all of you know f1 input is an int
+
+f1(Q x)  {  } x is of type Q
+what can be Q
+Q can be a class
+Q can be an interface.
+if you tell functional programming Q is typically an interface.
+
+long back interface == standard.. only way to use a standard is by using a product
+which implements the standard..
+
+Q obj =new ABC();
+what does it mean
+
+ABC is a class which is implementing the interface called Q.
+that means inside ABC whatever is function defined by Q will be implemented.
+
+
+when confused stick with basics..
+what is basic, who wrwote the function who is calling it.
+
+
+main nothing to ask.. fate.. jvm will call it.
+main function written by suresh...
+he wants to call sort function written by Ramesh.
+ok..sort is a non static function. so we need to create an object and call it.
+sort input is a comparingthing ...who decided this, Ramesh because is owner of the sort.
+Comapring things is an interface written by Ramesh thru which he will force suresh
+to write a function whose input and return type should match...
+suresh can never write any function whose input is int or int because Ramesh told
+it must be string and string only..
+how is it done in syntax.. in java it is interface usage.
+interface means contract or standard means "force" "agree"
+
+we have to pass a function as an input argument to tell fnctional programming
+but here we are passing a object as input argument welcome to language nuances
+in java you do functional programming by passing an object whose class implements
+an interface and that interface has only one function in it.
+
+
+ComparingThings y =(p,q)->false;
+meaning of this line, I have a defined a function in a class which implements Comparing
+things , and that function will return 3. and its input remains two things only
+why Ramesh told Hey guy I need two things in my input and return must be an int
+
+in all cases.. what is true.. to do functional programming in java.
+
+1. theory.. you have to pass a function as input... that is correct.
+2. way to do in java is thru an interface, why interface.. interfae is  contract.
+Ramesh told suresh hey agree to my contract... if you dont I will not do the thing
+for you.
+3. suresh told ok Ramesh i agree to your contract, how.. wrote  a class ABC which
+implements that interface.
+then created an object of it.
+4. suresh called Ramesh function sort by using that object of the contract and then
+Ramesh function will work.
+
+
+syntax. for suresh
+1. instead of creating a class that implements the interface.
+2. defines the function
+3. creates the object.
+you can mix all 1 to 3 by using lamda expression.
+
+I hate 1 to 3 is not an option. i will use smaller syntax is an option in java.
+
+
+in java.
+
+1. Ramesh
+write an important function
+writes an interface.
+
+
+2. Suresh
+1. write a class that implements the interface and defines the function and creates the object.
+or creates a lamda .. both are same thigns only .. nothing different.
+2. calls Ramesh function by suppying 1. I hate 1, you cant call Ramesh function.
+
+
+
+freak(x);
+100% x is assignment..
+
+Lambda .. to whom does it apply
+Ramesh or Suresh
+only to Suresh. suresh can tell i will write 10 lilnes no I will write 1 line who cares
+Ramesh tells all I need is a function how you give, that is yoru headache.
+
+Lambda is suresh headache and not Ramesh.. becuae it style of programming.
+welcome to java syntax in functional programming.
+
+
+ComparingThings interface designed by Ramesh to force suresh to give him while callingsort.
+equivalent Comparing things we have lot of things in java, which I will try to
+explain now and then we will look some more code samples.
+
+a style of coding where insead of 
+
+1. creting a class implementing an interface.
+2. defining a function
+3. creating an object.
+we can club all 1 to 3 in a single syntax.
+Functionalinterface.. that interface can be represented with a lambda syntax.
+
+Ramesh has an important function
+Ramesh tells anybody who wants his important function, I will keep a gun at your head
+you must agree.. interface
+Suresh or anybody who wants to call Ramesh function
+creates  a class that impleemtns the interface.. they are telling Ramesh hey look gun is ok for me.
+defiens the function... agreeing to the fun.
+create an object.
+call ramsh function by passing this object.
+entire syntax of creating an object of a class that implments the interface
+and defines the function == shortcut syntax == lambda.
+
+
+accounts.forEach(System.out::println);
+
+Here observe we are passing print function as input forEach this is passing
+Method references to function. this also is a style of functional programming.
+
+what is Lamda.. ( more of interface usage simplication)
+passing method references. passing functoinname as input arguments .. 
+these are two styles in which you do functional programming in java.
+
+
+
+Functional programming in java
+1) lamda only for suresh..
+typically it means an interface is there..
+you have a short cut way to create a object whose class impleemnts the interface
+and defines the method and you pass that object as input to the Ramesh function.
+
+2) method references
+storing the method in a variable.. this is not equivalent to calllign the method.
+you can pass this method reference as input to some other function..
+
+
+Streams are used to process a datastructure.
+typically the logic
+
+
+start traversing  --streaming.
+process it
+accumulate the results   -- terminal operation
+advantage is it will be lazy operation , only when need comes the function will run
+else it is delayed..
+
+whenever you look at stream
+
+1. on what the stream is based on ( you are iterating thru what)
+2. what intermediate operations are we doing ( filter, mapping, sorting)
+3. where are we collecting the results ( termainal operations)
+
+
+summary of functional programming.
+
+1. Ramesh and suresh.
+2. Ramesh can do two things, I write an interface.. (gun) , use a method reference.
+3. suresh 
+3.1 wants to call Ramesh function
+3.2 use lamda if Ramesh is using interface.
+3.3 use method reference .. directly.. if Ramesh for method reference.
+4. usage scenarios for functional programing in java.
+4.1 event hanlding.
+4.2 thread scenarios
+4.3 datastructure processing...
+4.3.1 streaming.. processing, terminal operation.
+stream from a source pick something and start traversing.. read only...
+processing filter, sort, distinct, aggregate...
+terminal operation ok collect the results now.
+5. entire topic of 4 will use functional programming.
+
+
+
+
+Function definition 
+Function calling
+Function assignment ( will come in functional programming, but kid will keep crying.. kid is uns)
+
+
+kids standard problem i believe in assignment only if I see = , pathetic kid keep crying..
+input being passed to function and returning from function is also assignment.
+
+
+
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+what is theory.. programmer has got only one job be 5/5 in functions and variables.
+
+
+
+
+customers.sort(Comparator.comparing(Customer::getEmail));
+
+sort function what are we doing
+1. calling (fantastic that is great)
+2. assigning
+3. defining
+
+comparing function 
+1. calling (fantastic that is great)
+2. assigning
+3. defining
+
+Customer::getEmail)  //functional programming via method references.
+
+assigning.
+
+
+f1(f2(f3));
+f1 function is being called.
+f2 function is being called by supplying f3 function as input and whatever it returns
+is being passed to f1.
+
+
+
+customers.stream()
+                .map(Customer::getLocation)
+                .distinct()
+                .forEach(location -> {
+                    System.out.println(location + ":");
+                    customers.stream()
+                            .filter(c -> c.getLocation().equals(location))
+                            .forEach(System.out::println);
+                });
+
+
+
+do you know your theory...
+stream
+customers.stream()   // no functional programming
+you are iterating thru the arraylist.
+
+process
+map(Customer::getLocation)   you are picking up customer location using method reference
+                .distinct()  // no functional programming
+pick up location from teh customer object in case there is duplicates avoid it.
+
+
+collect.(terminal operations)
+forEach(location -> {
+                    System.out.println(location + ":");
+                    customers.stream()
+                            .filter(c -> c.getLocation().equals(location))
+                            .forEach(System.out::println);
+                });
+
+
+
+
+
+we are passing a Lamda to forEach
+
+people who dont show line numbers in the editor dont help them...
+
+when we do streaming, processing or terminal operations we will using
+lot of functional programming.. in functional programmer where interfaces
+are there  Function, Predicate, M.. we will be using lamda expressions.
+
+
+
+Lamda expressins to use there must be an interface scenario. T or F.
+True.. if you see lamda being used..  Suresh life long will lamda only if has dependency
+on Ramesh..
+
+Are we "generalizing our learning" those who dont it suffer.. with information overload..
+
+
+
+customers.stream()
+                            .filter(c -> c.getLocation().equals(location))
+                            .forEach(System.out::println);
+
+stream  --customers.stream()
+process  --filter(c -> c.getLocation().equals(locatio  
+terminal -terminal operation  forEach(System.out::println);
+
+
+patiently stick with package functionalprogramming.copypaste;
+try to understand CustomerDemo.java and Customer.java
+and then copy paste similar examples where Account
+accounted, name, pincode and balance.
+and try to play around with balance.
+
+be willing to open other person program and make it work
+in your system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
