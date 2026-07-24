@@ -317,6 +317,138 @@ in your system.
 
 
 
+Hope we have some idea regarding functional programming
+
+OPtional in java.. very quickly go for networking and Linux remaining parts
+and in evening at 5.00 make a summary of Linux also.
+
+Optional is java attempt to make stupid people smart.. but you know what happens.
+
+What is optional , optional is a class in java to tell nothing is there..
+or something is there..
+
+think of optional like box.
+either it is empty
+or it is filled up.
+
+
+in java if you see optional or any datastructue we typically indicate our
+intent of what it will contain.
+
+
+List<STring> j we are telling my List will contain strings in java..
+if you put a non string into the list compiler will give an error.
+more of convience..
+
+1. Create the option. fill it up if you want or keep it empty
+2. at the time of usage look for isEmpty ...  if that returns false.
+3. pick up the thing present in  the optiomnal by using get method..
+
+Networking journey and Linux monitoring..
+
+adjective usage for technical people ... they should very careful
+
+slow, fastd.. where is the data..
+without having data telling it is slow it is fast.. English territory. better not do it..
+
+
+English professors use any adjective it is ok..
+
+getting 1 or 1.5 /5 in operating system practically it is never waste of time.
+
+taking hardware and giving it life thru software, that is a great skil.
+
+
+server related tools regarding processors, disks, memory, networking
+packaging tools..
+yam
+rep
+deb
+all these are opinions of how to distribute software...
+
+philosophical problem
+what do we want..
+
+1. want to be busy
+2. want to be relevant.
+
+
+how to make thngs  bug free.
+get more people to use it    requires lot of intelligence..
+
+being busy is free..
+being relevant is not..
+
+
+
+stupidity rules
+1. stupidty  requires team effort.
+2. stupidty once popular is no longer stupidity.
+
+
+why did banks provide atm, internet bankinga, mobile app
+becuae it helps you (X), or because it helps the bank (Y)
+Y first and then X as a side effect.
+
+cloud avaiability of resource on demand..
+
+CDN
+ i would visited micrspft.google , they will use lbrary x
+ 2. in some other x is used, x need not be downloaded by me
+x=bootstrap..
+
+1. close networking
+2. assingmetns which will evaluated on Monday..
+ask randomly each person to share screen and see teh assignemtns..
+
+
+results cannot be guranted in any system but probability of a plesant results..
+
+
+we can use http for showing something, we can use http for callinga  function...
+
+
+request modes get, post, put, delete.. technically we can generalize them as events in http
+later on at some point we will see what Event is..
+
+Security in any software is a combination of process and technology those who look
+at only technology will get unexpected surprises..
+
+In http scenario
+
+1. what goes int the requet.
+2. where is request processed.
+3. what come as a response..
+
+Please go ahead with your practicals on Linux complete, hands on Linux complete it
+and then go back to java ...
+
+have a file 
+which assignment.. which folder or file the assignment is there..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
