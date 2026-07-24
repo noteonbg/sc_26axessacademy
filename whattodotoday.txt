@@ -6,7 +6,7 @@ the code especially the difficult part.
 
 24th July 2026 will be checked on coming monday , 27th July 2026
 
-Assingment checklist 
+Assingment checklist  ( both the course related pdf and the assignments hands on pdf..)
 
 for Both java and linux
 1. complete assingments from the course pdf. ie pdf which we see in the class.
