@@ -1,12 +1,29 @@
+
 Remember you will be asked
 to explain and modify
 the code, be ready...by documenting
 the code especially the difficult part.
 
+24th July 2026
+
+Assingment checklist 
+
+for Both java and linux
+1. complete assingments from the course pdf. ie pdf which we see in the class.
+2. complete assingments given in the Assignments\Week1\Java - Hands on.pdf
+and linuxhandson.pdf ( 2 pdfs available)
+3. ensure in java use ArrayList, Streams , intermediate operations and terminal operations.
+4. ensure you understood the code, one full day coming wednesday is dedicated
+to the evalation.
 
 
+------------------------------------------------------------------------------------------
+July 23rd 
 
------
+linux assingments from the pdf.
+
+
+---------------------------------------------------------------------------------------------
 
 July 22nd 2026
 
