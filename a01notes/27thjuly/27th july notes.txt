@@ -1,0 +1,95 @@
+1. agile session
+2. continue standup for remaining teams and then git session
+3. evening continue our assignment
+check 24 of your assignments randomly.
+
+
+how to start from today..
+not only Ramesh and Suresh 
+there are others
+
+Rajesh
+Dinesh
+Mukesh
+Ganesh
+Rakesh
+Yogesh
+Lokesh
+Nilesh
+Naresh
+Brijesh
+
+Welcome to the Project.. based world .. .Process matters..
+
+
+
+
+
+
+
+
+when there are multiple steps I dont want to use my memory..
+
+
+Account
+performPayment
+performDeposit.
+
+
+create an account object
+all performdepost  and performpayment.
+
+ DebitAccount 
+performPayment
+performDeposit.
+performPayment (Boolean passwordchcking)
+performDeposit ( Boolean passwordchecking
+
+
+
+
+
+CreditAcount
+performPayment   -- you will take care of point giving and limit checking
+performDeposit.   --   I dont know what limit checking make a meaning
+assumption..
+
+
+
+Reference is of type super class type 
+
+Account c = randomly put saving or current account
+
+there are three funcions
+
+
+c.performPayment();  // rtp
+c.performDeposit();  //rtp
+c.getBAlance() ; //no runtime polymorphism
+
+getbalance is not overridden in the subclasses so it will always go 
+to the Account class.
+
+theory of inheritance
+subclass object can access super class functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
