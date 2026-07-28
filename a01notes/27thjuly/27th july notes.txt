@@ -5,7 +5,47 @@ check 24 of your assignments randomly.
 
 
 
+From Today onwards literally your project begins..
 
+1) everybody in team is a slave to the project.
+2) no question of judging any team member..
+3) any project will  have unequal effort.
+4) zero emotion on code, working ok go the next , not working think what to change..
+Investing emotions in code pathetic thing..
+
+
+
+
+Bad Intent + great process = Intent will win.
+Intent first, language next...
+
+
+Our intent is to ensure project succeeds..
+
+
+A project funeral begins very early....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Git
+
+
+Git is an organized way of controlling changes in organized way.. Version control systems do..
+
+Version is generalized word...
+open pdf later.. pdf can kidnap me...
 
 
 how to start from today..
@@ -24,6 +64,78 @@ Naresh
 Brijesh
 
 Welcome to the Project.. based world .. .Process matters..
+
+what is GIt, git is version control system
+what does it do.. control changes or allow you make changes in organized way
+and you can undo changes if you want to...
+
+
+surely what is not version control system != one drive or google drive ...
+
+
+how a single open source product killed all the products in the industry as far version control
+system..
+
+Imitate first before you think of improving especially in process, tools because...
+why.. We may not know the context..
+
+0. work like a team..
+1. is git software working.
+2. have you done the settings, check...   --list
+3. create a folder called myproject under GitLab  of week2 in bootcamp.
+3. do all your experiments in myproject folder only.
+any folder name is ok but don't work under GitLab folder.
+
+
+one more tip in project cooperation
+treat your team member like volunteers, if you try to keep gun at their head they can die
+but they wont complete the work..
+
+welcome to the world of opinions..
+
+all products will have opinions... are you generalizing your learning..
+
+
+snake and ladder game..
+
+x inside it there .git
+i have y insie X and inside it there is .git
+
+
+no matter whatever is mood be conscious about your folder structure and what it means..
+
+
+you are learning git commands is it useful yes.. but in a project we could be using
+tools... within visual code within IntelliJ we can navigate by using ui commands itself..
+
+
+how to do undos
+different kind of merging..
+
+
+
+continue with your git prcticals and complet it.
+and open git hands on and complete till page 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
