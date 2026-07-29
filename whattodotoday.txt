@@ -38,6 +38,15 @@ July 29th 2026
 2.2 a03Git-Merges-Tags-Undo.md
 
 
+
+remember your folder structure.
+
+Bootcamp\repofolder\week1\java
+                         \linux
+                    \.gitignore ( pdf files) 
+
+
+
 3. ADO Repo
   3.0)settings
        1) did you create a personal access token
@@ -48,7 +57,7 @@ July 29th 2026
             ... this syntax is needed only with the git commands in the server..... 
    3.1 see are you able to clone the repo in the bootcamp folder only...
    3.2 switch to your branch
-   3.3 create a a.txt file commit it 
+   3.3 create a a.txt file commit it with some taskid
    3.4 push it
    3.5 azure repos location and check whether the new file is found
 
