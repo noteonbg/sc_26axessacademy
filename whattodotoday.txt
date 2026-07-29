@@ -52,7 +52,11 @@ July 29th 2026
    3.4 push it
    3.5 azure repos location and check whether the new file is found
 
-   git rant..
+  checklist.
+     repo folder should be inside the bootcamp folder only...
+
+
+   git rant.. ( read this only if you are not able to contact server... )
 
     on the azure site in the browser.
     1. create your personal access token
@@ -65,21 +69,30 @@ July 29th 2026
 
     git config --global --unset http.proxy
     git config --global --get http.proxy
-
-
     git config --global --unset https.proxy
     
     #for office.
     git config --global https.proxy http://10.239.9.190:443
 
-    
+    gitconfig file.
+    [http]
+	 proxy = http://10.239.9.190:443
+	sslVerify = false
+	postBuffer = 524288000
+	maxRequestBuffer = 100M
+[credential "helperselector"]
+	selected = <no helper>
+[user]
+	mail = xyz@sc.com
+	email = pqr@sc.com
+	name = xyzpqr
+[core]
+	compression = 9
+
+  --------------------------------  
 
 
- 
-
-
-
-4. each member of project team look at your other member team... and review( most important)
+ 4. each member of project team look at your other member team... and review( most important)
    4.1 keep the emotion away...
    4.2 focus on the project and all of us are slave to the project.
    4.4 review each other assingment folder structure and contents and review it.
