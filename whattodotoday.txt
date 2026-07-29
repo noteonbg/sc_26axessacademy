@@ -29,9 +29,9 @@ July 29th 2026
    3.2 switch to your branch
    3.3 create a a.txt file commit it 
 4. each member of project team look at your other member team... and review( most important)
-    4.1 keep the emotion away...
-    4.2 focus on the project and all of us are slave to the project.
-    4.4 review each other assingment folder structure and contents and review it.
+   4.1 keep the emotion away...
+   4.2 focus on the project and all of us are slave to the project.
+   4.4 review each other assingment folder structure and contents and review it.
 
 
 
