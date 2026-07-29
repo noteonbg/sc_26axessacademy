@@ -22,6 +22,7 @@ July 29th 2026
 
 
 1. update your azure boards to include week1 and week2 (think and discuss with your team members)
+   tasks will be linked to the stories.
    dont write paragraphs... please. keep it numbered points, in description...
     1.1 think of userstory name_week1, name_week2
     1.2 tasks will be java assignments , linux assingments in week1
@@ -61,6 +62,18 @@ July 29th 2026
     git -c http.sslVerify=false gitcommands.
     remember this option -c htp.sslVErify=false should be used along with your git commands
     only for fetch , pull. ....
+
+    git config --global --unset http.proxy
+    git config --global --get http.proxy
+
+
+    git config --global --unset https.proxy
+    
+    #for office.
+    git config --global https.proxy http://10.239.9.190:443
+
+    
+
 
  
 
