@@ -1,8 +1,55 @@
+keep on log file on the cloud 
+where you write 
+date and your experiences..
+
+
 0. team working
 1. quick summary
 2. assessment.
 3. git.
 4. summarizing things..
+
+
+Everybody in the team must know.
+0. Azure boards..  ( 4.9/5)
+1. git  ( 3/5)
+2. all of you are conscious about the folder structure.(5/5)
+3. all of you must know some basic vi commands git (1/5)
+will put into vi editor... how to move from line
+how to delete a line.
+4. some basic Linux commands pwd.. ( 1/5)
+5. some more detail in how to approach code from a project
+point of view.( 3/5)
+
+Bad intent + great process = Intent will win.
+
+Project success
+= Process  * technology * tools * culture.
+azure boards == Process part.
+
+people can burry them selves in vagueness..
+
+overdetailing kills no one..
+under detailing is pathetic..
+
+
+
+hands on page 23, question 4.
+ghost talk.. no details only talk like a ghost..
+
+
+Azure board..
+
+1. work Item
+2. sub task
+
+
+
+
+
+
+
+
 
 E-SDLC
 use the sprints board.. trainer want to know the subtasks.
@@ -11,6 +58,179 @@ only then subtasks are closed only then user story..
 proxy will be different.
 office.
 home
+
+Accceptance critera
+fill it up.. what is definition of done.
+
+real challenge is prove you understood requirement..
+
+1. have you got the details.
+2. do you know the serial number.
+3.fill up the acceptance criteria..
+4. can your work item be read by other person and team
+can he continue the work.
+
+
+GIT
+our code  -- develop branch
+my code.   -- your branch
+all of you must know where is our code, and where is my
+code.
+
+1. clone the repo from the server... azure repos.
+this has to be done only once... if people are doing
+every day, asylum has started they will be in it.
+Ramesh
+suresh
+Mahesh.
+
+for today, still you are in "I" world and not "We" world
+1. clone your repo.
+2. switch to your branch.
+3. add your assingments folders to this branch.
+4. commit with a decent message.. remember the number ...
+5. push the changed branch back to to the server.
+
+when we have multiple things.. do we want to use
+our "memory" or "checklist" my view is "checklist"
+is better. brain is noisy..
+
+as of now. 
+
+1. you azure repo has got a branc with bankidyourname.
+2. you dont need to create any new branch..
+3. ensure you have your workitems ready in the board.
+4. know your serial number..
+5. do lot of small commits locally.
+6. at the end of day... push the branch to the remote.
+
+
+I have hatred for people who show laziness
+in filling up acceptance criteria... this shows
+meaning of complete.
+
+lot of pain will be there, it is ok, because getting into
+details always creates pain so what. it needs to be done
+because work has to happen.
+
+
+git checklist..
+
+People who write paragraphs in serious scenarios are pathetic
+use numbered points in writing.
+
+Intent first, language next..
+
+
+dont be vague..
+
+
+git yesterday
+
+all of you know what is meaning of a repo.
+
+
+
+git check list.
+0. you have a checklist ready.. you can see it
+and do it.. 
+1. did you configure git.
+2. did you know how to recognize a repo in git.
+2.1 yesterday we created the repo locally.
+2.2 today or tomorrow we will get the repo from the
+server after authenticating ourselves in a opinioated
+way..
+3. no matter whatever you do , most important thing
+we have a repo.
+4. freaky point, know your folder structure.
+5. pull the latest from the server in your branch
+6. start doing new things.
+7. add  it. , if you want undo it...
+8. once sure... commit it.
+7. push the branch to the server.
+
+3.47 Pm git adventure and then stop.
+
+
+
+
+
+
+
+
+syntax takes time it is better to operate thru
+a checklist..
+
+we part of git, is main branch or master branch..and usually
+in a project we cannot touch it..
+
+we part for us in a project will be 
+develop
+corpid+name == branch
+
+
+git init... (not relevant today, we are going
+to get the repo from the server)
+because i created locally I wanted the we branch
+to be called main.. opinion.. no master ok.. whatever..
+something should be committed
+
+
+when you get a repo from the server.
+there will be main branch with some file commiteed
+usually.. or your branch it is created, it will some commit.
+
+1. get the latest data from server...
+how you do .. not by cloning..
+
+your whole course will run on two repo.
+campusrepo till your project begins.
+projectrepo when your project begins
+
+how mny times you have to clone in next 8 weeks
+only 2 times..
+those who do more than 2 times ok.. asylym mode..
+
+
+
+1. you know a repo.
+2. it has got contents.
+3. you can check it status.
+4. in your project, creating a new branch..
+as of now.. you switch to your branch.
+
+5. do you know how to restore a file and do you know
+how to switch between branches and see the branches
+available.
+
+6. in the project main branch will change... and we 
+are in another branch, now the main branch changes
+has to be merged with our branch..
+
+7. before your merge ensure all the things in your current
+branch is commited or temporarily stored some where..
+git stash. or git popl..
+
+
+1. create a branch 
+2. create a file
+undo the operation... 
+3. add it
+4. commit
+
+
+change the main branch
+merge the main branch with the feature brainch
+before merging.. ensure you have stashed or commited
+
+keep your bp level normal and focus on the project
+and ensure team skills improve..
+
+
+1. practice basic git.. ensure entire team knows it
+2. update your azure boards...
+3. git with remote repo.. I will show you one example..
+
 
 
 
