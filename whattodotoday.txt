@@ -57,7 +57,7 @@ Bootcamp\repofolder\week1\java
             ... this syntax is needed only with the git commands in the server..... 
    3.1 see are you able to clone the repo in the bootcamp folder only...
    3.2 switch to your branch
-   3.3 create a a.txt file commit it with some taskid
+   3.3 create a a.txt file, put some contents,  commit it with some taskid
    3.4 push it
    3.5 azure repos location and check whether the new file is found
 
