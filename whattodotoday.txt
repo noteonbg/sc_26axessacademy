@@ -4,7 +4,6 @@ to explain and modify
 the code, be ready...by documenting
 the code especially the difficult part.
 
-24th July 2026 will be checked on coming monday , 27th July 2026
 
 Assingment checklist  ( both the course related pdf and the assignments hands on pdf..)
 
@@ -17,25 +16,56 @@ and linuxhandson.pdf ( 2 pdfs available)
 to the evalation.
 
 
+
 July 29th 2026
 --------------------------
 
-one story   name_week1 
-tasks
-   java assingment. mention pagenos of java assingment, hands on page number
-   linux assingment. similarly for linux...
-   networking hands on. .. similary hands on...
+
 1. update your azure boards to include week1 and week2 (think and discuss with your team members)
    dont write paragraphs... please. keep it numbered points, in description...
+    1.1 think of userstory name_week1, name_week2
+    1.2 tasks will be java assignments , linux assingments in week1
+        in description ensure you write the page numbers...of classroom and hands on...
+        no paragraphs.
+    1.3 ensure the week2 story is also setup.
+         tasks will be git assignments and docker assingments.
+    1.3 review it.. once..
+
+
 2.  everybody ensure git command..practice..
 2.1 a03Git-Local-Lab-Solo.md
 2.2 a03Git-Merges-Tags-Undo.md
+
+
 3. ADO Repo
+  3.0)settings
+       1) did you create a personal access token
+       2) did you create a branch
+       3) now come to the bootcamp folder and issue the git clone
+           remember git syntax for pushing and pulling the code will have the syntax.
+           git -c http.sslVerify=false command  ( pull, push, fetch...  when you are reaching server)
+            ... this syntax is needed only with the git commands in the server..... 
    3.1 see are you able to clone the repo in the bootcamp folder only...
    3.2 switch to your branch
    3.3 create a a.txt file commit it 
    3.4 push it
    3.5 azure repos location and check whether the new file is found
+
+   git rant..
+
+    on the azure site in the browser.
+    1. create your personal access token
+    2. create your branch.
+
+    come to your boot camp folder.
+    git -c http.sslVerify=false gitcommands.
+    remember this option -c htp.sslVErify=false should be used along with your git commands
+    only for fetch , pull. ....
+
+ 
+
+
+
 4. each member of project team look at your other member team... and review( most important)
    4.1 keep the emotion away...
    4.2 focus on the project and all of us are slave to the project.
