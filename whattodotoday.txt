@@ -20,7 +20,7 @@ to the evalation.
 July 29th 2026
 --------------------------
 
-1.  update your azure boards to include week1 and week2 (think and discuss with your team members)
+1. update your azure boards to include week1 and week2 (think and discuss with your team members)
    dont write paragraphs... please. keep it numbered points, in description...
 2.  everybody ensure git command..practice..
 2.1 a03Git-Local-Lab-Solo.md
