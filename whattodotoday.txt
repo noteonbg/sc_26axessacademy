@@ -35,7 +35,7 @@ tasks
    3.2 switch to your branch
    3.3 create a a.txt file commit it 
    3.4 push it
-   3.5 azure repos location and check whethre the new file is found
+   3.5 azure repos location and check whether the new file is found
 4. each member of project team look at your other member team... and review( most important)
    4.1 keep the emotion away...
    4.2 focus on the project and all of us are slave to the project.
