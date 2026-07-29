@@ -20,6 +20,11 @@ to the evalation.
 July 29th 2026
 --------------------------
 
+one story   name_week1 
+tasks
+   java assingment. mention pagenos of java assingment, hands on page number
+   linux assingment. similarly for linux...
+   networking hands on. .. similary hands on...
 1. update your azure boards to include week1 and week2 (think and discuss with your team members)
    dont write paragraphs... please. keep it numbered points, in description...
 2.  everybody ensure git command..practice..
@@ -29,12 +34,31 @@ July 29th 2026
    3.1 see are you able to clone the repo in the bootcamp folder only...
    3.2 switch to your branch
    3.3 create a a.txt file commit it 
+   3.4 push it
+   3.5 azure repos location and check whethre the new file is found
 4. each member of project team look at your other member team... and review( most important)
    4.1 keep the emotion away...
    4.2 focus on the project and all of us are slave to the project.
    4.4 review each other assingment folder structure and contents and review it.
 5. go thru the pdf... of docker tomorrow session is docker. look at the practicals needed 
-   and see it is present in the board.   
+   and see it is present in the board.  
+
+
+   checklist.
+   1) see whethre you are able to clone add a file and push the changes to the repo
+   2) boards
+   two stories.
+   name_week1
+    2 tasks java assignments and linux assingments.
+    ensure description is filled up with pagenos of the assingments. write in numbered points
+   name_week2
+    2 tasks git assingments and docker assingments.
+    ...
+
+
+
+
+
 
 
 
