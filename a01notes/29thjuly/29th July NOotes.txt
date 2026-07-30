@@ -1,0 +1,37 @@
+Next review will happen on Tuesday 4th August instead of wednesday
+1. whatever happened yesterday relax..
+2. today..
+2.1 hands on docker..
+2.2 bootcamp folder structure including the repo..
+2.3 git ..
+2.4 navigation in the code..
+2.5 ability to talk thru line numbers in code..
+2.5 how all things fit into the overall project..
+
+
+what is reality functions will be in multiple files in any project.
+can you tell hwo the flow went which line number of which function
+in which file results in which function of which file which line number..
+
+Docker..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

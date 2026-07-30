@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_i8TBooOGEfGNJ9yS69r8Nw" elementId="org.xmind.cathy.window.main" contributorURI="platform:/plugin/org.xmind.cathy" selectedElement="_jILhgYOGEfGNJ9yS69r8Nw" label="XMind" x="-1850" y="284" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_i8TBooOGEfGNJ9yS69r8Nw" elementId="org.xmind.cathy.window.main" contributorURI="platform:/plugin/org.xmind.cathy" selectedElement="_jILhgYOGEfGNJ9yS69r8Nw" label="XMind" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -397,11 +397,11 @@
   </descriptors>
   <descriptors xmi:id="_W8IhYETZEeaGL5Gu2uBiyA" elementId="org.xmind.ui.modelPart.image" contributorURI="platform:/plugin/org.xmind.ui.mindmap" label="%part.image.label" tooltip="%part.image.tooltip" closeable="true" contributionURI="bundleclass://org.xmind.ui.mindmap/org.xmind.ui.internal.e4models.ImagePart">
     <persistedState key="modelPart.pages.contributionUri" value="bundleclass://org.xmind.ui.gallery/org.xmind.ui.internal.gallery.ClipArtModelPage,bundleclass://org.xmind.ui.iconfinder/org.xmind.ui.internal.iconfinder.IconfinderModelPage"/>
-    <menus xmi:id="_4_C1oYphEfG4AegYAs87Xw" elementId="org.xmind.ui.modelPart.image.menus.clipArt">
+    <menus xmi:id="_w_mLIYvHEfGS4sRIA4nmqw" elementId="org.xmind.ui.modelPart.image.menus.clipArt">
       <tags>ViewMenu</tags>
       <tags>org.xmind.ui.modelPart.image.pages.clipArt</tags>
     </menus>
-    <menus xmi:id="_4_T7YIphEfG4AegYAs87Xw" elementId="org.xmind.ui.modelPart.image.menus.iconfinder">
+    <menus xmi:id="_w_y_cIvHEfGS4sRIA4nmqw" elementId="org.xmind.ui.modelPart.image.menus.iconfinder">
       <tags>ViewMenu</tags>
       <tags>org.xmind.ui.modelPart.image.pages.iconfinder</tags>
     </menus>
