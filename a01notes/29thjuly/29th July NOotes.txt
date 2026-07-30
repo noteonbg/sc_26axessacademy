@@ -13,12 +13,288 @@ what is reality functions will be in multiple files in any project.
 can you tell hwo the flow went which line number of which function
 in which file results in which function of which file which line number..
 
+Cloud
+Avaialibity of resource on demand..
+
+
 Docker..
+Linux
+docker..
+kuberntetes...
+
+
+we have a program in our system... the project
+we push it to a repo... n the repo, things would be been configured..
+to package our code into something which cloud understands..
+usually format which the cloud understands this format of docker ..docker images
+
+what is advantage with this thing...
+1. it can scale up , it can scale down...
+2. you can encapsulate the entire development environment.
+
+
+Fibonacci sequence number needed jdk11 docker image... 17
+CreditAccount needed jdk21..  docker image 21
+in the cloud based world you can allocate resources quickly
+or remove resources quickly.
+
+
+
+In the cloud when the application fails.. you have to tell why it fails
+then knowing some basics of docker will help.
+
+
+Docker is a platform...
+somebody telling trust my opinion of doing things I will help you
+I am keeping it free... for somethings you have to pay...business things..
+
+all platforms tell "my way of doing things is best" but as a science
+person we should spend time generalizing things..
+
+
+what does it mean.
+1. you have docker platform. ie where things run... almost all the cloud
+providers are ok with the docker platform, hence we also are ok
+with the docker platform
+
+2. create an application X in any language.. use the docker platform
+accept its opinion.. make your application able to run on the docker
+platform. (This is ok... this will be done automatically by using
+something build pipelines..)
+
+3. then give it the cloud provider eventually, it will start running...
+
+4. when problems come in this adventure.. then we should how to debug...
+so all the practicals we do will help in this.. (This is more relevant)
+
+5. opinion. welcome to more syntaxes.. 
+
+
+what will happen.
+1. the moment you commit.. automatic jobs which are scheduled will start.
+this will test your code, check for security issues. and then create
+a docker image and ensure cloud gets it... ( without programmer essentially
+writing lines of docker ... Devops people.... should we know it 4/5
+ADO  pipelines.. )
+
+2. ok now application is running and suddenly somebody tells applaiction is  not working how do you debug... so you should how to debug application 
+in cloud today and tomorrow session should help..
+
+Generlly you can assume the common sense exhibited by IT industry
+will be less than that of non IT industry because non IT industry
+500 to 600 year history IT industry max of 60 year .. so commonsense varies
+Process maturity...
+
+in the cloud boss operating system is always Linux... hence your previous
+module or learning some basic scripting..
+
+i write an application called X
+i trust the docker platform because of my cloud dependency.
+i figure how to package my application x in the docker 
+we configure the application
+give to the cloud eventually.
+
+
+you take your appliatino and environment it depends on and package
+into a docker image.. ( something is understandable to docker environement)
+we should make executable things.. we will use 
 
 
 
 
 
+1. you have IntelliJ project with java code in it.
+2. you have to include docker related libraries.
+3. docker opinion .. you have to create file called Dockerfile.
+4. in that you have to write some syntax... which docker tells.
+4.1 hey docker i need java runtime 21, 
+4.2 hey docker i need node js runtime 17
+4.3 hey docker this is place where my main function is present in my project
+5. run some docker command and create a docker image...
+6. then run this image.. this image is what cloud will run at runtime for you.
+
+freaky point technical people should go slow on using adjectives..
+or adverbs... use less.
+
+
+I have adding of two numbers
+I have subtraction of two numbers
+
+this week give more resources to adding of two numbers because it is used
+heavily
+after this week reduce the resources..
+cloud .. scalability..
+Docker is lightweight..
+
+because it will same os...
+
+1. learning os .. little bit practically
+2. learning distributed computing
+3. learning about architecutures
+4. showing rigur in function and variable design.
+will never be out of fashion
+
+
+
+yoru projct will consist of multiple docker images..
+they need to be orchestrated..something needs more resource, somethings
+less resource, when some crashes, backup resource has to be come
+active...  == orchestration.. cloud provides give you mechanisms to do it.
+one common orchestration, Kubernetes..
+
+
+how many runtime did you see.
+1. some tiny story on java runtime...  run as java applicatin.. java runtime
+that is running.
+
+2. you ran some Linux commands...
+2.1 utilities.
+2.2 networking utilities.
+
+3. you ran some git commands.
+
+4. welcome to docker commands..
+get some ready made docker image .. get some docker os image from the registry
+ask to get some software also from the docker registry
+run some hello world program in the docker..
+echo  "hello how are you"
+
+
+Hello world java program can you run it with in the docker.
+eventually you will run it int he cloud...
+
+
+
+paranoidness has got no limit
+
+1. Bootcamp
+2. repo folder.
+3. inside repo java 
+week1 
+folder java..
+insie repo folder Linux commands screen shots.
+inside repo folder
+week2
+git 
+docker
+   pfs	
+     docker pdf.
+     class and hands on pdf.
+.gitignore.
+ensure pdfs are not pushed to the repo.
+
+
+
+1. focus on the docker hands on..
+1.1 look at your asisngment and also the md file file
+present in.
+
+
+1. docker client .. where are you are issuing the commands.
+2. you are getting docker images from the registry..
+you got ubuntu from the registry
+3. you are running those images .. container..
+you are running ubuntu. .Linux.
+4. you want to get into this application and do something
+ls
+install some software python
+5. commiting and giving a different tag name..
+6. you will be your own smallapplication in java and running
+it inside docker here there may be a small problem not because
+of docker, because we dontk now how to run java program outside
+IntelliJ.
+
+syntax reference
+document.. 
+plese refer to the md file shared..
+
+
+run your program outside the ide..
+
+cmd
+this is place where our package and .class file is running.
+we should know we compiled by using OpenJDK from redhat version 21.
+no then have entertainment docker file.
+
+in java welcome to to the world of classpath.
+classapth is a mechanism thru which jvm will locate the .class files.
+we should not include package names under this..
+
+by using classpath we teaching jvm where to search for a file.
+
+
+
+
+
+you must know how to run the application outside of the ide.
+what settings are needed only then you can usedocker for running
+your application in our java case..
+
+
+
+it is knowing classpath.
+
+
+
+1. continue your practicals use the md file for syntax..
+if you are getting..
+2. what is objective...
+2.1 are we getting some image and reaching the inside of the container.
+2.2 can we supply configuration information to the container from outside..
+2.3 debugging in terms of networking or storage..
+
+
+quick summary point is like this.
+
+
+1. you must know cloud... increase or decrease resources on demand.
+2. orchestration... how you tell increase or decrease.. what when...
+Kubernetes... 
+3. you need packaging mechanism for the cloud... Docker..
+4. There is a box.. what will be there in the box is decided by programmer...
+how means thru a Docker file..
+in the box I want ubuntu, update it and i want git and i want curl 
+software installed.
+
+this container executes.
+you can get a shell, in that shell you can try git or curl command.
+
+second program
+box has got javascript code to run it, you need javascript runtime..
+which was nodejs is 
+
+I have created a pen , pen in a box  ( Dockerfile)
+I have a created a book, book in a box
+I have created a geometry box, geometry in a box
+execution.. in computer science applies only Microservices architecture"
+
+
+
+
+
+5. as with any platform... there more popular the platform gets... more
+the participants, they have to participate ( business)
+
+
+
+
+
+
+
+is the box running and what is there in the box we should be conscious..
+are you talking to the box.
+are you talking to thing present in the box.
+
+1. first focus on the java docker assignment
+2. then continue with your word document assignments.
+3. 3.30 to 3.45 team break.
+4. 3.45 we will tell what is expected from
+each member of team in java.
+  4.00PM we will go discussion room individually and discuss yesterday
+feedback of evaluation..
+
+Next evaluation of assignemnts including java.. git and docker will 
+happen on coming Tuesday and not on Wednesday as Jared is busy..
 
 
 
