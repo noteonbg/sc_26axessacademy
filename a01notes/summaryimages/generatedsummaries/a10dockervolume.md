@@ -97,6 +97,8 @@ Because named volumes are managed by Docker on the host system, the easiest way 
 ```bash
 docker run --rm -v input:/app/input alpine sh -c 'echo "hello from docker input volume" > /app/input/data.txt'
 
+```on windows command prompt
+docker run --rm -v input:/app/input alpine sh -c "echo hello from docker input volume > /app/input/data.txt"
 
 ---
 
@@ -149,3 +151,5 @@ HELLO FROM DOCKER INPUT VOLUME
 
 Data written to the `output` volume persists even after the container finishes execution and exits.
 
+## remove volumes if you do not want it
+docker volume rm input output

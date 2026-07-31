@@ -1,19 +1,19 @@
 concept is not a function of time.
 syntax is a function of time.. should I byheart syntax answer is know
-why .. i I am using it frequently i will remember, If I dont use I forget..
+why .. i I am using it frequently i will remember, If I don't use I forget..
 we are in the AI world...
-ai tool will generate tonnes of code, if it did not work blame is on us...
+ai tool will generate tons of code, if it did not work blame is on us...
 we should become good code reviewers..
 
 
 theory...
 
 in depth is undefined.. learning anything in depth, implies show me how
-does it help me in a project.. be buried under unnecessary terminologies
+does it help me in a project..  don't be buried under unnecessary terminologies
 and jargons..
 
 Cloud..
-Linux. what happened, where you learning the os, NO, learnin how to interact
+Linux. what happened, where you learning the os, NO, learning how to interact
 with the OS commands... shell script and utility commands..
 
 Git...
@@ -21,7 +21,7 @@ change control system, but issue is we are still in the I world..
 so here there will be gaps..
 
 Docker..
-1. conterization platform.. why.. because of cloud...
+1. containerization platform.. why.. because of cloud...
 series of the commands...
 
 if the cloud did not recognize docker, docker would be irrelevant for us..
@@ -29,7 +29,7 @@ how docker start for you...
 
 1. your program is working... ( assignment )
 2. writing a  Docker file.
-3. creating a a Docker Image.
+3. creating a Docker Image.
 4. executing the docker image to have a container at runtime.
 5. check the status of the program running inside the container.
 6. pass something from your outside world to the docker world
