@@ -14,6 +14,32 @@ and linuxhandson.pdf ( 2 pdfs available)
 3. ensure in java use ArrayList, Streams , intermediate operations and terminal operations.
 4. ensure you understood the code, one full day coming wednesday is dedicated
 to the evalation.
+July 30th 2026
+------------------------------------
+
+
+1. look at your .gitignore.
+2. have a folder called poc\
+poc\ in any module when we have a doubt, in our project we create a folder
+called poc and clarify our doubt thereand it will not get commited to git..
+3. ensure git assignments you have screen shot  or txt file
+4.please ensure no repo , inside repo..
+Williams will have .git folder and none of your other folders for next 8 weeks.
+will ever have .git inside.. it
+5. add .gitignore and commit it first.
+6. add all the things done so far.. and commit it and push it to the
+remote repo.
+7 look at status... 
+it should show same
+8. reach till here and then start ...a03Git-Merges-Tags-Undo.md
+9. in docker show me the nodejs program and java assignment which you
+did yesterday both work.
+10. ngnix hello world docker program find out and make it work.
+11. update week 3 tasks.. add a separate doubttask
+12. make a checklist for git, have it on your desktop...
+why use memory for commands..
+
+
 
 
 
