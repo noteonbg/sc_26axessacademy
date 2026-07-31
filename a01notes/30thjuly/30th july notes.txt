@@ -140,7 +140,6 @@ why use memory for commands..
 
 
 
-
 most important tip for merging..
 
 you are on the local repo
@@ -158,9 +157,9 @@ read rom official source and then go to the freaky source...
 "Tremendous amount of image"
 Images are there to be changed.. whey they will change.
 
-when you make a new commit, why di dyou new commit because code changed..
+when you make a new commit, why did you new commit because code changed..
 once code changes, new commit is made, a pipeline runs.. and new docker image
-is created, deployed on the cloud and that wil run..
+is created, deployed on the cloud and that will run..
 
 new image creation happens everytime and frequently in project.
 that is reason we prefer docker to any vm or lx....
@@ -168,18 +167,18 @@ that is reason we prefer docker to any vm or lx....
 all those things will be taken care by orchestration engines kuberntes.
 what is probability of docker file changing in a project every month..
 zero.
-when you are making a docker you should thnk what software you need..
+when you are making a docker you should think what software you need..
 for your program to run.. and put that... think take some time and understand
 you should not change it every day....
 
 docker image will keep changing because our logic we have written in our program
 will keep changing...
-that is advantage of cloud, quick deploymet and quick releases..
+that is advantage of cloud, quick deployment and quick releases..
 
 in cloud based world continuously containers will be removed and added..
 
 
-rebuilding the image... existing image should be stoppe..
+rebuilding the image... existing image should be stopped..
 if you are making another image.... that image exists and new image also exists..
 
 
@@ -201,7 +200,7 @@ do according to whattodo.txt file given
 
 1.. write decent code ( code + test cases)
 2.  commit it.
-3.  relax.. automated dockre image creation, deployment...
+3.  relax.. automated docker image creation, deployment...
 4.  see whether things are running.
 5.  ok some entertainment comes.
 6.  now start debugging.
