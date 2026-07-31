@@ -269,16 +269,8 @@ I have created a geometry box, geometry in a box
 execution.. in computer science applies only Microservices architecture"
 
 
-
-
-
 5. as with any platform... there more popular the platform gets... more
 the participants, they have to participate ( business)
-
-
-
-
-
 
 
 is the box running and what is there in the box we should be conscious..
@@ -295,6 +287,68 @@ feedback of evaluation..
 
 Next evaluation of assignemnts including java.. git and docker will 
 happen on coming Tuesday and not on Wednesday as Jared is busy..
+
+youi should be able to supply arguments from your system to docker image running.
+and also allow the docker image to access your file system to write something
+if need be..
+
+
+
+I write javascript, to run javascript needs X
+I write java, to run java needs y.
+how we are telling this in docker..
+Docker file..
+
+welcome to world of "strong opinions"
+
+
+
+
+
+
+
+
+1. git... 
+how to pull data from the repo if repo changes.
+commit your existing thing
+and then merge.. if need be.
+how you add new things.
+how do you commit
+and are you conscious about what should not into the repo, despite being
+present in the repo.
+
+your technical coding.. "java and javascript in entire 8 weeks"
+in any language, how to navigate in the IDE>
+1. how to navigate function definition to function calling and vice versa.
+2. every team member to demonstrate git..
+
+
+
+
+
+
+
+
+Every day do this
+beginning of the day
+1. in the remote repo... create a file called x.txt and commit it as poc commit.
+
+during the day
+2. in your local repo lot of changes would have happened. stash it or add and commit it
+3. try a pull and ensure x.txt is present in your local repo..
+
+end of the day
+4. delte the x.txt in your local repo.
+5. add and commit it and push it.
+6. go back to your remote repo now x.txt should not exist.
+
+
+
+
+
+
+
+
 
 
 

@@ -14,10 +14,12 @@ and linuxhandson.pdf ( 2 pdfs available)
 3. ensure in java use ArrayList, Streams , intermediate operations and terminal operations.
 4. ensure you understood the code, one full day coming wednesday is dedicated
 to the evalation.
+
+
+
+
 July 30th 2026
 ------------------------------------
-
-
 1. look at your .gitignore.
 2. have a folder called poc\
 poc\ in any module when we have a doubt, in our project we create a folder

@@ -1,0 +1,225 @@
+concept is not a function of time.
+syntax is a function of time.. should I byheart syntax answer is know
+why .. i I am using it frequently i will remember, If I dont use I forget..
+we are in the AI world...
+ai tool will generate tonnes of code, if it did not work blame is on us...
+we should become good code reviewers..
+
+
+theory...
+
+in depth is undefined.. learning anything in depth, implies show me how
+does it help me in a project.. be buried under unnecessary terminologies
+and jargons..
+
+Cloud..
+Linux. what happened, where you learning the os, NO, learnin how to interact
+with the OS commands... shell script and utility commands..
+
+Git...
+change control system, but issue is we are still in the I world..
+so here there will be gaps..
+
+Docker..
+1. conterization platform.. why.. because of cloud...
+series of the commands...
+
+if the cloud did not recognize docker, docker would be irrelevant for us..
+how docker start for you...
+
+1. your program is working... ( assignment )
+2. writing a  Docker file.
+3. creating a a Docker Image.
+4. executing the docker image to have a container at runtime.
+5. check the status of the program running inside the container.
+6. pass something from your outside world to the docker world
+7. allow docker to contact your external world especially IO, disks..
+8. look for networking issues in your docker world... 
+
+
+what will happen in real life new project also.
+1. we have to do.
+2,3,4, all will be automated...
+5 , 8 we should have the skill.
+6,7 .. are all business needs...
+
+
+what is my expectation from you as of now... (Project based scenario)
+
+( Git)
+0. are you comfortable pulling the latest changes
+from the remote and merge with your current branch irrespective of its state.
+1. are you updating your ado boards.. week3 board update..
+2. while coming remember the number.... 
+3. are you comfortable coding things in multiple files in java
+and do you know your folder structure
+4. Logging should become part of coding.. program is alive or dead who 
+cares is it leaving data why it is alive or dead. ( dinosaur great grand mother
+doing it)
+5. you go inside docker image and see whether it is alive or dead...
+
+
+
+why did you create a script in Linux?
+for doing the program or like doing the task again and again.. 
+like repetitive tasks
+
+what do you inside the script file.
+commands which Linux os will understand..
+
+"in depth .." tell him I will listen to your "in depth" but after this I will
+open my code you have to show me how this inforamtions if you cant show me
+then dont talk me about those words ... why 
+
+
+work
+
+how to get full red in Tuesday review.. have repo inside repo.
+9999willilams repo... 
+.git folder.
+except this folder in another folder inside it. there should not be .git.
+ 
+
+a03Git-Merges-Tags-Undo.md ( this will  help objective 0)
+ensure all your changes did so far... are pushed to the remote..
+
+
+basic thing in networking.
+
+
+docker run -d -p 3000:3000 --name nodec myimage
+curl command in my
+
+networking service is running inside some port of the docker image... running.
+how do you expose it to outside world....  -p publishing  
+
+hey docker take this internal port which you have 80
+and run it and expose that outside to me in a port 90
+
+
+
+
+
+
+
+
+1. try to find out how to ngnix web server in docker and get a hello
+world program working.
+
+2. ensure you repo folder does not further repos..
+
+3. ensure you commit all the data you did so far.. push it to remote repo.
+
+4. a03Git-Merges-Tags-Undo.md 
+and check git also assingments..
+delete the .git folder if you copy that to your Williams repo.
+
+complete this
+
+
+1. look at your .gitignore.
+2. have a folder called poc\
+poc\ in any module when we have a doubt, in our project we create a folder
+called poc and clarify our doubt thereand it will not get commited to git..
+3. ensure git assignments you have screen shot  or txt file
+4.please ensure no repo , inside repo..
+Williams will have .git folder and none of your other folders for next 8 weeks.
+will ever have .git inside.. it
+5. add .gitignore and commit it first.
+6. add all the things done so far.. and commit it and push it to the
+remote repo.
+7 look at status... 
+it should show same
+8. reach till here and then start ...a03Git-Merges-Tags-Undo.md
+9. in docker show me the nodejs program and java assignment which you
+did yesterday both work.
+10. ngnix hello world docker program find out and make it work.
+11. update week 3 tasks.. add a separate doubttask
+12. make a checklist for git, have it on your desktop...
+why use memory for commands..
+
+
+
+
+most important tip for merging..
+
+you are on the local repo
+1. commit or stash your current changes.
+2. know your branch...
+3. you do pull.
+4. you do merge.
+5. resolve the conflict if you any..
+
+
+read rom official source and then go to the freaky source...
+
+
+
+"Tremendous amount of image"
+Images are there to be changed.. whey they will change.
+
+when you make a new commit, why di dyou new commit because code changed..
+once code changes, new commit is made, a pipeline runs.. and new docker image
+is created, deployed on the cloud and that wil run..
+
+new image creation happens everytime and frequently in project.
+that is reason we prefer docker to any vm or lx....
+
+all those things will be taken care by orchestration engines kuberntes.
+what is probability of docker file changing in a project every month..
+zero.
+when you are making a docker you should thnk what software you need..
+for your program to run.. and put that... think take some time and understand
+you should not change it every day....
+
+docker image will keep changing because our logic we have written in our program
+will keep changing...
+that is advantage of cloud, quick deploymet and quick releases..
+
+in cloud based world continuously containers will be removed and added..
+
+
+rebuilding the image... existing image should be stoppe..
+if you are making another image.... that image exists and new image also exists..
+
+
+image x , install curl and try curl --version
+stop it and restart the image and check whether curl still exists or not.
+
+
+
+image x, install curl, make a new image y.
+stop x
+start y and check curl --version.
+start X and check curl --version.
+
+
+container code is immutable.
+
+
+do according to whattodo.txt file given
+
+1.. write decent code ( code + test cases)
+2.  commit it.
+3.  relax.. automated dockre image creation, deployment...
+4.  see whether things are running.
+5.  ok some entertainment comes.
+6.  now start debugging.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
