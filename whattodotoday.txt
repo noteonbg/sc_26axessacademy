@@ -44,6 +44,15 @@ did yesterday both work.
 11. update week 3 tasks.. add a separate doubttask
 12. make a checklist for git, have it on your desktop...
 why use memory for commands..
+13. install postgres and keep it ready.. pgAdmin
+
+Task items
+1. database postgres.
+2. jdbc with postgres ( java oode)
+3. html
+4. css.
+
+
 
 
 
