@@ -1,1 +1,3 @@
-a01notes/29thjuly/jinrui.chen@sc.com.txt
+production/
+#git rm -r --cached production
+#git rm -r --cached folder_name/
