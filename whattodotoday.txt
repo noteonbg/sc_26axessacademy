@@ -31,6 +31,8 @@ Aug 3rd 2026
 look into generatedsummaries/a14databsae/syntaxcerelac
 4. for practice look at a01notes/summaryimages/generatedsummaries/a14databsae/
 a01database.txt to ao4database.txt
+5. take screen shots and store it in the folder.
+
 
 
 
