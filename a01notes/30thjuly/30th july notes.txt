@@ -205,6 +205,114 @@ do according to whattodo.txt file given
 5.  ok some entertainment comes.
 6.  now start debugging.
 
+Intent... first language next...
+
+Freak point,.. it requires intelligence to remove intelligence from a process.
+
+
+why docker,.. cloud is there..
+Docker is platform , so its opinions are there... docker ps... docker login.. docker run...
+you have your application, we have some written logic.... ok.. it is running our sytem...
+deploy it.. give to somebody else... testing team or production ...
+
+how a docker image is getting created... broadly the syntax for that..
+
+
+we will do hands on 3 topics. if you concentrate it will get over in 30 minutes..
+
+0. how a docker image is getting created and how it runs and how you pass
+parameters to it from outside docker..
+1. how to debug a container when it has died inside.. secretly.
+2. how to use volumes.
+3. how to use some basic networking in docker.
+
+what is difference between configuring and coding?
+coding means recompilation usually
+configuring means nothing to bother... ( maturity... and it will come provided we spend 
+some time thinking how will my project change,... software engineering document)
+
+
+Event handling..
+
+categorization of networking
+what you want to do on the containers
+communication within the containers by using some name.
+bridge
+
+one container to get locked into other container...
+
+what you want to do on the host...
+containers to take the host ip address..
+
+
+-------------------------------------
+
+volumes..
+a mechanism to get persistence between containers
+storage shared by two containers..
+when the container is dead also, volume will be available.
+persistence for the container..
+
+persistent  file or database
+
+
+
+
+
+suspend..
+
+1. Networking assignment..
+2. Volume assingment
+3. debugging docker when it collapses..
+
+
+docker environment will end today at 10.00PM
+
+https://github.com/noteonbg/sc_26axessacademy.git
+
+
+a13-networking.md
+in a13-networking folder.
+code base also exists.
+the code is small you can copy paste also and get it working..
+
+a01notes/summaryimages/generatedsummaries/a11dockervolume.md
+volumes...  containers, accessing some common diskspace in your host..
+this will exist when containers go.. persistence for containers.
+
+a08trythis.md  -- give you an idea regarding how debug docker containers..
+http events... one event does not give error, the other event gives error.
+you now you have see the logs.
+
+
+week3
+1. postgres database learning and practicals
+2. jdbc working with postgres.( using java to talk with postgres)
+3. html assingments.
+4. css assingments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

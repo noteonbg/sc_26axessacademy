@@ -1,0 +1,222 @@
+docker environment will not come back again..
+
+concept is not a function of time
+syntax is a function of time...
+
+
+
+
+what we will cover today.
+
+
+1. database part.
+2. assessment at 2.00PM
+3. feedback session at 3.45
+4. some code to make it work after 4.00
+5. tomorrow review schedule...
+
+
+
+purpose of md file was to avoid syntax misery..
+
+Opinion..
+postgres one opinion on database, can you generalize your learning..
+
+concepts that are important..
+
+Before you X does  bad things, what should X do? tell good things..
+they will I will give you features.... and then they will make it super slow..
+
+
+
+
+1. board should reflect database task.
+2. installed the database.. (? ) .. how go to confluence postgres installation.
+3. prove you have installed the database.
+
+database server.. machine on which database is running.
+port on which the service is running.
+you should know the database name which you are using.
+you should know how to authenticate... userid, and password
+open pgadmin..  you should be able to see database and schema... you should be able to databse
+sub components...
+
+database = table + index + view + trigger +.......
+
+
+
+
+
+
+
+
+
+1. why use database over  file.?
+
+E F codd rules he told some 12 rules.. in that most interesting thingfor us
+
+
+1. concept he told there should be physical and logical independence of data..
+
+
+I have a class employee
+empno, empname.
+i create an object of it and write to a file in binary format.
+we can retrive it what is problem
+one day employee will have empno, empnmame and email...
+once the structure of employee changes, old data cannot be retrieved
+from the file... but in RDBMS
+
+
+we have a unit called table. structure is empno and empname.
+alter the structure add email old data is not lost..
+
+
+RDBMS.... 
+
+
+
+
+relational database management systems.. you will get tiny ones..
+sqllite.. you will get even more tiny ones which can run our credit card or debit ard...
+
+in projects we dont create tables first.
+we think of all the queries we have to perform... and then design our tables.
+
+kids world, create tables first.
+adults world, think of queries and then start designing yoru tables..
+
+tell me the rhyming word with "rules" "fools"
+noramlziation and denormalization...
+
+how many tables you need.. think think think... there are some rules
+sometimes we violate it also ok.. every design comes with tradeoffs..
+
+
+
+quick summary
+1. why use rdbms.. physical and logica indendence of data.
+2. in a project think of queries and then come to tables.
+3. how many tables.. normalization... ok but think how much
+you want to do it.
+4. syntax is there.. sql.. ( sql is a standard to interact with RDBMS
+so as long as we follow standard sql it will work with all databases)
+but freak point all database companies dont want to us work on rdbms
+they want to us work on "their rdbms " so deviate from the standard
+and tell us hey use this... in the process we get addicted to their
+"RDBMS" which is a bad idea for a technical person..
+
+
+first normal form
+all the columns ...represent some information... 
+and there can be lot of duplication due to the way how the table
+is designed..
+
+2nd normal form
+identify primary key and ensure all columns of the table
+depend on the primary key..
+primary key unique way to identify that row..
+
+3rd normal form.
+you will remove transitive depedancies.. that means
+
+you ensrue table has got a particular purpose
+you can add information independently.
+loss of information will not be there..
+
+can you justify how many tables you have in the project why...
+broad theme is every table needs to have a primary key
+and other columns in the table shoul be dependant on the primary key
+in case they are not move it to some other table.
+
+
+1. why are we using rdbms.. ( physical and logical independence of data)
+2.  plan your queries and then come tables.. and not i will design tables and then think of queries (funeral)
+3. how many tables are you able to justify ...
+
+1. database server ip address, portno
+2. database  -- 10 databases can run on server which database are you connecting
+to.
+3. table  -- place where things are stored
+4. primary key  unique key which is used to identify row...
+5. unique key  -- unique key..
+6. foreign key   -- some columns whose contents should be based on primary
+key of some other table..
+7. check constraint.  -- enforcing some logic on column example it should 
+be positive it should be between 10 and 100..
+
+Entities.. is another name for a class which is related to  a table..
+
+table
+relation
+database level
+
+
+class categorization
+Entity
+are all same logically at different levels..
+
+
+most databses indexes are automatically created on primary key.
+when non primary key is thre if is searched frequently ensure you creaste an index
+but do know ... if columning index creation will result in a mess.
+index looks good for columns whose informatin does not change frequently.
+
+sql IS A STANDARD... NO COMPANY OWNS IT AND EVERY DATABASE VENDOR
+MUST SUPPORT IT.
+
+in database how to use Dates.. how to use blobs... ie mechanism to store
+files, json, xml... all this things we will come to later on..
+projects may need it.. most of times.. but today is not the time to discuss.
+
+Your whole course is a shallow course with lot of breadth..
+
+when it comes to any database....
+
+1. find out company way to connecting to the database on a database server
+using some credentials..
+2. learn console way of connecting also because it will help you in the
+cloud world
+3. ui based way of connecting to database.. pgAdmin.. tool.
+
+
+"OpinionS" all science people will not byheart this on need basis see.
+
+
+quick story
+1. database theory...
+2. with respect to any base, know the connecting information..
+database server, database name, ip address, portnumber...
+
+
+we have dept table with deptid and deptname here deptid is primary key
+emp table with empno which is primary key, deptid which is foreign key 
+and empname
+
+DDL commands ... create table, lter table.. these will not be undone
+by using TCL... rollback and commit
+
+I dropped a table.. how to get it back I cant do rollback....
+I inserted a row, I want to undo it. ok use rollback..
+
+How do I learn X?
+my own thing in X .. 30%
+trying to interpret other person things is 70%
+
+
+practically do the following.
+1. try look at the class session pdf and start doing the assignemnts..
+2. look at hands on do the assingments ..
+3. syntax... 
+
+11.02 to 11.17 and continue your practicals..
+
+
+
+
+
+
+
+
+
+
