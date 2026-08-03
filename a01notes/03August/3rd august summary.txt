@@ -273,6 +273,65 @@ one piece of java code. try to make it work and understand how it works..
 
 
 
+complete assignments and have a look at topics covered so far.. Look at functional programming
+and do some copy paste assignments and see are you able to relate to the theory..
+
+
+look at theory on functional programming and ensure you theory is running and you know syntax
+in java by copy pasting..
+8:30AM IST - 9:00AM IST Standup
+9:00AM IST - 10:00AM IST Review for one team
+10.00AM to 12.00PM completion of assignments.
+12:00PM IST - 1:00PM IST Review for one team
+1:00PM IST - 2:00PM IST Lunch for India
+2:00PM IST - 3:30PM IST Review for two teams  
+3:30PM IST - 4:30PM IST Prompt Engineering
+
+
+welcome to real life code, where it will be structured in proper way..
+the code I am showing is 26 year old style... 2000 style of code still applicable for next 50 years also..
+
+how this will help.. on day after tomorrow when you jdbc you will see this coding style helps you
+thanever existing style followed.
+
+can you take other person code and make it work.
+
+other person code.. agents code..
+
+1. complete your database assingments.
+2. look at the java code.. com is package..
+
+
+
+3. docker dont bother as of now... ado pipelines revisit theory..
+4. git very important..
+pull
+how to create a branch
+how to merge
+how to push.
+5. database part... in real life inyour project you can code almost zero lines an get away
+with all the database part working. ( this is 26 year old story. yu dont need to code much
+in data base layer.. why... framework or some library will take care of it for you...) welcome
+to world of ORMs..
+
+git   -- images.. 
+docker  --- images
+pipeline    --- no assingments on this
+
+
+
+what is our intent?
+ to be useful in project (this is a priority)
+or improve ouor technical skills at the cost of the customer..
+
+
+
+
+
+
+
+
+
 
 
 

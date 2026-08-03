@@ -20,6 +20,16 @@ on the system.
 versa.... , ensure you know what to do...
 
 
+Aug 4th 2026.
+----------------
+
+1. first complete database assingmetns.
+2. have a look at your skill level in git.
+3. ensure the sc_26axessacademy\a01notes\summaryimages\generatedsummaries\a00understandjava
+com package is understandable to you
+4. read the md file to understand how the flow works also, ensure your entire team understands it.
+5. look at the mindmaps we had written yesterday.
+
 
 Aug 3rd 2026
 -------------------------------
