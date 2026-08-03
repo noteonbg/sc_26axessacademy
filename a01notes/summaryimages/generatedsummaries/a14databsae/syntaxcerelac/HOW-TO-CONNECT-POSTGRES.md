@@ -123,3 +123,32 @@ Put it here:
 2. Database `bankdb` exists
 3. You can run `SELECT 1;` in pgAdmin Query Tool
 4. For JDBC: driver JAR is in `lib` and password in `DBConnection.java` is updated
+
+Console connection.
+
+psql -h localhost -p 5432 -U postgres -d postgres
+give your password.
+
+postgres=# \c postgres;  ( opinion of postgres how to connected to database )
+You are now connected to database "postgres" as user "postgres".
+
+
+postgres=# \dt;  ( opinion of postgres how to see list of tables)
+                List of tables
+ Schema |       Name       | Type  |  Owner
+--------+------------------+-------+----------
+ public | appointments     | table | postgres
+ public | departments      | table | postgres
+ public | doctors          | table | postgres
+ public | freak            | table | postgres
+ public | patients         | table | postgres
+ public | pg_validate_test | table | postgres
+(6 rows)
+
+
+postgres=# \d freak; ( see the structure of the table)
+               Table "public.freak"
+ Column |  Type   | Collation | Nullable | Default
+--------+---------+-----------+----------+---------
+ emp    | integer |           |          |
+
