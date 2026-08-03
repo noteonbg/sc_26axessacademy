@@ -207,9 +207,69 @@ trying to interpret other person things is 70%
 practically do the following.
 1. try look at the class session pdf and start doing the assignemnts..
 2. look at hands on do the assingments ..
-3. syntax... 
+3. syntax... look into generatedsummaries/a14databsae/syntaxcerelac
+4. for practice look at 
+a01database.txt to ao4database.txt
 
-11.02 to 11.17 and continue your practicals..
+day by day syntaxes are becoming .. more and more.. and we cannot affor to remember.. it.
+
+Syntax ocean in HTML, CSS... who do you keep bp level normal... try to understand
+the concept , syntax will come with time..
+
+
+syntax ensure you know what the syntax is doing..
+what are we doing today..
+
+1. take other person code and make it work , undertand and make changes to it ( welcome to real life)
+be loyal to the project, then you will realize lot of things we are learning is ok.. but may not be
+really relevant to the project..
+
+
+
+variable
+scope
+datatype ( content + operations)
+
+
+when you are using a query you will get one row or multiple rows you should know...
+
+guaranteed way of just getting one row is do a query and use where condition using primary key.
+
+
+
+because of normalization i got multiple tables
+now i got to query multiple tables..  joins will kick in... or nested queries will kick in..
+
+
+
+X  select dept.depno  from dept join employee on dept.deptno = employee.deptno
+
+
+Y   select dept.depno  from dept 
+
+
+ability to get into details is important, some parts of the assingmnt have large gaps hence
+the md files to rescue..
+
+it is very important to autogenerate primary keys than ask user to enter it..
+how by using a database concept called sequences..
+
+database = tables + indexes + views( read only filters on tables) + sequences + triggers..( events 
+on the database) + ...
+
+
+insert into tablename(c1,c2) values (1,'A'); //disaster waiting.. why.. tomorrow in a project gets added
+you have this scenario of yesterday it was working today it failed..
+
+
+3.27 ...3.43 PM
+
+
+feedback...
+
+4.00PM .. i will look each persons system where tehy are in rdbms adventure
+one piece of java code. try to make it work and understand how it works..
+
 
 
 

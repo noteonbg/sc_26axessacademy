@@ -34,6 +34,15 @@ a01database.txt to ao4database.txt
 5. take screen shots and store it in the folder.
 
 
+evening 4.08PM
+1. complete database assingments.
+2. java program make it work and understand it.
+3. tomorrow thing.
+screen shots of git and docker will help
+be ready to pull, merge, push in git.
+4. boards should be ready... for week3 also.
+
+
 
 
 
