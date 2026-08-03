@@ -37,6 +37,8 @@ CREATE TABLE appointments (
     fee NUMERIC(8, 2)
 );
 
+
+
 -- Insert data into Departments
 INSERT INTO departments (name) VALUES
 ('Cardiology'),      -- ID 1
