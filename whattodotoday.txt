@@ -25,7 +25,7 @@ Aug 3rd 2026
 -------------------------------
 
 1. ensure database assingment from hands on is done.
-2. ensure usecass from class pdf is one.
+2. ensure usecase from class pdf is one.
 3. look at a01notes/summaryimages/generatedsummaries/a14databsae/a00Database-Guide.md is read.
 3. for syntax look at .
 look into generatedsummaries/a14databsae/syntaxcerelac
