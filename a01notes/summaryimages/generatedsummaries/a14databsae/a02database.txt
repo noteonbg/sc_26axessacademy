@@ -1,0 +1,29 @@
+-- PostgreSQL-compatible example
+-- Step 1: Create the appointments table
+DROP TABLE IF EXISTS appointments;
+
+CREATE TABLE appointments (
+    appointment_id SERIAL PRIMARY KEY,
+    doctor_name VARCHAR(100),
+    patient_name VARCHAR(100),
+    department VARCHAR(50),
+    appointment_date DATE,
+    fee NUMERIC(8, 2)
+);
+
+-- Step 2: Insert sample data
+INSERT INTO appointments (doctor_name, patient_name, department, appointment_date, fee)
+VALUES
+('Dr. Smith', 'Richard', 'Cardiology', '2025-08-01', 200.00),
+('Dr. Smith', 'Jerry', 'Cardiology', '2025-08-02', 220.00),
+('Dr. Brown', 'Alice Johnson', 'Neurology', '2025-08-01', 300.00),
+('Dr. Brown', 'Bob Lee', 'Neurology', '2025-08-03', 280.00),
+('Dr. Adams', 'Carol White', 'Dermatology', '2025-08-01', 150.00),
+('Dr. Adams', 'Daniel Black', 'Dermatology', '2025-08-02', 160.00),
+('Dr. Smith', 'Eve Davis', 'Cardiology', '2025-08-04', 210.00);
+
+-- Step 3: Query - Find departments with average fee greater than 200
+SELECT department, AVG(fee) AS freak
+FROM appointments
+GROUP BY department
+HAVING AVG(fee) > 200;

@@ -210,3 +210,31 @@ Caused by: java.security.cert.CertificateException: No subject alternative DNS n
 	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
 	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
 	... 18 more
+!SESSION 2026-08-02 20:24:27.826 -----------------------------------------------
+eclipse.buildId=R3.7.9.201912052356
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-02 20:24:31.270
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-02 20:24:31.272
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-02 20:24:33.004
+!MESSAGE Path queued to be opened: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-02 20:24:35.068
+!MESSAGE Ready to open files: [F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2026-08-02 20:24:35.086
+!MESSAGE Malformed URI: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.ui.mindmap 4 0 2026-08-02 20:35:57.098
+!MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 4 2026-08-02 21:06:39.497
+!MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...

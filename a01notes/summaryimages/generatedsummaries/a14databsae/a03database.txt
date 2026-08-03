@@ -1,0 +1,189 @@
+-- PostgreSQL-compatible example
+-- Drop existing tables if they exist (clean slate)
+DROP TABLE IF EXISTS appointments;
+DROP TABLE IF EXISTS patients;
+DROP TABLE IF EXISTS doctors;
+DROP TABLE IF EXISTS departments;
+
+-- Create Departments table
+CREATE TABLE departments (
+    department_id SERIAL PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+-- Create Doctors table
+CREATE TABLE doctors (
+    doctor_id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    department_id INT REFERENCES departments(department_id)
+);
+
+
+
+
+-- Create Patients table
+CREATE TABLE patients (
+    patient_id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    dob DATE
+);
+
+-- Create Appointments table
+CREATE TABLE appointments (
+    appointment_id SERIAL PRIMARY KEY,
+    patient_id INT REFERENCES patients(patient_id),
+    doctor_id INT REFERENCES doctors(doctor_id),
+    appointment_date DATE,
+    fee NUMERIC(8, 2)
+);
+
+-- Insert data into Departments
+INSERT INTO departments (name) VALUES
+('Cardiology'),      -- ID 1
+('Neurology'),       -- ID 2
+('Dermatology'),     -- ID 3
+('Pediatrics');      -- ID 4
+
+-- Insert data into Doctors
+INSERT INTO doctors (name, department_id) VALUES
+('Dr. Smith', 1),
+('Dr. Brown', 2),
+('Dr. Adams', 3),
+('Dr. Green', NULL); -- Doctor with no department (for outer joins)
+
+-- Insert data into Patients
+INSERT INTO patients (name, dob) VALUES
+('Richard Johnson', '1980-04-12'),
+('Jane Smith', '1992-11-23'),
+('Alice Johnson', '2000-05-01'),
+('Bob Lee', '1985-07-18');
+
+-- Insert data into Appointments
+INSERT INTO appointments (patient_id, doctor_id, appointment_date, fee) VALUES
+(1, 1, '2025-08-01', 200.00),
+(2, 1, '2025-08-02', 210.00),
+(3, 2, '2025-08-03', 300.00),
+(4, 3, '2025-08-04', 150.00);
+-- Note: Doctor 4 (Dr. Green) has no appointments
+
+-------------------------------------------------------------
+--  1. INNER JOIN: Doctors with their departments
+-------------------------------------------------------------
+SELECT d.name AS doctor_name, dept.name AS department
+FROM doctors d
+INNER JOIN departments dept ON d.department_id = dept.department_id;
+
+--  Only doctors who belong to a department
+
+-------------------------------------------------------------
+--  2. LEFT JOIN: All doctors, even without departments
+-------------------------------------------------------------
+SELECT d.name AS doctor_name, dept.name AS department
+FROM doctors d
+LEFT JOIN departments dept ON d.department_id = dept.department_id;
+
+-- Includes doctors without a department (Dr. Green)
+
+-------------------------------------------------------------
+--  3. RIGHT JOIN: All departments, even without doctors
+-------------------------------------------------------------
+SELECT d.name AS doctor_name, dept.name AS department
+FROM doctors d
+RIGHT JOIN departments dept ON d.department_id = dept.department_id;
+
+--  Includes departments with no assigned doctors
+
+-------------------------------------------------------------
+--  4. FULL OUTER JOIN: All doctors and departments
+-------------------------------------------------------------
+SELECT d.name AS doctor_name, dept.name AS department
+FROM doctors d
+FULL OUTER JOIN departments dept ON d.department_id = dept.department_id;
+
+--  Combines LEFT and RIGHT JOIN results
+
+-------------------------------------------------------------
+--  5. SUBQUERY: Patients who paid more than average fee
+-------------------------------------------------------------
+SELECT p.name, a.fee
+FROM patients p
+JOIN appointments a ON p.patient_id = a.patient_id
+WHERE a.fee > (
+    SELECT AVG(fee) FROM appointments
+);
+
+--  Finds patients whose appointment fee is above average
+
+-------------------------------------------------------------
+--  6. SUBQUERY IN SELECT: Total fee per patient
+-------------------------------------------------------------
+SELECT
+    p.name,
+    (SELECT SUM(fee) FROM appointments a WHERE a.patient_id = p.patient_id) AS total_paid
+FROM patients p;
+
+-- Shows total amount paid per patient (NULL if no appointments)
+
+-------------------------------------------------------------
+--  7. JOIN with multiple tables: Appointments overview
+-------------------------------------------------------------
+SELECT
+    a.appointment_id,
+    p.name AS patient,
+    d.name AS doctor,
+    dept.name AS department,
+    a.appointment_date,
+    a.fee
+FROM appointments a
+JOIN patients p ON a.patient_id = p.patient_id
+JOIN doctors d ON a.doctor_id = d.doctor_id
+LEFT JOIN departments dept ON d.department_id = dept.department_id;
+
+------------------------------------------------------------------------
+
+full outer join another example
+
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50)
+);
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    amount DECIMAL(10, 2)
+);
+
+INSERT INTO Customers (customer_id, first_name) VALUES
+(1, 'Alice'),
+(2, 'Bob'),
+(3, 'Charlie');
+
+INSERT INTO Orders (order_id, customer_id, amount) VALUES
+(101, 1, 150.00),
+(102, 2, 200.00),
+(103, 4, 75.00); -- Order for a non-existent customer
+
+
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    o.order_id,
+    o.amount
+FROM
+    Customers c
+LEFT JOIN
+    Orders o ON c.customer_id = o.customer_id
+UNION ALL
+SELECT
+    c.customer_id,
+    c.first_name,
+    o.order_id,
+    o.amount
+FROM
+    Customers c
+RIGHT JOIN
+    Orders o ON c.customer_id = o.customer_id
+WHERE
+    c.customer_id IS NULL; -- Exclude rows already covered by the LEFT JOIN

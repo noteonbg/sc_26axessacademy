@@ -1,0 +1,155 @@
+
+PostgreSQL-compatible normalization examples:
+First Normal Form (1NF)
+Second Normal Form (2NF)
+Third Normal Form (3NF)
+
+using a medical domain scenario: patient visits, doctors, and treatments.
+
+
+
+  1NF – First Normal Form
+
+  Structure: `PatientVisits_1NF`
+
+Each row represents a single treatment per visit.
+ Composite data (like multiple treatments) is split into multiple rows.
+  Still some redundancy exists.
+
+
+CREATE TABLE PatientVisits_1NF (
+    VisitID INT,
+    PatientName VARCHAR(100),
+    PatientAddress VARCHAR(200),
+    DoctorName VARCHAR(100),
+    Treatment VARCHAR(100),
+    TreatmentCost DECIMAL(10, 2)
+);
+```
+
+Issues:
+
+ Repetition of `PatientName`, `PatientAddress`, and `DoctorName`
+ if a patient has multiple treatments per visit.
+ Redundant data leads to inconsistencies.
+
+---
+
+ 2NF – Second Normal Form
+
+  Goal:
+
+ Remove partial dependencies by separating attributes that depend only on part 
+ of the composite key.
+
+We split into two tables:
+
+---
+
+  Table 1: `Visits`
+
+sql
+CREATE TABLE Visits (
+    VisitID INT PRIMARY KEY,
+    PatientName VARCHAR(100),
+    PatientAddress VARCHAR(200),
+    DoctorName VARCHAR(100)
+);
+
+Each visit links to a patient and doctor.
+
+
+Table 2: `VisitTreatments`
+
+CREATE TABLE VisitTreatments (
+    VisitID INT,
+    Treatment VARCHAR(100),
+    TreatmentCost DECIMAL(10, 2),
+    PRIMARY KEY (VisitID, Treatment),
+    FOREIGN KEY (VisitID) REFERENCES Visits(VisitID)
+);
+
+Each treatment is tied to a specific visit.
+
+ Issue in 2NF:
+
+ `PatientName` and `PatientAddress` are still together.
+ If a patient visits multiple times, their name and address are repeated.
+ Also, `DoctorName` may repeat across visits.
+
+---
+3NF – Third Normal Form
+
+ Goal:
+
+ Eliminate transitive dependencies: attributes that depend on non-key attributes.
+ Normalize patient and doctor data into separate tables.
+
+---
+
+ Table 1: `Patients`
+
+sql
+CREATE TABLE Patients (
+    PatientID VARCHAR(10) PRIMARY KEY,
+    PatientName VARCHAR(100),
+    PatientAddress VARCHAR(200)
+);
+
+Each patient is stored only once.
+
+---
+
+ Table 2: `Doctors`
+
+sql
+CREATE TABLE Doctors (
+    DoctorID VARCHAR(10) PRIMARY KEY,
+    DoctorName VARCHAR(100),
+    Specialty VARCHAR(100)
+);
+
+Each doctor is stored only once, with specialty details.
+
+---
+
+ ➤ Table 3: `Visits`
+
+sql
+CREATE TABLE Visits (
+    VisitID INT PRIMARY KEY,
+    PatientID VARCHAR(10),
+    DoctorID VARCHAR(10),
+    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
+    FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
+);
+```
+
+Each visit is tied to a patient and a doctor using IDs.
+
+---
+
+Table 4: `VisitTreatments`
+
+sql
+CREATE TABLE VisitTreatments (
+    VisitID INT,
+    Treatment VARCHAR(100),
+    TreatmentCost DECIMAL(10, 2),
+    PRIMARY KEY (VisitID, Treatment),
+    FOREIGN KEY (VisitID) REFERENCES Visits(VisitID)
+);
+
+
+Treatments per visit remain here.
+
+---
+
+Summary of Evolution
+
+| Form    | Main Changes                                                             |
+| ------- | ------------------------------------------------------------------------ |
+| 1NF | Flattened data (no repeating groups), but redundant                      |
+| 2NF | Split into visits and treatments, removed partial dependency             |
+| 3NF | Further split into Patients and Doctors, removed transitive dependencies |
+

@@ -4,6 +4,7 @@
 		<item value="org.xmind.ui.exports.vector.exportsvg" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
 		<item value="org.xmind.ui.exports.vector.exportsvg" key="ImportExportPage.store_recently_used_wizard_ids"/>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="recentlyUsed"/>
 			<item value="org.xmind.ui.exportWizards.document"/>
 			<item value="org.xmind.ui.exportWizards.gantt"/>
 			<item value="org.xmind.ui.exportWizards.image"/>

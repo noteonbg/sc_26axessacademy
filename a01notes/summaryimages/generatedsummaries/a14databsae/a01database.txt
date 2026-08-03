@@ -1,0 +1,100 @@
+Database.
+
+physical and logical independence of data..
+
+PostgreSQL notes:
+Use PostgreSQL-compatible SQL syntax for all examples below.
+
+1. Make sure PostgreSQL is installed and running.
+2. Create a database (example):
+   createdb bootcamp_db
+3. Connect with psql:
+   psql -U postgres -d bootcamp_db
+4. Run the SQL commands shown below.
+
+Example connection string for client tools:
+postgresql://postgres:your_password@localhost:5432/bootcamp_db
+
+-------------------------------------
+
+quirks .. if you want to create another database.. then.
+
+Use PostgreSQL commands such as:
+CREATE DATABASE another_db;
+
+Or connect to an existing database with:
+psql -U postgres -d another_db
+
+To exit psql, type:
+\q
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+ 3. Create a table (e.g., `patients`)
+
+sql
+CREATE TABLE patients (
+    patient_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_of_birth DATE,
+    blood_type VARCHAR(3),
+    last_visit TIMESTAMP,
+    email varchar(15)
+);
+
+
+---
+
+ 4. Alter a table (e.g., add a column `allergies`)
+
+sql
+ALTER TABLE patients
+ADD COLUMN allergies TEXT;
+
+
+---
+
+ 5. Insert some rows
+
+sql
+INSERT INTO patients (first_name, last_name, date_of_birth, blood_type, last_visit, allergies)
+VALUES
+('John', 'Doe', '1980-04-12', 'O+', '2025-08-01 10:30', 'Penicillin'),
+('John', 'Doe', '1992-11-23', 'A-', '2025-07-15 15:00', NULL);
+
+
+---
+
+ 6. Update some rows
+
+sql
+UPDATE patients
+SET last_visit = '2025-08-09 14:00', allergies = 'None'
+WHERE patient_id = 3;
+
+
+---
+
+ 7. View rows
+
+sql
+SELECT * FROM patients;
+
+---
+
