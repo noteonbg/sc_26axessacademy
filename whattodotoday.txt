@@ -53,17 +53,6 @@ be ready to pull, merge, push in git.
 4. boards should be ready... for week3 also.
 
 
-
-
-
-
-
-
-
-
-
-
-
 July 30th 2026
 ------------------------------------
 1. look at your .gitignore.
