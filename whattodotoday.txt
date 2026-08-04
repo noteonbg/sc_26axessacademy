@@ -27,7 +27,11 @@ Aug 4th 2026.
 2. have a look at your skill level in git.
 3. ensure the sc_26axessacademy\a01notes\summaryimages\generatedsummaries\a00understandjava
 com package is understandable to you
-4. read the md file to understand how the flow works also, ensure your entire team understands it.
+4. read the md file to understand how the flow works also, ensure your entire team
+ understands it.
+5. look at Customer_Architecture_Tutorial.md and code it.. while coding understand
+what are you doing.. ( working on multiple files is needed becuase that is what architecture implementation
+means..)
 5. look at the mindmaps we had written yesterday.
 
 
