@@ -322,7 +322,7 @@ pipeline    --- no assingments on this
 
 what is our intent?
  to be useful in project (this is a priority)
-or improve ouor technical skills at the cost of the customer..
+or improve our technical skills at the cost of the customer..
 
 
 

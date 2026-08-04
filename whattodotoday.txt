@@ -20,19 +20,34 @@ on the system.
 versa.... , ensure you know what to do...
 
 
+Good morning Everyone today we will be doing the assignment evaluation again. 
+We will have the same approach like last week by review one by one. We will also check your Azure Boards and Azure Repos. Please follow below 3 steps and complete all the steps before the evaluation. 
+ 
+1. Create a new task called ADO assignments under Week 2 (Make sure assign to yourself)
+2. Upload and attach your completed assignments to the task under Week 2
+ (Git, Container, ADO)
+3. Push your completed assignments and codes to the Azure Repos
+
+
+
 Aug 4th 2026.
 ----------------
 
-1. first complete database assingmetns.
-2. have a look at your skill level in git.
+1. first complete database assingments.
+2. have a look at your skill level in git. ( change in remote, change in local, both should be in sync git status, git log, git add , git commit, git revert ..)
 3. ensure the sc_26axessacademy\a01notes\summaryimages\generatedsummaries\a00understandjava
 com package is understandable to you
 4. read the md file to understand how the flow works also, ensure your entire team
  understands it.
 5. look at Customer_Architecture_Tutorial.md and code it.. while coding understand
-what are you doing.. ( working on multiple files is needed becuase that is what architecture implementation
+what are you doing.. ( working on multiple files is needed becuase that is what ,architecture implementation
 means..)
 5. look at the mindmaps we had written yesterday.
+6. modify your creditaccount and debitaccount assingment into this architecture.. ensure it is exactly the same
+in terms of architecture.
+
+
+
 
 
 Aug 3rd 2026
