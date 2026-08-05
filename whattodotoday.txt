@@ -29,6 +29,28 @@ We will have the same approach like last week by review one by one. We will also
 3. Push your completed assignments and codes to the Azure Repos
 
 
+Aug 5th 2026
+
+1. trying to understand poc package.. and trying to implement
+customer ensure architecture is right.
+
+2. just for syntax practice.. take employee program , in a new package
+modify that to deal with customer only one condition don't create
+tables inside the java code, create it directly using pgAdmin.
+jdbc syntax practice.. zoom out.. we are not going to use jdbc in the project
+but I will ask jdbc in evaluation.. next week.
+
+3. begin with your jdbc hands on.
+
+4. ensure you update your boards correctly whatever is complete move to the resolved state.
+
+5. you must understand the architecture implemented.
+
+6. copy paste some 5 functional examples in java and understand.
+6.1 lambdas and interfaces.
+6.2 method references.
+6.3 stream, intermediate operations like filter, terminal oprations like foreach..
+
 
 Aug 4th 2026.
 ----------------

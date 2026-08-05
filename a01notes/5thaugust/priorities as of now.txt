@@ -1,0 +1,57 @@
+priority is still the same
+everybody in the batch 3/5
+
+we have to be comfortable writing java or
+javascript code in multiple files... so obviously functions ...( this is high priority
+ensure you are comfortable with this.) because architecture demands it..
+
+
+git... (3/5) -tomorrow random lucky person question 100%
+are you conscious about folder structure ideal scenario
+file added in remote repo, commited.
+file added in local repo, commited
+how do you sync both
+
+docker.. filler... not much of implication as of now..
+Linux commands no implication as of now.. (next 5 weeks)
+
+html, css ( pacific ocean we will take a spoon of water in shivering hands..)
+you have really think how to minimize its usage in the project.
+javascript ( 3/5) 
+trying to know react ( 3/5)
+
+
+database what tables, constraints are, dml commands and select commands...
+normalization dont bother about the terminology just prove in every table
+every column depends on the primary key...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

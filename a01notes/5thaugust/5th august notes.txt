@@ -1,0 +1,315 @@
+Today adventure.
+
+1. jdbc.
+2. working on architecture with respect to java.... ensure database
+code is written properly ( there will be multiple files... be 5/5 in that)
+
+3. ensure you revisit theory on functional programming and then copy
+paste some 5 examples indicating ..
+1. lambda and see interface... implications there.
+2. method references.
+3. stream, process and terminal operations..
+relate it to the theory . ( JavaScript next week will create
+non stop entertainment without this background.. )
+
+5. board a little bit...
+
+culture is very important
+
+what code you wrote ok.. nice start, but real thing can you make changes
+in other person code.. that is thing that matters in real life.
+
+unequal effort is the norm in any systems..
+
+
+Calendar to you know you schedule..
+
+I want to collect more data on team3 and team 4... on git..
+because I hurried due to time constraints..
+
+git pull
+git push
+git merge.
+
+entire all 4 teams how are you in java when you write code in multiple files.
+
+
+board.
+1. in story.. acceptance.. criteria.1.
+	1. hands on thing should be completed
+	2. classroom material uses cases should be comleted.
+	3. trainer should review all the assingments..
+	4. i should know how the assignments work.
+2. in your subtasks.
+	1. confluence link.. hands on and classroom th
+
+
+Culture  intent first, language next..
+
+
+
+
+to understand jdbc..
+
+
+1. do we know some database things.. which most of us already know.. ok..
+2. do you know interfaces, which I doubt?
+3. do you know how to use other person code.. library usage.. ( doubt we
+did not do it)
+4. if you know architecture.. incorporating changes is very easy...
+number of things you will change will be low..
+
+
+all projects will already be screaming hey this look these are changes
+I will undergo.. but the kid will crying and focusing only on today..
+as a result architecture is sacrificed and then change becomes nightmare ..
+
+why this priority.
+project that comes after 4 week should succeed.
+why it can fail..
+1. process is bad.. acceptance criteria... 
+2. i don't know java and JavaScript i know English..
+3. I want to create a mess for everybody with my git skills.
+
+
+what does it mean for you.
+1. technically..
+1.1 java(3/5)   -- functions that go in multiple files can you navigate..
+1.2 git (2/5)  -- pull, push, merge
+1.3 sql (1/5)  -- database, table, constraints, some basic sql.
+1.4 docker and Linux ( 0.5/5) why, docker images, docker ps -a , dockerFile.
+
+board.. let the state be correct first.
+whatever you are doing or completed let it be active.
+what you have not started let it new..
+done will come if acceptance criteria is met.
+
+become the 4th std school kid again..
+be ok with multiple subjects.. don't tell I am focused I can work only one thing.
+all this is scrap.. 
+
+1. current subject.  x
+2. java.
+3. git.
+4. board.
+5. react js
+
+ new
+active
+resolved.  you cmpletd the assignment , trainer did not give feedback
+done
+
+
+
+
+
+
+kids excitement..
+
+jdbc expand it.. Java Database Management Connection.
+
+next question
+what is jdbc.?
+a mechanism to talk to the database from your java program.
+
+java = X
+X mechanism to talk with database.
+it is very old thing.. nothing new about it... so we should learn generalize
+it..
+
+
+I dont know database concepts, but I want to work on jdbc. ok
+unlimited entertainment will come...
+
+many a times in a project you land up at this scenario
+we are working X , X needs Y, we dont know Y...
+challenge is learning Y to solve X and not do phd on Y and forget X.
+
+HOpe you will do the ritual..
+hello world java project, what does it mean
+1. java compiler is working ( javac
+2. java runtime is working.. ( jvm  == java ..)
+version is fixed..
+
+to work on jdbc..
+we have jdk installed in our system..
+
+once you start with real life forget I, welcome we.
+
+jdk is there..   oracle or redhat..
+database is provided by some other company ..  Postgres..
+java guys designed the standard for jdbc... interfaces..
+database vendors have to implement the interaaces.. they have
+to agree contract told by java guys...
+
+
+when you have an interface in java. designed by company X  java guys oracle..
+you need an implementation class. designed by company Y  --database vendors
+postgres, oracle, sap...
+do you agree.
+
+remember this theory
+X and y are interacting
+when Y changes X should not change then put a interface between X and Y
+
+X .. interface .... Y
+let Y change to Z, Z change P, P change to Q.. X will peaceful
+because interface is there..
+
+
+interfaces are part of you jdk.
+classes which implement the jdbc are not part of your jdk they
+are provided by database vendors..(companies which make the database)
+
+jvm needs CLASSPATH to know the location of classes.
+
+TAKE THE LIBRARY GIVEN DATABASE VENDOR AND INCLUDE IT IN YOUR PROJECT
+CLASSPATH..
+WHY only then classes given by database vendor can be used in your code..
+
+
+we need one extra library not present in jdk ... 
+libraries in java typically come in form of jar files..
+to work on jdbc we need to include postgres.jar file..
+how to include in the project.. module settings. .
+
+IntelliJ Opinion on how to ensure jar file is avialble to the JVM
+on the classpath is module settings.. add jar  and point to the jar file
+location.  should you care for this.. no.. in projects we use build tools
+like Maven or Graddle to do this... this is true ever since dinosaurs great
+grand mother...
+
+project success = process * technology * tools * culture
+
+
+when we get an error message first thing to do , read it irrespective
+of whether we understand or dont understand..
+
+1.confluence page download the postgres.sql jar and keep it in a folder in
+week3 called javalib, add to the modulesettings.. and check did you add it
+or not.
+2. copy paste into src.
+3. 
+private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
+    private static final String USER = "postgres";
+    private static final String PASSWORD = "1234";
+change this line accordingly...
+4. show patince check one more time did you do this.
+5. run the main function and see what output you are getting.
+
+those who completd it go thru the md file present in
+a01notes/summaryimages/generatedsummaries/a14jdbc/JDBC-Guide.md
+
+
+
+
+
+
+
+how are you writing the code matters..
+
+
+1. function for creating the table..
+2. function for insert, updating,s electing..
+
+
+try ()  , try with resources...
+
+
+try ( some resource, in case you get an exception ensue resource is released)
+
+9 out of 10, table creation will nto be done insie the jav code..
+it will done thru sql file execution or script execution..
+
+dml command check out for exceptions.. exceptions will come
+if constraints get violated..
+or syntax is wrong. syntax is wrong take a stick and hit ourselves..
+
+
+for insert, update and delte, we use te executeUpdate given by preparedstatement
+
+this int is useful during update and delete and not during insert..
+because during insert , insert commands fails due to only one
+reason...   constraint viaolation
+constraint violation means exception.. exception means you reach
+catch block..
+
+
+update or delete command when where condition is not met.
+you get logical problems ie int will be zero..
+looking at the int is important..
+executeUpdate function.. when you are using look out for the int it returns
+especially during update and delete..
+
+
+executeQuery it is a grid.. ( database terminology is Cursor)
+java terminology is ResultSet..
+
+find out does it have rows , if yes go and picks it columsn..
+
+
+whenever you are doing selelct
+1. see whether rows exist.
+2. pick up each column.
+3. creates an object..
+4. put that into a list
+5. return..
+
+project based world.
+
+kids world.
+1. see rows exist
+2. pick up column
+3. print it..
+
+
+
+change it to some other class which is relevant to your assignment.
+
+
+you take the existing assignment.
+create a new package customerpoc.
+copy the .java files here..
+modify employee to customer..
+including name of the class.
+change the login the class which contains main.
+
+kids will cry non stop... kids like writing new code..
+not changing exisdting code..
+
+
+Objective is not just get outputs..
+idea what architecture is going to relevant..
+
+knowing that architecture. in java. two major blockers..
+
+1. writing according to architecture ( 4/5)
+2. knowing functional programming ( 1/5)
+
+PostgresJdbcPoc, this is just a poc program on database totally
+useless in the project..
+
+architecture based
+what to do now.
+
+1. trying to understand poc package.. and trying to implement
+customer impleemnet
+
+2. just for syntax practice.. take employee program , in a new package
+modify that to deal with customer only one condition don't create
+tables inside the java code, create it directly using pgAdmin.
+jdbc syntax practice.. zoom out.. we are not going to use jdbc in the project
+but I will ask jdbc in evaluation.. next week.
+
+why do jdbc without architecture...
+
+
+
+
+
+
+
+
+
+
+

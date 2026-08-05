@@ -41,9 +41,9 @@ public class PostgresJdbcPoc {
             // DEMO 1: INSERT OPERATION (executeUpdate)
             // ------------------------------------------------------------------
             System.out.println("--- 1. INSERTING EMPLOYEES ---");
-            insertEmployee(conn, 221, "David Miller", "david.m@example.com", "Chicago");
-            insertEmployee(conn, 222, "Eva Green", "eva.g@example.com", "New York");
-            insertEmployee(conn, 223, "Frank Wright", "frank.w@example.com", "Chicago");
+           // insertEmployee(conn, 221, "David Miller", "david.m@example.com", "Chicago");
+           // insertEmployee(conn, 222, "Eva Green", "eva.g@example.com", "New York");
+           // insertEmployee(conn, 223, "Frank Wright", "frank.w@example.com", "Chicago");
             System.out.println();
 
             // ------------------------------------------------------------------
@@ -62,11 +62,13 @@ public class PostgresJdbcPoc {
             chicagoEmployees.forEach(emp -> System.out.println("  -> " + emp));
             System.out.println();
 
-            // ------------------------------------------------------------------
-            // DEMO 4: UPDATE OPERATION (executeUpdate)
-            // ------------------------------------------------------------------
+            /*
+             ------------------------------------------------------------------
+             DEMO 4: UPDATE OPERATION (executeUpdate)
+             ------------------------------------------------------------------
+            */
             System.out.println("--- 4. UPDATING EMPLOYEE (empNo = 201) ---");
-            updateEmployee(conn, 201, "David Miller Jr.", "david.mjr@example.com", "Los Angeles");
+            //updateEmployee(conn, 201, "David Miller Jr.", "david.mjr@example.com", "Los Angeles");
             
             System.out.println("Re-querying Chicago Employees after location update for 201:");
             selectEmployeesByLocation(conn, "Chicago").forEach(emp -> System.out.println("  -> " + emp));
@@ -76,7 +78,7 @@ public class PostgresJdbcPoc {
             // DEMO 5: DELETE OPERATION (executeUpdate)
             // ------------------------------------------------------------------
             System.out.println("--- 5. DELETING EMPLOYEE (empNo = 202) ---");
-            deleteEmployee(conn, 202);
+            deleteEmployee(conn, 902);
 
             System.out.println("\nFinal List of All Employees:");
             selectAllEmployees(conn).forEach(emp -> System.out.println("  -> " + emp));
@@ -114,9 +116,10 @@ public class PostgresJdbcPoc {
         // Try-with-resources automatically closes PreparedStatement after execution
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
             // Bind parameters (1-indexed)
+
+            pstmt.setString(3, email);     // Third ? -> email
             pstmt.setInt(1, empNo);       // First ? -> emp_no
             pstmt.setString(2, name);      // Second ? -> emp_name
-            pstmt.setString(3, email);     // Third ? -> email
             pstmt.setString(4, location);  // Fourth ? -> location
 
             // executeUpdate() is used for INSERT, UPDATE, DELETE queries
@@ -152,7 +155,10 @@ public class PostgresJdbcPoc {
             pstmt.setInt(1, empNo);
 
             int rowsDeleted = pstmt.executeUpdate();
-            System.out.println("Deleted employee [empNo=" + empNo + "], rows affected: " + rowsDeleted);
+            if( rowsDeleted == 0)
+                System.out.println("no employee found with " + empNo);
+            else
+             System.out.println("Deleted employee [empNo=" + empNo + "], rows affected: " + rowsDeleted);
         }
     }
 
