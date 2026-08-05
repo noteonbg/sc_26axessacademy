@@ -305,8 +305,68 @@ why do jdbc without architecture...
 
 
 
+driver
+
+1 how you to intearact with the database.
+
+1. via the os
+2. directly to the database without talking to os 
+2 pure driver.( this is what dinosaur great grandmother
+is using we are also using the same thing
+1 and other hybrid approaches... non pure driver. ( get 1 mark in
+the exam)
 
 
+we must know architecture this is minimum to survive in the project.
+
+we have a code called X in this we are doing insert,update
+delete.. so inside X we need connection, but uusaly the connection
+will be provided from outside X. connection creation is takes
+time so we use  a technical word pool of connections
+connection pool.
+
+we are having a EmpPostGresREpoisotyr implemetns EmpRepository
+
+database we dont create it inside this... connection
+comes from outside.. DatabaseConfig..
+
+allyour jdbc assingments must stick with the architecture
+where is architecture asisngment..
+
+inside IntelliJ project src com package.-- with database..
+understand java  --without databse.
+
+understand the architecture..
+
+1. a01notes/summaryimages/generatedsummaries/a00understandjava
+here you will see folder called com.
+com package has complete employee code with architecture
+and with only List and Map as repositories no database...
+architecture_flow_guide.md, this file tells how the employee thing
+is working the com working... how much of code you need
+to write zero onthis..
+
+Customer_Architecture_Tutorial.md has zero code.
+all the code has to be implemented by you.
+
+in both these places intent is to understand architecture properly
+this is architecture your two jdbc assingmetns have to stick to
+one in the classromm pdf and other hands on pdf.
+
+then...
+a02jaaworkspace\corejavaproject\src
+there is a com package with employee inside.
+this uses database...
+one package more called config, which will have databaseconfig calss
+which has the databse information and this used in the EmployeePostGres
+repo.. class.
+
+
+
+all your jdbc assingments two assingmetns are there.
+1. on classroom pdf
+2. one on hands on pdf
+must stick to the architecture.
 
 
 

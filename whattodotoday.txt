@@ -31,8 +31,43 @@ We will have the same approach like last week by review one by one. We will also
 
 Aug 5th 2026
 
-1. trying to understand poc package.. and trying to implement
-customer ensure architecture is right.
+
+1)
+
+understand the architecture..
+
+1. a01notes/summaryimages/generatedsummaries/a00understandjava
+here you will see folder called com.
+com package has complete employee code with architecture
+and with only List and Map as repositories no database...
+architecture_flow_guide.md, this file tells how the employee thing
+is working the com working... how much of code you need
+to write zero onthis..
+
+Customer_Architecture_Tutorial.md has zero code.
+all the code has to be implemented by you.
+
+in both these places intent is to understand architecture properly
+this is architecture your two jdbc assingmetns have to stick to
+one in the classromm pdf and other hands on pdf.
+
+then...
+a02jaaworkspace\corejavaproject\src
+there is a com package with employee inside.
+this uses database...
+one package more called config, which will have databaseconfig calss
+which has the databse information and this used in the EmployeePostGres
+repo.. class.
+
+
+
+all your jdbc assingments two assingmetns are there.
+1. on classroom pdf
+2. one on hands on pdf
+must stick to the architecture.
+
+------------------------------------
+
 
 2. just for syntax practice.. take employee program , in a new package
 modify that to deal with customer only one condition don't create
@@ -40,7 +75,6 @@ tables inside the java code, create it directly using pgAdmin.
 jdbc syntax practice.. zoom out.. we are not going to use jdbc in the project
 but I will ask jdbc in evaluation.. next week.
 
-3. begin with your jdbc hands on.
 
 4. ensure you update your boards correctly whatever is complete move to the resolved state.
 

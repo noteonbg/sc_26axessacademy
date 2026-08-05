@@ -11,9 +11,9 @@ import java.sql.Statement;
  */
 public class DatabaseConfig {
 
-    private static final String DEFAULT_URL = "jdbc:postgresql://localhost:5432/employeedb";
+    private static final String DEFAULT_URL = "jdbc:postgresql://localhost:5432/postgres";
     private static final String DEFAULT_USER = "postgres";
-    private static final String DEFAULT_PASSWORD = "postgres";
+    private static final String DEFAULT_PASSWORD = "1234";
 
     static {
         try {

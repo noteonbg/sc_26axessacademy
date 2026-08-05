@@ -1,4 +1,4 @@
 package pcoexceptions;
 
-public class NotGreatInProjectException {
+public class NotGreatInProjectException extends Exception{
 }

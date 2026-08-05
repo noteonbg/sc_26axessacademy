@@ -1,4 +1,4 @@
 package pcoexceptions;
 
-public class ProjectException {
+public class ProjectException extends RuntimeException{
 }
