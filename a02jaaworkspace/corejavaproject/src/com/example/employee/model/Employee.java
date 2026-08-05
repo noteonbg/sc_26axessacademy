@@ -1,4 +1,4 @@
-package poc;
+package com.example.employee.model;
 
 import java.util.Objects;
 

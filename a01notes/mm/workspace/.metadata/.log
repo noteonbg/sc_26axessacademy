@@ -238,3 +238,28 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclips
 
 !ENTRY org.xmind.ui.mindmap 4 4 2026-08-02 21:06:39.497
 !MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...
+!SESSION 2026-08-05 10:51:20.418 -----------------------------------------------
+eclipse.buildId=R3.7.9.201912052356
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-05 10:51:25.407
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-05 10:51:25.409
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-05 10:51:27.677
+!MESSAGE Path queued to be opened: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-05 10:51:30.878
+!MESSAGE Ready to open files: [F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2026-08-05 10:51:30.896
+!MESSAGE Malformed URI: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.ui.mindmap 4 4 2026-08-05 11:39:41.055
+!MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...
