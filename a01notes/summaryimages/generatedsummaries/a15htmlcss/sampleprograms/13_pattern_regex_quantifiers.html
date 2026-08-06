@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13 - Form Pattern Validation & Quantifiers</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 260px; font-weight: bold; }
+        input { padding: 6px; width: 220px; }
+        button { padding: 8px 16px; background-color: #0055a5; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>13. Regular Expression Pattern Validation &amp; Quantifiers</h1>
+
+    <form action="/validate" method="POST">
+        <!-- Example 1: Alphabets Only [A-Za-z]+ -->
+        <div class="form-group">
+            <label for="name">Name (Only Alphabets):</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Only letters allowed" required>
+        </div>
+
+        <!-- Example 2: 10 Digit Phone [7-9]{1}[0-9]{9} -->
+        <div class="form-group">
+            <label for="phone">Phone (10 Digits starting 7-9):</label>
+            <input type="text" id="phone" name="phone" pattern="[7-9]{1}[0-9]{9}" title="10 digits starting with 7, 8, or 9" required>
+        </div>
+
+        <!-- Example 3: Pincode Exactly 6 Digits [0-9]{6} -->
+        <div class="form-group">
+            <label for="pincode">Pincode (Exactly 6 Digits):</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" title="Must be exactly 6 digits" required>
+        </div>
+
+        <!-- Example 4: Alphanumeric 3 to 6 chars [0-9a-zA-Z]{3,6} -->
+        <div class="form-group">
+            <label for="code">User Code (3-6 Alphanumeric):</label>
+            <input type="text" id="code" name="code" pattern="[0-9a-zA-Z]{3,6}" title="3 to 6 alphanumeric characters" required>
+        </div>
+
+        <button type="submit">Validate and Submit</button>
+    </form>
+</body>
+</html>

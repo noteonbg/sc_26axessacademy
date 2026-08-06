@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03 - Block vs Inline Elements</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .block-element { background-color: #e0f7fa; border: 2px solid #00bcd4; padding: 12px; margin-bottom: 10px; }
+        .inline-element { background-color: #ffe0b2; border: 2px solid #ff9800; padding: 4px 8px; }
+    </style>
+</head>
+<body>
+    <h1>03. Block-Level vs Inline Elements</h1>
+
+    <h2>1. Block-Level Elements</h2>
+    <p>Block elements always start on a new line and stretch the full available width.</p>
+    <div class="block-element">I am a Block-level &lt;div&gt; element.</div>
+    <p class="block-element">I am a Block-level &lt;p&gt; paragraph element.</p>
+
+    <h2>2. Inline Elements</h2>
+    <p>Inline elements stay on the same line and take up only as much width as their content needs.</p>
+    <p>
+        Here is text with an <span class="inline-element">Inline &lt;span&gt;</span>, an <a href="#" class="inline-element">Inline Link &lt;a&gt;</a>, and an <b class="inline-element">Inline &lt;b&gt; tag</b> side-by-side on the same line.
+    </p>
+</body>
+</html>

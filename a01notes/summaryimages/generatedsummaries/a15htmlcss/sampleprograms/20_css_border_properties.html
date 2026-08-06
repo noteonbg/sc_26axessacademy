@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 - CSS Border Properties</title>
+    <!-- 
+      EXPLANATION FOR FRESHERS:
+      Borders are decorative lines drawn around HTML elements.
+      You can define borders using individual properties or a single shorthand property.
+    -->
+    <style>
+        /* body: Sets base font family and inner page spacing */
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+        }
+        
+        /* Individual Border Properties Demonstration */
+        .individual-border {
+            /* border-width: Thickness of border line (3px thick) */
+            border-width: 3px;
+            
+            /* border-style: Pattern of line (dashed = '- - -', solid = straight line, dotted = dots) */
+            border-style: dashed;
+            
+            /* border-color: Color of border line (#e91e63 is pink/magenta) */
+            border-color: #e91e63;
+            
+            /* padding: Inner blank space inside box between text and border line */
+            padding: 15px;
+            
+            /* margin-bottom: Outer blank space below box pushing down next element */
+            margin-bottom: 20px;
+        }
+
+        /* Shorthand Border Property Demonstration */
+        .shorthand-border {
+            /* border (Shorthand): Combines width, style, color in 1 line: [width] [style] [color] */
+            border: 2px solid yellow;
+            
+            /* background-color: Interior fill color of box (#333333 is dark grey) */
+            background-color: #333333;
+            
+            /* color: Font/text color inside box (#ffffff is white) */
+            color: #ffffff;
+            
+            /* padding: Inner space around text */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>20. CSS Border Properties</h1>
+
+    <div class="individual-border">
+        Border using individual properties: <code>border-width: 3px; border-style: dashed; border-color: #e91e63;</code>
+    </div>
+
+    <div class="shorthand-border">
+        Border using shorthand property: <code>border: 2px solid yellow;</code>
+    </div>
+</body>
+</html>

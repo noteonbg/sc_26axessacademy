@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12 - Form Attributes and Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 12px; }
+        label { display: inline-block; width: 220px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>12. Form Attributes &amp; Validation Features</h1>
+
+    <form action="/submit" method="POST">
+        <!-- autofocus, placeholder, required, minlength, maxlength, size -->
+        <div class="form-group">
+            <label for="uname">Username (Req, 4-10 chars):</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter username" autofocus required minlength="4" maxlength="10" size="20">
+        </div>
+
+        <!-- readonly vs disabled -->
+        <div class="form-group">
+            <label for="role">Role (Readonly):</label>
+            <input type="text" id="role" name="role" value="Developer" readonly>
+        </div>
+        <div class="form-group">
+            <label for="sysid">System ID (Disabled):</label>
+            <input type="text" id="sysid" name="sysid" value="SYS-1002" disabled>
+        </div>
+
+        <!-- list with datalist -->
+        <div class="form-group">
+            <label for="browser">Browser Datalist Suggestion:</label>
+            <input type="text" id="browser" name="browser" list="browser-list" placeholder="Choose or type...">
+            <datalist id="browser-list">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+            </datalist>
+        </div>
+
+        <!-- min, max, step -->
+        <div class="form-group">
+            <label for="age">Age (18 - 60, step 1):</label>
+            <input type="number" id="age" name="age" min="18" max="60" step="1" required>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>

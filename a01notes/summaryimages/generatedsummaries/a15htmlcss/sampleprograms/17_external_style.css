@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Sample Program 17 - External CSS Stylesheet
+   ========================================================================== */
+
+/* 
+ * SELECTOR: h2.external-title
+ * WHY ADDED: Targets <h2> headings that specifically carry the .external-title class.
+ */
+h2.external-title {
+    /* 
+     * PROPERTY: color: darkblue;
+     * WHY ADDED: Sets heading text color to a deep navy blue.
+     * WHAT IT DOES: Overrides default browser black text color.
+     */
+    color: darkblue;
+
+    /* 
+     * PROPERTY: border-bottom: 2px solid darkblue;
+     * WHY ADDED: Adds a decorative divider line beneath the section title.
+     * WHAT IT DOES: Draws a 2px thick solid blue line along the element's bottom edge.
+     */
+    border-bottom: 2px solid darkblue;
+}
+
+/* 
+ * SELECTOR: .external-text
+ * WHY ADDED: Styles paragraph text linked from the external CSS file.
+ */
+.external-text {
+    /* 
+     * PROPERTY: font-size: 18px;
+     * WHY ADDED: Increases readability by making paragraph text slightly larger than default 16px.
+     * WHAT IT DOES: Sets the glyph height of characters to 18 pixels.
+     */
+    font-size: 18px;
+
+    /* 
+     * PROPERTY: color: green;
+     * WHY ADDED: Colors text green to visually confirm the external CSS file is linked.
+     * WHAT IT DOES: Changes text foreground color to standard green.
+     */
+    color: green;
+
+    /* 
+     * PROPERTY: font-weight: bold;
+     * WHY ADDED: Emphasizes the text.
+     * WHAT IT DOES: Increases stroke weight of the font characters.
+     */
+    font-weight: bold;
+}

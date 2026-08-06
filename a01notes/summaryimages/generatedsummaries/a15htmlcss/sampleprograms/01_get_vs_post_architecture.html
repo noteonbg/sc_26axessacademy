@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 - HTTP GET vs POST Architecture</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f8f9fa; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #0055a5; }
+        input[type="text"], input[type="password"] { padding: 8px; width: 250px; margin: 5px 0; }
+        button { padding: 8px 16px; background-color: #00a859; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>01. HTTP Methods: GET vs POST</h1>
+
+    <!-- GET Request Form -->
+    <div class="section">
+        <h2>HTTP GET Method (Search Query)</h2>
+        <p>Data is appended to the URL in key/value pairs (e.g., <code>?q=HTML5</code>). Used for non-sensitive data.</p>
+        <form action="/search" method="GET">
+            <label for="search-input">Search Query:</label><br>
+            <input type="text" id="search-input" name="q" placeholder="Type search term..."><br>
+            <button type="submit">Submit GET Request</button>
+        </form>
+    </div>
+
+    <!-- POST Request Form -->
+    <div class="section">
+        <h2>HTTP POST Method (Secure Login)</h2>
+        <p>Data is sent securely in the HTTP request body. Used for sensitive data like passwords.</p>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Submit POST Request</button>
+        </form>
+    </div>
+</body>
+</html>

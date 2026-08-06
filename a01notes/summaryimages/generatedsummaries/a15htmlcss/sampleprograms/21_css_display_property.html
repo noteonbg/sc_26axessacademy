@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21 - CSS Display Property</title>
+    <!-- 
+      
+      The 'display' property is the most key layout property in CSS.
+      It decides how an element sits on the page relative to other elements around it.
+    -->
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+
+        /* 1. display: inline
+           - Sits side-by-side on the same line as adjacent elements.
+           - Takes only as much width as its text content needs.
+           - Ignores custom width and height settings.
+        */
+        .inline-demo { 
+            display: inline; 
+            background-color: lightpink; 
+            padding: 5px; 
+        }
+
+        /* 2. display: block
+           - Starts on a brand new line.
+           - Takes 100% full width of the container, pushing the next element down.
+           - Allows setting custom width, height, margins, and padding.
+        */
+        .block-demo { 
+            display: block; 
+            background-color: lightgreen; 
+            padding: 8px; 
+            margin: 8px 0; /* 8px top/bottom space, 0px left/right space */
+        }
+
+        /* 3. display: inline-block
+           - Hybrid: Sits side-by-side on the same line like inline...
+           - BUT allows setting custom width and height like block!
+           - text-align: center aligns text in the middle horizontally.
+           - line-height: 40px sets line height equal to height for easy vertical text centering.
+        */
+        .inline-block-demo { 
+            display: inline-block; 
+            width: 140px; 
+            height: 50px; 
+            background-color: lightskyblue; 
+            padding: 5px; 
+            text-align: center; 
+            line-height: 40px; 
+        }
+
+        /* 4. display: none
+           - Completely hides the element from the webpage.
+           - Takes up zero space on the screen layout.
+        */
+        .none-demo { 
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <h1>21. CSS Display Property (inline, block, inline-block, none)</h1>
+
+    <h2>1. display: inline</h2>
+    <span class="inline-demo">Inline 1</span>
+    <span class="inline-demo">Inline 2</span>
+
+    <h2>2. display: block</h2>
+    <span class="block-demo">Converted to Block 1</span>
+    <span class="block-demo">Converted to Block 2</span>
+
+    <h2>3. display: inline-block</h2>
+    <div class="inline-block-demo">Box 1</div>
+    <div class="inline-block-demo">Box 2</div>
+
+    <h2>4. display: none</h2>
+    <div class="none-demo">Hidden text (Not rendered on page).</div>
+</body>
+</html>

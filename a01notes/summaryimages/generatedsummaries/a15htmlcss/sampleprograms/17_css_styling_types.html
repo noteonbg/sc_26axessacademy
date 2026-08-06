@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17 - Types of Styling</title>
+
+    <!-- 1. External Styling Link -->
+    <link rel="stylesheet" href="17_external_style.css">
+
+    <!-- 2. Internal Styling -->
+    <style>
+        p.internal-style {
+            background-color: lightyellow;
+            border: 1px solid gold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>17. Three Types of CSS Styling Methods</h1>
+
+    <!-- External CSS -->
+    <h2 class="external-title">1. External CSS (&lt;link rel="stylesheet"&gt;)</h2>
+    <p class="external-text">Styled using external stylesheet (17_external_style.css).</p>
+
+    <!-- Internal CSS -->
+    <h2>2. Internal CSS (&lt;style&gt; in &lt;head&gt;)</h2>
+    <p class="internal-style">Styled using internal CSS rules embedded inside head &lt;style&gt; tag.</p>
+
+    <!-- Inline CSS -->
+    <h2>3. Inline CSS (style="..." attribute)</h2>
+    <p style="background-color: yellow; border: 2px solid orange; color: darkred; padding: 10px; font-weight: bold;">
+        Styled using Inline CSS attribute directly on the paragraph element.
+    </p>
+</body>
+</html>

@@ -29,6 +29,22 @@ We will have the same approach like last week by review one by one. We will also
 3. Push your completed assignments and codes to the Azure Repos
 
 
+---------------------------
+
+
+Aug 6th 2026.
+
+1. ensure you complete the jdbc assingments and most important can code a new one
+for a different scenario.
+2. git .. 
+see can you push changes to the remote repo..
+3. practice functional programming in understandjava folder new md
+file is present transaction_exercise.md try that and most important
+validate the theory.. this will be useful in javascript.
+4. check your assingment status.. and review your boards we will look into it.
+5. go thru the md files present in a15htmlcss folder 
+ 
+
 Aug 5th 2026
 
 

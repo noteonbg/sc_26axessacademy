@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>23 - CSS Combinators</title>
+    <!-- 
+      EXPLANATION FOR FRESHERS:
+      A CSS Combinator explains the relationship between two selectors.
+      It tells CSS how to target elements based on how they are nested or ordered in the HTML tree.
+    -->
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+
+        /* 1. Descendant Selector (space: 'div p')
+           - Rule: Targets ANY <p> tag that is inside a <div> tag.
+           - Matches direct children AND deeply nested grandchildren (e.g. inside <section>).
+           - color: blue sets the text color to blue.
+        */
+        div p {
+            color: blue;
+        }
+
+        /* 2. Child Selector ('>': 'div > h4')
+           - Rule: Targets ONLY direct children (exactly 1 level down) of a <div> tag.
+           - If <h4> was nested inside a <section> inside <div>, it would NOT be selected.
+           - border-bottom: 2px solid green creates a green line right under the text.
+        */
+        div > h4 {
+            color: darkgreen;
+            border-bottom: 2px solid green;
+        }
+
+        /* 3. Adjacent Sibling Selector ('+': 'div + p')
+           - Rule: Targets the single <p> tag that comes IMMEDIATELY right after a <div> tag.
+           - They must share the same parent and be right next to each other.
+           - background-color: yellow fills paragraph background with yellow.
+           - font-weight: bold makes text thick.
+        */
+        div + p {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* 4. General Sibling Selector ('~': 'div ~ span')
+           - Rule: Targets ALL <span> tags that share the same parent and come ANYWHERE after a <div> tag.
+           - display: block forces the <span> tags (which are inline by default) to act like block elements on new lines.
+           - margin-top: 5px adds space above each span.
+        */
+        div ~ span {
+            color: purple;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>23. CSS Combinators (space, &gt;, +, ~)</h1>
+
+    <div>
+        <h4>Direct Child H4 (div &gt; h4)</h4>
+        <p>Direct Child Paragraph (div p)</p>
+        <section>
+            <p>Nested Descendant Paragraph (div p)</p>
+        </section>
+    </div>
+
+    <!-- Adjacent Sibling -->
+    <p>Adjacent Sibling Paragraph (div + p)</p>
+
+    <!-- General Siblings -->
+    <span>General Sibling Span 1 (div ~ span)</span>
+    <span>General Sibling Span 2 (div ~ span)</span>
+</body>
+</html>

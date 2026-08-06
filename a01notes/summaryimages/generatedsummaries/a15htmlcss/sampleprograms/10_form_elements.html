@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 - Standard Form Elements</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { font-weight: bold; display: inline-block; width: 150px; }
+    </style>
+</head>
+<body>
+    <h1>10. Standard HTML Form Elements</h1>
+
+    <form action="/submit" method="POST">
+        <!-- 1. Text Box -->
+        <div class="form-group">
+            <label for="fullname">Single-line Textbox:</label>
+            <input type="text" id="fullname" name="fullname" value="John Doe">
+        </div>
+
+        <!-- 2. Radio Buttons -->
+        <div class="form-group">
+            <label>Radio Button:</label>
+            <input type="radio" id="male" name="gender" value="M"> Male
+            <input type="radio" id="female" name="gender" value="F"> Female
+        </div>
+
+        <!-- 3. Checkbox -->
+        <div class="form-group">
+            <label>Checkbox:</label>
+            <input type="checkbox" id="html" name="tech" value="HTML" checked> HTML
+            <input type="checkbox" id="css" name="tech" value="CSS"> CSS
+        </div>
+
+        <!-- 4. Textarea -->
+        <div class="form-group">
+            <label for="address">Textarea:</label>
+            <textarea id="address" name="address" rows="3" cols="30">123 Street Name</textarea>
+        </div>
+
+        <!-- 5. Dropdown -->
+        <div class="form-group">
+            <label for="city">Dropdown Select:</label>
+            <select id="city" name="city">
+                <option value="BGL">Bangalore</option>
+                <option value="MYR">Mysore</option>
+            </select>
+        </div>
+
+        <!-- 6. Buttons -->
+        <div class="form-group">
+            <input type="button" value="Click Button" onclick="alert('Button Clicked!')">
+            <input type="submit" value="Submit Button">
+            <input type="reset" value="Reset Button">
+        </div>
+    </form>
+</body>
+</html>

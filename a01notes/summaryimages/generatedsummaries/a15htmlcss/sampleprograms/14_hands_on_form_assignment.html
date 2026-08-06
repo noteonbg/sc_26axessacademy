@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14 - Hands-On Form Assignment (Slide 29)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; padding: 20px; }
+        .form-card { background: white; width: 600px; margin: 0 auto; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { color: #0055a5; border-bottom: 2px solid #0055a5; padding-bottom: 8px; }
+        .form-group { margin-bottom: 12px; }
+        label { display: inline-block; width: 160px; font-weight: bold; vertical-align: top; }
+        input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="week"], input[type="month"], select, textarea {
+            width: 350px; padding: 6px; border: 1px solid #ccc; border-radius: 4px;
+        }
+        input:focus, textarea:focus, select:focus { border-color: #0055a5; outline: none; background-color: #ffffdd; }
+        .buttons { margin-top: 20px; text-align: center; }
+        input[type="submit"], input[type="reset"], input[type="button"] { padding: 8px 16px; margin: 0 4px; border: none; border-radius: 4px; color: white; cursor: pointer; font-weight: bold; }
+        input[type="submit"] { background-color: #0055a5; }
+        input[type="reset"] { background-color: #757575; }
+        input[type="button"] { background-color: #00897b; }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <h2>User Registration Form (Slide 29 Assignment)</h2>
+
+    <form action="/welcome" method="POST">
+        <div class="form-group">
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" title="Only alphabets" placeholder="Please enter your first name" autofocus required>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" title="Only alphabets" placeholder="Please enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label>Gender :</label>
+            <input type="radio" id="m" name="gender" value="Male" required> Male
+            <input type="radio" id="f" name="gender" value="Female"> Female
+            <input type="radio" id="o" name="gender" value="Others"> Others
+        </div>
+        <div class="form-group">
+            <label>Languages known :</label>
+            <input type="checkbox" id="h" name="lang" value="HTML" checked> HTML
+            <input type="checkbox" id="c" name="lang" value="CSS"> CSS
+            <input type="checkbox" id="j" name="lang" value="JS" checked> JS
+        </div>
+        <div class="form-group">
+            <label for="addr">Address :</label>
+            <textarea id="addr" name="addr" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="cities">Cities lived in :</label>
+            <select id="cities" name="cities" required>
+                <option value="">-- Select City --</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Chennai" selected>Chennai</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number :</label>
+            <input type="text" id="contact" name="contact" pattern="[7-9]{1}[0-9]{9}" title="10-digit phone starting 7-9" required>
+        </div>
+        <div class="form-group">
+            <label for="color">My favorite color :</label>
+            <input type="color" id="color" name="color" value="#0000ff">
+        </div>
+        <div class="form-group">
+            <label for="date">Date is :</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Birthday is :</label>
+            <input type="datetime-local" id="birthday" name="birthday" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Time is :</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+            <label for="week">Week is :</label>
+            <input type="week" id="week" name="week" required>
+        </div>
+        <div class="form-group">
+            <label for="month">Month is :</label>
+            <input type="month" id="month" name="month" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email id is :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Click Me" onclick="alert('Form validation passed!')">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

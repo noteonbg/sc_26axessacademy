@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15 - HTML5 Semantic Elements Layout</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+        header, nav, main, aside, footer { padding: 15px; margin: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        header { background-color: #d1c4e9; }
+        nav { background-color: #bbdefb; }
+        main { background-color: #c8e6c9; display: inline-block; width: 62%; vertical-align: top; }
+        aside { background-color: #fff9c4; display: inline-block; width: 30%; vertical-align: top; }
+        footer { background-color: #ffccbc; clear: both; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>15. HTML5 Semantic Elements Structure</h1>
+        <p>Published on: <time datetime="2026-05-26">May 26, 2026</time></p>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <a href="#">Home</a> | <a href="#">Articles</a> | <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Section: Semantic Markup Benefits</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>Semantic tags improve accessibility and <mark>SEO ranking</mark> significantly.</p>
+                <figure>
+                    <img src="https://via.placeholder.com/150x80" alt="Semantic layout diagram">
+                    <figcaption>Fig 1: Semantic Structure Diagram</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <details>
+            <summary>Click to Expand FAQ Details</summary>
+            <p>Accordion content rendered natively by &lt;details&gt; and &lt;summary&gt; tags.</p>
+        </details>
+    </main>
+
+    <!-- Aside Sidebar -->
+    <aside>
+        <h3>Sidebar (&lt;aside&gt;)</h3>
+        <p>Related links, ads, or secondary information.</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Axess Academy. Footer Content.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18 - CSS Box Model</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .box-model-demo {
+            /* Content Area Dimensions */
+            width: 350px;
+            height: 100px;
+            background-color: #e3f2fd;
+
+            /* Inner Padding */
+            padding: 25px;
+
+            /* Border Line */
+            border: 5px solid #1976d2;
+
+            /* Outer Margin */
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>18. The CSS Box Model</h1>
+    <p>Every element consists of Content, Padding, Border, and Margin.</p>
+
+    <div class="box-model-demo">
+        This box demonstrates:
+        <br><strong>Content</strong> (350x100px)
+        <br><strong>Padding</strong> (25px inside)
+        <br><strong>Border</strong> (5px solid blue)
+        <br><strong>Margin</strong> (40px outside)
+    </div>
+</body>
+</html>

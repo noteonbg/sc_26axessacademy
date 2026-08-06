@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22 - CSS Position Property</title>
+    <!-- 
+      
+      The 'position' property controls how and where an HTML element is placed on the screen.
+      It works alongside coordinate offset properties: top, bottom, left, and right.
+    -->
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+
+        /* Parent Container:
+           - position: relative makes this box act as an 'anchor reference point' 
+             for any child element inside it that uses position: absolute.
+        */
+        .container {
+            position: relative; /* Relative anchor parent container */
+            width: 400px;
+            height: 180px;
+            background-color: #eeeeee;
+            border: 2px solid #333333;
+            margin: 20px 0;
+        }
+
+        /* Relative Positioning:
+           - position: relative moves the element relative to where it normally lives in the layout.
+           - top: 15px pushes it DOWN by 15px from its natural starting top edge.
+           - left: 20px pushes it RIGHT by 20px from its natural starting left edge.
+           - It still keeps its original blank space in the layout flow so other elements don't collapse into it.
+        */
+        .relative-box {
+            position: relative;
+            top: 15px;
+            left: 20px;
+            background-color: #ffab91;
+            padding: 10px;
+        }
+
+        /* Absolute Positioning:
+           - position: absolute removes the element completely from normal document layout flow.
+           - It positions itself relative to its nearest positioned parent container (.container).
+           - bottom: 10px locks its bottom edge 10px above the parent box's bottom edge.
+           - right: 10px locks its right edge 10px inside the parent box's right edge.
+        */
+        .absolute-box {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #80ebe6;
+            padding: 10px;
+        }
+
+        /* Fixed Positioning:
+           - position: fixed pins the element directly relative to the browser viewport screen.
+           - It stays frozen in the exact same spot even when the user scrolls the page!
+           - bottom: 10px & right: 10px places it at the bottom-right corner of the browser window.
+           - z-index: 1000 controls stacking order (layer depth). A high number ensures this box 
+             floats ON TOP of all other content without getting covered.
+        */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ffd54f;
+            border: 1px solid #ff6f00;
+            padding: 10px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>22. CSS Position Property (static, relative, absolute, fixed)</h1>
+
+    <div class="fixed-box">Fixed Position Box (Bottom Right Viewport)</div>
+
+    <div class="container">
+        Relative Container Parent
+        <div class="relative-box">Relative Box (Shifted 15px top, 20px left)</div>
+        <div class="absolute-box">Absolute Box (Anchored to container bottom-right)</div>
+    </div>
+</body>
+</html>
