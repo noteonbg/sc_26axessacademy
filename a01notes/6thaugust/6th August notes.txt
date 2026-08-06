@@ -185,14 +185,14 @@ complete the usual ritual...
 2. ensure you have visual code..
 
 
-AI tools we should know basics.. and tool wil help.
+AI tools we should know basics.. and tool will help.
 
-1. complet your html assignment.
+1. complete your html assignment.
 2. look at md file... of html..
-3. get on with your jdbc assingmetns 
+3. get on with your jdbc assignments 
 4  git everybody should be able to show, they are able to make changes in the local repo
 and push it 
-5. I want to see the status of work items on the board, wherer are they are present..
+5. I want to see the status of work items on the board, where are they are present..
 
 
 

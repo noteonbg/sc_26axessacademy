@@ -1,4 +1,4 @@
-# The Ultimate CSS Handbook for Freshers: How to Approach Any Web Page
+#  How to Approach Any Web Page
 
 This guide provides a step-by-step, numbered roadmap containing the essential CSS principles every beginner and fresher developer must master to build any website layout. Each rule includes a complete, copy-pasteable HTML & CSS code example.
 
