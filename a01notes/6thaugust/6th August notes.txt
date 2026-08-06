@@ -1,0 +1,212 @@
+1. we will cover web basics and html basics... over zoom out what does it imply
+2. should aim for understanding the architecture code and also functional programming with that
+why.. javascript needs it.
+3. git ... remote repo or the local repo changes. how do you sure both are sync..
+4. look at your assignments tarting from java. git. container... let us can we move anythingto done
+or not..
+
+
+today
+1. understanding architecture... 
+2. how you are approaching web..
+3. git sorted out today itself.
+4. boards how does it look.. can we have something in done 
+
+most important thing. if i give a problem statement can you write the problem in architecture
+style.. ( super important for every one in the team )
+
+
+we have item model. item, itemname, price and category.
+1. give itemno, i should see the item details
+2. price and category, item should get updated
+
+
+1. i want to see all items which are greater than price.
+2. i can add item.. to the list.
+
+
+3 layer or n layered..
+n layered. service and dao can be get split in multiple small lauers.
+
+Q and R can be split into multiple layers..
+
+Context must be know to be relevant..
+
+1. 100% sure without javaarchitecture we are dead in the project.
+2. in a system we cannot be zero in anything at same 5/5 in everything..
+
+really how HTML, css, javascript fits in the project.
+
+welcome to real life CTC
+
+C constraints..
+T Tradeoffs
+C contraditions
+we have to live with it..
+
+web part..
+1. you understand html 3.5/5 .. ok
+2. css is super important if we try to spend more time may get lost . how to moderate ( 1.5/5)
+how layout works in css.. that is important to think know
+3. javascript ( 3.5/5)
+entire thing is about building presentation after knowing "Reacts opinion"
+
+our fate .. overload of information we have to figure out how to summarize...
+
+we will meet of ghosts in real life, we have to request or fore them to come to earth..
+ghost == only intent no details.
+hey give me details ...coming to earth..
+
+welcome to systems we cant be 5/5 in everything, we cannot be zero in everything..
+
+for technical topic  called X we learn... the most important learn which is official
+website..
+x=Linux
+x=java
+x=docker
+x=sql
+x-html,css
+
+when you are building a presention using html, css get used the color schemes of standard chatertered..
+
+Syntax is not easy.. Linux, docker... 
+html has got its own syntax.
+css has got its own syntax and lots of propeties.
+javacript language, is in category of its own... 
+
+see how best you understand how to approach html and css (2/5) ...
+javascript (3/5)
+html uses tags and these tagsare interpreted by the browser.
+
+html tag.
+head
+body..
+whateer is there in the body tag will appear as part of the body .. in body of the browser.
+
+javascript can be used in all 3 ( presentation  (view,controller,model), service, repo (dao)  ) layers..
+but we are using it only for presentation layer...  nodejs.... 
+
+
+file:///f%3A/scproject/sc_26axessacademy/a01notes/summaryimages/generatedsummaries/a15htmlcss/poc/poc1.html
+
+http://127.0.0.1:5500/a01notes/summaryimages/generatedsummaries/a15htmlcss/poc/poc1.html
+
+for tags we can use some attributes example id .. , there are lot of other things
+but let us us focus on id, why...
+
+
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+when we see any page we will think which part has to change, which part should not change.
+
+
+typically tags are given id because they may have to change.. dynamically.
+
+
+
+generally the rule is structure is decided by html, styling by css, dynamic behavour
+by javascript.. javasript can access css internally to change the look or change the content of the html that is what you are going to learn next week..
+
+UL, OL, Li.. ok list items ok.. how to build menus in real life.. how we must learn css..
+
+links.. is way thru which we navigate.
+
+<a href="where to go" > what to show </a>
+<a href="www.google.com"> search </a>
+
+the reason we use a form is group things..
+
+
+i want to take userid, password, email and group them and send to place called X.
+then you need a form...
+
+will take userid, password, email independently.. ok you dont need a form..
+
+1. form tag, has got two attributes, action and method.
+
+action="where your request will be processed" method="http mode of request" .. get, post, put and delete.
+
+
+id is used only with the client side, within the browser for processing
+on the server when request coms only names matters and not id..
+
+kids are afraid of compilation errors, adults are afraid of logical errors.
+submit button,.. invokes action...
+normal button will not invoke action
+reset button. resets valus.
+
+
+submt button and reset button makes sense only if you have a form.
+welcome to theory...
+
+
+get and post both are modes of request 
+get goes as part of header... in the protocol so information is visible add favourites
+post goes as part of body.. so information is not visible..  you cannot do it...
+http is not secure...
+
+
+
+
+http://127.0.0.1:5500/search?q=abc -- get mode of request.
+
+
+when we are using http.. dont talk about security and all relax..
+get will reveal information as part of header..
+post will not..
+get can be bookmarked
+post cannot be..
+get will send less information
+post. 
+
+
+
+show patience while designing the ui
+0. let the best design win..
+1. know what logic you plan to implement.
+2. think changing and not changing part
+3. patiently work out the html and css part.
+4. then think of javascript part
+5. link javascript with your service layer..
+
+when we want to do many things.. do we want a checklist or will we trust our "memory"
+go for a checklist.. before  a project begins so that noise will be down..
+
+
+complete the usual ritual...
+1. copy the hands on pdf and content.
+2. ensure you have visual code..
+
+
+AI tools we should know basics.. and tool wil help.
+
+1. complet your html assignment.
+2. look at md file... of html..
+3. get on with your jdbc assingmetns 
+4  git everybody should be able to show, they are able to make changes in the local repo
+and push it 
+5. I want to see the status of work items on the board, wherer are they are present..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
