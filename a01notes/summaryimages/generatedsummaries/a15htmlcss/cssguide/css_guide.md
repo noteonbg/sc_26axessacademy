@@ -16,6 +16,8 @@ By default, browsers apply unpredictable default margins/padding and add padding
     <style>
         /* 1. Global Reset Rule */
         * {
+
+            /* Default (content-box): If you set width: 100px and add 20px of padding, the total width becomes 140px (100px + 20px left + 20px right). The padding pushes outward.With border-box: If you set width: 100px and add 20px of padding, the total width stays 100px. The inner content area shrinks to fit the padding inside */
             box-sizing: border-box; /* Width includes padding and border */
             margin: 0;              /* Removes default browser margins */
             padding: 0;             /* Removes default browser padding */
