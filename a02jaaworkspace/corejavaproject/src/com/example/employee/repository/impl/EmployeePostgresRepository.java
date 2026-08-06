@@ -22,7 +22,7 @@ public class EmployeePostgresRepository implements EmployeeRepository {
      * Initializes PostgreSQL repository and auto-creates table schema if missing.
      */
     public EmployeePostgresRepository() {
-        try (Connection conn = getConnection()) {
+        try (Connection conn = DatabaseConfig.getConnection()) {
             DatabaseConfig.initializeDatabase(conn);
         } catch (SQLException e) {
             throw new RuntimeException("Failed to initialize PostgreSQL Employee database schema: " + e.getMessage(), e);

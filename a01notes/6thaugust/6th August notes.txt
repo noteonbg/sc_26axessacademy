@@ -194,6 +194,190 @@ AI tools we should know basics.. and tool will help.
 and push it 
 5. I want to see the status of work items on the board, where are they are present..
 
+ensure you focus on the said thing
+0. function design matters in all projects.... so spend time on it..
+1. jdbc assignments gets completed.. ( 2 assignment and most important you understood )
+2. functional programming.. ( passing function as input argument to another function is need)
+get the theory right on functional programming..
+3. html whatever worked ok.. we did not touch the hard thing... layout of the page...for
+that you need CSS..
+
+
+let me do my astrology..
+1. on java.. writing according to architecture and doing the jdbc for sving currentaccount
+( blocker.. 1/5)
+2. git.. since we are working on same branch locally and remote.. (5/5)
+one system. one remote. one local branch, only thru local branch remote is changing.
+ie push..
+
+3. database asisngments are almost comlete..
+4. Linux and docker closed episode I dont want vist.. change the color to amber.
+5. coming disaster.. small disaster CSS. Big Disaster.. JavaScript if we dont know
+functional programming.
+
+
+why entertainment in db assignment
+very simple lack of theory...
+
+
+class Person //Account
+	name;
+	age;
+	work()
+
+
+class Police extends Person  //DebitAccount
+	policestation  //passowrd
+	controlTraffic()
+
+
+class Doctor extends Person // CreditAccount
+	specialization  // 
+	doSurger();
+
+	
+Person p =new Police();
+
+if(p instanceof Police)
+{
+	Police x = (Police)p;
+	x.controltraffic.
+	x.
+
+
+}
+//implication this person cannot control traffic..why p is of type Person
+p.controlTraficc();//red line will come 
+
+
+
+Account c =new DEbitAccount();
+c.getPassword();//tis will not work..
+
+
+Account c =new CreditAccount();
+c.getBonsuPoint or getLimit//this will not work
+
+
+why did we do Account c=?
+we wanted to do runtime polymorphism.
+c.performDeposit();
+c.performPaymetn();
+
+
+theory..
+By using a reference of super class forget about accessing any exclusive functions
+of the subclass, despite the super class refernce pointing to the object of the subclass.
+
+
+you have to do the hard thing  "tradeoff"
+in service layer or repo layer...
+
+
+
+
+service layer.. function..
+
+you have Account reference with you..
+reference can have DebitAcount or creditAcount object with it.
+
+repository method
+1. insert(Account c)
+
+if( c instanceof DebitAccount)
+{
+DebitAccount d =(DebitAccount)c;
+d.getPassword..
+insert into the debit table.  4 values.. id,name,balance, password
+
+
+
+}
+else if( c instanceof CreditAccount) //RTTI runtime type idenetification
+{
+	CreditAccount c1 =(CreditAcount)c;
+	c1.get
+ 	insert itno credit able 5 columns id,name, blance, limit, ...
+
+
+}
+
+
+
+
+Person p =new Police();
+the object I have is of Police
+but reference i have is of person..
+
+
+
+
+once we come to ORM,w e will see this thigns becomes easy..
+
+
+
+
+  Optional<Account>  findById(int accountno)
+who will caxll findById, service method.
+
+in the sreivce method again instanceof...
+
+
+in real life, we will not create a database connection some libary will create it and give it to us.
+opening of connectxion and closing of connection will taken by care by the library our job
+is once we get the connection what to do with.. to indicate that let us create a separate config
+and keep database configuration..
+
+app
+service
+repo
+ connection will got by calling a function from the config class.
+model
+config. 
+
+
+
+
+
+
+
+we have repo class, in that there is a function called f1.
+there is high probability f1 function of repo class is called by a function f2 of the service 
+package.
+in f1 if we throw an exception. and not catch it.. it will come to f2 of service function.
+f2 function can take a call how to communicat ea message meaningfull to the app layer
+or throw the exception, let the app layer and decide what it wants to tell the user.
+
+
+
+
+
+
+using the class 
+1. call a static function
+2. you create an object and call non static function
+if you do 1 or 2.. whichever first time static block will get executed..
+
+
+how will java program talk with the database ( not any particular ddatabase database product
+given by the vendor.)
+
+how does java talk to postgres.. jdbc standard.. database vendor must provide a Driver..
+
+
+please ensure all of you are ok with the architecture ,not being ok
+is  red flag.
+be ok with functional programming and go thru the theory ,
+that is another red flag.
+html and CSS we can pick up later on.. little by little.
+
+jdbc assignment sequence completion
+menu driven customer assignment  
+account, debitaccount and creditaccount assignment.. (this may take some time...)
+must be able to code a program if given a scenario by looking at the syntax of existing code..
+step by step... 
+
+
 
 
 
