@@ -101,29 +101,39 @@ come to earth..
 2. learn display , position property. (1/5)
 
 
-what are the css assingments... you have to do..
+what are the CSS assignments... you have to do..
 
 
 Repo has been updated.  whattotoday.txt contains today tasks.
 
 what to do today
 
-1. understand some css.. 
+1. understand some CSS..  
 1.1 look at the sample programs in 
 generatedsummaries\a15htmlcss\sampleprograms
 1.2 look at the cssguide.md present in
  generatedsummaries\a15htmlcss\cssguide
 1.3 look at the program in .
 summaryimages\generatedsummaries\a15htmlcss\cssguide\poc
-
-1.4 go week4 confluence download the javascript hands on.
-it has got a html , css and try to complete it.
+1.4 go week4 confluence download the JavaScript hands on.
+it has got a html , CSS and try to complete it.
 
 
 2. most important..
-2.1 focus on architecutre jdbc assingment.
+2.1 focus on architecture jdbc assignment.
 2.2 functional programming in java....
 this has been mentioned in yesterday Aug 6th ...
+
+3. you must know how to navigate in the code.
+tell data type of the variable.
+tell scope of variable.
+navigate from  function calling to function definition.
+navigate from function definition to  function calling.
+must be able to explain complete function flow in code... important and meaning of knowing architecture..
+
+
+
+
 
 
 
