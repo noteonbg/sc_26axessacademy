@@ -103,4 +103,69 @@ Relative to: The Browser Window (Viewport / <html>) — ignoring all parent cont
 What happens: It is removed from flow and pinned to top: 10px and right: 10px of the visible screen. 
 Even if you scroll down a 5,000-pixel page, <h3> stays frozen in that exact spot on your screen like a sticky notification.
 
+
+Normal Flow.
+
+If **no positioning** were used on any of the tags (meaning all tags default to `position: static`), 
+here is exactly how the browser would render them in normal document flow:
+
+---
+
+### Key Rules of Normal Flow
+
+1. **Block-Level Stacking:** Heading tags (`<h1>`, `<h2>`, `<h3>`) and `<div>` elements are all **block-level elements**. They automatically take up 100% of the available width of their parent container and stack vertically from top to bottom.
+2. **Margin Collapsing:** Top and bottom margins of adjacent vertical elements collapse together into a single margin equal to the larger of the two.
+3. **In-Flow Layout:** Every element occupies physical space on the page. Subsequent elements are pushed down below the previous element's bottom edge.
+
+---
+
+### Step-by-Step Layout Without Positioning
+
+#### 1. `<div class="parent-card">`
+
+* Renders centered on the screen with a width of `400px` and height of `300px`.
+* Acts as the container box holding any children placed inside its HTML tags.
+
+#### 2. `<h1> Heading (Relative)`
+
+* Sits at the **very top-left corner** of `.parent-card` (accounting for the 10px inner padding of `.parent-card`).
+* It takes up the full width inside `.parent-card` and forces the next element (`<h2>`) to sit directly below it.
+* Without `top: 15px` or `left: 30px`, it does not shift; it stays cleanly aligned to the top-left edge.
+
+#### 3. `<h2> Heading (Absolute)`
+
+* Sits **directly below `<h1>**` in normal vertical order.
+* Because it is no longer `absolute`, it is **NOT** pulled out of flow. It stays inside the standard reading flow near the top of `.parent-card`, rather than floating down to the bottom-right corner.
+
+#### 4. `<h3> Heading (Fixed Banner)`
+
+* Sits **outside and below `<div class="parent-card">**`, at the bottom of the HTML file.
+* Because it is no longer `fixed`, it loses its sticky behavior on the browser screen. It renders below `.parent-card` as a normal page heading and **scrolls up and down with the rest of the page**.
+
+---
+
+### Comparison Summary
+
+```
+WITH POSITIONING:                       WITHOUT POSITIONING (Normal Flow):
++-----------------------------------+   +-----------------------------------+
+| [h3 Fixed Banner at Top Window]   |   | .parent-card                      |
+|                                   |   |  <h1> Heading 1                   |
+| .parent-card                      |   |  <h2> Heading 2                   |
+|  [h1 shifted down/right]          |   |  (empty space down to 300px)      |
+|                                   |   +-----------------------------------+
+|                   [h2 Abs Bottom] |   | <h3> Heading 3 (below card)       |
++-----------------------------------+   +-----------------------------------+
+
+The 3 Rules of position: static
+Ignores Offset Properties: top, bottom, left, right, and z-index have zero effect.
+ Setting top: 50px on a static element does nothing.
+
+Preserves Space: Every static element occupies its own space on the page and pushes subsequent elements down
+ or to the side.
+
+Cannot Act as an Anchor: A static parent element cannot serve as a reference point for a
+ child element that uses position: absolute.
+
+
 -->
