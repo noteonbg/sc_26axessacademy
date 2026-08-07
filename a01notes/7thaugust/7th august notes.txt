@@ -1,7 +1,151 @@
+2.00Pm to 3.30 PM... some schedule outside the classroom...
+
+
+what we plan to cover today
 1. CSS. 
 2. different skill... understand overall perspective, lots of syntax properties.. positioning and layout is
-good place to start understanding..
+good place to start understanding.. ( spend some time another 10 days ok.. provided every day..
+position, display... flex, grid...) 1/5 you will get an idea how layout in css..
 3. complete your jdbc.. and functional programming today.
 4. ensure your database assignments are complete and well named if you taken screen shots.. 
 4. we will take stock of things from 4.15 PM where assignments are ...
 5. coming week evaluation will be ... java jdbc..., html
+
+copilot... output is coming ok fine... can you explain function call sequence.. if not.. red mode..
+
+
+for a scenario X can you implement the architecture.  --generalize your architecture skills.
+
+you write ghcp writes it.. who cares..
+
+1. architecture must be there.. multiple files..
+2. functions will be there each of file they have to call 
+3. this clarify must be there with you.. in the ide, learning how to navigate the code is great skills
+all of us should be 2/5
+
+
+
+ docker... Linux no need to change anything
+git 
+databse assingments.. screenschot1
+html assingments..
+
+it is a good skill for everybody to know how to navigate thru the code using the editor...
+
+
+
+
+
+
+
+
+
+
+expand CSS   
+Cascading STyle Sheets...
+what is used for styling markup langauges.. like html..
+
+what is most important thing in css.
+1. figuring how layout of the page looks like.. hard thing and important thing... we will use ghcp... but
+knowing basics helps.. layouts (1/5 ) great going..
+
+
+what is syntax format in css.
+
+1. find what in html  ( context selector)
+2. what kind of styling you want..  ( css properties pacific ocean..)
+
+find what in html what kind of syntaxes do you get.
+1. match an tag and do this kind of styling. ( browser will apply automatically style)
+2. match an id and do this kind of styling. ( browser will apply automatically style)
+3. class  and do this kind of styling..  ( this is very important thing to know because here
+we can control whether some styling should be applied or not applied )
+
+where you can write css.
+1. at the tag level <h1 style="color:red"> hello </h1>  ( some rare times )
+2. at the head level  <head> <style > h1 { color:red }  <style>  ( some rare times )
+3. separate file  we write a file css file.. put css syntax in it and link it. ( have bias towards this)
+
+
+
+in css in terms of syntax you shold learn what a class is..
+
+
+
+
+
+
+once you see any code. we must see line numbers if we cannot it is a sin..
+
+
+
+
+
+if you styleing particular to a tag.. inline.
+if you want styling that can be used in a particular page... internal styling head..
+if you want styllng that can be applied across multiple pages.. external styling..
+
+open official documentation and read it, irrespective of whether we understand or dont understand..
+
+
+get some syntax practice and then we will revisit why,, it is important from the project point of view..
+if in your team people waste time on css every day pathetic.. in first two days of project
+css layout should be fixed none of your team members should touch it again.. that requires
+lot of planning...be disorganized is free..
+
+
+
+in css  learn layouts ( ghost statement)
+come to earth..
+1. css selector.
+2. learn display , position property. (1/5)
+
+
+what are the css assingments... you have to do..
+
+
+Repo has been updated.  whattotoday.txt contains today tasks.
+
+what to do today
+
+1. understand some css.. 
+1.1 look at the sample programs in 
+generatedsummaries\a15htmlcss\sampleprograms
+1.2 look at the cssguide.md present in
+ generatedsummaries\a15htmlcss\cssguide
+1.3 look at the program in .
+summaryimages\generatedsummaries\a15htmlcss\cssguide\poc
+
+1.4 go week4 confluence download the javascript hands on.
+it has got a html , css and try to complete it.
+
+
+2. most important..
+2.1 focus on architecutre jdbc assingment.
+2.2 functional programming in java....
+this has been mentioned in yesterday Aug 6th ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
