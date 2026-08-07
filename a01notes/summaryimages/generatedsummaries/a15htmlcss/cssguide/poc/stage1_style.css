@@ -1,0 +1,43 @@
+/* ==========================================================================
+   STAGE 1 CSS: GLOBAL RESET & BASE BODY STYLES
+   ========================================================================== */
+
+/* 
+ * STEP 1.1: GLOBAL RESET
+ * Why: Browsers apply default margins/padding and content-box width rules.
+ * What it does: Sets all padding/margins to 0 and forces box-sizing to border-box.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+ * STEP 1.2: BODY TYPOGRAPHY & BACKGROUND
+ * Why: Establishes global font family and default light grey page background.
+ */
+body {
+    font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* 
+ * STEP 1.3: SKELETON CONTAINERS (TEMPORARY VISUAL STYLING FOR STAGE 1)
+ */
+.navbar {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px dashed #0055a5;
+    text-align: center;
+}
+
+.hero-section {
+    padding: 40px;
+    background-color: #e2e8f0;
+    margin: 20px;
+    text-align: center;
+    border: 2px dashed #00a859;
+}

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   STAGE 4 CSS: 2D CSS GRID SYSTEM (repeat(5, 1fr))
+   ========================================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background-color: #f4f6f8; color: #333; }
+.navbar { position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; height: 65px; padding: 0 25px; background: #fff; border-bottom: 1px solid #e2e8f0; }
+.nav-left, .nav-right { display: flex; align-items: center; gap: 20px; }
+.country { color: #00a859; font-weight: 600; }
+.nav-menu ul { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { text-decoration: none; color: #2d3748; }
+.btn-login { background-color: #00a859; color: #fff; padding: 8px 22px; border-radius: 3px; font-weight: 700; text-decoration: none; }
+.hero-section { background: linear-gradient(rgba(15, 59, 125, 0.45), rgba(15, 59, 125, 0.45)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat; padding: 50px 30px 80px 30px; min-height: 85vh; }
+.hero-title { color: #ffffff; text-align: center; font-size: 2.75rem; font-weight: 300; margin-bottom: 45px; }
+
+/* 
+ * STEP 4.1: 5-COLUMN CSS GRID CONTAINER
+ * Why: Requirements call for 5 cards side-by-side.
+ * What it does: Sets display: grid, grid-template-columns: repeat(5, 1fr), and 18px gap.
+ */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    max-width: 1400px;
+    margin: 0 auto;             /* Centers grid horizontally */
+}
+
+/* Temporary placeholder styling for Stage 4 */
+.grid-card-placeholder {
+    background-color: #ffffff;
+    padding: 60px 10px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px dashed #0055a5;
+    font-weight: bold;
+    color: #0055a5;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* PARENT CONTAINER */
+    .container {
+      position: relative; /* Serves as the positioning anchor for .absolute-box */
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 2px dashed #333;
+      margin: 50px auto;
+    }
+
+    .box {
+      width: 100px;
+      height: 40px;
+      color: white;
+      font-family: sans-serif;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    /* 1. RELATIVE POSITIONING */
+    .relative-box {
+      position: relative;
+      
+      /* Relative to: Its OWN normal position inside <div class="container"> */
+      top: 10px;  /* Moves 10px DOWN from where <div class="relative-box"> would normally sit */
+      left: 20px; /* Moves 20px RIGHT from where <div class="relative-box"> would normally sit */
+      
+      background-color: #3b82f6; /* Blue */
+    }
+
+    /* 2. ABSOLUTE POSITIONING */
+    .absolute-box {
+      position: absolute;
+      
+      /* Relative to: <div class="container"> because it is the nearest non-static parent */
+      bottom: 10px; /* Placed 10px ABOVE the bottom edge of <div class="container"> */
+      right: 10px;  /* Placed 10px INSIDE the right edge of <div class="container"> */
+      
+      background-color: #ef4444; /* Red */
+    }
+
+    /* 3. FIXED POSITIONING */
+    .fixed-box {
+      position: fixed;
+      
+      /* Relative to: The browser viewport (<html> / screen window), completely ignoring parent tags */
+      top: 0;  /* Anchored directly to the very TOP edge of the browser window */
+      left: 0; /* Anchored directly to the very LEFT edge of the browser window */
+      
+      width: 100%;
+      background-color: #10b981; /* Green */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Positioned relative to: The Browser Viewport (Screen Window) -->
+  <div class="box fixed-box">Fixed Navigation Bar</div>
+
+  <!-- Parent Container: Has position: relative to act as anchor -->
+  <div class="container">
+
+    <!-- Positioned relative to: ITS OWN ORIGINAL SPOT in normal flow -->
+    <div class="box relative-box">Relative</div>
+
+    <!-- Positioned relative to: <div class="container"> (nearest non-static parent) -->
+    <div class="box absolute-box">Absolute</div>
+
+  </div>
+
+</body>
+</html>
+
+<!--
+
+position: relative $\rightarrow$ Relative to ITSELF (the exact spot the <div class="relative-box"> 
+    tag would naturally occupy).position: absolute 
+    $\rightarrow$ Relative to <div class="container"> 
+        (the nearest ancestor tag that has position defined). 
+        If .container didn't have position: relative, it would fall back to positioning relative
+         to <html>.position: fixed $\rightarrow$ Relative to the VIEWPORT 
+            (the browser window screen itself, ignoring all HTML parent tags)
+-->

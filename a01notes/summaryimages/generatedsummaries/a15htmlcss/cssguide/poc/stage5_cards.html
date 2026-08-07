@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 5 - Card Components & Image Fitting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stage5_style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="location-picker">You're in <span class="country">India ▼</span></div>
+            <nav class="nav-menu"><ul><li><a href="#">Our Products</a></li><li><a href="#">Promotions</a></li></ul></nav>
+        </div>
+        <div class="nav-right"><a href="#" class="btn-login">LOGIN</a></div>
+    </header>
+
+    <!-- 
+      STAGE 5: COMPLETE CARD CONTENT COMPONENTS
+      Replaced placeholders with 5 <article class="card"> items containing:
+      1. <div class="card-media"><img ...></div> -> Image header with object-fit: cover
+      2. <div class="card-body"><h3>...</h3><p>...</p></div> -> Text body
+    -->
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-title">Welcome to Standard Chartered</h1>
+
+            <div class="card-grid">
+                
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=600&q=80" alt="Wildlife Trade">
+                    </div>
+                    <div class="card-body">
+                        <h3>Combating the illegal wildlife trade</h3>
+                        <p>See how we work with partners to fight money laundering and the illegal wildlife trade</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="NRI Banking">
+                    </div>
+                    <div class="card-body">
+                        <h3>Invest like you never left India</h3>
+                        <p>Invest on-the-go with NRI Banking.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Forex Card">
+                    </div>
+                    <div class="card-body">
+                        <h3>Explore the world like a local #PayLikeALocal</h3>
+                        <p>Load up to 20 currencies on the Multi-Currency Forex card. Apply now</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1556742049-0a67daf64f42?auto=format&fit=crop&w=600&q=80" alt="SC Edge App">
+                    </div>
+                    <div class="card-body">
+                        <h3>SC Edge app – Exclusive for salary accounts</h3>
+                        <p>One app for travel, dining, recharges, bill pay &amp; managing expenses. Know more</p>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=600&q=80" alt="Supermarket Cashback">
+                    </div>
+                    <div class="card-body">
+                        <h3>Get 5% cashback at supermarket</h3>
+                        <p>With Manhattan Platinum credit card</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

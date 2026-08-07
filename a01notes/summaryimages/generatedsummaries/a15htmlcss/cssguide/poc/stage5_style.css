@@ -1,0 +1,69 @@
+/* ==========================================================================
+   STAGE 5 CSS: CARD COMPONENTS, IMAGE CROPPING & SHADOWS
+   ========================================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background-color: #f4f6f8; color: #333; }
+.navbar { position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; height: 65px; padding: 0 25px; background: #fff; border-bottom: 1px solid #e2e8f0; }
+.nav-left, .nav-right { display: flex; align-items: center; gap: 20px; }
+.country { color: #00a859; font-weight: 600; }
+.nav-menu ul { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { text-decoration: none; color: #2d3748; }
+.btn-login { background-color: #00a859; color: #fff; padding: 8px 22px; border-radius: 3px; font-weight: 700; text-decoration: none; }
+.hero-section { background: linear-gradient(rgba(15, 59, 125, 0.45), rgba(15, 59, 125, 0.45)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat; padding: 50px 30px 80px 30px; min-height: 85vh; }
+.hero-title { color: #ffffff; text-align: center; font-size: 2.75rem; font-weight: 300; margin-bottom: 45px; }
+.card-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; max-width: 1400px; margin: 0 auto; }
+
+/* 
+ * STEP 5.1: CARD CONTAINER & SHADOW
+ * Why: Creates white cards with soft depth shadows.
+ * What it does: Sets background #ffffff, border-radius 4px, overflow: hidden, and box-shadow.
+ */
+.card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;           /* Clips top image to rounded card corners */
+    display: flex;
+    flex-direction: column;     /* Stacks image vertically above text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* 
+ * STEP 5.2: CARD IMAGE CONTAINER & OBJECT-FIT: COVER
+ * Why: Photo dimensions vary; without object-fit, photos get squished/stretched.
+ * What it does: Forces fixed height (195px) and crops photos cleanly without distortion.
+ */
+.card-media {
+    width: 100%;
+    height: 195px;
+    overflow: hidden;
+    background-color: #edf2f7;
+}
+
+.card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* Preserves image aspect ratio */
+}
+
+/* STEP 5.3: CARD TEXT BODY */
+.card-body {
+    padding: 22px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a202c;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.85rem;
+    color: #718096;
+    line-height: 1.5;
+}

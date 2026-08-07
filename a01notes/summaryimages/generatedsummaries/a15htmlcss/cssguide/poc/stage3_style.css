@@ -1,0 +1,42 @@
+/* ==========================================================================
+   STAGE 3 CSS: HERO BANNER DUAL BACKGROUND & OVERLAY
+   ========================================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background-color: #f4f6f8; color: #333; line-height: 1.5; }
+
+.navbar {
+    position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between;
+    align-items: center; height: 65px; padding: 0 25px; background-color: #fff;
+    border-bottom: 1px solid #e2e8f0;
+}
+.nav-left, .nav-right { display: flex; align-items: center; gap: 20px; }
+.country { color: #00a859; font-weight: 600; }
+.nav-menu ul { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { text-decoration: none; color: #2d3748; }
+.btn-login { background-color: #00a859; color: #fff; padding: 8px 22px; border-radius: 3px; font-weight: 700; text-decoration: none; }
+.logo-text { font-size: 0.85rem; font-weight: 700; color: #0055a5; line-height: 1.1; text-align: right; }
+
+/* 
+ * STEP 3.1: HERO SECTION DUAL BACKGROUND OVERLAY
+ * Why: Raw background images can make white text unreadable.
+ * What it does: Blends a 45% dark SC Blue overlay gradient over the hero image.
+ */
+.hero-section {
+    background: linear-gradient(rgba(15, 59, 125, 0.45), rgba(15, 59, 125, 0.45)), 
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+    padding: 50px 30px 80px 30px;
+    min-height: 85vh;
+}
+
+/* STEP 3.2: HERO HEADLINE */
+.hero-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 300;           /* Thin elegant typography */
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,112 @@
+/* ==========================================================================
+   STAGE 2 CSS: STICKY TOP NAVBAR FLEXBOX LAYOUT
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* 
+ * STEP 2.1: STICKY HEADER CONTAINER
+ * Why: Locks header to top when scrolling down.
+ * What it does: Sets position: sticky, top: 0, and flexbox horizontal spacing.
+ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;              /* Keeps header above scrolling content */
+    display: flex;
+    justify-content: space-between; /* Pushes left links & right logo apart */
+    align-items: center;        /* Centers elements vertically */
+    height: 65px;
+    padding: 0 25px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* STEP 2.2: LEFT NAV CONTROLS */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #e2e8f0;
+    padding-right: 15px;
+}
+
+.location-picker {
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.location-picker .country {
+    color: #00a859;             /* SC Brand Green */
+    font-weight: 600;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2d3748;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* STEP 2.3: RIGHT NAV CONTROLS */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login {
+    background-color: #00a859;  /* Corporate Green */
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 3px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0055a5;             /* Corporate Blue */
+    line-height: 1.1;
+    text-align: right;
+}
