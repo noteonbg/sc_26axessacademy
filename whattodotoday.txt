@@ -53,6 +53,14 @@ it has got a html , css and try to complete it.
 this has been mentioned in yesterday Aug 6th ...
 
 
+3. you must know how to navigate in the code.
+tell data type of the variable.
+tell scope of variable.
+navigate from  function calling to function definition.
+navigate from function definition to  function calling.
+must be able to explain complete function flow in code... important and meaning of knowing architecture..
+
+
 --------------------------------------
 
 
