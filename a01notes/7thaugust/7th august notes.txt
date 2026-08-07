@@ -1,0 +1,7 @@
+1. CSS. 
+2. different skill... understand overall perspective, lots of syntax properties.. positioning and layout is
+good place to start understanding..
+3. complete your jdbc.. and functional programming today.
+4. ensure your database assignments are complete and well named if you taken screen shots.. 
+4. we will take stock of things from 4.15 PM where assignments are ...
+5. coming week evaluation will be ... java jdbc..., html

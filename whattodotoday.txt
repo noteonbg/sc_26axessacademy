@@ -31,6 +31,30 @@ We will have the same approach like last week by review one by one. We will also
 
 ---------------------------
 
+Aug 7th 2026
+
+--------------------------------------
+
+1. understand some css.. 
+1.1 look at the sample programs in 
+generatedsummaries\a15htmlcss\sampleprograms
+1.2 look at the cssguide.md present in
+ generatedsummaries\a15htmlcss\cssguide
+1.3 look at the program in .
+summaryimages\generatedsummaries\a15htmlcss\cssguide\poc
+
+1.4 go week4 confluence download the javascript hands on.
+it has got a html , css and try to complete it.
+
+
+2. most important..
+2.1 focus on architecutre jdbc assingment.
+2.2 functional programming in java....
+this has been mentioned in yesterday Aug 6th ...
+
+
+--------------------------------------
+
 
 Aug 6th 2026.
 
