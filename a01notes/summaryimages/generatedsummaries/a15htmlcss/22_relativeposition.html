@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* PARENT CONTAINER */
+    .parent-card {
+      position: relative; /* Serves as the positioning reference for absolute children */
+      width: 400px;
+      height: 300px;
+      background-color: #f8fafc;
+      border: 2px solid #cbd5e1;
+      margin: 60px auto;
+      padding: 10px;
+    }
+
+    /* 1. H1 - RELATIVE POSITIONING */
+    h1 {
+      position: relative;
+      
+      /* RELATIVE TO: Its OWN original spot in normal document flow */
+      top: 15px;   /* Shifted 15px DOWN from where <h1> would naturally be */
+      left: 30px;  /* Shifted 30px RIGHT from where <h1> would naturally be */
+      
+      font-size: 24px;
+      color: #2563eb; /* Blue */
+      margin: 0;
+    }
+
+    /* 2. H2 - ABSOLUTE POSITIONING */
+    h2 {
+      position: absolute;
+      
+      /* RELATIVE TO: The <div class="parent-card"> tag */
+      bottom: 20px; /* Locked 20px ABOVE the bottom border of .parent-card */
+      right: 20px;  /* Locked 20px INSIDE the right border of .parent-card */
+      
+      font-size: 20px;
+      color: #dc2626; /* Red */
+      margin: 0;
+    }
+
+    /* 3. H3 - FIXED POSITIONING */
+    h3 {
+      position: fixed;
+      
+      /* RELATIVE TO: The Browser Window (Viewport / <html> tag) */
+      top: 10px;   /* Locked 10px from the TOP of the entire browser screen */
+      right: 10px; /* Locked 10px from the RIGHT of the entire browser screen */
+      
+      font-size: 16px;
+      background-color: #16a34a; /* Green */
+      color: white;
+      padding: 8px 12px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Parent wrapper with position: relative -->
+  <div class="parent-card">
+
+    <!-- Point 1: Relative Heading -->
+    <h1>h1 Heading (Relative)</h1>
+
+    <!-- Point 2: Absolute Heading -->
+    <h2>h2 Heading (Absolute)</h2>
+
+  </div>
+
+  <!-- Point 3: Fixed Heading -->
+  <h3>h3 Heading (Fixed Banner)</h3>
+
+</body>
+</html>
+
+
+<!--
+
+Step-by-Step Breakdown
+Point 1: <h1> with position: relative
+
+Relative to: Itself (<h1>) — specifically, the exact default spot where it
+     would naturally render inside .parent-card.
+
+What happens: The top: 15px and left: 30px rules push <h1> down and right away 
+    from its starting position. Crucially, it still reserves its original space in
+     the document flow, meaning any element following it respects that blank space.
+
+Point 2: <h2> with position: absolute
+
+Relative to: <div class="parent-card"> — the nearest parent element with position defined (relative).
+
+What happens: It is completely pulled out of normal flow (no space is reserved for it).
+ Setting bottom: 20px and right: 20px pins it directly to the bottom-right corner of .parent-card.
+  If .parent-card did not have position: relative, <h2> would look further up the tree until it hit
+     <body>/<html>.
+
+Point 3: <h3> with position: fixed
+Relative to: The Browser Window (Viewport / <html>) — ignoring all parent containers completely,
+     including .parent-card.
+
+What happens: It is removed from flow and pinned to top: 10px and right: 10px of the visible screen. 
+Even if you scroll down a 5,000-pixel page, <h3> stays frozen in that exact spot on your screen like a sticky notification.
+
+-->
