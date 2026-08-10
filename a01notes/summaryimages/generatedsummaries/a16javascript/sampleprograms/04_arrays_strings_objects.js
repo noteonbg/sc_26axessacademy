@@ -64,7 +64,7 @@ console.log("Sorted Rates (Numeric):", rates);
 console.log("\n--- Functional Array Methods (React Ready) ---");
 
 const bankLedger = [
-    { id: 1, type: "DEPOSIT", amount: 1500, status: "COMPLETED" },
+    { id: 1, type: "DEPOSIT", amount: 1500, status: "PENDING" },
     { id: 2, type: "WITHDRAWAL", amount: 200, status: "COMPLETED" },
     { id: 3, type: "WITHDRAWAL", amount: 450, status: "PENDING" },
     { id: 4, type: "DEPOSIT", amount: 3000, status: "COMPLETED" }
@@ -76,9 +76,17 @@ bankLedger.forEach((tx, idx) => {
     console.log(`  [Tx #${idx + 1}] ID: ${tx.id} | ${tx.type} | Amount: $${tx.amount} | ${tx.status}`);
 });
 
+
+
+
+
+
 // find() - Returns first matching element
 const pendingTx = bankLedger.find(tx => tx.status === "PENDING");
 console.log("Found Pending Tx:", pendingTx);
+
+
+
 
 // filter() - Creates a new array passing condition (Crucial for React state filtering)
 const completedDeposits = bankLedger.filter(tx => tx.type === "DEPOSIT" && tx.status === "COMPLETED");

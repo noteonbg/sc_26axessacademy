@@ -29,6 +29,27 @@ We will have the same approach like last week by review one by one. We will also
 3. Push your completed assignments and codes to the Azure Repos
 
 
+-------------------------------
+
+Aug 10th 2026
+
+1. complete the javascript assingments in page 22 and 31.
+2. go thru the pdf and see are you ok with the concepts.
+3. go thru the functional programming concepts in java.. and javascript
+4. look at generatedsummaries\a16javascript\sampleprograms and go thru the programs
+from 01... to 04....js
+5. make them work in your system, remember there is no html you should create html and link them up.
+6. ensure your week1, week2 and week3 assingments are ready in order, to review it.
+7. keep the html and css ready for page 56 to 61 of javascript class pdf and also look at the hands on
+javascript.pdf and keep the html and css ready for the same also.
+
+
+
+
+
+
+
+
 ---------------------------
 
 Aug 7th 2026
