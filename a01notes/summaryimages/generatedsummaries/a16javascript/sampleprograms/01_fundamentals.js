@@ -23,7 +23,14 @@
 
 'use strict';
 
+
+
 console.log("=== Module 1: JavaScript Fundamentals ===");
+
+
+
+let i =3;
+console.log(`Initial value of i: ${i}'`);
 
 // 1. Dynamic & Loose Typing Demonstration
 // In JavaScript, variables can hold values of any data type without explicit declaration.

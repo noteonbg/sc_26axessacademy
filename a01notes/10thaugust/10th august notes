@@ -23,6 +23,442 @@ Todays adventure.
 5. let us review, the week1, week2, and week3 assingmetns where are we... for each person.
 
 
+output does is not the objective...
+1. purpose of each file in your project.
+2. function call hierarchy..
+
+
+
+
+
+javascript
+hopefully you will do the rituals..
+1. copy the pdf, copy the hands on.. have a folder called week 4..
+
+
+javascript..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+1. respect it as a new language learn from the basics..
+
+
+are we 100% conscious while writing the code. or are we in comma state..
+are we 100% conscious while writing the code. or are we in comma state..
+are we 100% conscious while writing the code. or are we in comma state..
+are we 100% conscious while writing the code. or are we in comma state..
+are we 100% conscious while writing the code. or are we in comma state..
+are we 100% conscious while writing the code. or are we in comma state..(English speaking
+professor talking about logic.. rather than what is happening in the code)
+
+when you create a variable, do you know what it is scope and data type
+when you are using variable do you know its data type...
+because language syntax
+
+
+Intent is wrong funeral as already began nothing to fight with it.. then comes
+the process.
+
+1. everybody in the team can write code, in the architecture way..
+jdbc..
+
+
+
+1. give empno, give me the emp details.
+2. update the  emp details.. can you update
+can you write this in form of an architecture code, in your existing project.
+
+HTML,CSS and javascript we need a plan.. 
+
+1. details
+2. order of doing things...
+all this matters.
+
+
+
+function f1(x)
+{
+what is x... javascript will not tell you should know because you are person
+who is calling the function or defining the function.
+
+}
+
+
+
+
+
+
+
+
+
+
+I know python or I know java so I will manage javascript will kill us..
+
+MDN javascript..
+
+
+what is javascript used for.
+javascript can be used to build anything..
+anything mean
+
+1. presentation  ie app
+2. service 
+3. repository
+4. model..
+
+
+what are we using form
+we are planning to use javascript only for presentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+we are going to see lot of function assignment...
+ie functional programming... 
+
+function assignment != calling the function.
+
+what you do in presentation..
+
+This is what every team member needs to become 5/5 or else presentation
+is in funeral mode..
+
+1. access sections of the html page under some circumstance.
+2. do some logic , make a request and get the response.
+3. using the data got in response, update the UI or navigate to another page..
+
+we will make a checklist for this.. so that we can use less intelligence to do the job.
+
+
+same story . Os is there.. javascript runtime is there, you wrwite javascript
+
+javascript code which we have written will talk to javascript runtime
+and it will talk to os and get the job done..
+
+javasript runtime... nodejs..
+
+to run javascript we need a browser compulsorily no...
+we can javascript inside the browsre yes...
+I have html, css and javascript, browser is needed yes..
+
+
+loosely typed and also dynamic typing
+let x =3;
+x="hello"
+x=false;
+does javascript has got data types answer is yes, it tells hey you dont needto tell
+me what the data type is while you create a variable I will dynamically judge it..
+
+
+
+
+
+
+
+let x;
+what is x.. undefined..
+in javascript you got something called undefined..
+
+
+
+
+
+where i can write JavaScript
+
+
+1. you can write JavaScript in an independent file and give to JavaScript runtime
+to run it..
+2. I want to run JavaScript within browser only .. ok then usual way
+is link JavaScript to html and open the html, JavaScript runtime present
+in the browser will execute the JavaScript and show the results for you.
+
+
+very common irritating problem in classrooms, not know that assignment
+does not mean   = but passing inptus to function is also assignment..
+
+
+those who dont know functional programming enjoy hell in javascript
+and talk lot of "English"
+
+quick summary. what I should do.
+1. boards follow it with good intent. let it reflect what is real.
+2. you are commiting in azure repos daily..
+3. you know how to write jdbc code in java in an architecture for any scenario
+called X
+4. you know html, css little bit but you know theory of web..
+http... request... and how will get you response ... mind map..
+html page, what will change, what will not change..
+css layout..
+5. in javascript... respect it as a new language, and be conscious.
+
+
+whenever you see lamda being used in java.. it was suresh was doing it
+1. did you realilze it was done during calling of a Ramesh function
+2. suresh defined a function and passed it as input argument to Ramesh function.
+3. whatever was written in lamda was called by Ramesh..
+
+
+when I do function assignment. ok I define a function(X), I call some body else function
+and pass my function as input to somebody else function (Y).
+
+function y(idontcareforname)
+{
+	idontcareforname();
+}
+
+---
+function x()
+{
+}
+
+
+function fate()
+{
+y(x)
+}
+
+
+fate();
+
+
+
+
+
+
+var is veryold concept in javascript you dont use it in your project. in your assngment.
+
+
+let x=3;
+x=4;
+
+const y =5;
+
+
+
+
+let x=3;
+let z = typeof x; //Number, Z data type is a string how did i know i opened
+documentation just now..
+console.log(typeof z); //String
+
+
+we are not talking about content of the variable, we are asking about data type
+of the variable. welcome to consciousness.
+
+in javascript while creating the variable we are not telling its data type
+so we have to be conscious...
+
+
+let x=3;// now x is a number
+x="hello"
+//now x has a string
+x=false;
+//now x is a Boolean
+x=[];
+//now x is an array
+x={};
+//now x is an object.
+
+REspect javascript as a new language..
+
+from today onwards welcome to visiting official websites for anything even if we dont
+understand and then go to the freaky websites..
+
+
+welcome to folder structure..
+
+
+javascript
+	 assignment
+	    html content	
+            js
+
+
+
+everybody must justify your foler structure why it is good...
+easy thing but are we doing it..
+
+
+two things observe.
+
+1. first deal with negative scnearios
+2. lastly deal with poisitive scenarios
+that how banks should work
+
+when you see function definition.
+
+1. think what is intput.. in terms of data type
+2. what is its return type...
+return Boolean, int , string.. good for kids world and dead in project.
+let to return objects... good for project... 
+
+
+
+1. javascript syntax .. get comfortable with it.. take today and tomorrow to do that.
+2. be conscious and now the lagnague is new so dont assume..
+
+welcome to world of objects... 
+
+java kid will cry when I see object I need a class, javascript does not believe
+it , it tells if you want an object you can have it without any class.
+No I want to create a class ok that also is possible.
+
+
+let x =3; // number..
+let x='hello'
+let x ={ length:3, breadth:4 }
+x.length// 3
+x.breadth//4
+
+respect javascript for what it is..
+
+
+you cannot read what is date type of the variable by looking at the variablename.
+
+
+function f1(x)
+{
+	 let y = x.toUpperCase();
+
+
+}
+what is data type of X. you should I dont know.. allow me to use typeof inside f1
+or show  me some operations you have done inside f1. or show me the calling place
+only than I can tell you what is x.
+welcome to javascript.
+
+
+let x ="hello"
+x=x.toUppercase();
+console.log(x);
+
+why we should know the meaning of primitive and non primitive in java or javscript.
+because how assignment....  happens.
+
+int x =3;
+int y=x;
+x=44;
+print the value of y
+
+
+int x[]=new int[4];
+int y[]=x;
+x[0]=44;
+print y[0]//it will be 44.
+array it is not primitive.
+
+x[] and y[] are pointing to same array.
+
+
+Customer o =new Customer();
+Customer o1 =o;
+o.setCustomerName("theory is important");
+print o1.getustomerName();
+
+
+
+let x =3;//Number primitive..
+let y =x;
+x=44;
+console.log(y);
+
+let x={ color:"red" }
+let y =x;
+y.color="blue";
+console.log(x.color);
+
+
+let i=4
+i =7;
+4 never ot changed to 7, it is anew value for i...
+primitives are immutable
+
+declaration for a function means election promise one day I will be defining it..
+
+it is very common thing to define a function and assign it... 
+
+
+let x = define and assign ( for this function we wont give a name)
+and somebody else will call it.. welcome to functional programming.
+
+let x =function() { return 3; }
+
+
+
+
+
+variables outside all functions = global variable ( sin sin sin.. never do it..
+dinosaur great grand mother never did we also should not)
+
+
+web developer tools in the browser this can be used by end customer also.
+and if we use global variables, end customer can give us unlimited entertainment..
+so avoid global variables..
+
+
+do the assignment of page 22. but we are project people so first is architecture
+then is code. how to do this assingments..
+
+
+for each assignment write two functions
+1. function will return the logic data. -- f1
+2. the other function will print the entire data in console.log. f2
+we keep logic and ui separate.
+inside f2 call f1..
+in your html page script tag call f2.
+
+
+do the assignment of page 22.
+function logic(takeinput)
+{
+return some data based on the logic
+
+}
+
+function display()
+{
+let x = logic(giveinput)
+console.log(x);
+
+}
+
+display();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
