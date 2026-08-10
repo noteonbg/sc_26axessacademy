@@ -447,8 +447,220 @@ console.log(x);
 
 display();
 
+------------------------------------------------------
+
+1. primary key, foreigne key... gets violated during dml, select.
 
 
+dept deptid is primary key
+emp deptid is foreign key
+
+
+removing from the dept table.. you are removing based on primary key..
+come to the emp table remove all emp records which are having that deptid as foreign key
+and then remove the dept table.
+
+
+
+itemno, price, category... 
+
+
+for me to find out how many items are avialbel greater than than price.. 
+
+where   -- to filter individual rows..
+having  -- filtering criteria on aggregated column..
+
+
+JDBC ... 
+
+1. connection.
+2. start executing sql,... PreparedStatement or its cousins..
+
+
+when you name like "%geek%"
+where should geek
+
+alter table and add a column, if i do rollback..
+DDL commands undoing is not possible. so rollback.. 
+
+
+<input type="textbox" required="true" value="ok123"
+
+
+head region.. page specific css.
+
+<p style="color:Red" >  inline css.
+
+if all h1 should appear red color
+
+
+h1  { color:red  }
+
+.pqr  { color:red }
+
+
+form tag... group things..
+
+http request. response.
+
+
+request 1. response 1
+request 2, response 2..
+each request is indendent it does not remember the earlier request.
+this mechanism in http is called stateless.
+
+<A href="where to go " target="_blank"> visit our website.. </A>
+
+syntax is a function of time and you cant have a short cut for it..
+
+
+
+html =structure of the page
+css =style of hte page
+javascript = dynamic behavoru..
+
+<table>  story telling I wnat a table.
+<tr> I want a row.
+<Td> or <th> I want a cell.
+
+
+display property.. layout part of the 
+
+javascript..
+in html we use the thing called id..
+
+html if you want to categorize tags..
+1. inline elements
+2. block elements
+
+html will come in form series of nested tags..
+<h1>
+  hello
+  <section>
+html is essentially hierarchically to understand this we have an opinion word called
+"DOM" Document object model.. memory structure how the html gets interpreted..
+
+CSS is a great topic for people who are interested in, look of the page...
+css units... 
+px
+you get absolute units and relative units..
+
+
+
+know some http basics.. how request, what is passe, mode of request..
+http is stateless.. you give 1 and tell i give you 2, i dont remember 1..
+cookie /session. .. this create in entertainemtn..
+html... required.... what can be done in html dont do it in javascript.
+css... html block and inline element and css display property..
+form action="processLogin"  method="mode of request"
+
+
+in over communicated world... summarize things..
+
+join back at 2.00PM
+finish assessment..
+we will continue with javascript..
+hands on..
+ 
+
+
+
+today you will writing some functions.. and varibles using let and const..
+ 
+
+since we are using ready made functions which are commonly used
+not opening documentation is a sin..
+mdn is our go to place. in javascript
+
+Array means 
+1. sequential datastructure
+2. contiguous memory
+3. fixed size may be may not be... in javascript size can vary
+
+let empno=[2,3,4];
+empno.push(4);
+DAta type ... content + operations
+Datastructures..
+group of things.
+decide operations
+you deide pick one from the library
+
+linear datastructures
+1. creation
+2. addition
+3. traversing thru it.
+4. occasional, search and sort..
+
+
+
+arrayname.foreach(freak)
+
+
+the foreach takes each element from the array and calls the freak function
+by supplying the value of that element in the array and index position.
+owner of for each... has told I dont freak to return anything.. so obviously
+we will nt return anything..
+
+when we did arrayname.foreach(f1);
+did you realize we were suresh.
+did you realize person who wrote for each was Ramesh.
+did you realize the function f1 we wrote was based on what Ramesh told.
+he told have two inputs one will be the array value at place and second one is index
+dont return anything to me.. we sticked to it..
+
+
+
+
+
+
+I write my own code. so what it is not a measure of how much we understand things.
+take other person code and try to understand.. 
+
+let x=[];
+let y=[];
+let z = { l:3,b:4}
+x.push(z);
+y.push(z);
+z.l=44;
+print x[0].l
+
+
+dont copy things unnecessarily this rule telling people is  waste of time
+so all the new langauges which came started enforcing this automatically
+anything that came after c++
+ 
+
+when you see function assignment... remember we are slave...
+
+
+1. we are calling somebody else function.. foreach,find, sort..filter..
+2. that somebody has told us what our function should take as input
+and what it should return we should read it and follow it.
+3. we call the somebody else function passing our functionas input.. only
+then logic will work..
+
+iN ALL THESE PROGRAMS WHAT HAPPENED 
+
+0. dont open documentation, English is free keep talking whatever we want...
+1 we were doing function definition + function assignment while calling
+somebody else function.
+2. that somebody else is going to call our function.
+3. that somebody else told what our function should take as input
+and what it should return...
+
+
+understand function asisngment, function callilng, and functiond definition.
+
+
+function assignment in code is.
+
+1. we are calling a function.
+2. input to that .. we are defining and assigning in the same place.
+
+
+functioncall(define and assign a function);
+
+3.32 to 3.47 take a break and come back..
 
 
 
