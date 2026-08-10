@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6: DOM & Form Validation - Bank Portal</title>
+    <style>
+        :root {
+            --primary: #0072ce;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --border: #cbd5e1;
+            --danger: #dc2626;
+            --success: #16a34a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        h1 { color: var(--primary); margin-top: 0; border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        
+        .section-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #334155;
+            margin-bottom: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .form-row label {
+            width: 180px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .input-group {
+            flex: 1;
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+        }
+
+        .error-text {
+            color: var(--danger);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 4px;
+            display: inline-block;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn:hover { opacity: 0.9; }
+        .btn-outline { background: transparent; color: var(--primary); border: 1px solid var(--primary); }
+
+        ul.bank-services-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.bank-services-list li {
+            background: #f8fafc;
+            padding: 10px 15px;
+            border: 1px solid var(--border);
+            margin-bottom: 8px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .react-box {
+            background: #e0f2fe;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Module 6: DOM Manipulation & Form Validation</h1>
+
+    <!-- PDF Hands-on 1: Array Displayed as Dynamic HTML List -->
+    <div class="section-card">
+        <div class="section-title">PDF Hands-on 1: Dynamic Node Creation (Array to HTML List)</div>
+        <p>Below list is generated dynamically from a JavaScript array using <code>document.createElement()</code> and <code>appendChild()</code>:</p>
+        
+        <div style="margin-bottom: 10px;">
+            <button class="btn btn-outline" id="addServiceBtn">+ Add New Service Node</button>
+            <button class="btn btn-outline" id="removeServiceBtn" style="color:var(--danger); border-color:var(--danger);"> Remove Last Service Node</button>
+        </div>
+
+        <ul id="servicesList" class="bank-services-list">
+            <!-- Dynamic <li> items inserted here by JS -->
+        </ul>
+    </div>
+
+    <!-- PDF Hands-on 2: Regex Name Validation -->
+    <div class="section-card">
+        <div class="section-title">PDF Hands-on 2: Form Validation (Regex Alphabets Check)</div>
+        
+        <div class="form-row">
+            <label for="applicantName">Customer Name:</label>
+            <div class="input-group">
+                <input type="text" id="applicantName" placeholder="Enter name (alphabets only)">
+                <span id="nameError" class="error-text"></span>
+            </div>
+            <button class="btn" id="validateNameBtn">Validate Name</button>
+        </div>
+
+        <!-- Additional Regex Validation: 10 Digit Phone Number starting 7-9 -->
+        <div class="form-row">
+            <label for="contactNo">Contact Number:</label>
+            <div class="input-group">
+                <input type="text" id="contactNo" placeholder="Enter 10 digit number (starts 7-9)">
+                <span id="contactError" class="error-text"></span>
+            </div>
+            <button class="btn" id="validateContactBtn">Validate Contact</button>
+        </div>
+    </div>
+
+    <!-- React Virtual DOM Comparison -->
+    <div class="react-box">
+        <strong>⚛️ React Virtual DOM vs Direct DOM Manipulation:</strong><br>
+        Direct DOM manipulation like <code>document.createElement()</code> or <code>element.appendChild()</code> forces immediate browser reflow and repaint. React abstracts this via a <strong>Virtual DOM tree</strong>. When state changes, React computes minimal diffs and updates only the necessary real DOM nodes automatically!
+    </div>
+</div>
+
+<script src="06_dom_and_validation.js"></script>
+</body>
+</html>

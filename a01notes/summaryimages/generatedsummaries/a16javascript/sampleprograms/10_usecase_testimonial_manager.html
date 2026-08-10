@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Testimonials Portal - Presentation Use Case 2</title>
+    <style>
+        :root {
+            --primary: #0072ce;
+            --primary-dark: #00569e;
+            --secondary: #00a859;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --danger: #ef4444;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .header-box {
+            background: linear-gradient(135deg, #0072ce 0%, #00a859 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header-box h1 { margin: 0; font-size: 1.8rem; }
+        .header-box p { margin: 5px 0 0 0; opacity: 0.9; }
+
+        .form-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .form-control {
+            width: calc(100% - 110px);
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: 100px;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover { background-color: #008f4c; }
+
+        .testimonials-section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            border: 1.5px solid #38bdf8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .testimonial-card:hover { transform: translateY(-2px); }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .author-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1e293b;
+        }
+
+        .action-btns {
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .action-btns span {
+            cursor: pointer;
+            padding: 2px 5px;
+        }
+
+        .action-btns span:hover { text-decoration: underline; }
+
+        .testimonial-message {
+            color: #475569;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .react-box {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header-box">
+        <h1>Standard Chartered - Customer Testimonial Portal</h1>
+        <p>PDF Presentation Use Case 2 (Slides 58-59) - Dynamic CRUD Operations</p>
+    </div>
+
+    <!-- Testimonial Input Form -->
+    <div class="form-card">
+        <form id="testimonialForm">
+            <input type="hidden" id="editIndex" value="-1">
+            
+            <div class="form-group">
+                <label for="userName">Name</label>
+                <input type="text" id="userName" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="userMessage">Message</label>
+                <input type="text" id="userMessage" class="form-control" placeholder="Enter your Message" required>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Testimonials List Container -->
+    <div class="testimonials-section">
+        <div class="section-title">Testimonials</div>
+        <div id="testimonialsList">
+            <!-- Dynamic Testimonial Cards Rendered Here -->
+        </div>
+    </div>
+
+    <!-- React Framework Comparison -->
+    <div class="react-box">
+        <strong>⚛️ React CRUD State Management Concept:</strong><br>
+        In React, Edit & Delete operations are handled immutably:
+        <ul>
+            <li><strong>Delete:</strong> <code>setTestimonials(prev => prev.filter(t => t.id !== id))</code></li>
+            <li><strong>Edit:</strong> <code>setTestimonials(prev => prev.map(t => t.id === id ? updatedItem : t))</code></li>
+        </ul>
+        React automatically updates the Virtual DOM tree without requiring explicit DOM manipulation like <code>element.remove()</code>!
+    </div>
+</div>
+
+<script>
+    'use strict';
+
+    // Initial Testimonials Array (Matching PDF slide 59)
+    let testimonials = [
+        {
+            id: 1,
+            name: "Ritu",
+            message: "It has been a positive experience with personable banking service in a timely manner"
+        }
+    ];
+
+    // DOM Elements
+    const form = document.getElementById("testimonialForm");
+    const nameInput = document.getElementById("userName");
+    const messageInput = document.getElementById("userMessage");
+    const editIndexInput = document.getElementById("editIndex");
+    const submitBtn = document.getElementById("submitBtn");
+    const listContainer = document.getElementById("testimonialsList");
+
+    // Render Testimonials List in UI
+    function renderTestimonials() {
+        listContainer.innerHTML = "";
+
+        if (testimonials.length === 0) {
+            listContainer.innerHTML = `<p style="color:#64748b; font-style:italic;">No testimonials available. Submit one above!</p>`;
+            return;
+        }
+
+        testimonials.forEach((item, index) => {
+            const card = document.createElement("div");
+            card.className = "testimonial-card";
+            
+            card.innerHTML = `
+                <div class="testimonial-header">
+                    <div class="author-name">${item.name}</div>
+                    <div class="action-btns">
+                        <span onclick="editTestimonial(${index})">Edit</span> | 
+                        <span onclick="deleteTestimonial(${index})">Delete</span>
+                    </div>
+                </div>
+                <div class="testimonial-message">${item.message}</div>
+            `;
+
+            listContainer.appendChild(card);
+        });
+    }
+
+    // Form Submit Handler (Add or Update)
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = nameInput.value.trim();
+        const message = messageInput.value.trim();
+        const editIdx = parseInt(editIndexInput.value);
+
+        if (!name || !message) {
+            alert("Please fill in both Name and Message fields.");
+            return;
+        }
+
+        if (editIdx === -1) {
+            // Add New Testimonial
+            const newItem = {
+                id: Date.now(),
+                name: name,
+                message: message
+            };
+            testimonials.push(newItem);
+        } else {
+            // Update Existing Testimonial
+            testimonials[editIdx].name = name;
+            testimonials[editIdx].message = message;
+            
+            // Reset Edit Mode
+            editIndexInput.value = "-1";
+            submitBtn.textContent = "Submit";
+            submitBtn.style.backgroundColor = "#00a859";
+        }
+
+        // Reset Form
+        form.reset();
+
+        // Refresh UI
+        renderTestimonials();
+    });
+
+    // Edit Testimonial Handler
+    window.editTestimonial = function (index) {
+        const target = testimonials[index];
+        nameInput.value = target.name;
+        messageInput.value = target.message;
+        editIndexInput.value = index;
+
+        submitBtn.textContent = "Update Testimonial";
+        submitBtn.style.backgroundColor = "#0072ce";
+        nameInput.focus();
+    };
+
+    // Delete Testimonial Handler
+    window.deleteTestimonial = function (index) {
+        if (confirm(`Are you sure you want to delete testimonial from '${testimonials[index].name}'?`)) {
+            testimonials.splice(index, 1);
+            renderTestimonials();
+        }
+    };
+
+    // Initial UI Render
+    renderTestimonials();
+</script>
+</body>
+</html>

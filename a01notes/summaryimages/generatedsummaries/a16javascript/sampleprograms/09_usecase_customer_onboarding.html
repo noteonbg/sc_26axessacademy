@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Customer Onboarding - Presentation Use Case 1</title>
+    <!-- Bootstrap 5 CSS CDN for standard corporate look -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        .brand-header {
+            background: linear-gradient(135deg, #0072ce 0%, #003366 100%);
+            color: white;
+            padding: 25px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .card-custom {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: white;
+        }
+        .form-label {
+            font-weight: 600;
+            color: #334155;
+        }
+        .error-msg {
+            color: #dc3545;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        .table-custom th {
+            background-color: #0072ce;
+            color: white;
+        }
+        .react-banner {
+            background-color: #e0f2fe;
+            border-left: 5px solid #0072ce;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="brand-header">
+    <div class="container">
+        <h2 class="mb-1">Standard Chartered - Customer Onboarding</h2>
+        <p class="mb-0 opacity-75">PDF Presentation Use Case 1 (Slides 56-57)</p>
+    </div>
+</header>
+
+<div class="container mb-5">
+    <div class="row">
+        <!-- Customer Registration Form -->
+        <div class="col-lg-5 mb-4">
+            <div class="card card-custom p-4">
+                <h4 class="mb-3 text-primary">Add New Customer</h4>
+                <form id="customerForm" novalidate>
+                    
+                    <!-- Name Field -->
+                    <div class="mb-3">
+                        <label for="custName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="custName" placeholder="Enter Name">
+                        <div id="nameErr" class="error-msg"></div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                        <label for="custEmail" class="form-label">Email Id:</label>
+                        <input type="email" class="form-control" id="custEmail" placeholder="Enter email">
+                        <div id="emailErr" class="error-msg"></div>
+                    </div>
+
+                    <!-- Contact No Field -->
+                    <div class="mb-3">
+                        <label for="custContact" class="form-label">Contact No:</label>
+                        <input type="text" class="form-control" id="custContact" placeholder="Enter contact no">
+                        <div id="contactErr" class="error-msg"></div>
+                    </div>
+
+                    <!-- Account Type Field -->
+                    <div class="mb-3">
+                        <label for="custAccType" class="form-label">Account Type:</label>
+                        <select class="form-select" id="custAccType">
+                            <option value="">Select account type</option>
+                            <option value="savings">savings</option>
+                            <option value="current">current</option>
+                        </select>
+                        <div id="accTypeErr" class="error-msg"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100 py-2 font-weight-bold">Add Customer</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Customer Tabular Summary List -->
+        <div class="col-lg-7">
+            <div class="card card-custom p-4">
+                <h4 class="mb-3 text-primary">Onboarded Customers</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-custom align-middle" id="customerTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Account Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerTableBody">
+                            <!-- Pre-populated sample rows matching PDF slide 56 -->
+                            <tr>
+                                <td>Sandra Rogers</td>
+                                <td>Rogers@gmail.com</td>
+                                <td>9999888877</td>
+                                <td><span class="badge bg-success">savings</span></td>
+                            </tr>
+                            <tr>
+                                <td>Steve Casey</td>
+                                <td>Casey@gmail.com</td>
+                                <td>8899888877</td>
+                                <td><span class="badge bg-info text-dark">current</span></td>
+                            </tr>
+                            <tr>
+                                <td>Michelle Michaels</td>
+                                <td>Michaels@gmail.com</td>
+                                <td>8899888899</td>
+                                <td><span class="badge bg-info text-dark">current</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- React Concept Integration Note -->
+    <div class="react-banner">
+        <h5>⚛️ How this Use Case translates into React:</h5>
+        <p class="mb-0">In a React application, this form would be controlled via component state (<code>const [customers, setCustomers] = useState([])</code>). Form inputs update state using <code>onChange</code>. When <strong>Add Customer</strong> is clicked, state is updated immutably using <code>setCustomers([...customers, newCustomer])</code>, which automatically re-renders the customer table without any manual DOM insertion!</p>
+    </div>
+</div>
+
+<script>
+    'use strict';
+
+    // In-memory Customer Array storing customer objects
+    const customerList = [];
+
+    // DOM Elements
+    const form = document.getElementById("customerForm");
+    const nameInput = document.getElementById("custName");
+    const emailInput = document.getElementById("custEmail");
+    const contactInput = document.getElementById("custContact");
+    const accTypeSelect = document.getElementById("custAccType");
+    const tableBody = document.getElementById("customerTableBody");
+
+    // Error Message Elements
+    const nameErr = document.getElementById("nameErr");
+    const emailErr = document.getElementById("emailErr");
+    const contactErr = document.getElementById("contactErr");
+    const accTypeErr = document.getElementById("accTypeErr");
+
+    // Validation Functions
+    function validateName() {
+        const val = nameInput.value.trim();
+        // Regex: Alphabets only
+        const pattern = /^[A-Za-z\s]+$/;
+        if (val === "") {
+            nameErr.textContent = "Please enter name";
+            return false;
+        } else if (!pattern.test(val)) {
+            // PDF exact error text requirement: "please enter only alphabets"
+            nameErr.textContent = "please enter only alphabets";
+            return false;
+        } else {
+            nameErr.textContent = "";
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        const val = emailInput.value.trim();
+        // Standard Email Regex
+        const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (val === "") {
+            emailErr.textContent = "Please enter email id";
+            return false;
+        } else if (!pattern.test(val)) {
+            emailErr.textContent = "Please enter valid email id";
+            return false;
+        } else {
+            emailErr.textContent = "";
+            return true;
+        }
+    }
+
+    function validateContact() {
+        const val = contactInput.value.trim();
+        // PDF exact requirement: 10 digits and first digit should be 7-9
+        const pattern = /^[7-9]{1}[0-9]{9}$/;
+        if (val === "") {
+            contactErr.textContent = "Please enter contact number";
+            return false;
+        } else if (!pattern.test(val)) {
+            contactErr.textContent = "Contact no must be 10 digits starting with 7-9";
+            return false;
+        } else {
+            contactErr.textContent = "";
+            return true;
+        }
+    }
+
+    function validateAccountType() {
+        const val = accTypeSelect.value;
+        if (val === "") {
+            accTypeErr.textContent = "Please select account type";
+            return false;
+        } else {
+            accTypeErr.textContent = "";
+            return true;
+        }
+    }
+
+    // Real-time validation event listeners
+    nameInput.addEventListener("keyup", validateName);
+    emailInput.addEventListener("keyup", validateEmail);
+    contactInput.addEventListener("keyup", validateContact);
+    accTypeSelect.addEventListener("change", validateAccountType);
+
+    // Form Submission Handler
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent page reload
+
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isContactValid = validateContact();
+        const isAccTypeValid = validateAccountType();
+
+        // Check if all fields are valid
+        if (isNameValid && isEmailValid && isContactValid && isAccTypeValid) {
+            // Create Customer Object
+            const customerObj = {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                contact: contactInput.value.trim(),
+                accountType: accTypeSelect.value
+            };
+
+            // Push into JS Array
+            customerList.push(customerObj);
+
+            // Add row to tabular UI dynamically
+            const tr = document.createElement("tr");
+            
+            const badgeClass = customerObj.accountType === "savings" ? "bg-success" : "bg-info text-dark";
+            
+            tr.innerHTML = `
+                <td>${customerObj.name}</td>
+                <td>${customerObj.email}</td>
+                <td>${customerObj.contact}</td>
+                <td><span class="badge ${badgeClass}">${customerObj.accountType}</span></td>
+            `;
+
+            tableBody.appendChild(tr);
+
+            // Reset form fields
+            form.reset();
+            alert(`Customer '${customerObj.name}' onboarded successfully!`);
+        }
+    });
+</script>
+</body>
+</html>
