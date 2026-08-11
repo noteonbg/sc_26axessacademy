@@ -72,8 +72,9 @@ const bankLedger = [
 
 // forEach() - Iteration
 console.log("Ledger Summary (forEach):");
-bankLedger.forEach((tx, idx) => {
-    console.log(`  [Tx #${idx + 1}] ID: ${tx.id} | ${tx.type} | Amount: $${tx.amount} | ${tx.status}`);
+bankLedger.forEach((elementofarray, index) => {
+    console.log(`  [Tx #${index + 1}] ID: ${elementofarray.id} | ${elementofarray.type} | Amount: $${elementofarray.amount} | ${elementofarray.status}`);
+    return "hey hello";
 });
 
 
@@ -82,7 +83,7 @@ bankLedger.forEach((tx, idx) => {
 
 
 // find() - Returns first matching element
-const pendingTx = bankLedger.find(tx => tx.status === "PENDING");
+const pendingTx = bankLedger.find(rx => rx.status === "HORRIBLE");
 console.log("Found Pending Tx:", pendingTx);
 
 
@@ -93,7 +94,8 @@ const completedDeposits = bankLedger.filter(tx => tx.type === "DEPOSIT" && tx.st
 console.log("Filtered Completed Deposits:", completedDeposits);
 
 // map() - Transforms elements into a new array (Crucial for React JSX UI lists)
-const transactionSummaries = bankLedger.map(tx => `Tx #${tx.id}: ${tx.type} of $${tx.amount}`);
+const transactionSummaries = bankLedger.map(tx => tx.type);
+console.log(typeof transactionSummaries[0])
 console.log("Mapped Summaries:", transactionSummaries);
 
 // reduce() - Aggregate total balance

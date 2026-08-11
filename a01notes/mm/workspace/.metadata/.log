@@ -344,3 +344,25 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclips
 
 !ENTRY org.xmind.core.command 1 0 2026-08-10 09:43:22.521
 !MESSAGE Malformed URI: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+!SESSION 2026-08-11 08:32:24.952 -----------------------------------------------
+eclipse.buildId=R3.7.9.201912052356
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-11 08:32:34.013
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-11 08:32:34.016
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-11 08:32:39.466
+!MESSAGE Path queued to be opened: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-11 08:32:44.578
+!MESSAGE Ready to open files: [F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2026-08-11 08:32:44.599
+!MESSAGE Malformed URI: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind

@@ -13,7 +13,7 @@
 
 'use strict';
 
-// Utility helper to write colored logs to HTML console box & browser console
+//goto jupiter and then moon and come back
 function logEvent(message) {
     const timestamp = new Date().toLocaleTimeString();
     const formatted = `[${timestamp}] ${message}`;

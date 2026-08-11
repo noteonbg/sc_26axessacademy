@@ -28,6 +28,27 @@ We will have the same approach like last week by review one by one. We will also
  (Git, Container, ADO)
 3. Push your completed assignments and codes to the Azure Repos
 
+-------------------------------------
+Aug 11th 2026
+
+
+1. page 42 of javascript.pdf
+
+look at generatedsummaries\a16javascript\sampleprograms
+2. a05.html, js
+3. a06.html, js
+understand it and prove you can make it work in your system.
+4. keep the html and css ready for page 56 to 61 of javascript class pdf and
+5. the hands on javascript.pdf and keep the html and css ready for the same also.
+
+architecture to be followed in js... 
+1. events, anything related to hte ui of html.. ui
+2. logic separate
+
+
+
+
+
 
 -------------------------------
 

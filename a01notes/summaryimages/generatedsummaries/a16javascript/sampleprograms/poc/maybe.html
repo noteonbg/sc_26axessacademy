@@ -1,0 +1,89 @@
+<html>
+<head>
+    <style>
+        .cr  { color: red;  }
+        .gr  { color: green; }
+
+
+    </style>
+<script>
+
+
+
+
+
+        function multipleOf5(somenumber)
+        {
+
+            const hardthing = {  status:-1, message: "dont give zero as number",  result:0 };
+            if ( somenumber > 0)
+             {
+                    hardthing.status = 1;
+                    hardthing.message="got result successfully"
+                    hardthing.result = somenumber * 5; 
+            }
+            return hardthing;
+       }
+
+     
+        //This also is event registration mechnism, but this is a more consistant way of doing it.
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log("DOM fully loaded and parsed");
+            const crazything = document.getElementById('myButton');
+            crazything.addEventListener('click', ()=>{
+                console.log("when button is clicked");
+                const somenumber = document.getElementById('somenumber').value;
+                const whatismyreturntype=multipleOf5(somenumber);
+                if(whatismyreturntype.status == 1)
+                {
+                    document.getElementById('message').innerHTML = "result is " + whatismyreturntype.result;
+                    document.getElementById('message').classList.remove('cr');
+                    document.getElementById('message').classList.add('gr');
+                    
+                        
+                }
+                else
+                {
+                    document.getElementById('message').innerHTML = whatismyreturntype.message;
+                    document.getElementById('message').classList.remove('gr');
+                    document.getElementById('message').classList.add('cr');
+                }
+
+
+
+
+            });
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    </script>
+</head>
+<body>
+    <h1>Sample Program</h1>
+    <p><input type="text" id="somenumber" placeholder="some number" />
+    <span id="message"> some message will be shown here </span></p>
+    
+    <!-- one style of writing this-->
+    <button id="myButton"> multiple of 5 </button>
+<!-- onclick="buttononClickEventHandlingFunction()"  -->
+    <!-- hey system, one day when you detect the event called onclick happening on the button, please call my function
+     someFucntion   Event registrtion..-->
+    
+</html>
