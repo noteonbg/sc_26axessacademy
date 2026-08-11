@@ -25,7 +25,7 @@ function mockExecuteDatabaseQuery(sqlQueryString, parameters = []) {
 // 1. Vulnerable Implementation (DO NOT USE IN PRODUCTION!)
 // ----------------------------------------------------------------------------
 function unsafeLoginHandler(userProvidedUsername, userProvidedPassword) {
-    console.log("\n❌ [UNSAFE IMPLEMENTATION] Processing Login Attempt...");
+    console.log("\n [UNSAFE IMPLEMENTATION] Processing Login Attempt...");
     
     // Attacker inputs malicious payload: "' OR '1'='1"
     const sql = `SELECT * FROM users WHERE username = '${userProvidedUsername}' AND password = '${userProvidedPassword}'`;

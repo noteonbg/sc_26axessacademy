@@ -52,10 +52,10 @@ function checkCreditApproval(creditScore) {
 console.log("\n--- Promise Consumption (.then / .catch) ---");
 checkCreditApproval(750)
     .then(result => {
-        console.log("✓ PROMISE RESOLVED:", result);
+        console.log("PROMISE RESOLVED:", result);
     })
     .catch(error => {
-        console.log("❌ PROMISE REJECTED:", error);
+        console.log("PROMISE REJECTED:", error);
     });
 
 // ----------------------------------------------------------------------------
@@ -69,12 +69,12 @@ async function processLoanApplication(applicantName, score) {
     try {
         // 'await' pauses execution until the promise resolves or rejects
         const approval = await checkCreditApproval(score);
-        console.log(`✓ SUCCESS: Loan approved for ${applicantName}!`);
-        console.log(`  Max Loan: $${approval.maxLoanAmount} | APR: ${approval.interestRate}`);
+        console.log(` SUCCESS: Loan approved for ${applicantName}!`);
+        console.log(` Max Loan: $${approval.maxLoanAmount} | APR: ${approval.interestRate}`);
         return approval;
     } catch (err) {
-        console.log(`❌ DECLINED: Loan application failed for ${applicantName}.`);
-        console.log(`  Reason: ${err.reason}`);
+        console.log(` DECLINED: Loan application failed for ${applicantName}.`);
+        console.log(` Reason: ${err.reason}`);
         return null;
     } finally {
         console.log(`[System Log] Evaluation completed for ${applicantName}.`);

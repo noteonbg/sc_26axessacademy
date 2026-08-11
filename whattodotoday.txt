@@ -28,6 +28,22 @@ We will have the same approach like last week by review one by one. We will also
  (Git, Container, ADO)
 3. Push your completed assignments and codes to the Azure Repos
 
+
+--------------------------------------
+
+Aug 12th 2026
+
+1. ensure august 11th and 10th, activities are completed
+2. double check yourself can you write a java code for scenario.
+    item model itemno, itemname, price, qty, category.
+2.1 we need to get call items based on a category.
+2.2 update item details only price, qty 
+3. go ahead with understanding other javascript programs in
+   the folder  generatedsummaries\a16javascript\sampleprograms
+
+
+
+
 -------------------------------------
 Aug 11th 2026
 
