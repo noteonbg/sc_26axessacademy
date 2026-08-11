@@ -1,0 +1,296 @@
+project. because that is our boss and that is paying
+the salary.
+
+
+English... will come.. requireemnts..
+we have to convert that into files based on architecture.
+files dont execute, functions do...
+inside there must be functions... obviously
+when we talk functions variables will come input return type..
+project specific data types.. classes and objects will come.
+people who dont like getting into details deserve suffering
+and will get suffering.. --- designing low level stuff.
+until we have clarify in terms of function design and variable design. no coding can happen..
+
+foreach tells.
+I can run a function for each element in the array
+that function should not return anything to me.
+and its input I can give two things to you.
+element of the array and index.
+
+all the assingments which we did yesterday in javacript
+are all kids assingments why.. content of the array
+was string or number, in real life content of the array
+will be object 100%
+
+navigate
+function calling to function definition
+function definition to function calling.
+variable scope and data type..
+
+people who dont read documentation of function which
+are commonly used in the code, will enjoy unlimited
+entertainment with their prediction skills.
+
+find function on the array, calls another function
+which we define and pass to it.
+this another function which we pass will get called
+for each element of the array until it returns true
+or end of the array is reached..
+
+the function we are passing to find.
+1. should return Boolean
+2. its input argument is individual array element, index.
+
+how many arguments does function(X) we pass find(Y) function take.
+
+Y(x);
+1. x is a function
+2. what it should return Boolean. why "Y" tells so.
+3. how many input argumetns does x get , Y is person
+who is going to call X.
+last 40 minutes rant is.. when you call a function
+open documentation and read it.. we did not do this
+in java.. we used prepareStatement, executeUpdate.
+rs.next, setInt(1,23);
+
+
+input argument to Map is a function...
+what does function take as input (element,index, array)
+
+welcome to consciousness..
+people should talk in terms function called, function defined
+, function assigned, this is variable data type, this is scope
+and then what logic it is doing..
+
+
+
+
+
+
+
+
+
+memory loss high time you upgrade your ram..
+
+we are talking about changing sections of the html page
+and also event handling..
+
+
+
+
+
+java  ( Back end)
+1. service function
+2. repo function
+3. hopefully we show "rigour" in it... get into lot of details
+example...
+what is input
+what does it return
+how do i know failed or success 
+failed because of user
+failed because of system.. db not working..
+
+
+Front end.
+0. why are you writing this page.. -- to call some business logic
+1. you know "what will change, what will not change"
+2. have your html and css ready.. wherever things are changing
+html.. ensure id is there..
+in css , classes are there.( when to apply, when not to apply
+ie control)
+3. event handling in javascript.. (super important thing)
+
+
+				
+
+
+in javascript we got entire representation of objects
+in memory. the entire html page is accessible in form of
+objects. we got various objects like document, window, navigator.
+our favoruite will be document because within that ...
+all our html content will be there..
+
+thru the document methods you can reach different parts 
+of the page..
+
+
+to write any html page..
+
+I am already in Hell, how to improve the intensivity of Hell
+be disorganized during chaos..
+
+
+
+1. you know business logic why are you writing this page.
+2. you know what will change, what will not change.
+3. you got id ready in html, classes ready in css.
+4. you have completed html part and css part.. (this is needed
+so that we can work on javascript peacefully...)
+5. we setup events.. ( function assingments will come)
+6. inside our functions... of event handling.
+6.1 pick things from html..
+6.2 make request, get response...
+6.3 update the UI 
+6.3.1 change parts of the page.
+6.3.2 leave the page and go to some other page, with some data.
+
+freak point but important.
+I will write my own program and only then I will understand ok...
+but also open other person program and try to understand
+that is proof of we knowing anything..
+
+
+
+
+
+
+
+for form ui components id only.. .you plan to refer to the ui
+componetns in your javascript..
+
+name .. when request is submitted, server side things will
+refer to the ui components via name only and not id.
+
+quick summary
+1. official documentation reading is important.
+2. by opening other person code, changes of checking
+our relevance would be high..
+3. X is web page.. there is a generic way to understand
+things..
+
+technically there is  thing called document. there is a thing
+called window.. these are not opinions these are technical
+things in the browser.
+
+we want to access section of the web page, then
+we have to depend on the document..
+
+those who byheart syntax will suffer now.
+
+welcome to "opinons" and "syntax"
+This syntax which I am showing is 1996 to 2000 syntax
+there are better ways to do the same syntax..
+
+event registration concept is important
+everytime we do this.. it is understood function assignment
+only be there.
+our function will get called when event occurs
+that theory is important.
+
+Syntax is not.. because there many opinions on it...
+
+till yesterday whatever we wrote was kids program
+why no event handling. no event handling what are we doing
+in a web page... nothing...
+
+Event registration = two things you have to mention.
+1. on what you want event to be detected.
+2. which event, which is your call back function..(function assignment)
+
+
+kids who don't generalize suffer suffer suffer.
+
+always during function assignment you observe
+we are doing two things.
+1. define a function
+2. assign it.
+3. name of the function does not matter.. for the person
+who is going to call our function.. hence use arrow or
+anonymous functions..
+no I will give  name, ok kid be happy that name is useless.
+
+welcome to consciousness
+1. which event.. on what..
+2. have you registered for the event..
+3. when the event occurs only then that function will get called.
+4. typically scenario for even handling.
+define a function, assign a function and tell for which
+event this function should be called by the system..
+
+
+0. on what event you want to detect on
+1. registered for the event.
+2. event has occurred.
+3. which function will get called.
+
+any javascript code..
+
+1. event handling functions
+2. logic functions
+3. ui functions.
+
+
+
+
+
+
+ const somenumber = document.getElementById('somenumber').value;
+when we write this. we should know what id points
+is it a textox, it is a button or is it a checkbox
+this is again are we conscious...
+why we should know this each object let us textbox
+button or checkbox comes with its own properties..
+not knowing this and assuming will create lot of unnecessary
+entertainment..
+
+
+hardest thing... knowing you return type of function
+and input argument you need to pass in business logic
+context..
+ 
+success ok.
+failure why.. becuase eof user..
+failure why.. independent of user.
+
+when you are writing logic functions.. slow down
+and think how will y ou communicate success and all categoriesof failure... that is reason it is hard..
+
+iability to get into details means the person will be ghost.
+is team able to interpret the logic function properly
+those who dont another way to have a funeral in the project.
+
+what we did today is real html page program. yesterday
+was welcome to javascript
+
+generalize.
+1. set up some events 
+2. access parts of html page.
+3. do some logic.
+4. update the page..
+5. change the style... via classes.
+
+
+
+
+
+
+1. page 42 of javascript.pdf
+2. a05.html, js
+3. a06.html, js
+understand it and prove you can make it work in your system.
+4. continue your pending assingments..
+
+1. events, anything related to hte ui of html.. ui.
+2. only logic should separate file..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
