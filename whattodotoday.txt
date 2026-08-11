@@ -31,9 +31,9 @@ We will have the same approach like last week by review one by one. We will also
 -------------------------------------
 Aug 11th 2026
 
-
+0. class program is present in poc folder maybe.html
+this is html file we discussed in the class.
 1. page 42 of javascript.pdf
-
 look at generatedsummaries\a16javascript\sampleprograms
 2. a05.html, js
 3. a06.html, js
