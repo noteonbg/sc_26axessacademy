@@ -4,8 +4,7 @@ to explain and modify
 the code, be ready...by documenting
 the code especially the difficult part.
 
-
-have a checklist for the commonly used syntaxes...
+Have a checklist for the commonly used syntaxes...
 
 
 daily ritual.
@@ -32,6 +31,19 @@ We will have the same approach like last week by review one by one. We will also
 --------------------------------------
 
 Aug 12th 2026
+
+message by jerad  -12th August 2026
+Hi Everyone today we will be reviewing your assignment for week 3. Please make sure you have created your week 3 story with
+ 3 subtasks which are database assignments,
+jdbc assignments and html css assignments.
+Please make sure you upload attachment to those subtasks.
+Failed to do so before your review will mark red in your
+evaluation sheet for Boards.
+Thank you. 
+
+
+
+
 
 0. keep your intellij jdbc project open, vs code html pages css open, pgAdmin open.
    when coming to the assessment.
