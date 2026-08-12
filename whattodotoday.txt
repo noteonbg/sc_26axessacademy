@@ -33,6 +33,8 @@ We will have the same approach like last week by review one by one. We will also
 
 Aug 12th 2026
 
+0. keep your intellij jdbc project open, vs code html pages css open, pgAdmin open.
+   when coming to the assessment.
 1. ensure august 11th and 10th, activities are completed
 2. double check yourself can you write a java code for scenario.
     item model itemno, itemname, price, qty, category.
@@ -40,7 +42,7 @@ Aug 12th 2026
 2.2 update item details only price, qty 
 3. go ahead with understanding other javascript programs in
    the folder  generatedsummaries\a16javascript\sampleprograms
-
+4. ensure nodejs is installed , go thru the confluence page and see whether it works.
 
 
 
