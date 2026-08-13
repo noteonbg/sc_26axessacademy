@@ -28,6 +28,30 @@ We will have the same approach like last week by review one by one. We will also
 3. Push your completed assignments and codes to the Azure Repos
 
 
+
+---------------------------
+
+Aug 13th 2026
+
+0. things are non deterministic
+1. complete the JavaScript assignments what has been given in  42.
+2. try to see did you understands today concept of destructuring, spread , promise, modules.
+3. for topic 2, don't bother "thinking syntax"  focus on copy pasting some examples .. but prove
+you understood the example and also prove for promises and modules you know Ramesh and Suresh are there.
+4. hard thing... remaining assignments are completed and understand overall process.
+4.1 did you identify what will change in html .. what syntaxes did you use for changing parts in html.
+4.2 broad CSS, on class usage how did the layout appear.
+4.3 JavaScript
+4.3.1 event handling.
+4.3.2 logic.. part..
+4.3.3 how did impact the ui.
+5. self test (coming Monday  17th august 2026 ) Item scenario are you able to code
+6. understand the existing examples already written and prove you know what is happening..
+both java part and html, CSS and JavaScript part.. complete earlier day assingingment if anything
+is pending..
+
+
+
 --------------------------------------
 
 Aug 12th 2026
