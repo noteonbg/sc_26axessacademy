@@ -8,7 +8,7 @@ Have a checklist for the commonly used syntaxes...
 
 
 daily ritual.
-1. pull th latest data from the azure repo.. if any. usually will not be.
+1. pull the latest data from the azure repo.. if any. usually will not be.
 2. know your serial numbers and what they do.. useful in commiting
 3. standup in terms of serial numbers..
 
@@ -42,9 +42,6 @@ evaluation sheet for Boards.
 Thank you. 
 
 
-
-
-
 0. keep your intellij jdbc project open, vs code html pages css open, pgAdmin open.
    when coming to the assessment.
 1. ensure august 11th and 10th, activities are completed
@@ -55,8 +52,6 @@ Thank you.
 3. go ahead with understanding other javascript programs in
    the folder  generatedsummaries\a16javascript\sampleprograms
 4. ensure nodejs is installed , go thru the confluence page and see whether it works.
-
-
 
 -------------------------------------
 Aug 11th 2026

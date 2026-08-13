@@ -25,20 +25,23 @@ console.log("\n=== Module 8: Asynchronous JavaScript (Promises, Fetch & Async/Aw
 // ----------------------------------------------------------------------------
 // 1. Creating & Handling Promises (Bank Credit Authorization Simulation)
 // ----------------------------------------------------------------------------
+
+// Ramesh
 function checkCreditApproval(creditScore) {
-    return new Promise((resolve, reject) => {
+    return new Promise((x, y) => {
+        //Logic inside the function is written by Ramesh.. full fill the promise..
         console.log(`[Credit System] Verifying score (${creditScore})... Please wait...`);
         
         setTimeout(() => {
             if (creditScore >= 700) {
-                resolve({
+                x({
                     status: "APPROVED",
                     score: creditScore,
                     maxLoanAmount: 500000,
                     interestRate: "6.8%"
                 });
             } else {
-                reject({
+                y({
                     status: "REJECTED",
                     score: creditScore,
                     reason: "Credit score below required threshold (700)."
@@ -46,10 +49,14 @@ function checkCreditApproval(creditScore) {
             }
         }, 1500); // 1.5 second delay
     });
+
 }
+
 
 // Consuming Promise using .then() and .catch()
 console.log("\n--- Promise Consumption (.then / .catch) ---");
+
+//sursh has to use the code
 checkCreditApproval(750)
     .then(result => {
         console.log("PROMISE RESOLVED:", result);

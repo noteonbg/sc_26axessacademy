@@ -3,6 +3,75 @@
 <script>
 
 
+//invisible mahesh person who created Promise
+
+//ramesh
+function checkCreditApproval(creditScore) {
+    return new Promise((ps, pf) => {
+        console.log(`[Credit System] Verifying score (${creditScore})... Please wait...`);
+        setTimeout(() => {
+            if (creditScore >= 700) {
+                console.log("taking time to print approval");
+                ps(23);
+            } else {
+                console.log("taking time to print denial");
+                pf("Credit Denied! Your score is below the required threshold.");
+            }
+        }, 2000);
+    });
+}
+
+//Suresh is writing below code
+function doyouknowtheory(x)
+{
+    console.log(x,"inside the funtion do you know theory");
+}
+
+function checkingdoyouknowtheory(y)
+{
+    console.log(y,"checking do you know theory");
+}
+
+//const freak =checkCreditApproval(700);
+//freak.then(doyouknowtheory).catch(checkingdoyouknowtheory);
+
+
+
+
+async function notmultipleof5()
+{
+
+    try{
+
+        const result = await checkCreditApproval(700);
+        console.log(result,typeof(result));
+    }
+    catch(error)
+    {
+        console.log(error,"we are in exception block what to do...");
+    }
+    
+}    
+
+
+notmultipleof5();
+    
+    
+
+
+
+
+
+
+
+
+
+//suresh
+
+
+
+
+
 //lkg kids style of coding
 
     // function freak() // defining of the function
@@ -31,34 +100,34 @@
         
 
 
-        //project relevant way..
+        // //project relevant way..
 
 
-        //ramesh
-        function important(hell)
-        {
-            console.log("doing some important function");
-            hell();
-        }
-        //end of ramesh code
+        // //ramesh
+        // function important(hell)
+        // {
+        //     console.log("doing some important function");
+        //     hell();
+        // }
+        // //end of ramesh code
 
 
-        //suresh code
+        // //suresh code
 
-        function freak()
-        {
-            console.log("ramesh forced to me write this");
-        }
+        // function freak()
+        // {
+        //     console.log("ramesh forced to me write this");
+        // }
 
-        function someotherthing()
-        {
-            //my fate to call ramesh function
-            important(()=>console.log("welcome to earth"));
+        // function someotherthing()
+        // {
+        //     //my fate to call ramesh function
+        //     important(()=>console.log("welcome to earth"));
 
-        }
+        // }
 
-        someotherthing();
-        //end of suresh code
+        // someotherthing();
+        // //end of suresh code
 
 
 

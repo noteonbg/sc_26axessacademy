@@ -1,0 +1,506 @@
+project has already started
+
+SME talk to you...convert their English into files, functions and variables. ( being a programmer)
+yesterday .. review some feedback..  self testing oneself is a good skill to have in any learning..
+we have multiple things to do,, in that case depending on noisy gland or organ called brain is a bad idea..
+depend on checklist.
+technical checklist.. we will make one.
+we will continue entertainment with javascript.. ( javascript is a new language and be conscious)
+
+
+Reality we have to adapt according to what is expected from us..
+
+pdf
+
+0. eternal rule in writing technical things, write numbered points and dont write paragraphs or bullets.
+1. folder which contains the assingments readme.txt
+2. we have pdf where screen shots are there and also location of the code...
+mention in the pdf first two points.
+1.1 location of code is in ....
+1.2 readme.txt or md is in ....
+1.3 screen shots.
+pdf attachment should not cause issues..
+
+unconscious stuff , task not mapped to correct iteration.. this was surprise..
+
+
+English ( SME experts ) is going to come how do you convert that into code..
+
+6 year kid or 100 year kid , most of them cry non stop when you ask for details..
+
+
+workitem 
+
+acceptance criteria ... should have numbered points.. with details..
+
+java side should be ready .. before you think of web side
+
+clear 5/5 in service function.. funeral has began..it will come definitely
+1. service function.. 
+2. what is input 
+3. what is its output
+4. how does output indicate that things succeeded failed ,failed due to what.
+
+
+you have a choice..
+1. you can design html page... thinking ok this is service layer I plan to call
+how the look of the page what will change.
+what ui components should I show.
+what events should i react to.
+when will I call service functdion.
+
+1. once you service...  service function with details.
+1.1 it means you know the model to use.
+1.2 you can have an idea regarding what you need to do in the repo.
+
+be very busy and frustrated..
+
+
+
+all i said to start with.
+1. ensure your stories, workitems have details with numbered points.. attachements... you design..
+2. English is fine. take each sentence and ask what is service function, input, return type and 
+return must mention.. failure cases   
+3. decide your look of the page..
+4. decide your repo part..
+may be high probability of getting code done properly..
+
+selftest folder
+backend  -- java part
+frontend .. html ,css,js
+only problem we cannot link thee two, it is ok.. just look independently and see whether
+they work..
+
+
+
+Being busy is free
+being relevant is not.
+Culture is correct... no judgements... focus on the project all of us are its slave.
+unequal effort is ok..
+Whether we are in good mood or bad mood whocares, architecture first and then code.
+
+
+please remove graphic icons it ind... text.
+
+
+two things.. self testing.
+
+
+
+
+checklist for you.
+
+
+1. ensure iteration is correct for the task..
+2. in your code folder. readme.md ... some points..
+3. in pdf
+3.1 location of the code
+3.2 location of readme.md
+3.3 screen shots.
+4. attach pdf to the task.
+
+
+from project point of view.
+everybody in the team first self test yourself.. we know what remedial action to take...
+approach..
+
+0. boards reflect reality...( acceptance is clear.. no moral science words in acceptance criteria)
+1. service function design.
+2. web ui or repo design.
+3. complete 2 , you have webui, repo ..
+4. test it works or not.
+
+--------------------- end of my rant---------------------------
+
+I am assuming everybody is using
+let and const. and never var ( is another name for headache ) anywhere...
+
+
+what you do in javascript.
+1. setup events.
+2. do some logic..
+2.1 make http request , get response and use the data..
+3. based on logic.. update the ui.
+3.1 change the part of the html...  
+3.2 navigate to a different page ( routing.. )
+
+
+I hope people realized the importance of Ramesh and suresh during function assignment..
+
+
+
+most of times what we are doing is.
+
+
+1. some important function is given by Ramesh.
+2. Ramesh tells hey you have to pass me a function only then I will work.
+3. we are suresh, we want to call Ramesh function, we define a function as per Ramesh expectation
+and then call Ramesh function passing our function as input..
+
+const freak ={ a:3,b:4}
+freak.a=7;
+
+
+in your entire javascript i guess you would have used only let and const and not var anywhere.
+
+you cannot two variables with the same name in the same scope.
+
+
+
+
+whenever you feel there is a need to assign a function, go for arrow funtions
+when we assign a function, it is 100%  we define   a function, but never call the function 
+
+when we define a function and we are going to call it.. arrow function is just not worth it.
+
+There will be lot of event registrations in javascript... use the arrow function for it..
+
+
+
+where I will use arrow function..  English answer, whenever I feel there is a need to define and assing
+a function I will use arrow function, because I 100% know I am not the caller.
+
+
+
+register for events using arrow functions.
+
+
+let x ={ radius:3 };
+x is an object. it does to belong to any class..  welcome to javasript.
+
+
+but then if we want to create multiple objects with similar properties.
+
+
+let x = { radius:3 }
+let y ={ radius:4 }
+let z ={ radius:6} 
+
+javascript gives you a class syntax. you can write a class and then create object.
+
+
+class concept of javascript is used lot in real life.. why models we use in java
+will become classes in javascript.. models are needed to call the service function
+or get the return type of service function..
+
+
+Account.. it was used like input to service functions
+and some service functions returned Account.
+so Account was a model..
+so all these models needs representation in the web tier... web tier calls service functions..
+
+
+arrow functions important syntax.
+class syntax is important from a project point of view..
+
+
+function f1(x,y,z)
+{
+console.log
+}
+
+
+f1(3);
+
+
+
+style of coding
+Destructuring which is very commonly used in javascript.
+
+
+Destructuring. means you take an object or an array and move its values to individual varibles.
+
+
+let x= { length:3, breadth:4 }
+let q = x.length; //Number
+console.log(typeof q);
+
+in this case we destructured an object..
+we can destructure an array.
+aprt from this, nothing else..
+
+
+Destructuring..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+quick summary
+1. keep your bp level normal focus on the project, running commentary is free..
+2. javascript
+2.1 set up events.. ( function assignment.. arrow functions)
+2.2 do some logic... 
+2.3 update the ui..
+2.2 and 2.3 .. document.getElementbyId... access sections of the page....
+it in this place, you will use class, destructuing also..
+
+
+destructuing is style of coding... nothing great technically but commonly used in javascript
+so we will use its usage a lot in react.. 
+100% your project in javascript will breathe only objects...
+
+
+destructuring things.
+1. take array or objects and move its individual elements or properties to a separate variables
+
+2.
+
+js 
+ ui
+ service  -- logic to call the service function of java.. and in this.. you will use models
+ model. --write class.
+
+
+spread operator copy and expand..
+again only for two things Arrays and objects.
+
+
+
+
+
+from object to individual variables... ( destructuring..)
+
+
+from object to copy of an object and then making changes to it ( spread)
+
+original object called X
+ dont touch it..
+make a copy of it Y and hten add things to it.
+spread operator.
+
+
+Promise..
+It will never happen now It will take some time.. we have to wait. if you are doing something
+where you have to wait.. it is called async
+
+async f1()  //why aynch because f1 has to wait
+{
+
+	await dosomething(); // why you have to wait because somebody has promised. to do something
+
+
+}.
+
+because of promise, we are waiting, because we are waiting function asynch.. we will take it slow.
+
+what is important
+
+who Promised.. Ramesh
+to whom .. Suresh.. ok great...
+
+
+who Promised .. Ramesh
+to Whom .. Ramesh only very scary..
+
+
+
+I want to make a request, some server side ocmponetn will process it and give me response
+this will take time.. this is done by using a promise.
+
+
+Ramesh
+tells you have to pass me two functions f1, f2.
+I am doing job X when I feel i succeeded in job X, then I will call your f1.
+when I feel I failed in the job X, then I will call f2.
+
+
+Ramesh wrote a function which returns a Promise.. to Suresh.
+This promise to to usable by Suresh , suresh has to pass two functions as input to the promise
+first functdion 
+
+
+
+
+Suresh
+likes Ramesh job X. so he will call Ramesh Promise how.
+by defining two functions f3 and f4 , sursh will pass f3 and f4 to Ramesh Promise.
+
+
+
+const y =new Promise(x);
+this x is a function... so Ramesh can be use arrow functions why.. Ramesh will do define and assign
+to whom. to whomever person who Wroe the Promise class. Promise is a inbuilt class.
+
+how many arguments should x take what should x return Ramesh cannot decide, the person
+who wrote Promise will tell Ramesh that..
+
+The person who wrote told Ramesh hey you must be pass me a function whose input is another two functions.
+and it must return anything..
+
+
+those who dont understand suffer suffer . welcome to respecting theory.
+
+
+
+when we are going to call a function, what the first thing we should do..?
+open documentation 
+those who dont know theory of function assignment entertainment guaranteed. and full English will come..
+
+tak your time understand promise concept.
+and copy paste two three examples so that you dont need to think of syntax.. but then 
+ask what ramsh is doing, what suresh is doing. ..
+
+
+
+you have a promise.. 
+
+if you have a promise...x.
+
+x.then(callthisfunctionwhenthingssuceed).catch(call this function when things fail)
+
+
+succes and failure and logic of deliveirng on promise is not on us ramesh job is do that..
+
+
+ramesh code.
+
+function doingsomething(input)
+{
+
+return new Promise((x,y)=>{ 
+	taking something to deliver on promise;	
+	judging whether success happened or failure
+	if success call x function
+	if failure call y function.
+});
+
+
+
+
+}
+
+
+
+1.do you have a promise, Yes..
+2. then while callin the function I will use await.
+3. in the function where I used await, i will call that function as async
+
+
+
+
+
+
+
+
+Promise theory is imporant
+styles  of coidng ok two ways are there..
+
+
+then and catch.
+async await promise..
+
+
+
+line 45..
+result an object which is returned
+when the resolve function is called.
+
+
+
+if you aare dealing with a promise. you have two appraoches..
+
+
+
+approach 1
+1. promiseobject.then(successfunction).catch(failfunction) //remmber you function should one input
+argment that will have the promise sent to you.
+
+
+approach 2
+
+inside a async function
+
+asynch function f1()
+{
+	try
+	{	
+		const datagivenbypromisewhensucceeded = await promisefunction();
+
+	}catch(whenpromisefaileddatagivenbypromise)
+	{
+
+	}
+
+
+
+}
+
+all functional programming in java. is copied from javascript.. all the class you see in javascriptis copied from java..
+
+
+quick summary
+
+0. I am promising something to somebody else
+1. I am doing something which takes time..( start of promise)
+2 . I may succeed or I may fail 
+3. person who wants to check on the promise... must use asnch, await, try and catch
+or promiseobject.then(successfunction).catch(failedfunction)
+
+axios. in case your sme is a technical person.. ask them what would you prefer to fetching
+the server resources, fetch or axios.. both are opinions... if they axios we prefer axios
+else fetch
+
+what is moost important thing during rsponse we should first do.
+
+check the response status... if status is 2xx it means it is succss
+if yu get 4xx or 5xx entertainment troble
+4xx user is in comma state.. user related problems
+5xx programmer is in comma state.. programmer related problems.
+we should know to hanlde it in the ui.
+
+
+ramesh has promised suresh.
+so ramesh must tell suresh one day.. .whether he succeeded or not.
+
+
+module concept.
+1.i have two js files. a.js and b.js
+2. how to use functions written in a.js in b.js.
+
+
+so what to do.
+0. things are non deterministic
+1. complete the javascript assingmetns what has been given in  42.
+2. try to see did you understands today concept of destructuring, spread , promise, modules.
+3. for topic 2, dont bother "thinking syntax"  focus on copy pasting some examples .. but prove
+you understood the example and also prove for promises and modules you know ramesh and suresh are there.
+4. hard thing... remaining asisngments are completed and understand overall process.
+4.1 did you identify what will change in html .. what syntaxes did you use for changing parts in html.
+4.2 broad css, on class usage how did the layout appear.
+4.3 javascript
+4.3.1 event handling.
+4.3.2 logic.. part..
+4.3.3 how did impact the ui.
+5. self test (coming monday dead 17th august 2026 ) Item scenario are you able to code
+both java part and html, css and javascript part..
+
+
+
+my biggest fear, lack of clarity and people are busy.. 100% disaster..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

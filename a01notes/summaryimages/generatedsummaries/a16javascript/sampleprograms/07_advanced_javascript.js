@@ -66,6 +66,9 @@ console.log(`Implicit Return Tax:    $${calcTaxStandard(50000)}`);
 console.log("\n--- ES6 Class & Objects ---");
 
 class BankCustomerAccount {
+
+
+    
     constructor(accountNumber, customerName, initialBalance = 0) {
         this.accountNumber = accountNumber;
         this.customerName = customerName;
@@ -117,6 +120,7 @@ const financialProfile = {
         tier: "Platinum"
     }
 };
+console.log(financialProfile.holder.firstName);
 
 // Object Destructuring with nested values & default fallback
 const { accNo, metrics: { creditScore, tier }, branch = "Mumbai Main" } = financialProfile;

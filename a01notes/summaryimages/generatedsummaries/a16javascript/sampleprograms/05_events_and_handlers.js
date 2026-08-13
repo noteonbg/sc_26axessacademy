@@ -48,7 +48,7 @@ const rateInfo = document.getElementById("rateInfo");
 
 if (rateCard) {
     // mouseenter & mouseleave
-    rateCard.addEventListener("mouseenter", function () {
+    rateCard.addEventListener("mouseenter", () =>{
         rateInfo.style.display = "block";
         rateCard.style.backgroundColor = "#e0f2fe";
         logEvent("EVENT: mouseenter fired on Interest Rate Card.");

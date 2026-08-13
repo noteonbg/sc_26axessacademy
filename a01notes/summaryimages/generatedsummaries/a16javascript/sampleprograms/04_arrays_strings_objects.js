@@ -72,6 +72,7 @@ const bankLedger = [
 
 // forEach() - Iteration
 console.log("Ledger Summary (forEach):");
+
 bankLedger.forEach((elementofarray, index) => {
     console.log(`  [Tx #${index + 1}] ID: ${elementofarray.id} | ${elementofarray.type} | Amount: $${elementofarray.amount} | ${elementofarray.status}`);
     return "hey hello";
