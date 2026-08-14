@@ -7,7 +7,7 @@ what we will be covering
 3. how html, CSS and JavaScript work together.
 4. quick revision what ,we should have understood this week..
 5. may be project process...
-6. Monday is assessment for html , css and javascript.
+6. Monday is assessment for security and javascript.
 7. what is expected on coming week review.
 JavaScript Basics
 Handling form input values
@@ -16,7 +16,7 @@ DOM Events
 8. node installation is done..
 self test.. item... that would have help you..
 
-Business is a very tough thing.. so getting paying customers being profitable are will not happen
+Business is a very tough thing.. so getting paying customers being profitable , will not happen
 accidentally so it has to be respected..
 
 
@@ -30,7 +30,7 @@ Security == Technology, then non stop entertainment is expected..
 
 we play the probability game most of times.. have  a process which eliminates the probability of risk.
 
-security , just like  css... is a separate skil.. so we must be knowing 1/5 in security..
+security , just like  css... is a separate skill.. so we must be knowing 1/5 in security..
 
 Security is not  I thing, it is a company thing..
 
@@ -76,19 +76,165 @@ somebody is confused whether they should make a paying thing or a free thing..
 in their confusion.. they give software which is free. but secretly in their mind they are crying
 No you should pay me.. this kind of software always has bugs..
 
-example of great free software apache foundation..
+example of great free software Apache foundation..
 
-how did viruls or malaware we donwnloaded without testing it...
-
-
-join back by 11.19AM 
+how did virus or malware, we downloaded without testing it...
 
 
+ in every programming language you will get an immutable version of string, why security demands it..
+
+
+how do you create an immutable object..
+
+1. class
+1. non static variables.
+2. thru constructor assing it.
+3. then dont have setters have only getters.
+object of this class is immutable.
+
+
+immutable REctangle.
+
+class REctangle
+ private int length;
+private int breadth.
+	REctangle(int l, int b)
+	{
+
+	}
+	getter.. method no setter
+
+
+
+Account c = ?
+prove me 100% ? is an Acount object only means Account should be final class.
+
+it is vague, but do understand immutable objects are needed at coding level to enforce security..
+
+
+process, tool usage , security, testing,logging   == better Imitate first and then suggest improvements if any..
+
+
+security is all in the back end, in the front end some fancy dress security..
+
+rule no 1, in banking.. never trust the front end..
+
+
+freak point.
+everybody who plans knows that nothing will according to plan.
+planning is done for direction rather than for certainty..
+
+
+quick summary
+1. know what information cannot be shared..
+2. service function level think of security impliations but you dont need to implement any code now..
+3. password is sheer torture.. 
+
+overall intent is .. anybody who gets my data should not be able to useit...
+
+you need to think of security in terms of layers..
+
+
+getsomething?userid=24
+
+image a person who can know how to use browser better than us.. our security should not break
+that is anecessity today..
+
+
+SQL Injection..
+
+100% everybody has used PrparedStatement and not Statement in their jdbc why...
+security...
+
+statement we use plain text in our queries, that can lead sql injection
+
+
+where 1=1
+
+
+
+
+www.x.com
+only reqwuest from x.com shoul be processed
+if it is y.com block..
+cors..
+
+
+
+
+moral of the story
+
+1. know security is process + technology issue.
+2. know some basics of private key, public key.
+3. know that you cannot trust the client... check everything on server.
+4. passwords or any sensitive data should be encrypted....  if hackers gets access to the data
+he should find it useless.
+5. focus on service function and have some idea "non coding way" what kind of security it needs.
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+KNow context.. that is important 
+I am planning for my project. they will not appreciate because their expectation
+what progress "in code" did you do for your project.. Tradeoff.
+
+team members a,b,c
+
+a is wriring the code integrated with our project
+x
+
+ourproject folder
+    x
+	a code will be presetn	
+
+
+folder structure we will resolve on Monday before we start react.. your project will be on react.
+till then prioritize.
+
+0. culture is everything in a project...keep your focus on project success
+1. document everything... 
+2. Board update for week5 if any present... see is there iteration..(doubt)
+3. Decide who will do what... in the project.. take a call.
+4. based on that update the board.. project related organization and board..
+5. think about service function design, review it as a team..
+6. think how will the overall project integrate.. use the ai tool also but review it as a team..
+7. ensure all the html you have a rough idea how will it look like....( using paper or paintbrush ..)
+8. ensure somebody builds the common asssets, ie overall page how will it look like..
+9. folder structure we will think what to do..? because you are going to build it by using react
+and not by using html ,javscript usage will change.. css will remain same.
+
+
+
+technical risk..
+test themselves whether they are ok with html, javascript, css and java part
+by trying the item one.. example.
+
+
+	
+1. credit card origination start with your project planning.
+2. remaining people be ready to show where we are in javascript assignment adventure...
+
+
+Immediate technical priority is every body know in javascript
+
+1. how to setup events.
+2. access sections of the page
+3. do some logic.
+4. update the page..
 
 
 
