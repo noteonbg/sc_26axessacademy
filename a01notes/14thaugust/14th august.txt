@@ -1,0 +1,108 @@
+
+
+1. project orientation. 9 to 10 am, evening 4 to 5 PM (sme interaction for other project teams)
+
+what we will be covering
+2. cyber security . 
+3. how html, CSS and JavaScript work together.
+4. quick revision what ,we should have understood this week..
+5. may be project process...
+6. Monday is assessment for html , css and javascript.
+7. what is expected on coming week review.
+JavaScript Basics
+Handling form input values
+Form Validation
+DOM Events
+8. node installation is done..
+self test.. item... that would have help you..
+
+Business is a very tough thing.. so getting paying customers being profitable are will not happen
+accidentally so it has to be respected..
+
+
+Security.. depends on the risk profile of the project...
+
+
+Security = Process + technology
+Security == Technology, then non stop entertainment is expected..
+
+
+
+we play the probability game most of times.. have  a process which eliminates the probability of risk.
+
+security , just like  css... is a separate skil.. so we must be knowing 1/5 in security..
+
+Security is not  I thing, it is a company thing..
+
+Dont insult a process + technology thing into only a technology thing..
+
+
+what requires lot of intelligence is to know every decision is a "Trade Off"
+
+
+interesting subject to know a little bit 1/5 is Economics..
+
+
+most of the security problems are well known.. and there are solutions for it
+and we don't need to act as though we are first person experiencing it..
+
+
+Quick summary
+1. security is a process +technology respect both.
+2. security.. proportional to the risk we have...
+3. denial of service.. is very common threat...
+
+
+
+multiple choice questions are for stupid people
+open ended questions are for intelligent people.
+
+when I join the project
+why not ask what all security protocols do i need to follow during coding..?
+and then try to find out what it does..
+
+
+Distributed denial of service.
+man in middle
+password breaking
+spoofing.
+Phishing.
+
+
+Intent first, language next..
+
+from last 25 years we have kind of crazy problem..
+somebody is confused whether they should make a paying thing or a free thing..
+in their confusion.. they give software which is free. but secretly in their mind they are crying
+No you should pay me.. this kind of software always has bugs..
+
+example of great free software apache foundation..
+
+how did viruls or malaware we donwnloaded without testing it...
+
+
+join back by 11.19AM 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -59,11 +59,11 @@ If Ramesh sends this as plain text, anyone snooping on the internet router or Wi
    - Suresh receives the scrambled text.
    - Suresh uses **Suresh's Private Key** to unlock the message back into clean text: `"Transfer ₹50,000 to Account #98765"`.
 
-> 🎯 **Key Rule for Confidentiality**: **Encrypt with the RECIPIENT'S Public Key.** Only the recipient can read it with their Private Key.
+>  **Key Rule for Confidentiality**: **Encrypt with the RECIPIENT'S Public Key.** Only the recipient can read it with their Private Key.
 
 ---
 
-## ✍️ Scenario 2: Suresh Proves a Message Came From Him (Digital Signature / Authenticity)
+## Scenario 2: Suresh Proves a Message Came From Him (Digital Signature / Authenticity)
 
 ### The Problem
 Suresh sends an official approval to Ramesh:

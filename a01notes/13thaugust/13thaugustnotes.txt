@@ -305,7 +305,7 @@ to Whom .. Ramesh only very scary..
 
 
 
-I want to make a request, some server side ocmponetn will process it and give me response
+I want to make a request, some server side component will process it and give me response
 this will take time.. this is done by using a promise.
 
 
@@ -316,7 +316,7 @@ when I feel I failed in the job X, then I will call f2.
 
 
 Ramesh wrote a function which returns a Promise.. to Suresh.
-This promise to to usable by Suresh , suresh has to pass two functions as input to the promise
+This promise to usable by Suresh , suresh has to pass two functions as input to the promise
 first functdion 
 
 
@@ -451,13 +451,13 @@ axios. in case your sme is a technical person.. ask them what would you prefer t
 the server resources, fetch or axios.. both are opinions... if they axios we prefer axios
 else fetch
 
-what is moost important thing during rsponse we should first do.
+what is most important thing during response we should first do.
 
-check the response status... if status is 2xx it means it is succss
-if yu get 4xx or 5xx entertainment troble
+check the response status... if status is 2xx it means it is success
+if you get 4xx or 5xx entertainment trouble
 4xx user is in comma state.. user related problems
 5xx programmer is in comma state.. programmer related problems.
-we should know to hanlde it in the ui.
+we should know to handle it in the ui.
 
 
 ramesh has promised suresh.
@@ -467,6 +467,7 @@ so ramesh must tell suresh one day.. .whether he succeeded or not.
 module concept.
 1.i have two js files. a.js and b.js
 2. how to use functions written in a.js in b.js.
+
 
 
 so what to do.(repo updated with whattodo.txt and todays code also..)
