@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity 101 - Financial Services Student Hub</title>
+    <style>
+        :root {
+            --scb-red: #dc2626;
+            --scb-dark: #7f1d1d;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1e293b;
+        }
+
+        .sec-header {
+            background: linear-gradient(135deg, var(--scb-red) 0%, var(--scb-dark) 100%);
+            color: white;
+            padding: 35px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .sec-header h1 { margin: 0; font-size: 2rem; }
+        .sec-header p { margin: 6px 0 0 0; opacity: 0.85; }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+
+        .card:hover { transform: translateY(-3px); }
+
+        .badge-red {
+            background-color: #fee2e2;
+            color: var(--scb-red);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .card h3, .card h5 { margin: 0 0 10px 0; color: #0f172a; }
+        .card p { color: #64748b; font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px; }
+
+        .btn-red {
+            display: block;
+            text-align: center;
+            background-color: var(--scb-red);
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn-red:hover { background-color: #b91c1c; }
+        .btn-outline { background: transparent; color: var(--scb-red); border: 1px solid var(--scb-red); }
+        .btn-outline:hover { background: #fee2e2; }
+    </style>
+</head>
+<body>
+
+<header class="sec-header">
+    <div class="container" style="margin:0 auto;">
+        <h1>Cybersecurity 101 Student Hub</h1>
+        <p>Standard Chartered Training — Essential Security Mechanisms & Cryptography Concepts</p>
+    </div>
+</header>
+
+<div class="container">
+    
+    <div class="grid">
+        <!-- Card 1: Ramesh & Suresh Story -->
+        <div class="card" style="border-left: 4px solid var(--scb-red);">
+            <div>
+                <span class="badge-red">Encryption Story</span>
+                <h3>🔐 Public & Private Keys (Ramesh & Suresh)</h3>
+                <p>Simple narrative guide explaining how Ramesh and Suresh use Public & Private key pairs to send secret messages, create Digital Signatures, and establish fast HTTPS connections.</p>
+            </div>
+            <a href="06_asymmetric_encryption_ramesh_suresh_guide.md" target="_blank" class="btn-red">Read Story Guide (06_...md)</a>
+        </div>
+
+        <!-- Card 2: Spring Boot & React Blueprint -->
+        <div class="card" style="border-left: 4px solid var(--scb-red);">
+            <div>
+                <span class="badge-red">Developer Blueprint</span>
+                <h3>⚙️ Spring Boot & React Security Guide</h3>
+                <p>Non-syntax architectural blueprint explaining client/server trust boundaries, stateless JWT tokens, Spring Boot authorization, CORS, XSS/CSRF, and dual-layer validation.</p>
+            </div>
+            <a href="05_spring_boot_react_security_architecture_guide.md" target="_blank" class="btn-red btn-outline">Read Stack Blueprint (05_...md)</a>
+        </div>
+
+        <!-- Card 3: Practical Mechanisms -->
+        <div class="card" style="border-left: 4px solid var(--scb-red);">
+            <div>
+                <span class="badge-red">Operational Mechanisms</span>
+                <h3>📘 Practical Banking Security Mechanisms</h3>
+                <p>12-step non-technical operational guide covering Input Validation, Parameterized Queries, Salted Hashing, MFA/OTP, Rate Limiting, Session Timeouts, RBAC, TLS, and Digital Signatures.</p>
+            </div>
+            <a href="04_practical_banking_security_mechanisms.md" target="_blank" class="btn-red btn-outline">Read Numbered Guide (04_...md)</a>
+        </div>
+    </div>
+
+    <h3 style="color:var(--scb-red); margin-bottom: 20px;">🧪 Practical Executable Security Labs</h3>
+
+    <div class="grid">
+        <!-- Lab 1 -->
+        <div class="card">
+            <div>
+                <span class="badge-red">Lab 1 • OWASP #3</span>
+                <h5>SQL Injection Defense</h5>
+                <p>Payload simulation (<code>' OR '1'='1</code>) vs Parameterized Prepared Statement protection.</p>
+            </div>
+            <a href="01_sql_injection_defense.js" target="_blank" class="btn-red btn-outline">View Lab 1 Code</a>
+        </div>
+
+        <!-- Lab 2 -->
+        <div class="card">
+            <div>
+                <span class="badge-red">Lab 2 • Cryptography</span>
+                <h5>Salted Password Hashing</h5>
+                <p>PBKDF2 SHA-512 password hashing with 16-byte random salts against Rainbow Tables.</p>
+            </div>
+            <a href="02_password_hashing.js" target="_blank" class="btn-red btn-outline">View Lab 2 Code</a>
+        </div>
+
+        <!-- Lab 3 -->
+        <div class="card">
+            <div>
+                <span class="badge-red">Lab 3 • Integrity</span>
+                <h5>Digital Signatures</h5>
+                <p>RSA 2048-bit key signing & SHA-256 integrity verification for wire transfer payloads.</p>
+            </div>
+            <a href="03_digital_signatures.js" target="_blank" class="btn-red btn-outline">View Lab 3 Code</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

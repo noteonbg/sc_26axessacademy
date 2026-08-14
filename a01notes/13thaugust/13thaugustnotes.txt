@@ -469,10 +469,10 @@ module concept.
 2. how to use functions written in a.js in b.js.
 
 
-so what to do.
+so what to do.(repo updated with whattodo.txt and todays code also..)
 0. things are non deterministic
 1. complete the JavaScript assignments what has been given in  42.
-2. try to see did you understands today concept of destructuring, spread , promise, modules.
+2. try to see, did you understands today concept of destructuring, spread , promise, modules.
 3. for topic 2, don't bother "thinking syntax"  focus on copy pasting some examples .. but prove
 you understood the example and also prove for promises and modules you know Ramesh and Suresh are there.
 4. hard thing... remaining assignments are completed and understand overall process.
@@ -482,7 +482,8 @@ you understood the example and also prove for promises and modules you know Rame
 4.3.1 event handling.
 4.3.2 logic.. part..
 4.3.3 how did impact the ui.
-5. self test (coming Monday  17th august 2026 ) Item scenario are you able to code
+5. self test (coming Monday  17th august 2026 ) Item scenario are you able to code(javapart
+and html part both)
 6. understand the existing examples already written and prove you know what is happening..
 both java part and html, CSS and JavaScript part..
 
