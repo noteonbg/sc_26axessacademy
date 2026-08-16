@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variable Scope Demo: var vs let vs const</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .info-card {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h2 { color: #2563eb; margin-top: 0; }
+        p { font-size: 1.05rem; line-height: 1.6; }
+        .instructions {
+            background: #e0f2fe;
+            border-left: 4px solid #0284c7;
+            padding: 15px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #0369a1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="info-card">
+    <h2>JavaScript Variable Comparison: var vs let vs const</h2>
+    <p>This HTML page executes a complete comparison script testing <strong>scope</strong>, <strong>re-declaration</strong>, <strong>re-assignment</strong>, <strong>hoisting</strong>, and <strong>const object mutation</strong>.</p>
+    
+    <div class="instructions">
+        Instruction: Open your Web Browser Console by pressing F12 (or Right-Click -> Inspect -> Console tab) to inspect the live output!
+    </div>
+</div>
+
+<script>
+    'use strict';
+
+    console.clear();
+    console.log("=========================================================");
+    console.log("   JAVASCRIPT VARIABLE DEMO: var vs let vs const");
+    console.log("=========================================================\n");
+
+    // ---------------------------------------------------------
+    // 1. SCOPE DEMONSTRATION (Block Scope {} vs Function Scope)
+    // ---------------------------------------------------------
+    console.log("--- 1. SCOPE DEMONSTRATION (Block Scope {} vs Function Scope) ---");
+
+    if (true) {
+        var varScopedVariable = "I am var (Function/Global Scoped)";
+        let letScopedVariable = "I am let (Block Scoped)";
+        const constScopedVariable = "I am const (Block Scoped)";
+    }
+
+    console.log("Outside block - var variable:", varScopedVariable); // Works! var leaks outside block {}
+
+    try {
+        console.log(letScopedVariable);
+    } catch (error) {
+        console.log("Outside block - let variable error:", error.message); // Throws ReferenceError
+    }
+
+    try {
+        console.log(constScopedVariable);
+    } catch (error) {
+        console.log("Outside block - const variable error:", error.message); // Throws ReferenceError
+    }
+
+    console.log("\n---------------------------------------------------------");
+
+    // ---------------------------------------------------------
+    // 2. RE-DECLARATION DEMONSTRATION
+    // ---------------------------------------------------------
+    console.log("--- 2. RE-DECLARATION DEMONSTRATION ---");
+
+    var varItem = "Initial var value";
+    var varItem = "Re-declared var value"; // Allowed! var permits re-declaration
+    console.log("varItem re-declared value:", varItem);
+
+    let letItem = "Initial let value";
+    // let letItem = "New value"; // SyntaxError if uncommented! let forbids re-declaration in same scope
+    console.log("letItem initial value:", letItem);
+
+    console.log("\n---------------------------------------------------------");
+
+    // ---------------------------------------------------------
+    // 3. RE-ASSIGNMENT DEMONSTRATION
+    // ---------------------------------------------------------
+    console.log("--- 3. RE-ASSIGNMENT DEMONSTRATION ---");
+
+    let letCount = 10;
+    letCount = 20; // Allowed! let permits re-assignment
+    console.log("Re-assigned letCount:", letCount);
+
+    const constLimit = 100;
+    console.log("constLimit value:", constLimit);
+
+    try {
+        constLimit = 200; // Throws TypeError! const forbids re-assignment
+    } catch (error) {
+        console.log("Re-assigning const error:", error.message);
+    }
+
+    console.log("\n---------------------------------------------------------");
+
+    // ---------------------------------------------------------
+    // 4. CONST OBJECT MUTATION DEMONSTRATION
+    // ---------------------------------------------------------
+    console.log("--- 4. CONST OBJECT MUTATION DEMONSTRATION ---");
+
+    const employee = {
+        id: 101,
+        name: "Euler",
+        department: "Engineering"
+    };
+
+    console.log("Original const employee object:", employee);
+
+    // Mutating properties of a const object IS ALLOWED
+    employee.name = "Ramanujam";
+    employee.role = "Senior Architect";
+    console.log("Mutated const employee object:", employee);
+
+    try {
+        // Re-assigning the entire object variable reference IS FORBIDDEN
+        employee = { id: 102, name: "Gauss" };
+    } catch (error) {
+        console.log("Re-assigning const object reference error:", error.message);
+    }
+
+    console.log("\n---------------------------------------------------------");
+    console.log("   DEMO COMPLETED - CHECK SUMMARY TABLE IN CONSOLE");
+    console.log("---------------------------------------------------------");
+
+    console.table([
+        { Feature: "Scope", var: "Function/Global Scope", let: "Block Scope {}", const: "Block Scope {}" },
+        { Feature: "Re-declaration", var: "Allowed", let: "Forbidden", const: "Forbidden" },
+        { Feature: "Re-assignment", var: "Allowed", let: "Allowed", const: "Forbidden" },
+        { Feature: "Object Property Mutation", var: "Allowed", let: "Allowed", const: "Allowed (Properties mutable)" }
+    ]);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Use Case 1 - Components, Props and States</title>
+    <style>
+        /* Pure Vanilla CSS - No external libraries */
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --border: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: var(--dark);
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        .page-wrapper {
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 1px solid #cbd5e1;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h3.page-title {
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin-top: 0;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+        }
+
+        .section-block {
+            margin-bottom: 25px;
+        }
+
+        .section-header {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .component-box {
+            padding: 8px 0;
+            font-size: 1rem;
+        }
+
+        .btn-custom {
+            background-color: #f1f5f9;
+            color: #334155;
+            border: 1px solid #94a3b8;
+            padding: 7px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .btn-custom:hover {
+            background-color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- Entrypoint importing src/main.jsx -->
+<script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>

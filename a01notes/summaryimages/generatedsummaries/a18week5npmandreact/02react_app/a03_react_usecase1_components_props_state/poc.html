@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter Example</title>
+</head>
+<body>
+
+  <h2>Open the console to see the output</h2>
+
+  <script>
+    function useCounter(initialValue = 0) {
+      const state = { value: initialValue };
+
+      function setValue(newValue) {
+        state.value = newValue;
+        console.log("Updated count:", state.value);
+      }
+
+      return [state, setValue];
+    }
+
+    // Destructure with initial value
+    const [counter, updateCounter] = useCounter(10);
+
+    console.log("Initial count:", counter.value); // 10
+
+    updateCounter(25); // Updated count: 25
+
+    console.log("Final count:", counter.value); // 25
+  </script>
+
+</body>
+</html>

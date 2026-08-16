@@ -1,0 +1,22 @@
+/* Strategy 2: Component-Specific CSS for Header */
+
+.app-header {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}

@@ -397,3 +397,43 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclips
 
 !ENTRY org.xmind.ui.mindmap 4 0 2026-08-14 09:47:55.445
 !MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 4 2026-08-14 17:59:55.258
+!MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...
+!SESSION 2026-08-16 20:41:18.032 -----------------------------------------------
+eclipse.buildId=R3.7.9.201912052356
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclipse.keyring @user.home/Application Data/XMind/secure_storage F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-16 20:41:21.183
+!MESSAGE Skip unrecognized command line argument: '-eclipse.keyring'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-16 20:41:21.185
+!MESSAGE Skip unrecognized command line argument: '@user.home/Application Data/XMind/secure_storage'
+
+!ENTRY org.xmind.cathy 1 0 2026-08-16 20:41:22.689
+!MESSAGE Path queued to be opened: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.cathy 1 0 2026-08-16 20:41:24.425
+!MESSAGE Ready to open files: [F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind]
+
+!ENTRY org.xmind.core.command 1 0 2026-08-16 20:41:24.437
+!MESSAGE Malformed URI: F:\scproject\sc_26axessacademy\a01notes\mm\maybesummary.xmind
+
+!ENTRY org.xmind.ui.mindmap 4 0 2026-08-16 21:06:46.878
+!MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 0 2026-08-16 21:12:37.922
+!MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 0 2026-08-16 21:15:24.117
+!MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 0 2026-08-16 21:34:37.028
+!MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 4 2026-08-16 21:34:42.596
+!MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...

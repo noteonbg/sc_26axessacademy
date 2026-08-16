@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Use Case 2 - Manufacturing Equipment Portal</title>
+    <style>
+        /* Pure Vanilla CSS - No external libraries */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --dark: #1e293b;
+            --border: #cbd5e1;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; padding: 30px; margin: 0; }
+        .container { max-width: 950px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .section-title { font-size: 1.25rem; color: #1e293b; font-weight: 700; border-bottom: 2px solid var(--primary); padding-bottom: 8px; margin-bottom: 20px; }
+        .custom-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .custom-table th, .custom-table td { padding: 12px 15px; border: 1px solid #cbd5e1; text-align: left; }
+        .custom-table th { background-color: #f1f5f9; color: #334155; }
+        .selected-row { background-color: #dbeafe !important; font-weight: 600; }
+        .form-column, .details-column { flex: 1; background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #475569; }
+        .form-group input, .form-group select { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; }
+        .btn-submit { background-color: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 4px; font-weight: 600; cursor: pointer; }
+        .btn-submit:hover { background-color: var(--primary-dark); }
+        .detail-row { margin-bottom: 12px; color: #334155; }
+        .status-badge { padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; display: inline-block; }
+        .status-active { background: #dcfce7; color: #15803d; }
+        .status-under_maintenance { background: #fee2e2; color: #b91c1c; }
+        .status-standby { background: #fef3c7; color: #b45309; }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
