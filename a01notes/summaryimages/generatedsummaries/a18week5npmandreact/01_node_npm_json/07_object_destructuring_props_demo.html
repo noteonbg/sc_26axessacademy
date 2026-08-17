@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Destructuring & React Props Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        h2 { color: #2563eb; margin-top: 0; }
+        h3 { color: #1e293b; border-bottom: 2px solid #2563eb; padding-bottom: 6px; }
+        pre {
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.95rem;
+        }
+        .result-box {
+            background-color: #e0f2fe;
+            border-left: 4px solid #0284c7;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn:hover { background-color: #1d4ed8; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Financial Domain: Object Destructuring vs React Props</h2>
+    <p>This demo explains how destructuring JavaScript objects directly in a function signature is the exact mechanism React uses for Component Props.</p>
+</div>
+
+<div class="card">
+    <h3>1. JavaScript Function Signature Destructuring</h3>
+    <pre><code>// Function Signature Destructuring (Financial Account Statement)
+function printAccountStatement({ accountHolder, accountNumber, balance, currency = "USD" }) {
+    return `--- Account Statement ---
+Account Holder : ${accountHolder}
+Account Number : ${accountNumber}
+Current Balance: ${currency} ${balance.toFixed(2)}`;
+}</code></pre>
+
+    <button class="btn" onclick="runDemo()">Run Destructuring Demo</button>
+    <div id="outputArea" class="result-box">Click the button above to view execution output...</div>
+</div>
+
+<div class="card">
+    <h3>2. Direct Comparison: Plain JavaScript vs React Component</h3>
+    <pre><code>// Plain JS Function Call
+printAccountStatement({
+    accountHolder: "Euler",
+    accountNumber: "ACC-789012",
+    balance: 15450.75,
+    currency: "USD"
+});
+
+// React Functional Component Call (Behind the scenes, JSX converts to identical JS object!)
+&lt;AccountCard 
+    accountHolder="Euler" 
+    accountNumber="ACC-789012" 
+    balance={15450.75} 
+    currency="USD" 
+/&gt;</code></pre>
+</div>
+
+<script>
+    'use strict';
+
+    // 1. Function definition using Object Parameter Destructuring in Signature
+    function printAccountStatement({ accountHolder, accountNumber, balance, currency = "USD" }) {
+        return `--- Account Statement ---
+Account Holder : ${accountHolder}
+Account Number : ${accountNumber}
+Current Balance: ${currency} ${Number(balance).toFixed(2)}`;
+    }
+
+    function runDemo() {
+        console.clear();
+        console.log("=================================================");
+        console.log("   FINANCIAL OBJECT DESTRUCTURING DEMO");
+        console.log("=================================================\n");
+
+        // Object 1: Full properties
+        const customer1 = {
+            accountHolder: "Euler",
+            accountNumber: "ACC-789012",
+            balance: 15450.75,
+            currency: "USD",
+            branch: "NY-Main" // Extra property ignored by function
+        };
+
+        // Object 2: Currency omitted (uses default fallback 'USD')
+        const customer2 = {
+            accountHolder: "Ramanujam",
+            accountNumber: "ACC-345678",
+            balance: 85200.00
+        };
+
+        const res1 = printAccountStatement(customer1);
+        const res2 = printAccountStatement(customer2);
+
+        console.log("Call 1 Output:\n" + res1 + "\n");
+        console.log("Call 2 Output (Default Fallback Currency):\n" + res2 + "\n");
+
+        document.getElementById("outputArea").textContent = 
+            "1. PASSING FULL OBJECT:\n" + res1 + "\n\n" +
+            "2. PASSING OBJECT WITH OMITTED CURRENCY (DEFAULT 'USD' APPLIED):\n" + res2;
+    }
+
+    // Auto-run on load
+    runDemo();
+</script>
+
+</body>
+</html>

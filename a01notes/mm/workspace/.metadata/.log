@@ -462,3 +462,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data ./workspace -eclips
 
 !ENTRY org.xmind.ui.mindmap 4 0 2026-08-17 16:23:25.604
 !MESSAGE Failed to locate wizards order xml: org.xmind.ui.mindmap/src/org/xmind/ui/internal/wizards/wizards_order.xml
+
+!ENTRY org.xmind.ui.mindmap 4 4 2026-08-17 17:59:54.431
+!MESSAGE [save] start...[save] add state...[save] clean...[save] doSave start...[save] doSaveWorkbookToTempStorage start...[save] doSaveWorkbookToTempStorage over...[save] doSaveWorkbookToURIFromSource start...[save] new file...[save] serialize start...[save] new FileOutputStream...[save] setOutputStream...[save] serialize success...[save] doSaveWorkbookToURIFromSource over...[save] doSave over...[save] success...over...

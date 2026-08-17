@@ -555,6 +555,59 @@ observe capital letter for the function
 Join ghcp and then come back and after feedback...
 
 
+rework is pain avoid to extent possible. by following a good process...
+It is a "we" and not an  "I"..
+
+1. have a numbered word document which contains details of requirements
+and everybody review it once.. painful but do it..
+2. how will each of html pages look like review it.
+3. update the boards and tasks
+4. be clear about folder structure... how do you know
+look at a01notes\summaryimages\maybeproject\a02projectfolderstructure md files
+5. break you html pages into components....and how css will fit in.. now.
+look at a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture understand the code and read the readme.md file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
