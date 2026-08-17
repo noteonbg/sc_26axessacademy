@@ -23,7 +23,9 @@ versa.... , ensure you know what to do...
 
 Aug 17th 2026 
 
-rework is pain avoid to extent possible. by following a good process...
+Intent first , Language next...
+
+rework is pain, avoid if possible, by following a good process...
 It is a "we" and not an  "I"..
 
 Current Focus.
@@ -52,7 +54,8 @@ and everybody review it once.. painful but do it..
 4. be clear about folder structure... how do you know
 look at a01notes\summaryimages\maybeproject\a02projectfolderstructure md files
 5. break you html pages into components....and how css will fit in.. now.
-look at a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture understand the code and read the readme.md file.
+look at a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture 
+understand the code and read the readme.md file.
 
 
 ---------------------------------------------------------------------------------------
