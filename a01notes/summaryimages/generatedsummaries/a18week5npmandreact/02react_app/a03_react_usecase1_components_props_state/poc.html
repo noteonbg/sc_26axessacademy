@@ -8,19 +8,27 @@
   <h2>Open the console to see the output</h2>
 
   <script>
-    function useCounter(initialValue = 0) {
-      const state = { value: initialValue };
 
-      function setValue(newValue) {
-        state.value = newValue;
-        console.log("Updated count:", state.value);
+    //ramesh does this
+    function useCounter(initialValue = 0) {
+      const country = { value: initialValue };
+
+      function setHorrible(newValue) {
+        console.log("function assingment will not leave it... it follow me");
+        country.value = newValue;
+        console.log("Updated count:", country.value);
       }
 
-      return [state, setValue];
+      return [country, setHorrible];
     }
 
+
+    //suresh does this we are permannently suresh most of times
     // Destructure with initial value
     const [counter, updateCounter] = useCounter(10);
+
+
+
 
     console.log("Initial count:", counter.value); // 10
 

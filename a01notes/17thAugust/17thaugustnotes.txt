@@ -461,11 +461,11 @@ let x=(a,b)=> { return a*b; };
 
 css
 Parent, Child, siblings..
-remember this is heiarchy we usually refer to in the html page..
+remember this is hierarchy we usually refer to in the html page..
 
 <div>  <p> hi </p> </div>
-.innerHTML  ==chnge html inside some tag.. after using document.getElementbyId..
-.textcontent =text content..
+.inner HTML  ==change html inside some tag.. after using document.getElementbyId..
+.text content =text content..
 
 Local storage.. in the browser...if you store some data here when browser is closed also
 the data can be retrieved back later on...
@@ -474,12 +474,91 @@ Session storage.. when close the browser data is lost ...
 
 quick summary..
 0. process right..
-1. relax dont everything... is important .. waste time..
-identify changing part of html , make with id... usually.. changing part of css will come
+1. relax don't think everything... is important .. waste time..
+identify changing part of html , make with id... usually.. changing part of CSS will come
 thru application of classes...
-2. focus on html and css first and get things working...( via react...)
-oh I should show this data dynamicslly ok... 
+2. focus on html and CSS first and get things working...( via react...)
+oh I should show this data dynamically ok... 
 3. event handling. changing parts of the page, getting mock data is next phase..
+the way we are approaching project.. html + css = phase 1 and add javascript in phase 2.
+
+
+what syntaxes of javascript we should be 5/5
+1. map function, foreach function, function asisngment...
+
+2. how do you write react code..
+
+2.1 you have an existing project which is working..
+2.2 how is this working.. react is having a file called index.html, index.css and a component
+called App. thru index.js it is dumpting the app component into the index.html.
+
+
+
+
+
+
+export default function DynamicBadge({ status }) {
+   
+function freak({junk})// destructuring..
+
+{
+  console.log(junk)
+}
+
+
+freak({junk:44, scrap:55})
+
+
+
+
+
+
+
+
+
+<reactcomponent abc="23" def="44" />
+at time of using whatever we information we supply is called as props it is read only
+it is an object you can destructure at your component definition level.
+
+
+let conscious = f1();
+let y = conscious[0];
+let z = conscious[1];
+
+let [y,z]=f1();
+those who have not spent time on destructuing .. spend time and understand it..
+
+props
+state.. in react
+this is only way to introduce changes in your html page.. changing part of the html page
+how is it done.. answer is via props and via state..
+
+
+
+
+f1 returns an array and whatever is there in first elment is getting assigned to abc.
+second element in the array is getting assigned to def.
+
+
+how react component work..
+
+1. you define a function and kind of opinionated function
+function has html + JavaScript put together jsx.
+ensure it can be exported it will be used in some other component...
+
+2. you come to your app or any other component and call the function
+not function1();   <FunctionnameyouusedforTheApp/>
+observe capital letter for the function
+
+
+
+Join ghcp and then come back and after feedback...
+
+
+
+
+
+
 
 
 
