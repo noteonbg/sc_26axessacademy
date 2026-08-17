@@ -1,7 +1,7 @@
 Morning (Start of the Day)
 
-1. Check the board for stuck tickets or blocked tasks.
-2. Read team messages to catch urgent alerts or issues early.
+1. Check the board for blocked tasks.
+2. Read team messages to catch  issues early.
 
 Identify the main goal to focus on in today's standup.
 
