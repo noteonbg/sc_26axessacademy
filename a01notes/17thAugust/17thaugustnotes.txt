@@ -1,12 +1,490 @@
+assessment .. 2.00 to 2.45PM.
+ghcp session.. 3.30 to 4.30 PM 
+feedback... after ghcp session
 
-0. be a 4th std kid, English class, listen to English, social studies class listen to social studies......
+stay till 5.30PM without fail.
+
+
+Todays sessions
+
+0. Be a 4th std kid, in English class, listen to English, in  social studies class listen to social studies......
+
 1. standup.. tell me what is status of boards in terms of stories and tasks identified
 1.1 is the story updated .. yes or no. 
 1.2 are the tasks identified .. yes or no ( skip if 1.1 is no)
 1.3 has it been reviewed .. ( skip if 1.2 is no )
+
 2. understand how react works.
 3. assessment in the afternoon take it.
 4. will look at the project process after assessment is over in the afternoon...
+
+
+Real life Constraints Tradeoffs Contradictions.. 
+SME energy how much can preserve better..
+In the domain case, you can use ai chat..
+
+
+
+
+avoid rework to the extent possible..
+poor requirements gathering != requirements are changing..
+
+what is expected from us by coming Wednesday
+0. everybody in team participates in this..
+1. hopfully the entire ui is ready.. without any back end it is ok..
+2. for each screen you know which service will be called..
+
+1 each and everybody page... in react should have.
+
+1.1 html and css ready.
+1.2 javascript and events , changing of thte page thru mockdata.
+that 's all target for coming Wednesday..
+
+
+React is way thru which we are build html, css and javascript stuff . but thru react's opinion..
+react opinion concept of component, state and props.
+
+
+hope we know function assignment..
+hope we have never used var.. in our code.. we have used only const and let.
+
+1. i define function, i assign function, but I dont call it some system defined function will call it ..
+
+
+
+
+
+in web based world there is no shortage of opinions.. so generalize your learning..
+
+1. nodejs
+javascript runtime available outside the browser...
+
+2. npm
+build tool. packaging manager for javascript..
+
+
+3  react
+3.1 is an opinion how to build web ui components which eventually become only html,css,js
+for the browser..
+
+web based ui.. boss is browser.
+browser does not like react, angualar.... it tells give html,css and javascript ..
+circus we do in react finally it becomes html,css and javascript.
+react makes our job easier.. surely we should realize it..
+but for this we should know "React opinion on how to do things"
+
+
+
+1. how react works.
+2. what is json..
+3. in the process nodejs we are using and what is npm...
+
+
+There are many way to build react applicatin. as far the training goes we are going
+to take approach crate-react-app approach.. this create-react-app requires nodejs..
+hence we are going to learn nodejs..
+
+
+1. what is nodejs
+nodejs is javscript runtime available outside hte browser..
+what do you write we write javascript code, in what is file extension .js 
+how do i run javascript.
+
+node hello.js
+
+
+just showed that nodejs allows you to run your javascript outside the browser..
+
+npm.. registry..
+package manager..
+is place from where you download javascipt libraries. if you make a javascript library
+if you ant other people people to access, ensure it s published in the npm repository..
+
+
+npm...
+build tool.  ( dinosaur great grand mother used to use it..)
+
+
+1. download libraries given by other person.
+2. package the code.
+3. test the code.
+4. run the code..
+
+
+we are going to use two build tools
+1. npm.. for client side.. web ui
+2. maven for server side.. service, repo..
+generalize your learning so that you can remember less..
+
+
+we are using a build tool and we have to download the code.. from the repo.. via internet.
+so within company there can be lot of entertainment... so we need to give the tool
+proxy information.. here company specific ways there we should learn it and do it...
+
+
+
+1. node js you will install.
+2. to make npm work. we need to tell it how to access a proxy.. so some settings are needed.
+3. npm install package name.
+what will happen is two things.
+3.1 thru the proxy it will reach the npm registraty and download the necessary packages..
+4. package.json is a file created by npm to indicate which libraries we are using
+and when we have multiple files where it should start, how testing can be happen... lot of
+details about our project we can mention it or it will get mentioned in package.json.
+
+
+
+
+module 
+i have one.js
+i have two.js
+how to call functions of one.js in two.js or vice versa.. that is module conept.
+here browsesr has an opinion
+nodejs has an opinion..
+
+do a small poc. to know difference between modules when used in context of browser.
+and modules when used in context of nodejs..
+
+npm install. it will look package.json and download all the libraries needed
+for the project.
+
+
+npm start..
+it will look package.json which file to run.. because packge.json will have
+and it will run the things..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+most of times project gets killed because of "English speaking professors who are vague till death"
+
+Developer ghost will tell "I understood the reqruiements" what does htis mean.
+1. ui should having an idea.
+2. unit test cases..
+
+
+1. html , css sorted out.. show it sme let him tell whatever changes he wants.. we will incorporate..
+
+
+
+
+
+
+
+
+1. relax..
+2. install nodejs..
+3. check the proxy settings given in confluence ... and do that .npmrc... file..
+4. download the examplereactapp.. (whatevername) download the zip , unzip it.
+you will see package.json inside it..
+
+Patience first, Intelligence next..
+
+week5 folder.
+download the pdfs and keep it ready in respective folder.
+in terms of installation nodejs.. path of nodejs should be there, node.exe
+1. nodepoc.
+	create a file called hello.js, console.log(123); 
+and node hello.js and see whether output comes
+	look package.json is not there...
+	in nodepoc folder.. type npm install axios and see whether it works.
+	node_modules folder will created.. ( this works means.. proxy settings is correct)
+2. reactpoc
+	unzip the file patiently.
+	come to the folder.. reactexample look for package.json is it there..	
+	in the folder type npm install.
+	npm start.. see whether browser opens and some react application shows up in the browser.
+	how ... we will talk later on..
+4. start reading md file present in a18week5npmandreact
+and also in react folder also you will see a md file please go thru it..
+
+
+ 
+
+
+
+
+
+
+
+
+
+we are starting react...
+
+hope you can tell some story on nodejs.. javascript outside the browser.
+what is story you will tell about  npm..
+
+1..you installed some javascript library and it made use of proxy settings
+and downloaded intoa  folder called node_modules..
+
+downloading lilbraries specific to a project
+globally download.. user\node_modu
+
+everybody react project worked, how..
+1. npm install.. then it looked in package.json... what libraries are there 
+downloaded from the repo... using your settings in .npmrc....
+
+people who know architecture and people who respect systems.. will never go out of fashion...
+
+JSON..
+standard for representing variables..
+javscript agrees with it
+java agrees with it.
+python agrees with it
+c++ agrees with it..
+why it is a standard..
+
+you take a variable and represent in a string format which every programming language agrees.
+this is how things work in distributed computing in todays world..
+
+
+JSOn.. which variable are you talking about..
+
+if variable is an json format you can convert that into an object X of a particular language Y
+object X in language Y... convert that into a json string..
+
+two conversions you should know.
+
+1. you have an object in language X .. 
+
+let x = { length:3, breadth:4 }
+how to conver this into json..
+
+let y = JSON.stringify(x);
+y is a string...    {"length":3, "breadth":4  }
+
+
+if you got a json string, you can convert that into an object of that language..
+
+
+let stupid='{"name":"abc","age":1000,"location":"freak"   }' we got a json string..
+how to convert this into a javascript object..
+
+let y = JSON.parse(stupid);  //converted json stringinto javascript object
+y.name
+y.age
+y.location
+
+
+
+quick summary
+1. what is json, standard for representing variables.. I like Shakespearean English ok.. pick your words and chew other people brain...
+
+
+2. somebody tells I want to "deal" with json...... ok ghost..
+
+2.1 what do you have json string(X)  or an object of language with you(Y)
+2.2 if you have X convert that to language object... 
+2.3 I have Y with me ok convert that into a json string ( Y)
+
+
+
+if your case..
+
+client sends request to server..
+
+client javascript object.. that should converted into json.. go in the request.
+on the server... json should get converted into java object.. why server side is written in java..
+
+
+response comes...
+you have java object with you  that gets converted into json string..
+it comes to the client.. in the client... json string should get converted into a javascript object
+for you.
+
+
+
+during request.
+entry point is javascript object, convert that to json.. travels via request
+reaches server...
+server converts this json into java.. why.. server side ( srevice, repo,model) 
+is written in java
+
+
+during response
+java functions will return.. java objects.. that will get converted into json
+json will travel to the client.. the client sees it and tells ok json get converted
+to javascript why client in our case is written in javascript
+
+
+nursery kids who compare json with xml.. you can give them a chocolate and ask them to relax..
+
+rule of copy pasting.
+copy paste something totally and change its name and tell I am original..
+
+all I am saying "if we dont generalize our learning be buried under terminologies"
+
+
+freak point, getting into details is a pain. but then how can we work without that...
+
+
+quick summary
+0. with respect to your project use the ai chats to get clarify on domain ask it..
+what details you will put , what could be best flow.. respect business...
+1. nodejs  javascript outside the browser...module it has an opinion different from browser.
+2. npm.  -- how to get libraries, package.json, npm install... ( theory is build tool)
+3. json.  -- standard for representating variables.. what do you have json or an object.. be
+conscious..
+
+plan now is
+1. how react works..
+2. quick revision on last week you got an assessment at 2.00PM.
+3. some react at 2.50 to 3.15
+4. ghcp adventure..
+5. project planning
+
+react opinion is mix html and javascript together.
+this mixing is called with JSX  
+
+how do i write ui in react.. buzz word is component.
+what is component a piece of ui ( html+javascript+css) is used together.
+while writing this component we should be conscious. about what will change, what will not change..
+whatever will change.. ( props,state,events)
+
+
+todays lot of free opinions and each guy claiming I am best ... headache.. which headache
+prefer whatever company prefers..
+
+create-react-app when you use this... folder structure will look like what I am showing now
+
+
+
+ok we defined a react component .. how via function..definition ( we created the component)
+how are we going to call the function. components are called by using  atag..
+
+
+<FreakComponent/> this is called using the component.
+where you should use it in some other component... which component left to you
+
+by default React uses this component called App.
+
+
+by default react shows the page called index.html , it uses this as a drawing board...
+here by default the component it shows is the App component..
+
+
+1. we defined a component in react opinion... ( write a function whose fnctionname matches
+the filename, it should start with capital letter only please...)
+2. it should return one tag.. under which other tags are present..
+3. ensure export is done...
+
+
+ok this is a function, who is going to call it and how..
+
+1. come inside anther component which one.... app component under that how did
+I use the compoentn
+
+I used the component like tag   <FreakComponent/>
+
+when react sees it it knows it has to include the code written freakcomponent here and output will
+start appearing..
+
+
+defining a  function..  creating a component
+calling of afunction.. using the component
+but syntax will be different during calling <tag/>
+
+
+
+
+
+what is common, html,css,js or react or angular or next... who cares..
+
+1. focus on html, css make it appear...
+2. route it..
+3. then start attacking the dynamic part..
+4. then 
+
+
+props, state and event handling... how it is done in react way...
+
+
+
+
+
+
+
+quick summary
+
+
+1.Internet Protocol..
+2.Distributed Denial of service...
+3. only X user should see his account information.. Confdentiatity
+4. how information is secured and other people cannot see.. Crytography
+5. let and var.. let.
+6. let horrible=[2,3,4];
+   let nothorrible=horrible.map(num=>num-1);
+
+
+7. var freak;
+alert(freak);  // undefined
+
+8. let x = document.createElement("span");
+crete the tag and not append it...
+
+9. let lt =new Date();
+alert(lt)  date, time, timezone.
+
+
+let z =[2];
+z.push(4);
+console.log(z)2,4
+
+how does javascript start dynamic behavior..
+Event   Handlder
+
+
+
+let s=[2,3,4];
+const [freak,...rest]=s;
+freak  2
+rest  3,4
+s.forEach(whatiamdoing);  // it is a function
+
+
+how will it get called.
+
+let x =(a,b)=>a*b;
+let x=(a,b)=> { return a*b; }; 
+
+
+
+css
+Parent, Child, siblings..
+remember this is heiarchy we usually refer to in the html page..
+
+<div>  <p> hi </p> </div>
+.innerHTML  ==chnge html inside some tag.. after using document.getElementbyId..
+.textcontent =text content..
+
+Local storage.. in the browser...if you store some data here when browser is closed also
+the data can be retrieved back later on...
+
+Session storage.. when close the browser data is lost ...
+
+quick summary..
+0. process right..
+1. relax dont everything... is important .. waste time..
+identify changing part of html , make with id... usually.. changing part of css will come
+thru application of classes...
+2. focus on html and css first and get things working...( via react...)
+oh I should show this data dynamicslly ok... 
+3. event handling. changing parts of the page, getting mock data is next phase..
+
+
+
+
+
 
 
  
