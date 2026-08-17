@@ -1,0 +1,23 @@
+Morning (Start of the Day)
+
+1. Check the board for stuck tickets or blocked tasks.
+2. Read team messages to catch urgent alerts or issues early.
+
+Identify the main goal to focus on in today's standup.
+
+Mid-Morning (Standup & Sync)
+3. Run a strict, 15-minute Daily Standup focused on the Sprint Goal.
+4. Write down every blocker and impediment raised by the team.
+5. Set up quick follow-up chats for topics that need deeper discussion.
+
+Midday (Unblocking & Shielding)
+6. Contact stake holders to  clear away blockers.
+7. Sync with the SME or academic leads to keep user stories clear.
+
+Afternoon (Coaching & Meetings)
+8. Check in with team members to listen to concerns and coach them.
+9. Track progress on improvements decided in the last Retrospective.
+
+End of Day (Wrap-Up)
+10. Update the status of active blockers and open dependencies.
+11. Note down the top priority to tackle first thing tomorrow morning.

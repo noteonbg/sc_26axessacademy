@@ -19,17 +19,45 @@ on the system.
 versa.... , ensure you know what to do...
 
 
-Good morning Everyone today we will be doing the assignment evaluation again. 
-We will have the same approach like last week by review one by one. We will also check your Azure Boards and Azure Repos. Please follow below 3 steps and complete all the steps before the evaluation. 
- 
-1. Create a new task called ADO assignments under Week 2 (Make sure assign to yourself)
-2. Upload and attach your completed assignments to the task under Week 2
- (Git, Container, ADO)
-3. Push your completed assignments and codes to the Azure Repos
-
-
-
 ---------------------------
+
+Aug 17th 2026 
+
+rework is pain avoid to extent possible. by following a good process...
+It is a "we" and not an  "I"..
+
+Current Focus.
+1. boards with relevant information.
+2. folder structure clarity
+3. html, css , dynamic things what will appear file clarity...
+4. html, css is built by using react and routing is done..
+
+milestone 1 met... with 4.
+
+5. service function clarity... recheck...
+6. start javsacript and complete dynamic behaviour by using mock data.
+
+milestone 2. met with 6 ..
+
+did everyone contribute and commit...
+was reviews done
+
+
+Look at the images in a01notes\summaryimages\maybeproject for our priorities..
+
+1. have a numbered word document which contains details of requirements
+and everybody review it once.. painful but do it..
+2. how will each of html pages look like review it.
+3. update the boards and tasks
+4. be clear about folder structure... how do you know
+look at a01notes\summaryimages\maybeproject\a02projectfolderstructure md files
+5. break you html pages into components....and how css will fit in.. now.
+look at a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture understand the code and read the readme.md file.
+
+
+---------------------------------------------------------------------------------------
+
+
 
 Aug 13th 2026
 
