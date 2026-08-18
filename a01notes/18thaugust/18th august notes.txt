@@ -443,16 +443,34 @@ so summary is.
 2. you copied the components from my project
 3. in your app.js and not mine, you started using my component.
 the syntax for that is present in my app.jsx file in src folder.
-4. do a small poc.. 
+
+
+4. do a small poc.. ( in your src folder create a folder called poc , create
+the component inside it)
 component should show one textbox and a button.
 when you click on the button it should add the number given in the textbox
 and one more number will come from the props and show the result
 below in the textbox. ( if in a good mood try this without react also..)
 5. in the same example if answer got is divisible by 2, then show
 the sum in green color or else show in red color.. 
+
+
+
 6. poc making.. is a must to know theory... we will summarize it one more
 time. by using mind map..
+5. go thru the md file of a01_real_world_react_developer_handbook.md present
+in a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app
 
+in project
+0. if you know a better and faster way of doing it, please go ahead
+after documenting it.
+1. everybody board should have a story and assigned to the user.
+2. word  document containing details of the project requirement should be
+ready. (Numbered word document)
+3. repo strategy ie which branch will have everybody code and how people
+will create a branch and then raise  a PR... 
+4. individual ui how it will look, who will calling it...... as discussed
+earlier in the mind map.
 
 
 
