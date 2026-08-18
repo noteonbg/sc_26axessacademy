@@ -5,7 +5,17 @@ import React, { useState, useEffect } from 'react';
  * Displays time elapsed in seconds using useState and setInterval.
  */
 export default function Counter() {
-    const [seconds, setSeconds] = useState(0);
+    const [seconds, setSeconds] = useState(0);  
+   
+    /*
+    const freak=useState(0); 
+    let cp = freak[0];
+    let changingcp=freak[1]; // function defined by react and assigned to us., we have to call it
+    //when cp changes..
+*/
+
+
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {

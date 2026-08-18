@@ -1,0 +1,467 @@
+today .
+to make things useful in real life will not happen by accident
+we need system thinking..
+
+
+master = do your  job + .. also
+
+scrum master.
+1. share the boards... 
+2. they will monitor boards for story, tasks and progress.
+3. blockers..
+
+
+1. react ... ( how things change)
+props, state, and route ...
+2. Events ( what this word implies.. )
+3. project related adventures.
+3.1 repo how will it work for all the team members.
+3.2 folder committed to the "our" branch.
+3.3 board update ... 
+4. multiple things todo.. operate thru a checklist..
+
+
+
+what is assumption.
+1. you people understood what node, what npm does..
+2. your react is working because of both..
+3. got an idea how react component appears on the screen...
+3.1 created the component ( defined a function with some JSX syntax)
+3.2 you decided where to use the component  ( Tag name )
+3.3 how did you component appear in the html page.
+3.3.1 you had an index.html.
+3.3.2 there is javascript index.js.
+3.3.3 in this index.js you told put the app component under root id of html.
+3.3.4 typically we use our component under the app
+
+
+
+
+
+
+but important point dont forget.
+1. javascript.. language nature..
+2. real problem is very simple in my "opinion" trying to digest the fact
+that int is not a the great thing.. but object is greatest thing in any
+programming language takes time especially for people who come from college.
+college has decided their life to only int..
+3. function assignment will follow you everywhere..
+
+
+
+
+function f1(freak)
+{
+	console.log(freak);
+
+}
+
+
+f1("horror");
+
+
+
+
+
+
+state, props , meaning of event.. ( react nice engish called hooks)
+get, post, put, delete.
+modes of request in http
+
+
+keep your bp level normal and focus on concepts you will see that helps
+we have less things to remember only...
+
+what does component have.
+1. a piece of ui.
+2. some event handling.-- a function will get called eventually..
+3. some changing part and some non changing part.
+4. do some logic.
+5. some amount of styling can be done..
+
+theory of component is great and we must know it..
+but how we create react application there can be opinions on it.
+the opinion we prefer to use create-react-app. it has an opinion
+on folder structure..
+
+By default in react when a project is created there will
+be one component 100% present  ( T/F)-- True ... App
+App will appear in the html page... somebody should done
+the logic taking the app and ensuring it is put in the html page
+this also is done automatically when you create a react project
+index.js... which will put app into the place called root in the html.
+
+
+you are seeing something in the browser in react project.
+how did that appear..
+you should able to move thru a set of files to show how it appeared.
+== I understood architecture...
+
+
+
+any person who does not know his folder structure should not work on
+the computer...src
+
+src 	
+   page36
+	page36startcomponent
+   page37
+	page37startcompoen
+
+
+being conscious about folder structure is a must.. in react things
+come under src.. under src ok... create further folders and dump it
+on what basis should i create folders, based on feature you are implementing it.
+
+I have all my files only under src... and no folders below it..
+ok funeral has began.. it is just a matter it will get completed..
+
+hope moral of the story is.
+1. how does app component appear in the html
+2. in src, folders are needed... 
+
+
+all of you hope you are convinced, that java and javascript have
+nothing in common other than the word called java.
+we are using the word javascript.. that is very common.. but actually
+we are using a standard called ES6
+
+when you write any react application you can have 1000 great standards
+but finally you have to satisfy only one boss.. who is that boss? Browser
+
+browser will always be behind the standards.. so you need a mechanism
+to change things to what browser understands.. that tool also is present\
+as part of react library..
+
+
+key thing is know that your UI is no longer in a single html page... with
+a single css... rather it is split into a series of components.
+
+each component can have.
+1. ui part
+2. js part
+3. css part to it 
+3 is optional..
+
+component has typically got.
+1. ui.
+2. event handling part of that ui.
+3. changing part or referring of that ui.
+
+
+
+one asisngment in react and one assingmnt without react and infer
+which one is easier.. there is no doubt 100% react thing wil be easier
+to deal with... this is my rant.. and realize it..
+
+will react faster than html , js which we usually code for a real ui
+answer is yes.. because react can update only that part of the page which changes , whereas we may update the entire page..
+
+
+you have a component and section in the component called x which
+has to change...
+
+1. the way we do it in react is..
+tell react hey look x is changing part in the component. how by using
+a mechanism called state..
+whenever x changes. we tell react hey x has changed.. 
+then react will come to the html and upate that x.
+we should not update x directly.
+
+Freak.js
+//component 2 child component
+export function Freak({abc,fwo})
+{
+return (<div> ok enjoy entertainment </div>);
+
+
+}
+
+To call  function you must be inside a  another function.
+you are inside another component...
+
+//component 1 --parent component
+function App()
+{
+
+	function tolerateJavascript() {  console.log("horrible"}
+
+
+
+	return <div> generalize learning <Freak fwo={toleratejavascript} horrible="whocares" abc="nobodycares"/> <div>
+	}
+
+
+
+to pass information from parent component to child component use props..v
+
+drowned with function assingments people who dont know theory enjoy your misery.
+
+everytime you see function assignment you will see the following.
+
+X=map,find, filter, event registration...
+1. some function is being called. X
+2. some function is being defined Y
+3. some function is being assigned Y
+
+X(Y);
+100% sure X is defined by Ramesh and called by Sursh.
+100% sure Y is defined by Suresh and called by Ramesh.
+100% Ramesh knows that  he is going to call Y because suresh called X and passed Y as input argument.
+
+
+until we open other person code, there is no proof we know anything..
+
+
+hope we have an idea. of what prop is.. attributes passed while
+using the component, becomes object input at time of defining
+the component. since we told object, destructuring is possible.
+welcome to dynamic things in react.. how did dynamic thing appear
+in my component 
+
+one way is thru props..
+
+
+
+project failure can happen to 3 reasons.
+1. process issue 90% ... boards are not correct, confusion in requiements
+, git revenge on t he team...
+2. react skills. ( 5%)
+3. java skills. ( 5%)
+
+
+
+
+
+
+
+
+
+during destructring X becomes Y..
+
+X = object
+Y = independent variables.
+
+
+State ... if you have any changing part within a component that change
+is represented by state.
+
+what is state..
+
+
+react opinion.
+1. React is telling us  ,if you want to change something, you dont change it
+you tell me, I will change it.. 
+2. Becuae I have an opinion on how the UI
+should get updated.. 
+3. I will check entire ui and update only that part of ui
+which has to be changed.  -- virtual dom... (shakespearen jargon in react)
+
+
+Event..   
+
+1. some variable changes.
+2. somebody should be informed about this..
+
+
+
+
+
+
+
+
+if plane that is going to Mumbai to Jaipur is cancelled
+I am looking at my mobile non stop, I did not receive any intimation
+that plane was cancelled today..
+because I did not register for that event?
+
+Function asisngment..
+
+coding implication of hooking...
+I defined f1.
+I assigned f1.
+
+<button onclick="f1()"> ok theory is important </button>
+
+we have written code, we are hooking outselves to the system and telling
+hey system when event ... called onclick occrs tell me by calling my f1
+function.
+
+
+Event 
+1. hey do you its meaning first... ( change in variable value, notification mechanism...)
+2. what are you .. Event Source or Event LIstener..( I dont know comma state person ...)
+3. ok I am event listener ok you need hook.
+3.1 i will define a function.  -- function name is  kt
+3.2 i will assign a function.
+3.3 it is understood I wont call the function, somebody else will call it..
+4. event source will call the function kt...when the event occurs..
+
+
+11.18AM .. state..so cool react being event listner Q and our component
+being P... ie event source..
+
+when we say state i am using..we are event source..who is q event lisnter
+it is react.. which is event listener.
+
+
+Event Listeners do.
+1. they define a function.
+2. they register for the event  ( function assignment happens)
+3. they dont call that function.
+4. somebody else has to call that function when event has occurred.
+
+How do you know Event Source.
+1. we know something is changing.. here in this case X.
+2. x will change then he will call some function not defined by him
+but assigned to him...how did he know this function, it was assigned
+to him..
+
+
+welcome to theory or enjoy non stop English usage..
+
+
+ const [seconds, setSeconds] = useState(0);
+1. useState is a ready function of react, we are passing it a number.
+2. it returns us an array.. whose first element will value we passed...
+obviouisly a number in this case.
+2. second element of the array is a function definition which help
+us change the value of the first variable..
+3. why did we do this.. we had a changing part in our html called seconds.
+react opinion dont change antthing directly come thru me... that come thru me is nothing call setSEconds function to change seconds.. 
+
+setSeconds function calling we will do.
+defining we have not done. who will define ... REact...useState belongs
+to react.
+
+Event Listener
+1. REact has defined a function
+2. assigned to you.
+3. told you when somethings changes please call this..
+
+
+
+const [seconds, setSeconds] = useState(0); 
+react is registered with us.. saying hey look when that variable called
+second changes, you intimate me by calling setSEconds function..
+we are Event source, we do two things.
+1. something changes.. secons.
+2. we let the listener know... hey look this changed by calling their function
+in this case we are not definers of setSEconds.. we are only caller of 
+setSecond...
+
+
+
+i have a component, in that component something is changing. (x)
+when x changes, react is telling hey look please tell me x has changed
+how... 
+react tells use the function useState , give a default value for x, I will
+define  a function for calling when X has changed.. when you feel x has
+changed please call this function ...
+
+
+Event source..
+1. change something.
+2. call function of event listener.
+
+
+
+
+whenever you call a function what should we do first.. 
+open	documentation
+
+
+Hope people understand when we tell state,, in our code we have event source
+and react is event listener..
+
+
+useEffect(() => {
+        const intervalId = setInterval(() => {
+            setSeconds(prev => prev + 1);
+        }, 1000);
+
+        // Cleanup timer on unmount
+        return () => clearInterval(intervalId);
+    }, []);
+
+is used whenever you are making changes anything related to the browser.. or
+outsie the ui...
+setInerval is a window function, it has not thing nothing related to your page...document. hence.. we use useEfect
+
+
+
+
+
+1.props.
+2. state.
+3. event handling.. we are q.. no doubt 
+
+1. in react component how things are changing..
+props
+because of p and q.
+
+
+The way you link up the css class with react is by using class-name and
+not class syntax..
+
+
+
+whenever we want to change a value of the variable given in state.
+what we do is call the setFunction which we got from react
+
+
+setFunction(anotehrfunction)
+
+anotherfunction(existingvalue)
+	{
+
+return newvalue fo 
+
+}
+
+
+
+all the syntax is new agreed.
+summarize your theory.. how...
+1.generatedsummaries\a18week5npmandreact\02react_app\a03_react_usecase1_components_props_state
+2. you will under src components folder.
+copy the components folder to your src... 
+now ,open your app.js..
+look at the app.jsx  in src dont copy app.jsx to your system please..
+
+look at app.jsx and one by one dont bother about css
+make the component work in your app.js and then understand
+the code..
+
+component are written by  me.
+making the comonents work is done by you..
+using the components also you are only doing it..
+
+
+so summary is.
+1. it is your project only..
+2. you copied the components from my project
+3. in your app.js and not mine, you started using my component.
+the syntax for that is present in my app.jsx file in src folder.
+4. do a small poc.. 
+component should show one textbox and a button.
+when you click on the button it should add the number given in the textbox
+and one more number will come from the props and show the result
+below in the textbox. ( if in a good mood try this without react also..)
+5. in the same example if answer got is divisible by 2, then show
+the sum in green color or else show in red color.. 
+6. poc making.. is a must to know theory... we will summarize it one more
+time. by using mind map..
+
+
+
+
+
+
+
+
+
+
+
+
+
