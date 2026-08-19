@@ -46,6 +46,10 @@ a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_rea
 a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\07_react_intercomponent_communication_demo
 \a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\a04_react_usecase2_equipment_portal
 
+for 6 copy your react project folder rename the folder and do each one of them one by one..
+each of these is a new project..
+
+
 
 -----------------------------------------------------
 
