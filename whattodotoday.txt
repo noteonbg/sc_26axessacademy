@@ -35,7 +35,7 @@ document is there in
  \a01notes\summaryimages\maybeproject\projectx\docs\1.0_architecture\1.3_component_planning_and_contracts_guide.md
 you will see a checklist at the last.
 
-4. repo structure and what you will broadly doing  look at .
+4. repo structure and what you will broadly doing   .
  \a01notes\summaryimages\maybeproject\projectx\docs\5.0_onboarding\5.4_complete_6developer_azure_repos_git_workflow_and_poc_guide.md
 
 5. be sure you understand the folder structure..of your project.
