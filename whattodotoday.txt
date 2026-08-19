@@ -22,13 +22,32 @@ versa.... , ensure you know what to do...
 
 ----------------------------
 
-Aug 18th ...2026.
+Aug 19th  2026.
 
 1. ensure you get hands on practice on react and have a view how components
 work.. and how event handling works and how state works..
 
-2. 
+2. review your boards( tasks and stories are done or not)
 
+3. each of you must know about your components you are writing and what they will do.
+whole team must know how each component how it will integrate.. 
+document is there in
+ \a01notes\summaryimages\maybeproject\projectx\docs\1.0_architecture\1.3_component_planning_and_contracts_guide.md
+you will see a checklist at the last.
+
+4. repo structure and what you will broadly doing  look at .
+ \a01notes\summaryimages\maybeproject\projectx\docs\5.0_onboarding\5.4_complete_6developer_azure_repos_git_workflow_and_poc_guide.md
+
+5. be sure you understand the folder structure..of your project.
+ a01notes\summaryimages\maybeproject\projectx , go thru the readme.md file present in the folder.
+
+6. understand the code present in  ( it talks about styling, intercomponent communication and one small case study...)
+a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture
+a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\07_react_intercomponent_communication_demo
+\a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\a04_react_usecase2_equipment_portal
+
+
+-----------------------------------------------------
 
 
 
