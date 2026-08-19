@@ -42,14 +42,18 @@ you will see a checklist at the last.
  a01notes\summaryimages\maybeproject\projectx , go thru the readme.md file present in the folder.
 
 6. understand the code present in  ( it talks about styling, intercomponent communication and one small case study...)
+
 a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\06_react_css_styling_architecture
 a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\07_react_intercomponent_communication_demo
 \a01notes\summaryimages\generatedsummaries\a18week5npmandreact\02react_app\a04_react_usecase2_equipment_portal
 
-for 6 copy your react project folder rename the folder and do each one of them one by one..
-each of these is a new project..
 
-
+copy your existing project amd rename it and use it. so totally after this
+you must have 4 react projects.
+project 1,  what you worked on yesterday
+project 2,  where you practiced your css. (06_react_css_styling_architecture)
+project 3,  where you practice inter component communication (07_react_intercomponent_communication_demo)
+project 4,   where you are practing the a04_react_usecase2_equipment_portal(a04_react_usecase2_equipment_portal)
 
 -----------------------------------------------------
 
