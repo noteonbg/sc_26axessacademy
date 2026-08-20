@@ -1,0 +1,463 @@
+today adventure..
+
+1. react intercomponent communication ,routing and rest api calls.
+2. project rant.. and may be steps..
+3. what data points are needed to tell  "I am in the project"
+4. tomorrow adventure what everybody should be ready with... 
+
+
+<form id="xyz" >
+
+
+</form>
+
+xyz .. submit event it is understood there is  submit under the form...and that submit  button does
+not need any id.. give the fact that you referring to it anywhere in javascript..
+
+
+
+1. you identify changing parts in html and put an id for it, in case it is dynamic you generate the tags..
+2. you have css classes to the do makeup... 
+3. javscript... setup up events.. ( conscious )   in the js file any global things is irritation because
+user can change it via developer tools console..
+3.1 access things in from the html ( it should be under some particular context or event)
+3.2 logic building..
+3.3 update..
+
+
+
+Trust is fastest way to tell I cannot think..
+
+
+
+
+State..hey look there is a changing part in my component, to indicate that i have used state..
+
+
+
+const [chaingpart, changingpartfunction] =useState("defaultvalueforchangingpart");
+
+in communication.. English is not our mother tongue it is always great to use this word "for example...
+
+
+function functioname(freak)
+{
+
+}
+
+
+<add num1="3" callmehere={functinane}/>
+
+
+are we consciouis.. conscious of what , what is present in our variable..
+
+at time of using the component we can supply some information to that component... that is called as props..
+we are using the component where.. parent component..
+
+how parent component can suppy information to child component via props..
+welcome to consciousness ..
+
+
+all people who read variablenames instead of data type they belong to need a chocolate... to eat and chew..
+
+
+int f1(int a)
+{
+
+return 5;
+}
+
+we can just 1/5 broadly in the project but we should know. and not tell look at output, output is coming
+so be happy . pathetic...
+
+
+<B x=4 y=5/>
+
+
+
+function B({ x, y})
+{
+	
+x is separate variable which contains object.x
+y
+
+
+}
+
+function f1()
+{
+	e.preventDefault();
+
+
+}
+
+if parent wants to talk to child..
+its propos..
+
+child wants to talk parent, parent should allow a function to be passed via props..
+child will call that function.. there by giving nformation to the parent..
+in all these adventurs.. state is a must, because that is a changing thing ..
+
+Those who invest emotions in project pathetic..
+it is working.. go to the next thing.
+it is not working.. ok thing what needs to change why..
+that is it. zero emotions on project..
+
+
+tomorrow ok people can talk whatever they want.. and chew .... 
+
+Project presentation all the people in all teams where talking like business analyssts.. then it 
+is not tehnical presentation..
+
+moderate.. how to moderate..
+
+how does copilot solve lack of clarity in the user? this will go if we have habit of getting into details..
+
+
+
+It is logging and then debugging.
+
+Routing..
+
+
+REact tells I know an efficient way of changing your page...so if you want to change thing in the page
+come thru me.. how.. thur State.. any change you call a function given by React..
+
+
+const [freak,setFreak]=useState({});
+react tells ok i now know that freak is a variable which will change and it needs to appear on the html.
+react tells hey you dont change it.. you ask me to change it.. I will change it in a better way
+how, when you want to change freak, call the function setFreak.. which I gave to you.. react did function
+assignment..
+
+in JavaScript are we conscious...
+
+React Hooks (Dont trust think and judge thru a poc) -- theory of Event ( P, Q)
+1. React is going become an event listener.
+2. our component will become event source...
+so when things change, we tell react , react will be doing something, why it has registered
+for the event
+
+
+
+
+<Button onClick="f1()"> know theory </Button>
+
+is this function assignment or not?
+who is calling this function, we or the browser?
+browser, does browser care what we have written inside f1..
+
+
+what is happening inside.. 
+we have to chew their brain with some terminologies... they also feel happy we also can feel happy
+
+terminology chewing..
+
+
+quick summary
+1. you know component communication via props..
+2. hope you understood objects are the boss and not int..
+
+everytime I talk about state, hey look here is changing part..
+
+
+how  does a component change..?
+1. via state
+2. via props.
+ghost tells component changes.. ok what changed? component changed.. horrible.. hey look state changed
+or props changed..
+
+ Hooks are used in functional components once upon a time react guys thought the way
+to write react components is by using javasript classes...  then they changed their opinion
+no I will write clsses by using functions.. ok whatever opinion we follow..
+
+
+until we open other person code no really test of "do we know something" or not
+
+
+11.02 to 11.17AM we will take a break join back routing and rest api calls..(simple thing for function call)
+
+
+quick story.
+0. do you know what will change, what will not change.
+1. how component works.
+2. how state and props works.
+
+how event handling is setup
+how things appear in teh component, dynamic things.. 
+
+
+routing
+rest api calls.
+
+
+RESt API.. .
+
+1. it is a standard for defining and calling funtions in a distributed way.
+it uses http protocol as a base..so request/response is involved... for variables
+it uses json standar.. because when you tell functions how can we talk about funtions
+without variables..
+
+what is REST
+
+1. somebody defines a function this happens on system1 located in location P
+2. somebody calls the function this happens on system2 located in location Q
+=1 and 2 happens then we say .. it is distributed..
+
+all of your current adventures, thre was no two systems forgot about locations..
+where is function defined on system 1
+where is function called on system 1
+no distributed computing..
+
+
+www.google.com// url group.. website
+
+Ramesh
+when we write a function that can be called in distributed fashion by using http and json standads..
+we say are publishing the rest api.. or rest functions.. we defined it we did not call it..
+
+
+Suresh -- React
+he will call Ramesh function by using http protocol and URI( Universal Resource Identifier)
+given by the function to call the function..
+
+Hey are you calling the function,... conscious person should think and say Yes
+are you using http to call the function.. yes.
+when you call the function you need to pass inputs needed and get ther esponse.. in the response
+output should be... input and ouput will in some standard usually json..
+since calling involves request.. mode of request ... get, post, put or delete..
+since we are talking about output, response is there.. response means status codes will be there
+ok one day it will happen so Promise will be there..
+= ghost will tell I made a rest api call. , this is what we will doing in react...
+
+Getting rid of "I " diseases takes time.. becuae kid in college was buried in I...
+
+Ramesh one day...Spring boot
+
+whichever function we call via http, must have been defined in such a way that it can be called via http.
+what is this.. ghost word... "Publishign the api... "
+api.. what are you dong, calling or defining... he must answer.
+
+I published an api... ( this code is full of Event handling .. only )
+1 .you define a function a first, decide its input and output.. (normal language code)
+2. put a http cover on that function.. ( write a Rest controller.. function)
+2.1 you will tell hey this is uri.. name.. for calling the function
+2.2 mode of request..
+2.3 input will come via query parameter, path variable, body of the request..
+2.4 this is status code and this will be response...
+3. you tell ok run this in http server.. why without this. how will you make request and get a response..\
+
+
+once Ramesh defines a function and puts http cover on top of it.. anybody writing their logic
+in any language can call it because of json..
+
+
+Routing how do you go from one component to another... during some action..
+eample in html world is link..
+
+you can carry information as part of routing also..
+ 
+I im component 1, i am going to component 2 due to route.. I can carry some information route information.
+
+query parameter..
+go tocmponent2? empid=3;
+
+path variable.
+component/3
+
+you can send object in a shared space... 
+
+
+
+
+
+
+
+json is a a string format..  {  }
+keys also come in qutoes
+values can come in quotes or number, array, object is recognized
+undefined and function cannot come in json.
+
+
+
+
+
+
+
+
+
+
+
+
+
+quiuck summary
+1. you have some story telling on rest.. ( define a function and ensure it is callable by http.. publishing the rest api) .. i am calling the rest api function... ( calling the function via http.. and enjoying the request and response
+you get ) .. all data is typically thru json..., it is distributed...
+
+
+2. we have component, we want to go from one component to another... screen will change... routing..
+while you do routing you can carry information one one layer to another layer..
+
+how do do routing..
+
+1. react opinion, you have to install one more package react router dom.
+
+react routing is two things.
+
+1. first you configure for this string, show this component.
+
+Route Map  -this will not appear on the screen
+hell show a component called A
+heaven show a component called B
+earth show a component called C
+sun show a component called D.
+
+you will startusing ..
+usingthat links.. this will be seen on the screen.. page..
+
+navlink="hell"> welcome to hell </nv
+
+what kidn of router are you using
+Browser Router.. we are using..
+
+If youw ant routing to happen.. what all things are needed in the code.
+
+
+1. npm library installation.. react router dom.
+2. set the kind of router you are using in index.js or somewhere..
+3. you set up a router map...  for this string, this is the component to show.
+4. in your ui. you will string.. and what stirng to show to the user... 
+<A href="wheretogo"> what to show  </A>
+<NavLink to="/stringforthatcompoennt">whatever youw ant to show..</NavLink>
+
+how do do rest apis..
+
+
+
+useEffect(() => {
+    fetchItems();
+  }, [freak]);
+
+useEffect(somefunction,[whentocallthatfunction]);
+useEffect(someFunction,[]);
+call it only once when component is laoded..
+
+
+UseEffect takes a function ( function asisngment ) and an array as input..
+what it does. when you write empty array, it calls the function you passed only one time...
+if you put something in the array, whenever that changes, it will keep calling the function
+
+
+our fate is understand functions calls across multiple files. because that is what architecture is all about
+finally...
+
+
+
+usual style of writing react component is.. 
+one file for component.
+if you are calling some server api.. rest api.. you do it separate file..
+
+
+
+axios is one of most common libraries to makea rest api it needs axios libary installation by using npm..
+npm install axios..
+
+when overloaded with information and confused, stick with basics.. let me give an example.
+
+
+when you see a function call, what you want to do.. open  documentation..
+when you define a function, what you want to do... where it is calling..
+
+
+
+person who has to call teh function, must know the name of function or variable which has been assigned with that function.
+in rest api..
+
+1. he must server ip
+2. port number.
+3. ui.
+
+
+http://localhost:5000/api/items
+mode of request, get or post.
+input parameters..
+
+Keep your focus on.
+
+1. how your components work.
+2. how they interact with other components.
+3. how you navigate from one component to another component.
+4. what did you put in state, props.  ( hard part...)--conscious..
+5. css figure out how to keep it light and effective..
+4. push validation in second phase.. dont do it first phase..
+first phase.. is your ui looks properly, if everything is given dos the flow components happen..
+
+Archtiecture
+X component.js  --state,props, event handling.. from here you call the x api funtions
+X api(service).js  .. make rest api call and get the data send the data..
+
+
+Most of will realize why co-ordination between people is always a miracle..
+because we need a well defined process. which I think most teams find it hard to put in..
+that explains bp issues.. world war 3... 
+
+
+REmember there is easy ways to do validation and you should find out and use it.. there are third party
+libraries.. if you got access to that use it..
+
+sideeffect means something happens outside your component..
+contacting the server and getting data.. is happening outside your component.
+starting a timer service is windows feature again outside a component..
+these are called side effects..
+
+
+useffect(givemeafunction,whentocall);
+whentocall is an array, if is empty.. call it only once.
+if it has a vairalbe filled, then whenever that variables changes, call the function..
+
+
+
+
+promise.. resolve and rject will give you data..
+resolve.. you can get response data and use it..
+
+get
+post
+put
+delete
+these are http request modes..
+these are http request events.. so we can register for them what is what server or person who defines
+the rest api does..
+
+person who defines the function tells
+hey server, when somebody make s areqeust with get mode.. with this word scrap.. call my function..
+<button onclick="f1()"/>
+convention is
+post event is used for adding.
+get event is used for query
+put event is used for update
+delete event is used for deletion.
+ie your mode rquest is get. usually do query on the server.. l..
+indempotentn..
+
+
+12.56..
+what data points are needed to tell  "I am in the project"
+1. are you part of some repo. 
+2. did you do commit and raise a PR... if no you are not in a project.
+3. did the code work in your system... no.. you are not in a project.
+4. you should show your component working in your system.. and finally in the repo also.
+5. boards are updated..
+
+2.00PM join back..
+
+
+
+
+
+
+
+
+
+
+

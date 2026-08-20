@@ -9,7 +9,7 @@ import ChildAccountCard from './ChildAccountCard.jsx';
  */
 export default function ParentAccountManager() {
     // Initial Parent State Object
-    const [accountDetails, setAccountDetails] = useState({
+    const [horribledetails, setAccountDetails] = useState({
         accountHolder: "Euler",
         accountNumber: "ACC-789012",
         balance: 5000.00,
@@ -20,8 +20,10 @@ export default function ParentAccountManager() {
     // Callback function passed to Child component via props
     const handleChildUpdate = (updatedAccountObject) => {
         // Parent receives updated object from Child and updates state
+        console.log("am I  conscious");
         setAccountDetails(updatedAccountObject);
     };
+
 
     return (
         <div style={styles.parentContainer}>
@@ -30,15 +32,15 @@ export default function ParentAccountManager() {
 
             <div style={styles.parentStatusCard}>
                 <h4>Parent State Monitor</h4>
-                <p><strong>Master Balance:</strong> ${accountDetails.balance.toFixed(2)}</p>
-                <p><strong>Last Action Log:</strong> {accountDetails.lastAction}</p>
+                <p><strong>Master Balance:</strong> Rs {horribledetails.balance.toFixed(2)}</p>
+                <p><strong>Last Action Log:</strong> {horribledetails.lastAction}</p>
             </div>
 
             {/* Rendering Child Component & Passing Props */}
             {/* 1. account object passed DOWN to Child */}
             {/* 2. handleChildUpdate function passed DOWN to Child */}
             <ChildAccountCard 
-                account={accountDetails} 
+                account={horribledetails} 
                 onUpdateAccount={handleChildUpdate} 
             />
         </div>

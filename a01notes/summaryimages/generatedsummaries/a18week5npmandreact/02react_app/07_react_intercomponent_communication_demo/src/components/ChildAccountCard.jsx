@@ -9,6 +9,7 @@ export default function ChildAccountCard({ account, onUpdateAccount }) {
     const [depositAmount, setDepositAmount] = useState('');
 
     const handleDepositSubmit = (e) => {
+        console.log("am I conscious");
         e.preventDefault();
         const numAmount = parseFloat(depositAmount);
 
@@ -18,14 +19,15 @@ export default function ChildAccountCard({ account, onUpdateAccount }) {
         }
 
         // Creating updated financial object
-        const updatedAccountObject = {
+        const freak = {
             ...account,
             balance: account.balance + numAmount,
             lastAction: `Deposited $${numAmount.toFixed(2)} on ${new Date().toLocaleTimeString()}`
         };
 
+
         // Calling Parent Callback Function -> Sends Object Data UP to Parent
-        onUpdateAccount(updatedAccountObject);
+        onUpdateAccount(freak);
 
         setDepositAmount('');
     };
@@ -38,7 +40,7 @@ export default function ChildAccountCard({ account, onUpdateAccount }) {
             <div style={styles.infoBox}>
                 <p><strong>Account Holder:</strong> {account.accountHolder}</p>
                 <p><strong>Account Number:</strong> {account.accountNumber}</p>
-                <p><strong>Current Balance:</strong> ${account.balance.toFixed(2)}</p>
+                <p><strong>Current Balance:</strong> Rs {account.balance.toFixed(2)}</p>
                 <p><strong>Status:</strong> {account.status}</p>
             </div>
 
