@@ -453,6 +453,48 @@ what data points are needed to tell  "I am in the project"
 
 
 
+May be... 
+1. ensure board is updated.
+2. ensure your component works in your local system.
+3. if possible do a component check... state, props. event handling. .. how things appear
+on the screen
+4. one push of your code to your branch and no PR( why PR needs review.. not blind merge)
+5. your possible future plan of action..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,84 @@
+5 minutes presentation.
+2 minutes qa
+
+
+today adventure.
+1. standup
+2. plenary till 10.00AM
+3. back to classroom, some quick revision and project working.
+4. 2.00 PM to 3.30 PM fun Friday... adventure.
+5. 4.00 project presentation adventure begins..
+5.1 business logic is the boss.
+5.2 sequence of presenting is according to what requirements drive.
+5.3 keep the server running on your system. keep the code open.
+5.4 dont talk about code, until asked for..
+5.5 do mention , it is work in progress.
+5.6 document the feedback.. 
+
+
+
+
+parameters you are measured on next week on react..
+Punctuality
+Class Room Participation Score
+Assessment Marks
+Project Review
+Collaboration  -- check your pr and look at your code.. if you document this will help
+ADO Boards & Repos (Shakespeare ghosts dont enter here.. but they are strong ghosts.. so we will fight let us see...)
+Project Understanding and Scope Clarity ( hopefully Shakespeare does not enter.. )
+React Project Setup ( your folder structure )
+Components,  
+Props, State, and Hooks	
+Routing and Page Navigation
+API Integration in React ( if you got clarity on what you are expecting from the api.. it will help )
+Frontend Design and User Experience		
+
+
+we need to operate thru a checklist... when multiple items are there..
+
+
+
+Standard developer English.. have you understood the requirement.. Yes what is proof of it..
+not English talking
+
+testcases..  way thru which we can document what our component is doing..
+
+
+lack of clarity cannot be solved by becoming very busy...
+
+
+People should take reviews seriously.
+
+
+no reviews in the project == !00% guranteeed funeral..
+
+
+
+1. priority
+2. reviews.
+3. git approach is consistent.. eveyr team members what to do..
+4. if possible make use of the checklist..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
