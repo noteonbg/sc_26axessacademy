@@ -1,0 +1,25 @@
+meta {
+  name: Create Customer (@RequestBody Demo)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{controller_demo_url}}/api/v1/customers
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@bank.com",
+    "accountType": "SAVINGS",
+    "balance": 75000.00
+  }
+}

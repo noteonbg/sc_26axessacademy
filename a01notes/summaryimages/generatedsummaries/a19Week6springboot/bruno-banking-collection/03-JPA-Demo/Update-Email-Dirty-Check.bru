@@ -1,0 +1,11 @@
+meta {
+  name: Update Email (@Transactional Dirty Checking)
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{jpa_demo_url}}/api/v1/jpa/customers/1/email?email=sandra.updated@bank.com
+  body: none
+  auth: none
+}

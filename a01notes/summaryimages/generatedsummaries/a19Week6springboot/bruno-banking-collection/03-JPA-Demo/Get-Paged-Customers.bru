@@ -1,0 +1,11 @@
+meta {
+  name: Get Paginated JPA Customers (Pageable & Sort)
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{jpa_demo_url}}/api/v1/jpa/customers/paged?page=0&size=2&sortBy=id
+  body: none
+  auth: none
+}

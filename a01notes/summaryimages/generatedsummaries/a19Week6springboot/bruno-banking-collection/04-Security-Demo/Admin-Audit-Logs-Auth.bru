@@ -1,0 +1,16 @@
+meta {
+  name: Admin Audit Logs (Basic Auth - Admin Role)
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{security_demo_url}}/api/v1/admin/audit-logs
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: admin_carol
+  password: AdminPass2026!
+}

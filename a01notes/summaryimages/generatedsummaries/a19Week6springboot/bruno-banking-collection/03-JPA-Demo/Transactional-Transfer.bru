@@ -1,0 +1,11 @@
+meta {
+  name: Transactional ACID Fund Transfer
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{jpa_demo_url}}/api/v1/jpa/customers/transfer?sourceId=1&targetId=2&amount=2500.00
+  body: none
+  auth: none
+}

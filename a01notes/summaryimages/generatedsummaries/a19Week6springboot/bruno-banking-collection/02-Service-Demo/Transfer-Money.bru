@@ -1,0 +1,11 @@
+meta {
+  name: Transfer Money (Service Validation Rules)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{service_demo_url}}/api/v1/services/accounts/transfer?from=ACC-101&to=ACC-102&amount=5000.00
+  body: none
+  auth: none
+}

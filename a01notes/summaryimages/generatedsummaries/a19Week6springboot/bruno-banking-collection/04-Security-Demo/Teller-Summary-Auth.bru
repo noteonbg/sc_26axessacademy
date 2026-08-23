@@ -1,0 +1,16 @@
+meta {
+  name: Teller Daily Summary (Basic Auth - Teller Role)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{security_demo_url}}/api/v1/teller/daily-summary
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: teller_bob
+  password: TellerPass2026!
+}

@@ -52,6 +52,7 @@ if possible work on these things
 4. if possible make use of the checklist..
 5. generate test cases and see do you understand what it does...
 
+join back at 3.30PM after the fun Friday event.
 
 
 

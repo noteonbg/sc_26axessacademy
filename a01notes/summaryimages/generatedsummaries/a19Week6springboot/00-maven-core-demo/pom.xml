@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- =================================================================== -->
+    <!-- 1. MODEL VERSION & GAV COORDINATES                                  -->
+    <!-- =================================================================== -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>maven-core-demo</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <!-- =================================================================== -->
+    <!-- 2. PROJECT METADATA                                                 -->
+    <!-- =================================================================== -->
+    <name>Maven Core Concepts Demo</name>
+    <description>Demonstration project showcasing all core Maven concepts including Profiles &amp; Resource Filtering</description>
+
+    <!-- =================================================================== -->
+    <!-- 3. PROPERTIES                                                       -->
+    <!-- Reusable key-value pairs used throughout the POM                     -->
+    <!-- =================================================================== -->
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Dependency Versions -->
+        <junit.version>5.11.4</junit.version>
+        <commons-lang3.version>3.17.0</commons-lang3.version>
+        <slf4j.version>2.0.16</slf4j.version>
+        <logback.version>1.5.16</logback.version>
+        
+        <!-- Default fallback property value -->
+        <environment.name>Default Fallback Environment</environment.name>
+        <app.log.level>INFO</app.log.level>
+    </properties>
+
+    <!-- =================================================================== -->
+    <!-- 4. DEPENDENCIES & SCOPES                                            -->
+    <!-- =================================================================== -->
+    <dependencies>
+        <!-- Compile Scope: Available in compile, test, and runtime -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Runtime Scope: Needed at runtime, but not compile time -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Test Scope: Only available for unit testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- =================================================================== -->
+    <!-- 5. BUILD CONFIGURATION & RESOURCE FILTERING                         -->
+    <!-- =================================================================== -->
+    <build>
+        <!-- RESOURCE FILTERING: Replaces placeholders like ${environment.name} in application.properties -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Plugin (Testing) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.2</version>
+            </plugin>
+
+            <!-- JAR Plugin (Executable JAR configuration) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.example.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Exec Maven Plugin (Run main class via CLI) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>com.example.App</mainClass>
+                </configuration>
+            </plugin>
+
+            <!-- Clean Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- =================================================================== -->
+    <!-- 6. BUILD PROFILES (DEV vs PROD)                                     -->
+    <!-- Activate via: mvn exec:java -Pdev OR mvn exec:java -Pprod           -->
+    <!-- =================================================================== -->
+    <profiles>
+        <!-- Development Profile (Active by default) -->
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <environment.name>DEVELOPMENT (H2 In-Memory DB: jdbc:h2:mem:devdb)</environment.name>
+                <app.log.level>DEBUG</app.log.level>
+            </properties>
+        </profile>
+
+        <!-- Production Profile (Activate with -Pprod) -->
+        <profile>
+            <id>prod</id>
+            <properties>
+                <environment.name>PRODUCTION (PostgreSQL DB: jdbc:postgresql://prod-db:5432/bankdb)</environment.name>
+                <app.log.level>WARN</app.log.level>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>
