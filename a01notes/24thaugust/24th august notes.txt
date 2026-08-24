@@ -1,0 +1,655 @@
+welcome to system thinking.. zoom out..
+
+For any business getting a paying customer and being profitable over long periods of time is challenging and interesting..
+
+
+new born kids favourite words... "Innovative, creative, challenging"... are pathetic words if we dont give lot of details ..
+
+while you using copilot..
+pulse website... styling I would expect to confirm to this website and dont show any creativity on this.. please.
+ copilot to do some home work on requiremetns itself.. how your project can adapt to changes..
+show customers how the feature you added, adds business value..
+
+
+Today adventure.
+
+REal challenge in any project is figuring out this miracle character called  "Moderation"
+
+Intent first language next.. to make things useful in real life, it will not happen by accident..
+
+I feel people who are vague are oxygen thieves..
+
+
+Relax...
+
+Project success = process * technology * tools * culture..
+
+scrum master.
+sprint planning meeting..
+1. organize the team and work you need to complete..  and update the boards.
+2. you done yesterday, today and blockers..come back to us(academic lead... trainer.. ) 
+3. sprint review update the boards .. ( close it, update he boards... )
+4. sprint retrospective...
+
+
+Aryan.. may be missing today...
+
+today schedule.
+till 1.00PM session
+2.00PM assessement.
+4.00 to 5.00PM some random team project presentation to academy people..
+we will do some project evaluation.. quickly..
+
+
+
+Send a sprint Retrospective  to academic lead, Niranjana and your fellow team members today itelf...
+
+1. no paragraphs only numbered points.
+1.1 )what went well
+1.2 what could improve.
+1.3 what is your sprint plan.
+1.4 what were your learnings.
+
+
+0. concentrate.. on spring boot and remember you have three subjects.
+1. XML, Maven spring boot 
+2. focus on the project process.
+2.1 are stories and tasks specific.
+2.2 react working.
+   2.2.1 css style working...
+   2.2.2 component.. state, props, event handling are you clear... ?
+   2.2.3 routing..
+3. git PR and has your code been merged with our branch... 
+4. Review process.. how did you do it, and document it..
+5. Documentation.. are you documenting your journey...
+
+lack of clarity cannot be solved by people becoming busy..
+
+
+process point of view.
+1. this is story ok, this is tasked i was working on, this is tasked i am working on, blockers.. (may reduce vagueness in talk)
+2. acceptance criteria and description in usercase ( big sinners ), task should be having a description.. ( task specific technical activity
+can be mentioned if possible)
+3. practiced doing raised a pr where the "our branch" has changed and you are able to pull the our branches changes to your branch
+in the local system.
+
+Zoom out, projects , companies, individuals all of them get buried because of bad zoom outs and not because of bad zoom ins..
+
+Technical things..
+1. conscious about you know your folder structure, where your files go ... and why
+2. hope you know where react component planning basics..including event handling
+tip for you look at the excel sheet..
+3. this week we are building api, back end.. using spring boot. we must know how spring boot works..
+
+By thursday. we should know.
+
+0. if react component clarify is poor.. nothing will help we will be in a funeral surely..
+1. how to write a back end.
+2. how to  connect react to the back end.
+3. if possible add security to it also..
+
+
+All these terminologies you are aware.
+
+1. css class.
+2. component.
+2.1. event handling.
+2.2 state and props.
+2.3 routing.
+2.4 api call.
+3. service.
+4. repository
+5. model.
+ 
+
+
+what is common to all the 6 weeks..
+1. we are writing code in multiple files.
+2. function calls are happening across multiple files..
+why that is how architecture is implemented..
+
+
+Todays technical story...
+
+1. xml  1/5
+2. maven 1/5
+3. spring boot ( 3/5)
+
+I am building back end... spring boot using maven as a build system..
+Spring is a great framework to learn.. why it changed everything in IT industry .. atleast in terms how software design should be done..
+ 
+
+
+
+
+
+
+XML first
+
+what is purpose of XMl 
+
+1. to describe information using tags..
+2. XML is a meta language.. 
+from this you can derive other langauges if you want.. what do you mean by this..
+
+
+all language.
+1. vocabulary
+2. grammar. order of using the tags... in xml based world grammar comes in form of something called schema( recent 26 years old ) or dtd..(very old thing)
+
+purpose of xml
+1. to describe information
+2. what is use of it. unlinmited use... describing things have got unlimited usage because that is what information processing means..
+
+
+
+
+
+Maven
+Spring..
+
+
+
+
+
+best part of it.
+1. what is vocabulary you decide.
+2. what is grammar you decide..
+I will try to make it work for you.. validate it for you...
+
+<X><Y> hello </Y> </X>
+X and Y are vocabulary tags or words.
+under X should Y come or under Y should X come ie grammar...
+
+
+in a system we have to know multiple things not necessarily at 5/5 but being 0/5 is a sin and it will bite us surely..
+XML is an "amazing technology" why.. everybody has to know how to use it.. everybody who..
+
+
+1. I am clerk in office
+2. I am ceo in office.
+3. i business analyst
+4 i am programmer
+5. i am tester.
+
+USB
+Some technology is generic...
+-----------------------------------------------------------------
+
+hope you will do the rituals... create a folder week 6 under bootcamp
+copy the pdfs and have it...
+
+react assingments have gone for earth quake given the project enthusiasm.. what to do , let me think..
+
+
+all 24 of you must ask
+
+1. this is my react part.
+2. this is my java part
+we are in trouble.. we must 1 and 2 in the project we are working on.. re work your priorities in case you feel it is not there..
+
+standard project talk to address this. ( opinion and rant.. dont trust you can do better go ahead.. )  -- Moderation..
+1. here is my story, here are my tasks..  ( I respect process)
+2. this is task i was doing, business wise, this is what it implies.. ( I respect business)
+3. here is my code... which is responsible for doing this. ( I am not a English professor i can do technical things)
+4. this is my repo location where all code is commited   ( I am in a project)
+5. q &A
+ 
+
+maven..
+1. is a build tool... npm... copy paste of maven... 
+
+
+rule of copy pasting.
+after copy pasting, change the name and tell, find out better English words to use and tell it is "my" original things.. 1947 old stuff.\
+
+PNP transitor is great so is NPN
+Japan copied US.. in terms of industries.
+korea copied Japan
+china copied korea
+
+
+copy pasting nothing wrong as long as make things useful
+Original... nursery kids eat chocolate and be happy...
+
+
+what maven did and what spring did was show people how build tools can be made, and how applaition architectures can be designed...
+then every thing in every language,,   python, java, javascript, .net, C++ ... everything changed. because of spring and maven..
+so is great technology we dont need to become fan of anything, but we can learn a lot in design if we are "conscious"
+
+The proof that something is working for a developer is unit tests and integration tests pass.
+unit test case and integration test also act like a documentation for my code..
+
+
+
+
+1. rant on xml is over..
+2. quick story on maven...
+
+
+why npm ok.. it came after maven.. maven is an older cousin suitable for langauges which likes jvm..
+kotlin, groovy... are langauges which jvm likes.
+
+what you should know about maven..
+
+1. it is a build tool.
+2. what does it mean.
+2.1 it has an opinion on the folder structure and you must know it.... 
+2.2 you can download libraries.. dependancies...
+2.3 you can compile code, package code, test code, run code..
+3. it by default uses a file  called pom.xml file to know about project.
+
+
+
+moral of teh story.. relax and show patience to understand folder structure in any project first before having enthusiasm to code..
+
+golden rule of communication, give an example. can you give...
+
+
+
+packaging means zipping things into a folder structure which language understands..
+packaging in java means... 
+
+
+why we should know these things.. integration becomes relatively easier.. meaning of it we will see..
+
+
+
+
+group id is superset.   solarsystem
+artificact id is subset. earth
+packaging mechanism    jar, war  ( will have one folder struxture, war will have another folder structure) these are standards
+which we should learn when we are having nee to do so, we will happy with jar as of now..
+
+
+create-reaat-app
+
+in maven we have pom.xml file.
+in pom.xml file the first thing you will see yoru project description...
+
+groupid
+articfiatid
+version
+packaging..
+
+
+kids who are infected with "Program Mindset" and Not project mindset.. will feel this is "complicated".. they like Fibonacci Armstrong numberleet code
+
+
+
+when you include a library in maven, can can you tell which this library should be availbel for you.
+
+only for testing and runtime. ok.. 
+no during compilation, during testing, during time..
+
+we have a story on maven..
+you must build some theory on maven how atleast reading the md file if not your whole slides..
+
+
+theory 
+1. maven.. pom.xml file.
+2. in pom.xml we will describe our project characteristics.
+3. properties.. which versions we are planning to use
+4. dependancies... to tell which libraries are we are using.
+
+if you call yourself a programmer you will be always be followed by a ghost called Y which a bag with it , which contains X.
+what is name of Y  -- Functions
+what is name of X  --Variables
+
+variables ..
+
+data type  -- content  and operations
+scope 
+primitives and non primtivies from assignment operation point of view..
+
+
+Functions standard three adventures
+1. function definition
+2. function calling
+3. function assignment.
+
+
+we should value collobration.. Ramesh Suresh.. that story is important..
+
+
+spring, spring boot.
+
+what is spring boot = spring framework made easy 
+concepts of spring. which are useful in spring boot..
+
+
+Spring framework why sprng guys once upon a time use this word...
+
+what does spring do for us.
+
+
+1. loose coupling.  == kids will think they are indepndnet. no... X and Y are loosely coupled means.. when Y changes, X need not change and vice versa.
+( dependency injection... )
+2. x+ spring = x becomes easier.
+x=jdbc 
+x=web
+x=messaging systems
+jdbc becomes easier.
+why.. welcome to the world of template pattern design.
+
+
+In jdbc we wrote 10 lines of code, if we use spring with jdbc, our lines of code will be surely less than 10 and better quality 100%
+
+to your database part ie repository part, you almost don tneed to write any lines or for some complex things you may write 1 or 2 lines
+and your entire repository is taken care of why... becuae we are going to use it with spring..
+
+AI based world people who zoom out probability of surviving will be higher.. zoom in guys will be buried... buried means dead people..
+
+in repo world we are not going to use jdbc, we are goin to use ORM... why that makes my job even more simpler..
+provided I know databse concepts..  table, foreignkey, primary key and we are conscious.. great our job is done.
+
+3. aspect oriented programming.
+
+
+The secret song which project will always keep singing is "I will change" developer is praying no you shoud not change.  horrible developer..
+his prayer is never answered. how will this come.. only if we think in the project "what will change, what will not change" ie process.
+
+
+
+1. spring loose coupling.
+2. spring x+spring, x can be made easier. .whatever X... x means web, x means jdbc , x means messaging, x means security...
+3. AOP ( relax we will see it later on )
+
+
+no matter whatever is my mood who cares I cannot violate architecture..
+architecture is there to aid maintenance...
+
+
+as of now summary
+1. xml to describe information, feed to black box, it can give you some miracle things..because you described.
+2. maven .. standardized folder structure, dependancies.. compile, test , package.. project build tool in java.
+3. spring framework ( bread board, making things easy... (template design pattern), aop)
+4. there is a word we use in spring called IoC  ( Inversion Of Control)
+X is controlling Y..   Y controls X...
+what does in spring 
+4.1 instead of we creating objet.
+4.2 we will ask spring to create objects.
+
+In spring we shoud be conscious who created the object ( two things ) either we or spring framework.
+why did we create object.. tight coupling.
+why did we ask spring to create the object .. loose coupling.
+
+My project should be 100% tightly coupled .. pathetic.
+My project should be 100% loosely coupled .. pathetic.
+
+
+when you create an object ... function gets called  --> Constructor..
+
+
+Wiring in spring..
+
+
+what we will do in spring typically.
+1. we have to crate our classes..
+2. we have to decide how the architecture is..
+3. then ask spring hey create the object of this and use it with this class.
+
+
+create an object of repoisotry, create an object of service.
+put the repository object inside the service class.
+
+
+why did we put repository object in servie
+and not service object in repository.
+because service funtions will call repository functions.
+Robert frost ghost... because architecture demanded it..
+
+architecture tells service function will call repoisotry function..
+
+talk anything and finally come back to functions and variables..
+
+
+during spring framework only problem people have is "unconsciousness" in terms of either their architecture or who has created the object..
+why.. because they will not know what code they have written..
+
+
+quick summary about spring.
+1. think of bread board.
+2. bread board does not like any components, whatever you put and you connect it will do. architecture you control.
+3. what does it mean in terms of code, we create classes and then tell spring hey you create these object of this classes.
+which class for which we did not tell spring hey create the object, it is understood we will create those objects.
+4 after you create the object. what you do..you call non static functions..  ( simple answer)
+
+
+having information who cares.. real thing what you did with the information can you apply.
+overload of information.. knowing theory collapses this..
+
+
+quick revision. p   c.. but let me do it. (ritual)
+
+
+1. your approach of creating react application... 
+createreactapp
+does this project have package.json
+index.html
+
+
+2. if you want to pas sinformation from one compo to another.
+props
+
+
+3. all react components must return one tag..
+function f1()
+{
+
+return <div>hi</div>  --this is what will appear int he page.. you wrote a component because something must appear in the page.
+
+}
+render a component..
+1. returning something..
+2. when props or state changes.. again will be rendered.
+
+
+4. when you write a react component using function, obviously there is no concept called constructors
+
+5. Event handling
+
+<button onclick=f1()  >
+<button onclick=f1 />
+<button onclick={f1}/>
+
+
+6. const [freak,setFreak]=useState(0);
+react opinion hey if there is chaing part, you dont change, it ask me I will change it in a beter way..
+ie reason entire story is there..
+
+
+import React from 'react';
+
+function Greeting() {
+  const isNice = true; // Change to false to display "horrible"
+
+  return (
+    <div>
+      <h1>{isNice ? 'HI' : 'horrible'}</h1>
+    </div>
+  );
+}
+
+
+Event object..
+refers to element on which event is occurring
+event object is passed during every event hanlding
+in case of form you can use e.preventDefault.
+
+
+REST API call
+is it a function call
+function variables needs to be passed and returnedwhat will format..
+JSON format.. standard for representing variables..
+
+
+when you are using rest call, librry we are use axios..
+
+axios .. it uses javascript Promise... ( asynchronous) -- it will take time result will not come immediately
+success and failure..
+success in http.. 2xx
+failure of user   4xx
+failure because of system .. 5xx
+
+
+get, post, put, delete.. http request methods. ieok.. but today or tomorrow you will see these are events in http request..
+we are event liseteners.. 
+
+convention..
+get method .. querying.
+put method.. updating
+post method... creating
+delete method ... removing..
+
+const customerid=23;
+axios.get(http://www.abc.com/customer?customerno=")  -- Path     Variable  /, query parameter..?
+axios.post
+
+
+dipslay a list in react.
+which function of javsript
+ map
+
+package.json
+how do you install it.
+npm install
+
+
+
+import React from 'react';
+
+function SimpleList() {
+  const items = ['function', 'variable'];
+
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+
+
+
+REact routing some commonly 
+
+
+Route  -- mapping stirng to a component
+LInk   -- used in page to tell go this component..
+Swtich... 
+
+
+react component is changing dynamic information.
+1. state is changing
+2. props is changing
+3. during route you can pass some information.
+4. you are making an api call and you are getting information.. fed to a state. usually.
+
+take stock of your project issues..
+
+
+boards..
+show the code working little bit of business logic.
+technically
+git..
+
+
+install maven and spring boot Bruno( http request making mechanism to test my apis...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

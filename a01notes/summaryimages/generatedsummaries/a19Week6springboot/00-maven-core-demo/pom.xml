@@ -36,21 +36,27 @@
         <logback.version>1.5.16</logback.version>
         
         <!-- Default fallback property value -->
-        <environment.name>Default Fallback Environment</environment.name>
+         <environment.name>Default Fallback Environment</environment.name>
         <app.log.level>INFO</app.log.level>
+       
     </properties>
+
+
+<dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+
 
     <!-- =================================================================== -->
     <!-- 4. DEPENDENCIES & SCOPES                                            -->
     <!-- =================================================================== -->
     <dependencies>
         <!-- Compile Scope: Available in compile, test, and runtime -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
-            <scope>compile</scope>
-        </dependency>
+        
 
         <dependency>
             <groupId>org.slf4j</groupId>
