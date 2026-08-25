@@ -19,6 +19,37 @@ on the system.
 versa.... , ensure you know what to do...
 
 
+---------------------------
+
+Aug 25th 2026
+
+
+today ..all of you
+1. prove maven is working in your system... maven needs to download libraries.
+settings.xml.. which tell proxy information...
+
+2. you have get your spring boot project working withint IntelliJ
+and prove it works.
+
+3. install a tool called Bruno.. find out how...
+this is not a browser.. but a mechanism thru which you can test your controller
+functons by using http requests and see the response...
+
+4. you have to get my rectangle poc working in your system and understand
+the react part and java part of it completely. ( important thing)
+react
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspringpoc
+
+one component.
+
+
+spring boot
+1. controller.
+2. service.
+3. models..
+
+
+
 
 ----------------------------
 
