@@ -39,6 +39,7 @@ public class RectangleController { // Class syntax: Defines public class Rectang
     public ResponseEntity<PAResponseDto> calculatePA( // Syntax: Method returning ResponseEntity<PAResponseDto>
             @Valid @RequestBody RectangleRequestDto rectangleDto) { // Syntax: @Valid triggers validation, @RequestBody binds JSON to DTO
 
+// took the json and converted that into a RectangleRequestDTO object
         System.out.println("horror");
         PAResponseDto paResponse = rectangleService.calculatePA(rectangleDto); // Syntax: Calls service method to calculate PA
         return new ResponseEntity<>(paResponse, HttpStatus.OK); // Syntax: Returns ResponseEntity with HTTP Status 200 OK

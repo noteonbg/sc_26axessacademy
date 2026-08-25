@@ -44,7 +44,10 @@ function App() { // Syntax: Function component definition syntax
         rectangleObject // Request payload object argument
       );
 
+      //axios took my javascript object converted that into a json
+
       // Axios Response Data Access Syntax
+      // PA object json content will be available for you response.data
       setResult(response.data); // Syntax: response.data accesses JSON response body returned from Spring Boot
     } catch (err) {
       // Catch Syntax: Catches error thrown by Axios on HTTP 400/500 responses

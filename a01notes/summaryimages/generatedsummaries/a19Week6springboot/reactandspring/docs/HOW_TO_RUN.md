@@ -1,6 +1,6 @@
 # How to Run the Customer Management Application
 
-This document provides a step-by-step guide on how to set up, build, run, and test the **Customer Management System**, which consists of a **Spring Boot REST Backend** (configured for **PostgreSQL**) and a **React Frontend** (using Axios).
+This document provides a step-by-step guide on how to set up, build, run, and test the **Customer Management System**, which consists of a **Spring Boot REST Backend** (configured with embedded **H2 in-memory database**) and a **React Frontend** (using Axios).
 
 ---
 
@@ -14,22 +14,18 @@ Before running the projects, make sure your computer has the following tools ins
    - Verify by running: `mvn -v`
 3. **Node.js (v18 or higher) and npm**
    - Verify by running: `node -v` and `npm -v`
-4. **PostgreSQL Database Server**
-   - Must be running on `localhost:5432` with database `bankdb` created.
 
 ---
 
-## 🐘 PostgreSQL Database Setup
+## 🗄️ Embedded H2 Database Setup
 
-1. Open PostgreSQL CLI (psql) or PgAdmin.
-2. Create the database named `bankdb` if it doesn't already exist:
-   ```sql
-   CREATE DATABASE bankdb;
-   ```
-3. Application Credentials configured in `application.properties`:
-   - **URL**: `jdbc:postgresql://localhost:5432/bankdb`
-   - **Username**: `postgres`
-   - **Password**: `postgres`
+No external database installation or setup is required! The application uses an embedded **H2 in-memory database** (`jdbc:h2:mem:bankdb`).
+
+- **Database URL**: `jdbc:h2:mem:bankdb`
+- **Driver**: `org.h2.Driver`
+- **Username**: `sa`
+- **Password**: *(empty)*
+- **H2 Console**: Accessible in browser at `http://localhost:8080/h2-console` when backend is running.
 
 ---
 
@@ -41,8 +37,7 @@ reactandspring
 │   ├── HOW_TO_RUN.md              <-- This guide
 │   ├── SPRING_BOOT_SYNTAX_GUIDE.md<-- Spring Boot code & syntax guide
 │   └── REACT_AXIOS_SYNTAX_GUIDE.md<-- React & Axios code & syntax guide
-├── HOW_TO_RUN.md                  <-- Root Guide
-├── customer-backend/              <-- Spring Boot Maven REST API (PostgreSQL)
+├── customer-backend/              <-- Spring Boot Maven REST API (H2 Embedded DB)
 │   ├── pom.xml
 │   └── src/
 └── customer-frontend/             <-- React Single Page Application

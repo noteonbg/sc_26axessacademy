@@ -23,6 +23,26 @@ versa.... , ensure you know what to do...
 
 Aug 25th 2026
 
+phase 2)
+
+0. check with the excel sheet given in a01notes\summaryimages\maybeproject
+whether components clarity is there.
+1. ensure your boards.. are upto date.
+2. react css is consistent with pulse.
+3. ensure routing is completed.
+4. have a look at today spring boot and react program how it got integrated one
+more time.. ( Rectangle , Area and Perimeter program.. springreactpoc )
+5. look at the 01-banking-controller-demo and 02-banking-service-demo
+from , make it work in your local system and test  it with
+Bruno.
+\a01notes\summaryimages\generatedsummaries\a19Week6springboot
+
+
+
+
+
+
+phase i
 
 today ..all of you
 1. prove maven is working in your system... maven needs to download libraries.
