@@ -1,0 +1,501 @@
+today.
+1.focus on spring boot concept and run
+spring boot application outside the ide
+using maven.( remember 
+2. spring boot within ide..
+3. project related discussions after 3.30PM.
+
+old mistakes keep getting repeated in any project.
+world largest product ... ideas.. in a project we must relate to the requirement
+
+
+feedback.
+1. process.
+how are we distributing the work...
+2. technical part.
+2.1 ui.   -- feedback
+2.2 backend
+3. busness requirement  -- feedback..
+
+
+
+
+
+look and style.. Pulse...
+
+
+website user friendliness.
+1. consistency   -- just ensure our is copy of pulse..
+2. no scrolling ... .user may not see.
+3. do whatever you want number of clicks should not exceed 3.
+4. it must work on mobile also...
+
+my paranoid fear is always.. in name of business where we will get disorganized.
+here my approach would to have a checklist...
+
+
+
+
+
+
+quick summary.
+
+1. maven.. is a build tool.
+1.1 opinion on folder structure.
+1.2 you can compile code, test code, package code, run code..
+1.3 how does maven know about our project.. pom.xml file..
+1.4 xml is used to describe data... and black box .. in this case maven knows
+what to do whatever we have described, because we have used the vocabulary of maven..
+
+
+The proof that my project is spring boot project, is libarries I am using
+are spring boot related libraries..
+
+what i am expecting today to do.
+1. understand how spring boot works and also connect react to spring. how is it done.
+for doing this, do you know what details you need. answer you already know.
+excel sheet is there for component design.
+
+
+whether it is spring or spring boot. who cares..
+getting rid of I disease is very important to be technically good.
+
+
+1. do you know architecture that is starting point..
+breadboard..
+2. in spring or spring boot we should be conscious about
+who is creating the object.
+2.1  I, We, Mine, Me..
+2.2  we are telling Spring hey create the object
+we should be conscious about it..( IoC)--Inversion of control.
+3. Vehicle License , Passport..  ( Annotations )-- if you forget to use it,
+we land up with logical errors.
+3.1  License is taken by X because he knows the benefit of the License.
+3.2 License is given to X by Y, promising some benefit under a circumstance called "Q"
+3.2 X is meeting the circumstance called "Q" and then he realizes the benefit of License.
+
+
+
+
+explain spring boot usage..
+1. knowing architecture.
+2. do you know how to use annotation.
+
+
+Spring boot will look in our pom.xml and see what depenancies we have
+used and configure them based on information we have given..
+
+
+
+anybody who is using the annotation, which is what we are most of times..
+
+1. who has given this annotation, what benefit they are promised and when?
+I dont know 1, ok dont use annotation. or Shakespeare ghost ... "It will work
+it is inbuilt... system defined "
+
+2. annotation should be used at whatlevel..
+2.1 Class
+2.2 method
+2.3 field level ( variables outside functions inside the class)
+
+
+2. in springBoot application we use 
+@SpringBootApplication annotation... on what on the class level.
+
+
+if you want to apply annotation called X which is a class level annotation
+on three classes A , B andC..
+yes you got each of this class, A and B and C apply the annotation..
+
+
+spring gives you three things.
+1. loose coupling. bread board..
+2. x+spring = x becomes easier..
+3. aop.. did not talk about .. later on
+
+
+
+Spring boot = spring made easier.. in spring we had configure lot of things
+that has been reduced in spring boot..
+
+quick summary..
+
+1. you must know architecture or else dead in spring.
+2. we must be conscious.. who created the object we or spring.
+3. how annotation works.. we must know..
+3.1 who created it, what benefit the promised and when ...
+3.2 for benefit is given.. class, method, variable..
+
+
+who gave you the annotation, simple look at the package eto which the annotation
+belongs..
+
+
+
+hope i have told you some story telling on
+
+-1) xml
+0) maven
+1. spring. ( Inversion of control   -- 
+you are asking spring to create the object instead of we creating
+the object, dependency injection )
+2. spring boot
+3. annotations.
+
+I defined a function, I am not going to call somebody is going to call it
+under a particular circumstance.. == Event	Registration
+it requires intelligence to recognize
+
+
+
+server:port/api/rectangle/calculate in post mode of request.. then this function
+will get called,, why will this function get called, we have registered
+for the event..
+
+
+<button> when confused stick with basics </button>
+
+welcome to common sense
+1. useSTate is not my function, it is somebody else function. so I am calling
+it so open documentation, when anybody read it, it shows it returns an array
+with two elements.
+samething applies to annotations also..
+.
+I want to work on spring boot project who to start 
+
+1) we know folder structure in maven..
+2) we would used maven and got the dependancies put in the project
+where in the pom.xml file
+3) java fate we need main function start..
+4
+
+@SpringBootApplication
+Spring boot makes spring easier, give details.. that is what matters..
+example if we put a web dependency in your pom.xml spring boot will look
+at the web dependency and by using classpath ensure default web contamner is configured
+for us... typically this is called as tomcat.. ( web container used for java applciations)
+
+
+
+spring boot with database dependancies.. spring boot wil configure my database automatically provided i give database information in properties... in spring
+this needed a lot of configuration..
+
+I will start looking at all the classes present in the package for further annotations..
+x package
+  class is there main function
+y.controller .. clases
+z.exceptoins.. exception
+a.repostiory .. repo
+b.model.. models.
+c.entity... models which are mapped to tables.
+d.security
+
+people who are not conscious about folder structure in their project are bad
+people technically..
+
+if we are building a spring application X (Universe
+we should follow this convention..
+
+ class with main function
+x.mw.controller
+x.mw.repo
+x.mw.model.
+x.andromeda.controller
+pu.somefreakglaxy.controller
+
+
+tell me your package which contains class which has main function
+Z
+tell me your repo package.. 
+abc... repo
+IT.. for non IT people means Invite Trouble.
+
+
+who is creating the object and where is it being wired. or used... ( this means
+you have to know architecture.)
+
+
+REact program during axios call.
+
+1. will call controller function...  only these functions can respond to http
+requests.
+2. inside controller function we will call service function... 
+3. service functions internally can call repo functions if yu talk about database.
+4. you return from repo to service, service to controller....
+5. controller will return data as response.. ( http status  + data y ou plan to return)
+you will see in axios response...
+
+
+
+from react service ... you reach spring boot controller( here you would
+rgistered for http request events)
+you reached controller where we will go next to service... 
+
+
+architecture ok.. you talk about functions flows..
+
+
+what is REstControlelr architecturally
+
+1. it is a class which has functions which will react to http based request events..
+2. it will autotically take input json and convert that into java objects.
+3. it will automatically take output java objects and convert that into json.
+4. it will also help you in sending http response status.. codes.
+
+
+so many things to do, where is checklist..
+NO I will use memory. ok courageous decision.. all the best..
+
+
+architecture.. multiple files.. function will flow in multiples file..
+what each file is nothing but a layer.. why layer is created.. whenone layer changes
+other layer need not change..
+
+When spring runs, it could have created the objects wired them and application started.
+ie http server is also running... and waiting...
+
+waiting for what ...    Events	 to    Occur
+
+
+in react event occurs.
+in another layer i called some function x.
+inside function x,  i did axios api calls. for example get call.
+
+
+
+we reached spring controller layer... for the event called get.. 
+spring read input from http request..
+called service function.. because it is wired..
+service function called repo function, because it is wired..
+repo function returned y to service function, servie function eturned y to
+controller function.
+controller function took y, decided http response status codes ot be used...
+and returned the data via response...
+
+
+back to react x now...
+
+you can write many controllers, but end point being unique is our job..
+if we give a choice ot the computer, computer will thorw back at the choice at us..
+
+each team member will write their own controller class, own service class, own repo
+class, own dto...
+
+folder joining the party..
+
+
+from react to java... oh.. service in react to controller in java.
+			axios function call. to a controller function call in java.
+
+
+hope i am able to sell, ARchitecture is boss, functions and variables still matter.
+
+@RestController.
+@Service
+these annotations create object and do something extra typically..
+
+@Restcontrolelr creates an object + does lot of http related cooking for yu
+including json ... inputs needs to converted json object to java object
+and return type shuld converted from java object to json..
+@Service will create an object and we are telling hey look this is a service layer..
+
+once upon a time..   Docker.. image.. inteliJ..
+
+
+
+today ..all of you
+
+phase 1)
+1. prove maven is working in your system... maven needs to download libraries.
+settings.xml.. which tell proxy information...
+
+2. you have get your spring boot project working within IntelliJ
+and prove it works.
+
+3. install a tool called Bruno.. find out how...
+this is not a browser.. but a mechanism thru which you can test your controller
+functions by using http requests and see the response...
+
+phase 2) -- folder week5 in old repo and not in your project repo
+4. you have to get my rectangle poc working in your system and understand
+the react part and java part of it completely. ( important thing)
+react
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspringpoc
+
+
+one component.
+
+
+spring boot
+1. controller.
+2. service.
+3. models..
+
+
+complete function flow in the program..
+
+
+DTO is another name for model may be more better word for Model.
+DTO .. Data Transfer Object.
+
+understand the code..
+IN react series of function calls. do we know in which order functions were called.
+in spring boot. series of function calls do we know the order of function calls.
+knowing this is architecture..
+
+
+Please make sure you close all the story and task for previous weeks. 
+We will be checking on the status regularly.
+
+ 
+pessimistic programmer a resident of heaven
+optimistic programmer permanent resident of hell.
+
+we should get rid of this disease, Until I write my own program only then I will know
+this is pathetic.. tolerance towards uncertainty...
+
+we called a function by usng uri, using http protocol
+and variables we passed was passed in json format..
+welcome to api call.
+in react.. api call. for api call, backend must have published the api..
+that is what we did when we started spring boot server..
+spring boot hey I am ready for lilstening to http request events..
+when did event occur, in react when you did axios call.
+
+ResponseEntity is a class in spring, think of it like 2 compartment suitcase..
+1 compartment you can store http status code.
+2. compartment you can store whatever you want..
+
+
+I hate details enjoy Hell.
+
+
+in http.. can we tell you make a request. but response I dont like giving..
+hey look my server ran into problems I had lot of issues.. so that is reason
+I wont give response..  Invalid ... under any circumstance you must get response..
+
+
+
+you are in f1, you are throwing an exception where will control go, wherever
+f1 is called   important theory....
+
+
+when you see function definition.. who will call the function
+
+The exception has reached spring boot, what spring boot is doing ,
+has this person told me how to handle the exception.. if yes I will use it..
+
+we have three objecs.
+
+1. object input .. dto rectangleinputdto..
+2. object output... dto perimeterarea object.
+3. one object error... dto to handle erro scenarios.  ( controller to javascript world
+all these are couriers..
+
+There object of backend which needs to go from javascript.. so we should be conscious
+about the keys used... in json...example length, breadth...
+there are objects which come from backedn to javascript.. we should be conscious
+becuse we are going to use in frontend.. we cannot invent keys..we can use
+the keys given by backend..
+similary scenario for error handling..
+
+we need lot of patience first ..I will make api call but not use state. circular stupid
+
+peple who can know architecture and its function implications survive better as a technicalperson even in AI based world..
+
+http..
+you can use it for two things..
+
+Bruno why did it come. once upon there is something called postman which is used
+to test http based function calls. or api calls. we should not use browser
+because browser is used to test http based presentation and not function calls.
+
+
+
+
+
+process 
+
+1. we write a back end.
+2. check it with Bruno ... ideally with unit tests..and integration tests
+3. once it is working integrate with react..
+we should split our code
+minimum
+component
+apicalling
+
+
+I am seeing this screen in IntelliJ should I do something else, should I keep looking
+at the screen? why?
+
+ensure event is occurding and then see server will respond..
+
+
+the meaning of architecture is you can test each layer independently...
+
+
+i have a dobut on database.. I can write a code only at repository layer and check
+whther it works.
+
+I have a doubt on service... ..
+i have a doubt on controller ...
+i have a doubt on security...
+when in doubt we can 100% write  small program and check things out..
+
+
+
+
+
+
+3.30 to 3.45 
+take stock what all things you should in your project now that you an idea
+what backend is doing..
+go back to excel sheet and see if something is missing..
+
+3.45 PM we will join back..
+
+what to do.txt has been updated with phase 2..
+
+0. check with the excel sheet given in a01notes\summaryimages\maybeproject
+whether, components clarity is there.
+1. ensure your boards.. are up to date.
+2. react CSS is consistent with pulse.
+3. ensure routing is completed.
+4. have a look at today spring boot and react program how it got integrated one
+more time..
+5. look at the 01-banking-controller-demo and 02-banking-service-demo
+from , make it work in your local system and test  it with
+Bruno.
+location of the program is in, \a01notes\summaryimages\generatedsummaries\a19Week6springboot
+
+Credit Cards Team,
+Kindly block Vikas's calendar for the review sessions and add Jared and Vidya to the meetings.
+Schedule: Friday – Williams (5.30 PM - 6.00 PM)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

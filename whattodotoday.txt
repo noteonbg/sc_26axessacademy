@@ -21,6 +21,75 @@ versa.... , ensure you know what to do...
 
 ---------------------------
 
+
+Aug 26th 2026
+
+1. relax. culture is important, let focus on project success.
+2. in your system
+ 2.1 come with your project running in your system.
+ 2.2 keep your boards open in the browser
+ 2.3 keep the repo link open.
+ 2.4 if you have kept any journal... 
+ 2.5 
+3. for the assessment come with the following data written in notepad
+   3.1 how many components have you written.  ( number )
+   3.2 is the css part over. ( Y/N)
+   3.3 is the routing part over. ( Y/N)
+   3.4 is state part, props part for each component clear.  ( Y/N)
+   3.5 how many api calls , you will make... ( number if not clear it is ok.. tell in process)
+   Look at the md file present in a01notes\summaryimages\maybeproject\projectx\docs\3.0_api_contracts
+        3.5.1 what will be its input.
+        3.5.2 what will be the output.
+        3.5.3 what will be the http status...
+   
+
+May be, you can be considered..
+
+1. ensure component clarity...
+go thru the 1.3_component_planning_and_contracts_guide.md present in
+\a01notes\summaryimages\maybeproject\projectx\docs\1.0_architecture
+
+1.1  components are routed.
+1.2  state, props, routing infomration, is clear.
+
+
+
+1.3 how many api calls , you will make... ( Y/N)
+        1.3.1 what will be its input.
+        1.3.2 what will be the output.
+        1.3.2 what will be the http status...
+Look at the md file present in a01notes\summaryimages\maybeproject\projectx\docs\3.0_api_contracts
+
+1.4 folder structure of the back end ...
+look at 
+1.4.1 get clarity on back end function call.
+1.4.2 ...
+
+business is ok. but theory is important. read the md files present.
+MAVEN_GUIDE.md present in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\00-maven-core-demo
+
+Week6_Summary.md is present in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot
+
+worth looking at all the md files present in 
+sc_26axessacademy\a01notes\summaryimages\maybeproject\projectx\docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Aug 25th 2026
 
 phase 2)
