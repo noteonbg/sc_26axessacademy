@@ -272,7 +272,7 @@ ok fine it will work..
 6. where patience is needed if you are talkin about two tables show patience to review primary key, foreign key..
 
 
-1. show patience and review your controller function design... patheiently slow slow slow...
+1. show patience and review your controller function design... patiently slow slow slow...
 2. service and jpa travel fast.. it is ok.. no accidents will happen.
 
 
@@ -280,7 +280,7 @@ ok fine it will work..
 overview on..
 1. security
 2. how spring works..
-3. hope you understand dataase thing no a big deal but till some theory to understand...
+3. hope you understand database thing no a big deal but till some theory to understand...
 2.01PM
 
 

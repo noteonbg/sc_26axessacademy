@@ -18,6 +18,31 @@ on the system.
 3. be comfortable to ensure that if remote changes, it should reflect in your local repo and vice
 versa.... , ensure you know what to do...
 
+-----------------------------------
+Aug 27th 2026
+
+Relax and focus..
+
+1. try to understand the code present in
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\poc\spring_boot_react_calculator_guide.md
+esnure spring boot project in your company given academy project
+and react is present in the poc project which where we had rectangle perimeter and area project.
+
+2. try to make the program work present in
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspring
+this has both react and spring boot with database, understand it  and see how it works.
+
+3. a01notes\summaryimages\maybeproject\projectx\backend
+understand the folder structure here and see are you have a clear idea how
+your backend folder structure will be..
+
+4. in your project ensure
+4.1 react part css is done.
+4.2 routing is done.
+4.3 for each component clarity in terms of what controller function takes
+as input and returns ..
+
+
 
 ---------------------------
 Project success = process * technology * tools * culture 
