@@ -19,16 +19,16 @@ on the system.
 versa.... , ensure you know what to do...
 
 -----------------------------------
-Aug 27th 2026
+Aug 27th 2026  
 
 Relax and focus..
 
-1. try to understand the code present in
+1. try to understand the code present  and code it also  
 a01notes\summaryimages\generatedsummaries\a19Week6springboot\poc\spring_boot_react_calculator_guide.md
-esnure spring boot project in your company given academy project
+ensure spring boot project in your company given academy project
 and react is present in the poc project which where we had rectangle perimeter and area project.
 
-2. try to make the program work present in
+2. try to make the program work present in (here both the projects are ready, you need to run it)
 a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspring
 this has both react and spring boot with database, understand it  and see how it works.
 
@@ -41,6 +41,7 @@ your backend folder structure will be..
 4.2 routing is done.
 4.3 for each component clarity in terms of what controller function takes
 as input and returns ..
+
 
 
 
