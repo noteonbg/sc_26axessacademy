@@ -20,9 +20,13 @@ versa.... , ensure you know what to do...
 
 
 ---------------------------
-
+Project success = process * technology * tools * culture 
 
 Aug 26th 2026
+
+Fear time lost due to busyness. and lack of clarity.
+
+For review today individually..
 
 1. relax. culture is important, let focus on project success.
 2. in your system
@@ -30,7 +34,7 @@ Aug 26th 2026
  2.2 keep your boards open in the browser
  2.3 keep the repo link open.
  2.4 if you have kept any journal... 
- 2.5 
+  
 3. for the assessment come with the following data written in notepad
    3.1 how many components have you written.  ( number )
    3.2 is the css part over. ( Y/N)
@@ -42,6 +46,10 @@ Aug 26th 2026
         3.5.2 what will be the output.
         3.5.3 what will be the http status...
    
+
+
+
+
 
 May be, you can be considered..
 
@@ -63,9 +71,9 @@ Look at the md file present in a01notes\summaryimages\maybeproject\projectx\docs
 1.4 folder structure of the back end ...
 look at 
 1.4.1 get clarity on back end function call.
-1.4.2 ...
 
-business is ok. but theory is important. read the md files present.
+
+busyness is ok. but theory is important. read the md files present.
 MAVEN_GUIDE.md present in 
 a01notes\summaryimages\generatedsummaries\a19Week6springboot\00-maven-core-demo
 
@@ -76,7 +84,11 @@ worth looking at all the md files present in
 sc_26axessacademy\a01notes\summaryimages\maybeproject\projectx\docs
 
 
-
+what you should not think of doing also.
+1. starting any back end code.
+2. think about database..
+3. we have think of security.
+all these we discuss tomorrow.
 
 
 

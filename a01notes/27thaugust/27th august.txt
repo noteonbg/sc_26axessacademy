@@ -1,0 +1,319 @@
+Today adventure.
+
+
+people who make things complicated are oxygen thieves in project.. they will make everybody life miserable
+
+we shoul have hatredness towards complicated ...
+
+react theory.
+1. event.
+2. state and props.
+3. component works..
+How are things being shown.
+
+const i=3// this is not shown... this is just a dynamic thing hopefully
+<div> {i}  </div> .. this line is being shown...
+
+
+Ability to design a small poc when we get struck in doubts either in concept or in syntax. is a great skill to have.
+
+0. keep the bp level normal. 
+1. Keep the focus on the project, Culture is everything...
+Today coverage
+2. how to deal with database  via JPA ( ORM) , security what does it mean.
+3. project folder structure
+4. ensure concepts are clear.. 
+4.1 do you know architecture.
+4.2 who is creating the object
+4.3 wiring .. what does it mean.
+4.4 React calls controller functions... do you know input, output... response status..
+4.6 can you complete a code in 1 hour... nice test.. let us see.. all syntax given ( 2.00 to 3.00PM hopefully..)
+input is box.. which contains two numbers and symbol
+return type is another box. which contains result and message.
+
+
+so FAR IN YOU SPRING BOOT PROJECT, APART FROM making the "my" code work. none of us written any new code.. in your project.
+
+
+
+concept is not  function of time
+syntax is..
+
+being systematic is a great thing to have if possible to extent possible..
+I am working on spring boot or react.. but no patience to see my pom.xml file or package.json. pathetic..
+
+
+
+react should talk to spring .. who will speak like this.. ghost..
+on earth.. only within function can you call other function
+
+React
+event occurs.
+some function gets called. X ( event handling function)
+in that function. some other function gets called  Y ( service function )
+and with Y, we are using axios call.-- axios do. it makes http request... and it reaches your spring boot controller function.
+
+
+
+ensure your project has security enabled but dont use any security yet... wait patiently complete your back end
+and then we will start adding security in a separate phase.. no I will mix everything ok enjoy non stop entertainment..
+
+what is meaning of security.
+1. who are you, what you can access.
+2. I am enabling in the security in the project and telling allow all requests to get in  and allow cors.
+
+1.1 allow all my controller functions to be called.
+1.2 it can be called from any system..
+
+
+
+
+spring boot is running on x.
+react is running on y
+when requests from y come to x, it will get blocked... by default.
+so X has to tell allow requests from y to be come... this is what cors..
+
+
+
+people who dont project folder structure comma state people..
+
+api calls can be made... that means .. I am calling the function via http in a secure way by passing json
+as input and getting response also as json...
+
+
+name of the function is important. if you are calling it...
+if somebody is calling it. who cares for the name especially the system..
+
+
+
+when you write controller two things happened.
+1. you joined the party of distributed computing..
+2. we are calling a function of spring boot controller from  function of react written in service.js, which is turn called
+from the some component.
+
+
+kids until I do practicals I wont trust.. bad thing from a science perspective.
+
+I got pom.xml file configured for security what will spring boot by default block all the uri, you cant reach any
+controller function....
+
+
+package naming conventions are very important.. everybody should spent time understanding it..
+
+
+quick summary
+1. ensure your project has security libraries and your code is telling, i will anybody to access any of my
+controller funtions..
+
+what should be project folder structure..
+
+
+
+
+quick summary
+1. hope you have an idea regarding folder strutures
+2. hope some idea regarding this freak secrutiy setup..
+2.1 security is only for controller functions..
+3. spring architecture..
+3.1 do you know architecture of your project.. ( spring will not tell this we should know )
+3.2 do we know which object spring created, which object we created..
+3.3 using the objet call the functions..
+
+MVC  -- Model View controller
+photo  -- model
+photoframe  -- view
+screw.. back pad..  -- controller
+
+controller is somthing that links Model with a view.
+Restconroller is doig this only but with small modification, it is giving only model and no view..
+
+
+
+
+Mobile
+Battery
+Sim
+
+do we put sim inside Mobile or Mobile inside sim...  this is architecture..
+do we put service inside controller or controller inside service..
+
+
+
+
+
+Nursery kids problem, crying non stop... oh no my functions are coming in multiple files what I should do nothing understand it..
+
+Architecture demands it..
+
+
+
+
+
+
+
+
+Mobile obect spring created.
+Sim object spring created
+why .. I asked spring hey you create it. how by using som eanotation..
+
+
+sprng is going crete a mobile object, it has a sim object because we told hey spring create it
+when mobile object is created, we have created a battery object.
+
+
+when we see error messages read it irrespective of we understand or dont understand..
+
+
+
+
+Where are you going to usethe Mobile object.
+I will use it controller.
+
+
+Inversion of control..
+I created the object, I created the object me created the object. relax..
+
+
+sometimes I create the object, sometimes Spring creates the object how do i know.. architecture...
+
+
+
+
+@Bean.
+we are telling spring hey I will crate the object you must use it.
+
+@compoennt .. @RestController. @configuration @repository..
+hey spring you create the object and obviously you use it.
+
+
+quick summary
+1. do we know architecture.. no .. ok unlimited entertainment guaranteed.
+
+
+
+we did not create object of sim and give to spring.
+neither we asked spring to create object of sim
+but we are telling spring hey create mobile object that needs a sim..
+
+be conscious in java also... which object spring has got, which do you hve..
+
+
+
+
+
+quick summary
+1. hope you understand how spring works.. ( 
+invesion of control   --spring creating objects instead of us creating objects
+and 
+dependency injection - spring put mobile object inside yoiur controller and put sim object inside mobile )  
+it is thru this we fill the architecture in spring appliations..)
+2. hope you have an idea of security..
+2.1 put lbirary in pom.xml file
+2.2 allow every body to access everything.. ( we will change this later on, after discussions)
+dont bother about security at controller level as of now..
+3. database ...part..
+
+no jdbc...
+no postgres. goodbye postgres.. sc ahs decided all thigns in golden versions will be deleted... postgres is residing
+here hence .. good by postgres. postgres is dead means PgAdmin also should be dead
+so what we will do. answer is very simple we will this databse called h2.. h2 is light wegith database..
+some integration entertinament expected will resolve by tomorrow. today dont bother..
+
+your focus on the project.
+1. react ( css part, routing , clariy in terms of controller function )
+
+first controller function you write for the project must already have security configured.. although not enforced..
+
+
+Database part..
+you write almost zero code for doing insert, update, delete...
+ok then how will it know. welcome to jpa (ORM) ...
+
+ORm is a category.. superset, you can do it in java, python, js,c++ , c# everywhere..
+JPA is java way of doing ORM.. ( java was the original boss from everywhere copied..)
+
+1. come to your pom.xml
+ensure database depdancies are put..
+2. application.properties..
+telling which databae , wht is userid, what is password, what is driver.. same like jdbc
+
+sql will work
+h2 is database.
+postgres is database
+both are different databases...
+
+
+what are we doing in ORM.
+1.we take a class and map to a  table... ( Entity class)
+2. we create an interface in spring boot. telling hey spring boot, this is my entity class.
+3. spring boot will create a class that implements the interface and give me standard functions to
+do insert, update, delete. without we writing any line of code..
+
+JPa needs a primary key ...
+primary keys needs to autogenerated it is generally a sane way to avoid entertainment..
+\
+
+
+in jdbc 10 lines of code, in jpa 1 line of code.
+
+
+
+
+
+
+how will my jpa things work.
+
+1. look at pom.xml and look at application.properties.
+2. create classes in entity package why, we are maping this to table.. , I will not keep entity package, I will scrap package
+ok fine it will work.. 
+3. ensure classes are mapped to tables.
+4. write an interface extending JPARepository<EntityClassname,primarykeydatatype>
+5. start using jpa functions.. your database programming is done.. dont worry about sql command....
+6. where patience is needed if you are talkin about two tables show patience to review primary key, foreign key..
+
+
+1. show patience and review your controller function design... patheiently slow slow slow...
+2. service and jpa travel fast.. it is ok.. no accidents will happen.
+
+
+
+overview on..
+1. security
+2. how spring works..
+3. hope you understand dataase thing no a big deal but till some theory to understand...
+2.01PM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

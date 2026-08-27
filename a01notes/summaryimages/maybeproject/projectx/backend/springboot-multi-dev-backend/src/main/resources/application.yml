@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: springboot-multi-dev-backend
+  
+  # H2 In-Memory Database Configuration
+  datasource:
+    url: jdbc:h2:mem:multidevdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# Feature-specific custom configuration properties
+app:
+  features:
+    feature1:
+      enabled: true
+    feature2:
+      enabled: true
+    feature3:
+      enabled: true
+    feature4:
+      enabled: true
+    feature5:
+      enabled: true
