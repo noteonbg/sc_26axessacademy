@@ -309,7 +309,14 @@ swagger or Bruno choice is yours both you how to use..
 
 please attempt this...
 what to do now
-Focus on understanding..
+Focus on understanding..  
+
+2.30PM we will start the review..
+some jpa part works.
+swagger works.
+h2 console works in your system.
+Bruno works.
+
 
 a01notes\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
 1. jpa program which is there you should run it in your system
@@ -321,7 +328,7 @@ practice Bruno for something..
 
 2. a01notes\summaryimages\generatedsummaries\a19Week6springboot\jpapoc
 one to many , many to one example code this... messy but code it.. you will see the power
-of knowing primary key, foreign key..
+of knowing primary key, foreign key..is important.. 
 objective ,get an idea about
 1. how jpa works.
 2. how to use swagger.
@@ -350,16 +357,52 @@ if need be..
 
 
 
+security part.. 
+
+1. who are you, what is your role ( you can get this info
+either in memory or link to some table ) , what you can access. ( controller functions)
+
+your pom.xml
+must have jpa dependancy, swagger dependancy, security dependancy..
+everything will get blocked, it wont allow you access any controller function.
+how to avoid this problem..
+
+
+X 
+	class which contains main function
+	dto
+	repo
+	entity	
+	controller
+	config
+	   here you can put security class ( allows everyone to access all my controller functions)
 
 
 
 
 
+line 26 to 39
+I have told spring hey look these are users with these passwords and they have these roles.
+wht they role can do. I have not told.
+the users and passwords are hardcoded agreed.. we can get into from database.. i have link the spring security to table
+from which it can pick up username password and roles.
 
 
+relax.. but we should approach in stages..
+
+1. ensure backend is done without security using jpa and prove it works in swagger.
+2. ensure you integrate this with react...
+3. patiently think of user, roles... adding security can come in second phase
+4. again come to react to include security related things.
+
+for you.
+check point.. dto in controller function is it correct...
+check point .. entity relationships is it correct 
+check point 3... swagger integration is it giving you expected result.
+check  point 5.. ok integrate with react.
 
 
-
+use your time properly  eternal hope for everyone.
 
 
 

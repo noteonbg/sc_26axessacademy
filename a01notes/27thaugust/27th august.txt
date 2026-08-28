@@ -3,7 +3,7 @@ Today adventure.
 
 people who make things complicated are oxygen thieves in project.. they will make everybody life miserable
 
-we shoul have hatredness towards complicated ...
+we should have hatredness towards complicated ...
 
 react theory.
 1. event.
@@ -141,8 +141,7 @@ do we put service inside controller or controller inside service..
 
 
 
-Nursery kids problem, crying non stop... oh no my functions are coming in multiple files what I should do nothing understand it..
-
+Nursery kids problem, crying non stop... oh no my functions are coming in multiple files what I should do ,nothing understand it..
 Architecture demands it..
 
 
@@ -305,7 +304,7 @@ understand the folder structure here and see are you have a clear idea how
 your backend folder structure will be..
 
 4. in your project ensure
-4.1 react part css is done.
+4.1 react part CSS is done.
 4.2 routing is done.
 4.3 for each component clarity in terms of what controller function takes
 as input and returns ..
