@@ -1,7 +1,9 @@
 todays adventure.
 
-Monday project presentation by Team 3...  some back end controllers you can show.. in case you have coded it...
+NO CLARIFY.. ENJOY LOT OF REWORK... 
 
+Monday project presentation by Team 3...  some back end controllers you can show.. in case you have coded it...
+0. heroes create more problems in project than benefits
 1. relax and stay focused, avoid rework by being organized to extent possible....
 2. understand how database works in jpa and security in context of controllers.
 3. know your folder structure and database approach for the project
@@ -14,13 +16,374 @@ Monday project presentation by Team 3...  some back end controllers you can show
 	4.4 do you understand in  both the examples you did on how react talks to spring boot.. entire function call sequence...
 	4.5 do you know how to use Bruno.... ie 
 		how to make a http request and see the response..
-	5. may be focus
-		5.1 backend folder structure clarity.
-		5.2 backend database location and how merging adventure will work.. when PR is made
-		5.3 full clarity on controller function input, output and http status codes.( validation... )
-		5.4 for each component.. 
-			5.4.1 query you plan to make 
-			5.4.2 based on that entity class design..
-			5.4.3 if you got multiple tables ( primary key and foreign key adventures)
-			5.5 review it with your team members.. 
-	
+	4.6 what error messages you plan to show in the component...
+5. may be focus
+	5.1 backend folder structure clarity.
+	5.2 backend database location and how merging adventure will work.. when PR is made
+	5.3 full clarity on controller function input, output and http status codes.( validation... )
+	5.4 for each component.. 
+		5.4.1 query you plan to make 
+		5.4.2 based on that entity class design..
+		5.4.3 if you got multiple tables ( primary key and foreign key adventures)
+		5.4.4 review it with your team members.. 
+6. can we show some "creativity".. in terms of UI or business features (Giant Ghost ... we can drag the ghost to earth.. if possible..)
+
+
+ process
+technology
+business
+
+
+
+
+
+Today
+1. you will do spring jpa program and understand how the flow goes.
+2. you will do spring security program and understand how the flow goes.
+md file given you have to follow the steps..
+3. your preparing for review at 4.00PM
+
+Technically.
+1. did you know how react contacted spring and got  the data..
+2. how spring talking with the database. by using jpa..
+3. spring security how are we approaching..
+
+philosophical question how much of rework did we do, could we have avoided the rework... measurement..
+
+
+today or 30 years afterwards... what is relevant
+0. process usually increases probability of success in a repeatable way..
+1. we respect the business.  any technology to slave to the business..
+2. architecture... 
+3. function flows.. obviously with variables being used..
+
+sCIENCE NEVER RECOGNIZES TRUST SO THINK WHATEVER I SAID .. GO AHEAD..
+
+YOU have enough opportuntity to improve colloboaration in a project..
+
+There is no point being a Einstein in a failed projet, pathetic thing it is..
+
+
+
+in controller functions when we you are using http you are seeing html and css missing
+
+in busyness ensure theory clarity is also focused on..
+
+
+JPA...
+1. we are using h2... h2 within the standard chartered... h2 will run on a port.. ports are irritating for company.
+so we should how we are planning to run h2 .. in the project..
+
+2. when spring boot project is running h2 is running.. when it is not running h2 is not running.. ( opinion of keeping
+things simple...
+
+can i run h2 outside spring boot also yes.. you can do. but would not prefer.. if you want I will tell on how on Monday..
+
+
+
+http container is running... why waiting for requests and to process it and then give response.
+
+who is processing the http requests..   Controller   Functions
+
+welcome to theory run run run.. functions and variables will follow me..
+
+
+heart attack controller function..
+
+// why did this function name as giveheartattack
+
+
+@Getmapping("/gha/{i}")
+public void giveheartAttack(@pathVarble in i)
+{
+
+
+}
+
+when will system process http requests...
+if the request is made by the user...  you will doin react service.js
+
+when we tried to run the project in IntelliJ..  run symbol..
+
+IntelliJ identifies
+1 is IntelliJ projbecxt.. so it will run.
+2. it is maven project. so it will run.
+IntelliJ will not care whether it is spring boot project or some other project usually, until we put some plugsin..
+
+IDE is a tool... what is more important for contex....
+
+we are running our java project on the cloud.. inside a docker image.. then IntelliJ is useless maven is everything..
+
+
+
+everybody should now how to run any project outside the ide in any language..
+
+ReponseEntity<ClassName>
+
+ResponseEntity.
+1. think of two section box.
+1.1 one part of the box contains http resonse staus codes..
+1.2 other part of box it contains data which is making sense to your project.
+
+all your controller functions to return only REsponseEntity...
+
+
+calling of controller function from react using axios results in a  Promise
+fulfilled the promise
+did not fulfill the promise..
+how is judged, http status c
+
+
+ensure your controller function returns
+REsponseentity objects only.. why this is suitcase with two sections sections.. one part can store http response status codes.
+
+
+
+---------------------------------------------------------------------------
+
+
+
+
+
+
+whatever i said now, is called knowing architecture and respecting it..
+having time perspective improves decisions..
+
+
+
+we if read about http request modes..
+get cannot have a body
+post can have a body in the requet..
+
+
+why did i get 201... people are talking ceos.. 
+answer is very simple my controller function returned that..
+
+Hope is people have an idea how to use Bruno and how to  write your controller function
+and that is starting boss in spring boot, because react will contact that only.
+I will always return 200 only from controller function ok.. axios promise will enjoy entertainment
+nothing will come to the catch block in axios..
+
+
+Bruno one way of checking your controller functions or testing your api.
+Swagger is  another way alos, it is ui thing inbuilt.. what should i do.. dependency should be there..
+Bruno, Swagger is there..
+Bruno you have opena  tool
+swagger you open the browser url.
+
+
+
+how do you know your controller function is working..
+horrible answer.. let me write react code pathetic... no .. that will happen one day...
+
+
+ok ..approach to start with
+1. I tested with swagger.
+2. I tested with Bruno
+
+"Most decent way" of proving any code is working.
+My Unit  Tests  has passed
+
+
+quick moral of story.
+1. approach in backend you an idea.
+2. controller functions Boss.
+3. so Dtos will come.
+4. test it by using both swagger and Bruno.. so that you can say I know both tools..
+
+
+quick summary
+1. hope you have understood controller function is what you will call from react.
+2. to check it you will have to use Bruno or swagger.
+3. if you reach controller then you will go to servie, you will to repo layer...
+4. entity objects and DTO , 
+DTO input and return type from controller funtions.. ( this move between react and java .. json )
+entity objects.. objects that are mapped to table... simplifying our database jobs..)
+
+
+
+
+JPA.
+
+we are using a database which will be locally present in everbody system.. h2..
+where is it present.. database location... whre h2 datbse is present how it will coordinated needs some thought process
+which everybody in team should know..
+
+how do view the database contents.. we had  pgAdmin in postgres, what is its equivalentnow...
+
+becuae I did not need it that controllers..
+
+
+how many spring boot projets will your team have..
+  1
+
+how many spring boot appliations should run..
+1
+why you want to run...
+
+0. you are inside the company..network
+1. showed you location of my database inside my project folder.
+2. open pom.xml and show h2 dependency and jpa dependency.
+3. open application.properties.. h2 database is a great database it can be used for any real life application.this storyof telling it
+used for only testing... scrap.. will a bank use h2 database for  real life usage answer is 100% no.. currently whatever
+we can do with any database called X we can do with h2 also..
+
+
+
+
+
+
+waht all things you will use for your project.. phiolosophical question.. all the pople who are reviewing yoru project
+are only incentivizing you to outputs...
+
+0. hope you have an idea about the process..
+1. react.
+2. spring boot h2 database..
+3. azure boards and repos.
+4. git raise a pr... and maintain our repo.
+5. hope we are doing reviews and hope we are keeping some documentation..
+6. we are using maven to build our java project, IntelliJ to code.... ( ..)
+7. we are using Bruno or swagger to test.. or write unit test cases( next week is full of testing )
+
+
+you need plan how will you databse adventure work... relax it is  very old problem so solutions are there..
+but problem is there..
+
+
+currently the thing... can you all you understand jpa and work on it..
+use Bruno and swagger to test it..
+
+
+1. ok pom.xml file
+2. application.properties very important to change... or know what is there..
+in JPA what is thought process.
+
+1.we need to tell jpa what database we are using so that it can customize sql to that database.. we do this
+using the properties called Dialect..
+
+
+
+
+spring.jpa.hibernate.ddl-auto=update
+tells if my table does not exist, create it...
+create it based on what you have told in the Entity classes.
+
+
+
+quick summary
+1.  your database is inside your project.
+2. we are using h2.. and not postgres.
+3. look at pom.xml and look at application.properties ensure 2 is emphasized..
+4. write your entity classes.
+5. write an interface extending JPArepoistory interface...
+
+
+why do we create enity classes, ansser is because controller funtions demanded it..
+in the interface..  by default you will get lot of things like ... insert, update, selet all, select by primary ey..
+
+we are telling spring what we want, who is doing the cooking of actually writing the functions.. spring boot will do it for
+you that is how it has been for last 23 years..
+
+NOthing in wrong in doing something unconventional but you must have a strong reason for it...
+reason is important..
+
+
+
+stack unwinding..
+
+extemds keyword with a class means inheritance.. 
+
+syntax .. horrible no synax look at what concept is doing..
+
+interface extends interface..
+
+YellowBoardvehicle extends WhiteBoardVehicle.
+
+
+
+m(jpa) < n (jdbc)
+
+
+relax you have to get used to watching things on h2... understand the code, how it is working.
+swagger or Bruno choice is yours both you how to use..
+
+please attempt this...
+what to do now
+Focus on understanding..
+
+a01notes\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
+1. jpa program which is there you should run it in your system
+no coding just run it..
+practice seeing swagger at work
+practice Bruno for something..
+03-banking-jpa-demo and make it work in your sytem.
+
+
+2. a01notes\summaryimages\generatedsummaries\a19Week6springboot\jpapoc
+one to many , many to one example code this... messy but code it.. you will see the power
+of knowing primary key, foreign key..
+objective ,get an idea about
+1. how jpa works.
+2. how to use swagger.
+3. how to use Bruno
+4. how to use h2.
+
+3. yesterday second assignment which was given ie 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspring
+also uses database, make it work, in your system..
+
+
+
+
+Payment Initiation team will be presenting on Monday be prepared do some back end with only controller funtions or with database
+if need be..  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
