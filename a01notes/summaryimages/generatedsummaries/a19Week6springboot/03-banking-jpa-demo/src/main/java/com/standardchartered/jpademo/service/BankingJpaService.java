@@ -28,6 +28,9 @@ public class BankingJpaService {
     @Autowired
     private BankAccountJpaRepository accountRepository;
 
+
+// do this only once after creating the object and finishing all the wiring.. is done 
+//in the class.
     @PostConstruct
     public void initData() {
         if (customerRepository.count() == 0) {
