@@ -8,16 +8,14 @@ Have a checklist for the commonly used syntaxes...
 
 
 daily ritual.
-1. pull the latest data from the azure repo.. if any. usually will not be.
+1. when "our branch changes in remote" you do git fetch origin and rebase origin/our branch  in your branch.
 2. know your serial numbers and what they do.. useful in commiting
 3. standup in terms of serial numbers..
 
 on the system.
 1. commit frequently.
-2. ensure you push the data to the remote daily.
-3. be comfortable to ensure that if remote changes, it should reflect in your local repo and vice
-versa.... , ensure you know what to do...
-
+2. raise PR and ensure once changes are done
+3. you rebase your branch on changes in the "our" branch.
 
 Aug 28th if possible Attempt this by coming monday.
 
@@ -40,7 +38,7 @@ a01notes\summaryimages\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
 1.5 start linking to the react component...
 
 1.6 do you know the architecture...
-
+\a01notes\28thaugust\arch.png
 
 ------------------------------------------------------------------
 
