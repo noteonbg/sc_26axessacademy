@@ -1,0 +1,15 @@
+meta {
+  name: Get Account Transactions (JWT Bearer Auth)
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8085/api/v1/account/transactions
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{jwt_token}}
+}

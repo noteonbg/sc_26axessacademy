@@ -59,7 +59,7 @@ public class BankingSecurityConfig {
                  * - Allows access to users having either "ROLE_TELLER" or "ROLE_ADMIN".
                  */
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/h2-console/**", "/api/v1/public/**").permitAll()
+                        .requestMatchers("/h2-console/**", "/api/v1/public/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
                         .requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/v1/teller/**").hasAnyRole("TELLER", "ADMIN")
                         .requestMatchers("/api/v1/customer/**").hasAnyRole("CUSTOMER", "TELLER", "ADMIN")

@@ -1,0 +1,21 @@
+meta {
+  name: Create New Employee (Single Table POST)
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{jpa_demo_url}}/api/v1/jpa/employees
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Grace Hopper",
+    "email": "grace.hopper@sc.com",
+    "department": "IT",
+    "salary": 110000.00,
+    "designation": "Principal Engineer"
+  }
+}

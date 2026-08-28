@@ -1,0 +1,11 @@
+meta {
+  name: Test Custom Qualifier Gateway (@Upi)
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8086/api/v1/payments/custom-qualifier/upi?amount=500.00
+  body: none
+  auth: none
+}

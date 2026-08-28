@@ -1,0 +1,21 @@
+meta {
+  name: Update Employee Details (Single Table PUT)
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{jpa_demo_url}}/api/v1/jpa/employees/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@sc.com",
+    "department": "IT",
+    "salary": 98000.00,
+    "designation": "Lead Software Engineer"
+  }
+}

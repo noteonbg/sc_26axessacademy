@@ -94,7 +94,7 @@ public class CustomerRestController {
     public ResponseEntity<CustomerProfile> createCustomer(@RequestBody CustomerProfile customer) {
         customer.setId((long) (customerList.size() + 1));
         customerList.add(customer);
-        return ResponseEntity.status(HttpStatus.CREATED).body(customer);
+        return ResponseEntity.status(HttpStatus.OK).body(customer);
     }
 
     /*

@@ -18,7 +18,7 @@ This guide explains how to use **Bruno**—the open-source, Git-friendly API cli
 
 We have pre-created a ready-to-use Bruno API collection for all Week 6 microservices:
 
-**Collection Directory**: **[`F:\scproject\dontpostingit\Campus Content 2026\Week 6\bruno-banking-collection`](file:///F:/scproject/dontpostingit/Campus%20Content%202026/Week%206/bruno-banking-collection)**
+**Collection Directory**: `bruno-banking-collection/`
 
 ### Collection Folder Layout:
 ```text
@@ -65,7 +65,7 @@ bruno-banking-collection/
 1. Launch the **Bruno** desktop application.
 2. Click **Open Collection** on the home screen.
 3. Browse to the folder:
-   `F:\scproject\dontpostingit\Campus Content 2026\Week 6\bruno-banking-collection`
+   `bruno-banking-collection`
 4. Select the folder and click **Open**.
 
 ---
@@ -113,7 +113,7 @@ Bruno includes a command-line runner `@usebruno/cli` to execute tests in CI/CD t
 
 ```bash
 # Run the entire Bruno banking collection from terminal
-bru run "F:\scproject\dontpostingit\Campus Content 2026\Week 6\bruno-banking-collection" --env Local-Environment
+bru run "bruno-banking-collection" --env Local-Environment
 ```
 
 ---

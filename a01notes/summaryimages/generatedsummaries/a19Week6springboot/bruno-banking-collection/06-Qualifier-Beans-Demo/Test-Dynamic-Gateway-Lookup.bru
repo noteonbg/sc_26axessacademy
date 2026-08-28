@@ -1,0 +1,11 @@
+meta {
+  name: Test Dynamic Gateway Lookup (Map Injection)
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8086/api/v1/payments/dynamic/cryptoGateway?amount=1000.00
+  body: none
+  auth: none
+}

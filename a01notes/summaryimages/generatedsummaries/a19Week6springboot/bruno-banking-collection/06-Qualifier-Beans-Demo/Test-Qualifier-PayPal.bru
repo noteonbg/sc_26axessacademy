@@ -1,0 +1,11 @@
+meta {
+  name: Test Qualifier Gateway (@Qualifier payPalGateway)
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8086/api/v1/payments/qualifier/paypal?amount=299.99
+  body: none
+  auth: none
+}

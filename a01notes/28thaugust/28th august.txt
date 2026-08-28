@@ -1,0 +1,26 @@
+todays adventure.
+
+Monday project presentation by Team 3...  some back end controllers you can show.. in case you have coded it...
+
+1. relax and stay focused, avoid rework by being organized to extent possible....
+2. understand how database works in jpa and security in context of controllers.
+3. know your folder structure and database approach for the project
+4. checklist.
+	4.1 is react CSS adventure nearly over... or pending.
+	4.2 is react routing adventure over or not..
+	4.3 are you sure how many api calls  you will do,  
+		what will be its input and output... and 
+		move this logic outside the component.
+	4.4 do you understand in  both the examples you did on how react talks to spring boot.. entire function call sequence...
+	4.5 do you know how to use Bruno.... ie 
+		how to make a http request and see the response..
+	5. may be focus
+		5.1 backend folder structure clarity.
+		5.2 backend database location and how merging adventure will work.. when PR is made
+		5.3 full clarity on controller function input, output and http status codes.( validation... )
+		5.4 for each component.. 
+			5.4.1 query you plan to make 
+			5.4.2 based on that entity class design..
+			5.4.3 if you got multiple tables ( primary key and foreign key adventures)
+			5.5 review it with your team members.. 
+	
