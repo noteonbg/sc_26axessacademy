@@ -24,6 +24,7 @@ Aug 28th if possible Attempt this by coming monday.
 0. document your experiences...without fail
 
 1. As a team.
+
 1.1 folder structure of your project.
 sc_26axessacademy\a01notes\summaryimages\maybeproject\projectx\backend
 

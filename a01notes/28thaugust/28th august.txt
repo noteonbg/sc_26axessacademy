@@ -401,10 +401,36 @@ check point .. entity relationships is it correct
 check point 3... swagger integration is it giving you expected result.
 check  point 5.. ok integrate with react.
 
-
 use your time properly  eternal hope for everyone.
 
+0. document your experiences...without fail
+1. As a team.
+1.1 folder structure of your project.
+sc_26axessacademy\a01notes\summaryimages\maybeproject\projectx\backend
+1.2 controller function design... by looking at react.
+   1.2.1 input, output, http status and security needs.
+1.3 Entity class design , how database will get integrated during PR...
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\03-banking-jpa-demo\MULTI_DEVELOPER_H2_WORKFLOW_GUIDE.md
+1.4 test your code by using swagger or Bruno.
+1.5 start linking to the react component...
+1.6 do you know the architecture...
+\a01notes\28thaugust\arch.png
 
+------------------------------------------------------------------
+As an individual.
+2. did you know how react and spring boot worked..  
+2.1 a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspringpoc
+2.2 a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspring
+3. do you know jpa works..
+3.1 a01notes\summaryimages\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
+3.2 did you code the 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\jpapoc\spring_boot_h2_jpa_one_to_many_guide.md
+4. security...
+try to understand the code present in the following folders
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\spring-security-inmemory-demo
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\04-banking-security-demo
+
+-----------------------------------------------------------
 
 
 
