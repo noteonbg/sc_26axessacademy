@@ -1,5 +1,6 @@
 package com.standardchartered.jpademo.service;
 
+import com.standardchartered.jpademo.dto.EmployeeDto;
 import com.standardchartered.jpademo.entity.Employee;
 import com.standardchartered.jpademo.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import java.util.NoSuchElementException;
 
 /**
  * Service Layer encapsulating business logic for Employee single-table CRUD operations.
+ * Performs Entity <-> DTO conversions to protect domain entities from being directly exposed.
  */
 @Service
 public class EmployeeService {
@@ -22,41 +24,71 @@ public class EmployeeService {
         this.employeeRepository = employeeRepository;
     }
 
+    // Entity -> DTO Mapper
+    public EmployeeDto mapToDto(Employee employee) {
+        if (employee == null) return null;
+        return new EmployeeDto(
+            employee.getId(),
+            employee.getName(),
+            employee.getEmail(),
+            employee.getDepartment(),
+            employee.getSalary(),
+            employee.getDesignation()
+        );
+    }
+
+    // DTO -> Entity Mapper
+    public Employee mapToEntity(EmployeeDto dto) {
+        if (dto == null) return null;
+        return new Employee(
+            dto.id(),
+            dto.name(),
+            dto.email(),
+            dto.department(),
+            dto.salary(),
+            dto.designation()
+        );
+    }
+
     // READ: Retrieve all employees
     @Transactional(readOnly = true)
-    public List<Employee> getAllEmployees() {
-        return employeeRepository.findAll();
+    public List<EmployeeDto> getAllEmployees() {
+        return employeeRepository.findAll().stream()
+                .map(this::mapToDto)
+                .toList();
     }
 
     // READ: Retrieve single employee by ID
     @Transactional(readOnly = true)
-    public Employee getEmployeeById(Long id) {
+    public EmployeeDto getEmployeeById(Long id) {
         return employeeRepository.findById(id)
+                .map(this::mapToDto)
                 .orElseThrow(() -> new NoSuchElementException("Employee not found with ID: " + id));
     }
 
     // CREATE: Save a new employee
     @Transactional
-    public Employee createEmployee(Employee employee) {
-        if (employee.getId() != null) {
-            employee.setId(null); // Ensure auto-generated ID for creation
-        }
-        return employeeRepository.save(employee);
+    public EmployeeDto createEmployee(EmployeeDto dto) {
+        Employee employee = mapToEntity(dto);
+        employee.setId(null); // Ensure auto-generated ID for creation
+        Employee saved = employeeRepository.save(employee);
+        return mapToDto(saved);
     }
 
     // UPDATE: Update existing employee details
     @Transactional
-    public Employee updateEmployee(Long id, Employee updatedDetails) {
-        Employee existingEmployee = getEmployeeById(id);
+    public EmployeeDto updateEmployee(Long id, EmployeeDto updatedDetails) {
+        Employee existingEmployee = employeeRepository.findById(id)
+                .orElseThrow(() -> new NoSuchElementException("Employee not found with ID: " + id));
         
-        existingEmployee.setName(updatedDetails.getName());
-        existingEmployee.setEmail(updatedDetails.getEmail());
-        existingEmployee.setDepartment(updatedDetails.getDepartment());
-        existingEmployee.setSalary(updatedDetails.getSalary());
-        existingEmployee.setDesignation(updatedDetails.getDesignation());
+        existingEmployee.setName(updatedDetails.name());
+        existingEmployee.setEmail(updatedDetails.email());
+        existingEmployee.setDepartment(updatedDetails.department());
+        existingEmployee.setSalary(updatedDetails.salary());
+        existingEmployee.setDesignation(updatedDetails.designation());
         
-        // Automatic dirty checking updates the row in DB at transaction commit
-        return employeeRepository.save(existingEmployee);
+        Employee saved = employeeRepository.save(existingEmployee);
+        return mapToDto(saved);
     }
 
     // DELETE: Remove employee by ID
@@ -70,7 +102,9 @@ public class EmployeeService {
 
     // READ: Find employees by department
     @Transactional(readOnly = true)
-    public List<Employee> getEmployeesByDepartment(String department) {
-        return employeeRepository.findByDepartmentIgnoreCase(department);
+    public List<EmployeeDto> getEmployeesByDepartment(String department) {
+        return employeeRepository.findByDepartmentIgnoreCase(department).stream()
+                .map(this::mapToDto)
+                .toList();
     }
 }

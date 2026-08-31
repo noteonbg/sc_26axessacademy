@@ -60,7 +60,7 @@ public class Employee {
      *   to column `name` in table `employees` with max size 100 characters and mandatory value.
      * -----------------------------------------------------------------------------
      */
-    @Column(name = "freak", nullable = false, length = 100)
+    @Column(name = "name", nullable = false, length = 100)
     private String name;
 
     /**

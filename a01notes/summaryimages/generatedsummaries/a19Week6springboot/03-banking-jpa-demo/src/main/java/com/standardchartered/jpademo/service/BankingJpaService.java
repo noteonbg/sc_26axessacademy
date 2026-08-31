@@ -1,5 +1,7 @@
 package com.standardchartered.jpademo.service;
 
+import com.standardchartered.jpademo.dto.BankAccountDto;
+import com.standardchartered.jpademo.dto.BankCustomerDto;
 import com.standardchartered.jpademo.entity.BankAccountJpaEntity;
 import com.standardchartered.jpademo.entity.BankCustomerJpaEntity;
 import com.standardchartered.jpademo.repository.BankAccountJpaRepository;
@@ -16,9 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 
-/*
- * SYNTAX COMMENTARY: Service Layer with Spring Data JPA Persistence Operations
- */
 @Service
 public class BankingJpaService {
 
@@ -28,9 +27,6 @@ public class BankingJpaService {
     @Autowired
     private BankAccountJpaRepository accountRepository;
 
-
-// do this only once after creating the object and finishing all the wiring.. is done 
-//in the class.
     @PostConstruct
     public void initData() {
         if (customerRepository.count() == 0) {
@@ -44,45 +40,55 @@ public class BankingJpaService {
         }
     }
 
-    public List<BankCustomerJpaEntity> getAll() {
-        return customerRepository.findAll();
+    // Entity -> DTO Mappers
+    public BankAccountDto mapAccountToDto(BankAccountJpaEntity account) {
+        if (account == null) return null;
+        return new BankAccountDto(
+            account.getId(),
+            account.getAccountNumber(),
+            account.getAccountType(),
+            account.getAccountBalance()
+        );
     }
 
-    /*
-     * SYNTAX COMMENTARY: Database Pagination & Sorting
-     *
-     * PageRequest.of(pageNo, pageSize, Sort.by(sortBy).descending()):
-     * - Configures SQL OFFSET and LIMIT clauses behind the scenes.
-     * - Returns a Page<BankCustomerJpaEntity> containing total element count, total pages, and elements list.
-     */
-    public Page<BankCustomerJpaEntity> getPaginatedCustomers(int pageNo, int pageSize, String sortBy) {
+    public BankCustomerDto mapCustomerToDto(BankCustomerJpaEntity customer) {
+        if (customer == null) return null;
+        List<BankAccountDto> accountDtos = customer.getAccounts() != null ?
+            customer.getAccounts().stream().map(this::mapAccountToDto).toList() : List.of();
+
+        return new BankCustomerDto(
+            customer.getId(),
+            customer.getFirstName(),
+            customer.getLastName(),
+            customer.getEmail(),
+            customer.getStatus(),
+            accountDtos
+        );
+    }
+
+    @Transactional(readOnly = true)
+    public List<BankCustomerDto> getAll() {
+        return customerRepository.findAll().stream()
+                .map(this::mapCustomerToDto)
+                .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public Page<BankCustomerDto> getPaginatedCustomers(int pageNo, int pageSize, String sortBy) {
         Pageable pageable = PageRequest.of(pageNo, pageSize, Sort.by(sortBy).descending());
-        return customerRepository.findAll(pageable);
+        Page<BankCustomerJpaEntity> entityPage = customerRepository.findAll(pageable);
+        return entityPage.map(this::mapCustomerToDto);
     }
 
-    /*
-     * SYNTAX COMMENTARY: JPA Persistence Context & Automatic Dirty Checking
-     *
-     * @Transactional:
-     * - Begins an active DB transaction upon method entry and commits upon method exit.
-     * - Automatic Dirty Checking: Modifying fields on a MANAGED entity (e.g. customer.setFirstName(...)) automatically triggers an SQL UPDATE upon commit.
-     */
     @Transactional
-    public BankCustomerJpaEntity updateCustomerEmail(Long customerId, String newEmail) {
+    public BankCustomerDto updateCustomerEmail(Long customerId, String newEmail) {
         BankCustomerJpaEntity customer = customerRepository.findById(customerId)
                 .orElseThrow(() -> new RuntimeException("Customer ID " + customerId + " not found"));
 
-        // Entity is in MANAGED state in Persistence Context. Field update automatically syncs to SQL DB!
         customer.setEmail(newEmail);
-        return customer;
+        return mapCustomerToDto(customer);
     }
 
-    /*
-     * SYNTAX COMMENTARY: Transactional ACID Fund Transfer
-     *
-     * @Transactional:
-     * - Guarantees Atomicity & Consistency. If crediting target account fails, debiting source account is automatically rolled back!
-     */
     @Transactional
     public void transferFunds(Long sourceAccountId, Long targetAccountId, BigDecimal amount) {
         BankAccountJpaEntity source = accountRepository.findById(sourceAccountId)

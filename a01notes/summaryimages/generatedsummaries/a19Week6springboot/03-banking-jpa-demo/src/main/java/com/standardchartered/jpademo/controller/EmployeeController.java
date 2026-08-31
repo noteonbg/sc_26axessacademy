@@ -1,6 +1,6 @@
 package com.standardchartered.jpademo.controller;
 
-import com.standardchartered.jpademo.entity.Employee;
+import com.standardchartered.jpademo.dto.EmployeeDto;
 import com.standardchartered.jpademo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * REST Controller providing complete Single-Table CRUD endpoints for Employee entity.
+ * REST Controller providing complete Single-Table CRUD endpoints using EmployeeDto payloads.
  * 
  * Endpoints:
  * - GET /api/v1/jpa/employees (List all)
@@ -33,29 +33,29 @@ public class EmployeeController {
 
     // 1. GET ALL EMPLOYEES
     @GetMapping
-    public ResponseEntity<List<Employee>> getAllEmployees() {
+    public ResponseEntity<List<EmployeeDto>> getAllEmployees() {
         return ResponseEntity.ok(employeeService.getAllEmployees());
     }
 
     // 2. GET EMPLOYEE BY ID
-    @GetMapping("/{id}")   //horrible coding
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") Long id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
     }
 
     // 3. CREATE EMPLOYEE
     @PostMapping
-    public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
-        Employee createdEmployee = employeeService.createEmployee(employee);
+    public ResponseEntity<EmployeeDto> createEmployee(@RequestBody EmployeeDto employeeDto) {
+        EmployeeDto createdEmployee = employeeService.createEmployee(employeeDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdEmployee);
     }
 
     // 4. UPDATE EMPLOYEE
     @PutMapping("/{id}")
-    public ResponseEntity<Employee> updateEmployee(
+    public ResponseEntity<EmployeeDto> updateEmployee(
             @PathVariable("id") Long id,
-            @RequestBody Employee employeeDetails) {
-        Employee updatedEmployee = employeeService.updateEmployee(id, employeeDetails);
+            @RequestBody EmployeeDto employeeDetails) {
+        EmployeeDto updatedEmployee = employeeService.updateEmployee(id, employeeDetails);
         return ResponseEntity.ok(updatedEmployee);
     }
 
@@ -68,7 +68,7 @@ public class EmployeeController {
 
     // 6. GET BY DEPARTMENT
     @GetMapping("/department/{department}")
-    public ResponseEntity<List<Employee>> getEmployeesByDepartment(@PathVariable("department") String department) {
+    public ResponseEntity<List<EmployeeDto>> getEmployeesByDepartment(@PathVariable("department") String department) {
         return ResponseEntity.ok(employeeService.getEmployeesByDepartment(department));
     }
 }

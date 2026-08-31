@@ -314,7 +314,7 @@ passowrds in plain text is a great idea..
 
 
 
-12.22..
+Focus on these things only right now.
 
 
 1. look at the notes.. and summary...
@@ -322,12 +322,9 @@ after the assessment is over.. feedback
 2. show patience and understand jpa.. and understand the architecture..
 component.. service.. fetch ... controller function in spring.. service fucntin in spring..
 repo function .. spring boot.
-
 as controller input and return type... dto
 once you come repo layer , input and output.. Entities..
 
-
-3.
 
 
 

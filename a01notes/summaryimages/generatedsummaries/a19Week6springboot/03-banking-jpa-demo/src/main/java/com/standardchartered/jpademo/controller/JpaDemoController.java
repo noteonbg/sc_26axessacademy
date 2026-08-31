@@ -1,13 +1,13 @@
 package com.standardchartered.jpademo.controller;
 
-import com.standardchartered.jpademo.entity.BankCustomerJpaEntity;
+import com.standardchartered.jpademo.dto.BankCustomerDto;
+import com.standardchartered.jpademo.dto.TransferRequestDto;
 import com.standardchartered.jpademo.service.BankingJpaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -18,29 +18,26 @@ public class JpaDemoController {
     private BankingJpaService jpaService;
 
     @GetMapping
-    public List<BankCustomerJpaEntity> getAll() {
-        return jpaService.getAll();
+    public ResponseEntity<List<BankCustomerDto>> getAll() {
+        return ResponseEntity.ok(jpaService.getAll());
     }
 
     @GetMapping("/paged")
-    public Page<BankCustomerJpaEntity> getPaged(
+    public ResponseEntity<Page<BankCustomerDto>> getPaged(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size,
             @RequestParam(defaultValue = "id") String sortBy) {
-        return jpaService.getPaginatedCustomers(page, size, sortBy);
+        return ResponseEntity.ok(jpaService.getPaginatedCustomers(page, size, sortBy));
     }
 
     @PutMapping("/{id}/email")
-    public ResponseEntity<BankCustomerJpaEntity> updateEmail(@PathVariable("id") Long id, @RequestParam("email") String email) {
+    public ResponseEntity<BankCustomerDto> updateEmail(@PathVariable("id") Long id, @RequestParam("email") String email) {
         return ResponseEntity.ok(jpaService.updateCustomerEmail(id, email));
     }
 
     @PostMapping("/transfer")
-    public ResponseEntity<String> transfer(
-            @RequestParam("sourceId") Long sourceId,
-            @RequestParam("targetId") Long targetId,
-            @RequestParam("amount") BigDecimal amount) {
-        jpaService.transferFunds(sourceId, targetId, amount);
-        return ResponseEntity.ok("Successfully transferred $" + amount);
+    public ResponseEntity<String> transfer(@RequestBody TransferRequestDto request) {
+        jpaService.transferFunds(request.sourceAccountId(), request.targetAccountId(), request.amount());
+        return ResponseEntity.ok("Successfully transferred $" + request.amount());
     }
 }
