@@ -12,10 +12,48 @@ daily ritual.
 2. know your serial numbers and what they do.. useful in commiting
 3. standup in terms of serial numbers..
 
+
 on the system.
 1. commit frequently.
 2. raise PR and ensure once changes are done
 3. you rebase your branch on changes in the "our" branch.
+
+Aug 31st  2026..
+--------------------
+
+Relax and Keep the focus on the project... 
+
+0. Payment Intializtion will go for demo today, Loan Origination will
+for demo on Thursday.
+
+1. understand testing by ..
+1.1 a02_software_testing_fundamentals_financial_institution.md file.
+1.2 make the code a01notes\summaryimages\generatedsummaries\a20Week7Testingandclosing\a03junit
+code work by reading the readme.md.
+1.3 do the code as shown in a04_mockito_unit_testing_guide_and_casestudy
+
+
+2.  run the security program in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\spring-security-inmemory-demo
+it has react part and also spring boot part understand how it works..
+
+
+3. This was told on friday, in case not done, please do it.
+ do you know jpa works..
+3.1 a01notes\summaryimages\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
+3.2 did you code the 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\jpapoc\spring_boot_h2_jpa_one_to_many_guide.md
+
+
+4. review of Credit card origination and Loan origination will be done.
+
+
+
+
+-------------------
+
+
+
 
 Aug 28th if possible Attempt this by coming monday.
 
