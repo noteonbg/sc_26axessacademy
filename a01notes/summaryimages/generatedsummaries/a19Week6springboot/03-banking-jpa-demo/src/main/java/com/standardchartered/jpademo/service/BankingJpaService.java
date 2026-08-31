@@ -18,6 +18,19 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * =================================================================================
+ * BANKING SERVICE SYNTAX & PERSISTENCE MAPPING GUIDE
+ * =================================================================================
+ * 
+ * SYNTAX EXPLANATIONS:
+ * - `@Transactional(readOnly = true)`: Critical for lazily loaded relationships! Keeps the 
+ *   Persistence Context open while mapping `customer.getAccounts()` to `BankAccountDto` list, 
+ *   preventing `LazyInitializationException`.
+ * - `page.map(this::mapCustomerToDto)`: Converts a `Page<Entity>` object to a `Page<DTO>` 
+ *   while preserving pagination metadata (totalElements, totalPages, pageNumber).
+ * =================================================================================
+ */
 @Service
 public class BankingJpaService {
 
@@ -27,6 +40,9 @@ public class BankingJpaService {
     @Autowired
     private BankAccountJpaRepository accountRepository;
 
+    /**
+     * `@PostConstruct`: Seed data initialisation method executed once after Spring bean construction.
+     */
     @PostConstruct
     public void initData() {
         if (customerRepository.count() == 0) {
@@ -40,7 +56,9 @@ public class BankingJpaService {
         }
     }
 
-    // Entity -> DTO Mappers
+    /**
+     * Entity -> DTO Mapper for BankAccountJpaEntity
+     */
     public BankAccountDto mapAccountToDto(BankAccountJpaEntity account) {
         if (account == null) return null;
         return new BankAccountDto(
@@ -51,6 +69,9 @@ public class BankingJpaService {
         );
     }
 
+    /**
+     * Entity -> DTO Mapper for BankCustomerJpaEntity (Maps nested child accounts to DTO list)
+     */
     public BankCustomerDto mapCustomerToDto(BankCustomerJpaEntity customer) {
         if (customer == null) return null;
         List<BankAccountDto> accountDtos = customer.getAccounts() != null ?
@@ -66,6 +87,7 @@ public class BankingJpaService {
         );
     }
 
+    // READ: Retrieve all customers as DTO list
     @Transactional(readOnly = true)
     public List<BankCustomerDto> getAll() {
         return customerRepository.findAll().stream()
@@ -73,6 +95,11 @@ public class BankingJpaService {
                 .toList();
     }
 
+    /**
+     * READ: Database Pagination & Sorting
+     * SYNTAX: `PageRequest.of(pageNo, pageSize, Sort.by(sortBy).descending())`
+     * Converts raw Page<BankCustomerJpaEntity> to Page<BankCustomerDto> using `Page.map(...)`.
+     */
     @Transactional(readOnly = true)
     public Page<BankCustomerDto> getPaginatedCustomers(int pageNo, int pageSize, String sortBy) {
         Pageable pageable = PageRequest.of(pageNo, pageSize, Sort.by(sortBy).descending());
@@ -80,6 +107,7 @@ public class BankingJpaService {
         return entityPage.map(this::mapCustomerToDto);
     }
 
+    // UPDATE: Update customer email and return updated DTO
     @Transactional
     public BankCustomerDto updateCustomerEmail(Long customerId, String newEmail) {
         BankCustomerJpaEntity customer = customerRepository.findById(customerId)
@@ -89,6 +117,7 @@ public class BankingJpaService {
         return mapCustomerToDto(customer);
     }
 
+    // WRITE: ACID Transactional Fund Transfer
     @Transactional
     public void transferFunds(Long sourceAccountId, Long targetAccountId, BigDecimal amount) {
         BankAccountJpaEntity source = accountRepository.findById(sourceAccountId)
