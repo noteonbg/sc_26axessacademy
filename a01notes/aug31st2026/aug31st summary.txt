@@ -1,0 +1,350 @@
+todays topic.
+
+0. whattodo.txt is already updated..
+1. we will start with testing..
+2. quick summary about last week..
+3. test..
+4. what you should know.. step by step... clarity..
+5. project review.
+6. continue your project coding..
+
+To make thing useful in real life , it will not happeby accident..
+
+
+
+Testing...
+1. it is important part of proving that things are working in real life..
+
+
+
+for example is a great thing to use, because none of mother tongue is English..
+vagueness will come down.
+
+Imitate first and then IMprove..
+
+
+for your project you can demonstrate.
+1. hey look for some modules we did unit testing and integration testing.
+2. we did reviews on the project at various stages, at design stage, at coding stage..
+
+stupidity requires team effort..
+
+style of coding should be such that when a program fails we automatically have data why it 
+failed.. that is what logging will do for us..
+
+logging and DEbuggng.
+
+
+Does developer value writing a test case before the code... that itself is a cultural issue..
+
+due to make changes we made, did existing thing stop working or is still working
+we cannot have hope here we need to prove it..
+
+without testing.. there is no way.. we can make things relevant in real life..
+
+Test documents acts like documentation for our project..
+
+
+
+
+
+what is best way to prove your software is relevant?
+get large number people to use it..
+
+real thing that helps in life is "Moderation"
+ways of dealing with CTC... Constraints, tradeoffs, contradictions..
+
+
+If I want to fight with a customer I would prefer to do it on day 1.. full fledged
+than after 3 monthsss....
+
+
+
+sometimes people read a book , so that they dont want to start the "actual thing"
+delay things in name of "preparation"
+
+Unit testing.
+
+-1) is culture there of writing unit testing..
+0. fully automated..
+1. it should be fast.. it should wait for anything.
+2. we tell this is input i give, this is output i expect.
+3. run the code and see got output , meets expected output.
+4. document this..
+
+
+Integration test.
+developer must know it..
+
+Today we can become bankrupt just by using the cloud...
+so how use cloud optimally is also a skil... everybody in team should learn .00001/5
+
+
+is your react web site user friendly...
+you dont think so... definition of user friendly../
+
+0. device independence (  planning issue)
+1. consistency
+2. no scrolling
+3. number of clicks to do anything 3 or less than 3..
+
+
+
+how do you know function is complex or simple?
+number of conditions used in the function...
+FAn in, fan out.. 
+
+
+
+if( i >3)
+
+number of paths in your function to go from line 1 to line last in number of conditons +1
+
+
+Cyclomaticc  Complexity
+recursive functions are comlex.
+multiple function calls.
+
+welcome to the world today..
+
+1. who cares what information i Have, real question how am I applying that information?
+
+
+in all test cases..
+we will try to have what we expect, what we got we assert.
+assert is such a old thing computer science 1970's stuff still today useful.
+
+
+I dont document things as expected in the company pathetic person as a team member
+
+
+11.16AM and join back
+
+
+Hell or Heaven does not matter, repeatability does matter..
+
+
+
+quick summary..
+0. as long as noise level in brain in low we can do this "easily"
+1. currently your keep focus on completing the back end..
+2. we have to do unit testing and integration testing and everybody in the team
+should participate in it...  everybody must have written some unit testing for some particular
+scenario if not fully... ( we are aware of unit testing)
+3. how react interacted with spring ( everybody must know)
+4. how spring is going from controller ( dto)... service ... repo (entities) .. flow 
+everybody must know.
+5. how security is applied on controller functions..
+6. how does code look in react while calling secure functions.. (very simple..)
+7. are you raising PR.
+8. are your boards on track.
+9. is there a document where you are logging your experiences..
+in terms of reading...
+
+
+rant Peter drucker books of managing oneself
+and effective executive are great books always , in the world of AI, it has become even more
+great..
+
+quick summary.
+application.properties
+
+name of application
+portno.
+database url..
+security username..
+
+
+@SpringBootApplciation 
+1. configures the spring boot application 
+2.looks at packaes...
+3. configuration classes  @Bean
+@Beam we are telling Spring hey I will create the object you must use it for wiring.
+
+
+Security...
+when will security be applied after reaching controller function or before reaching
+controller function..
+before reaching controller function. how..SecurityFilterChain by using this..
+
+who are you User details service,
+
+ what you can access   SEcurityFilterChain..
+
+
+@RestController.
+what is format does input and response of controller functions take?
+JSOn .. are we writing any logic in our code to change json to java or java to json..
+no... it is already taken care by whom.. @RestController.
+
+when will you use rollback or commit with your sql.
+dml
+insert
+update
+delete.
+in JPA how do you transactions.. @Transactional.
+
+
+http://freak.com/k
+
+
+if I want to read this in my controller function.. 23..
+
+
+f1(@RequestParam int i;) x
+
+
+f1(@Pathvarible int i);  y  ==path variable to read parameters..
+
+
+@Repository annotation we are using.. this typically indicates
+this layer is responsible for inserting, updating... 
+actual inserting updating is done by using standardizdd methods..
+
+@repository.. insert, update...
+
+
+which repository ... functon should I use so that a row is inserted in the table.
+
+findAll.. all the rows.
+save .. inserting or updating..
+
+I want spring to create an object of Service... class.
+I want it to write the object in  
+
+
+
+@RestController
+A
+{
+
+@Autowired
+private B obj;
+
+
+
+}
+
+@Service
+B
+{
+
+
+}
+
+spring boot has controller object and service object, which annotation is used to tell
+sprng boot hey put the Service object inside controller.
+
+to create an object we use the word @Service. @REpository.. @config..
+to write the object ie put the object inside the other class @Autowired..
+
+@Autowired.. will not create object. whatever object spring has got it will use it.
+@Servce, @Repository will create object but not wire it.. 
+
+spring knowing architecture is everything. wht is knoing architecture.
+1. which objects spring will create.
+2. which object to put under what..
+
+spring creating object is called INversion of control.
+spring able to put one object under some other class.  Dependancy injection.
+
+sequence... is used to autogenerate values for primary key.
+in your project, primary key values should not be entered by the user.. until
+strong logic exists why...
+
+we can write some custom queries in jpa 
+why you want to write custom queries.. you must have a reason..
+@query , you use it the repository interface..
+
+
+pom.xml , why was settings.xml file used..
+so that from where the dependencies can be downloaded. canb e specified... authemtication
+
+get  -- querying
+post  -- inserting, creating
+put  --updating
+delete --removing.
+these are conventions..
+event called patch. in http.. used for partial updates. but hardly used in any project..
+
+spring boot security by default a username is created called user.
+
+
+security
+1. authentication  .. who are you...   usermanager
+2. authorization.  .. resources.. do you have access securitychainfiler.
+
+for you controller funtions , this should be accessible by x user only..
+
+@RestController
+class A
+{
+  @Autowired
+  private B obj;
+
+}
+
+
+@Primary ( auto qualifiers)
+@Service
+class B
+{
+
+}
+
+@Configuration
+class Config
+{	
+	@Bean // we are telling spring hey I will create the object you use it
+	public B f1()
+	{
+		return new B();
+	}
+
+
+}
+
+when you create two objects of same class and you are telling hey use one of the object in class A
+spring will get confused obviously.... so we should avoid this.. ideally but no I want to use
+this like this only because during testing I want use @Bean object , during development
+@Servie B object.. these kidn of variations..
+
+passowrds in plain text is a great idea..
+
+
+
+
+12.22..
+
+
+1. look at the notes.. and summary...
+after the assessment is over.. feedback
+2. show patience and understand jpa.. and understand the architecture..
+component.. service.. fetch ... controller function in spring.. service fucntin in spring..
+repo function .. spring boot.
+
+as controller input and return type... dto
+once you come repo layer , input and output.. Entities..
+
+
+3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
