@@ -267,12 +267,12 @@ Modern financial architectures require structured testing across four primary le
 └────────────────────────────────┬────────────────────────────────┘
                                  │
 ┌────────────────────────────────┴────────────────────────────────┐
-│                       Integration Testing                       │
+│                       Integration Testing  ( attempt this)                     │
 │              (APIs, Microservices, Mainframe Middleware)        │
 └────────────────────────────────┬────────────────────────────────┘
                                  │
 ┌────────────────────────────────┴────────────────────────────────┐
-│                     Component / Unit Testing                    │
+│                     Component / Unit Testing    (attemp this)                │
 │                (Isolated Classes, Functions, Methods)           │
 └─────────────────────────────────────────────────────────────────┘
 ```
