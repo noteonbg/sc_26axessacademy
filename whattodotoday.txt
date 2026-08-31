@@ -28,6 +28,44 @@ Relax and Keep the focus on the project...
 0. Payment Intializtion will go for demo today, Loan Origination will
 for demo on Thursday.
 
+1. try to understand the program written in 
+sc_26axessacademy\a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspringpoc
+you already did this.. this is numbers adding and multiplying.. stuff.
+intent is to prove you know how react and spring boot works. observe the role of DTO..
+to send info from reat to spring controller functon 
+return of spring controller function to react function understand this.
+
+2. under the employee part in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\03-banking-jpa-demo
+then understand the one to many stuff in the repo.. 
+
+3. try to understand the program in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\reactandspring
+understand the program and run it... in your system it will run...
+understand this code..
+this is again simple from jpa perspective because of one table.
+
+4. try to run the program in 
+a01notes\summaryimages\generatedsummaries\a19Week6springboot\spring-security-inmemory-demo
+both the react part is there and spring boot controller part is there.. focus..
+
+5. your project needs coordination in terms.
+5.1 controller funtion input and return type..
+5.2 entity classes design.
+5.3 ensure you enforce architecture while writing the 
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. understand testing by ..
 1.1 a02_software_testing_fundamentals_financial_institution.md file.
 1.2 make the code a01notes\summaryimages\generatedsummaries\a20Week7Testingandclosing\a03junit
