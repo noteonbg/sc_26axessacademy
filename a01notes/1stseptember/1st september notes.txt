@@ -24,6 +24,39 @@ creativity
        aim for this by Thursday Evening..
    2.4 if possible integrate with react also... 
 
+checklist
+1. git strategy.
+2. folder structure..
+3. dto.. relevant to react .
+4. entity.. relevant to dto. table .. across team members.. 
+5. security at last..
+6. review...
+
+Approach for any demo to stakeholders ..  every team member should be able to show..
+1. here is my api.
+2. look at swagger.
+3. look at the json.
+4. look at the component, here it is used...
+5. come the controller, show the service and repo .. dto and entity if need be.
+6. show the h2 table structure...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Testing..
