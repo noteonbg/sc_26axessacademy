@@ -18,6 +18,48 @@ on the system.
 2. raise PR and ensure once changes are done
 3. you rebase your branch on changes in the "our" branch.
 
+
+
+
+---------------------------------
+
+Sep 1st 2026.
+
+relax and focus on the project. Document your journey...
+
+1.understand unit testing code in the class, 
+2.for your project this may be the approach.
+   2.1 complete backend and review it whether it matches the front end requirement.
+      by using swagger...  get copilot to confirm that this ui will match the requirement.
+      dont bother about login , security.. as of now...
+      how to do it.. look at 
+   \a01notes\summaryimages\maybeproject\a07SpringBoot_React_Integration.pdf
+   2.2 look at the naming conventions for api names.. 
+       a01notes\summaryimages\maybeproject\a08rest_api_naming_conventions.pdf
+   2.3 integration with react we will do it after the review for this is done..
+aim for this by Thursday Evening..
+   2.4 if possible integrate with react also... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Aug 31st  2026..
 --------------------
 Culture is everything

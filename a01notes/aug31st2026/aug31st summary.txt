@@ -326,11 +326,86 @@ as controller input and return type... dto
 once you come repo layer , input and output.. Entities..
 
 
+1) my assumption is everybody in the batch know how react component is working
+and how event handling is registered.
+2) when an event occurs. you are going to reach some service js file in react itself.
+3) you are in react, you are in service js file.. here you will use axios
+to make a http request. to a controller function of spring boot.
+4. since you are calling th econtroller function you need to supply the input...
+this input is in form of json, this input you pass becomes RequestDTO in springboot world
+5. from the requestDTO, you will create the Entity Object if need be..
+6. you will call servie layer function..by supplying the entity object..
+7. once you are in service function, you will call the repo layer function, by using
+the entity object
+8. you did jpa.. and you will come back to service function.. service function
+can return entity object ot controller but here stop stop stop dont send entity
+object as response. to react. sin which I commited 
+9. in controller convert entity object into REsponseDTO , then use http status
+and responseDTO and use ResponseEntity object .. this will come to react..
+
+
+0. I cannot be a technical person by not knowing architecture.
+1. which react service function..
+2. which controller function.
+3. request DTO
+4. what is yoru entity object.
+5. service function.
+6. which repo function you are calling ( you will not define this.._)
+7. return of repo to service.
+8. service will return entity or collection to controller.
+9. controller will convert entity into response dto + http response status.
+10. this ResponseEntity will come to react..
+11. react has to put this in a state.. and show it in the UI.
+12. ensure validation at controller level.
+
+Review.
+1. review your controller functions, DTO and Entity classes as  a team..
+so that we are not creating entertainment for ourselves
 
 
 
 
 
+react to java in requesdt.
+java to react in response 
+it is always dto.
+
+Controller to service  
+service to controller
+you can pass or return entities..
+
+inside service. to repo..
+what else other than entities.
+
+my project = dto and entities.
+
+you need to take care of exceptions...program should not collapse..
+
+Entity.. is not a DTO..
+why dont wany database related things exposed to UI..
+
+
+shown simple security program where username and password is hardcoded in spring boot.
+we can link this to database..
+but in your project you must JWT
+
+taoken will generated based on a standard.. when after I login.
+eveyrtime icome afterwards I present this token.. looking at token I will judge whether
+user is valid or not.
+
+entity classes should not participate in the json adventures..
+
+based on DTO we may crate eEntities   --request processing
+vice versa  --response generation.
+
+so rant is .
+1. relax.. irrespective of our mood architecture is the boss.. we cannot escape.
+2. do we know function calls in architecture..
+3. approach is..
+3.1 review dto, review entities.. irrespective of which team member it is
+ensure mapping you get the entity from requestdto and responsedto from entity only
+in service layer and not in controller layer. no entity should appear in controller layer.
+controllers must take requestdto as input and send responsedto as output via ResponseEntity...
 
 
 
