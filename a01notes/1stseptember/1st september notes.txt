@@ -1,0 +1,169 @@
+whattodo.txt has been updated.. 1st September 2026 adventure...
+culture is everything, clarity cannot be got by being busy...
+relax and focus on the project
+losing time due to being ...disorganized .
+
+Stake holder expectation...
+1. show swagger api and show the react component which will use it... 
+2. integration with react ... 
+3. insurance policy of unit test and integration test for some modules .. all the modules preferable.
+
+creativity 
+1. we will see this later on.. it is possible after Friday...
+
+1.understand unit testing code in the class, 
+2.for your project this may be the approach.
+   2.1 complete backend and review it whether it matches the front end requirement.
+        by using swagger...  get copilot to confirm that this ui will match the requirement.
+        dont bother about login , security.. as of now...
+        how to do it.. look at 
+       \a01notes\summaryimages\maybeproject\a07SpringBoot_React_Integration.pdf
+   2.2 look at the naming conventions for api names.. 
+       a01notes\summaryimages\maybeproject\a08rest_api_naming_conventions.pdf
+   2.3 integration with react we will do it after the review for this is done..
+       aim for this by Thursday Evening..
+   2.4 if possible integrate with react also... 
+
+
+
+Testing..
+project..
+hope is by 12.00PM Clcok you will free to start working on your project.
+
+
+Unit testing..
+1. we are tesing a part of our code.. example one component one controoler. one service,  one repo
+is example of unit testing...who should do unit testing no debate.. only programmer should unit testing
+
+programmer has to tell look here I cooked the stuff, I will eat it and show it is ok. then then other people
+can eat it..
+best way to tell what my code does, is ask the person to go thru my unit tests..unit test document for your code..
+
+
+Unit testing , testing has to be fast...
+
+
+controller function   --> service function -- repo function
+
+	for example when i testin my service function, repo may be  taking time. so my service function
+	should waste its time by waiting for repo function.. especially during unit testing..
+
+while you are unit testing, you cannot wait for slowing things..
+X is using Y.. Y is taking time and we are doing unit testing for X... so what we should
+is simulate Y inside X and finish unit testing for X.
+
+X= service function
+Y = Repository function
+
+simulate Y inside X.. is called with a technical word "Mocking"
+
+
+Unit testing.
+1. what are you testing ( controller or service or repo  ), react .. ( component, service )
+2. mocking.. ( we are testing X and X needs Y, Y is slow... so mock Y inside X and finish unit testing for X )
+3. we have a thing called Junit .. which is used for unit testing in java applications.. 
+we have whole set of annotations.. @BeforeTest @AfterTest @Test...
+
+
+@Mock indicates that we planning to simulate something here.
+
+@ where you the mock to used.. that also should be clear.
+  @InjectMocks.
+
+
+
+@Simulate the clock.
+
+
+Where you want to use this simulated clock
+@InjectMock
+
+
+
+
+
+
+
+we had a mock object.
+we had decided where to inject the mock.
+w are teching mock object what to mock... how..
+
+hey look if somebodytells findbyId(1) then return "hello";
+
+
+x. Mock 
+y. Inject
+z .. teaching some function for x...
+
+
+
+quick summary
+1. know what are you testing  ( unit tests...  service, repo, controller..)
+2. if you are testing controller and if you feel service is slow, mock service inside Controller test
+3. writing a test... 
+test your function. see what is that you got as output, what was expected output and assert it.
+
+
+
+when it comes to unit testing.
+1. think what are you testing.X
+2 think within X what are you calling.. Y or Z or Q
+3. ask yourself Y or Z or Q is it slow... if yes... you are testing X
+4. whatever is slow learn to mock it when testding X.
+5. mocking it means take what you are mocking and teach it how to behave for a particular function call.
+
+
+----------------------------------------------------
+your project..
+
+clarity matters.
+
+1. hope is react is integrated.. you are doing in backend , dont write even a single line of code
+which react will not use.
+
+how will prove this in your code..
+all DTOs must be used by react.
+
+
+I currently dont trust any team... that they have identified how many apis to call from the ocmoennt
+what are they.... I hope it is done..  use the copilot and ask it hey.. is this json usage for this comment
+of mine.. yes or not.. review it..
+
+dont bother aobut security as of now..
+
+Entity must be slave to the DTO... entity should not do anything which DTO does not do..
+
+
+review your DTO's  entity is subset of DTO's only and then table creation takes place..
+
+
+
+ensure DTOs are used in react.
+ensure Entities do only those thing which DTO tells it to do..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

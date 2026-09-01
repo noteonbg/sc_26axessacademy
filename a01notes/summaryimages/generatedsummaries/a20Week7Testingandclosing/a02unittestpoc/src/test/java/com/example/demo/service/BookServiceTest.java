@@ -50,7 +50,7 @@ public class BookServiceTest {
         // STEP 1: ARRANGE (Setup expectations / stubbing)
         // "When the service calls bookRepository.findById(1), return 'Clean Code'"
         // =========================================================================
-        when(bookRepository.findById(1)).thenReturn("Neat Code");
+        when(bookRepository.findById(1)).thenReturn("Clean Code");
 
         // =========================================================================
         // STEP 2: ACT (Execute the actual service method being tested)
