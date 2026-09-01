@@ -31,7 +31,6 @@ public class BookService {
     public String getBookById(int id) {
         // Step 1: Call repository method (intercepted by Mockito in unit tests)
         String title = bookRepository.findById(id);
-        System.out.println("inside book service getbookbyid"); // Debugging/logging
 
         // Step 2: Perform business logic on the returned data
         if (title == null) {

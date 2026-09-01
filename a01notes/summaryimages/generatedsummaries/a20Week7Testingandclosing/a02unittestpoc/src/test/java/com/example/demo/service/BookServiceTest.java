@@ -15,89 +15,89 @@ import static org.mockito.Mockito.when;
 /**
  * UNIT TEST LAYER (Using JUnit 5 + Mockito)
  *
- * Key Concepts Demonstrated:
- * 1. @ExtendWith(MockitoExtension.class): Integrates Mockito framework with JUnit 5.
- * 2. @Mock: Creates a fake/mock implementation of BookRepository.
- * 3. @InjectMocks: Creates a real BookService instance and automatically injects the fake BookRepository into it.
- * 4. when(...).thenReturn(...): Stubbing behavior — defining what fake data the mock should return when invoked.
- * 5. verify(...): Behavioral verification — checking that the mock method was actually called with expected arguments.
+ * KEY LESSON FOR STUDENTS:
+ * ---------------------------------------------------------------------------------------
+ * 1. When running MainApp.java:
+ *    - Uses real 'BookRepositoryImpl'.
+ *    - Prints '>>> [REAL REPOSITORY]...' messages to System.out.
+ *    - Takes ~4 seconds because each call sleeps for 2 seconds (simulating database latency).
+ *
+ * 2. When running this Unit Test (BookServiceTest.java via 'mvn test'):
+ *    - Mockito creates a MOCK (fake) BookRepository instance via @Mock.
+ *    - 'BookRepositoryImpl' is NEVER instantiated or executed!
+ *    - NO '>>> [REAL REPOSITORY]...' messages will appear in the output.
+ *    - NO 2-second sleep delays occur. The tests run INSTANTLY (in milliseconds)!
+ * ---------------------------------------------------------------------------------------
  */
-@ExtendWith(MockitoExtension.class) // Enables Mockito annotations in JUnit 5
+@ExtendWith(MockitoExtension.class) // Integrates Mockito with JUnit 5
 public class BookServiceTest {
 
     /**
-     * @Mock creates a dummy object of BookRepository.
-     * Mockito automatically intercepts calls to 'bookRepository' so NO real database or code execution occurs.
+     * @Mock creates a fake dynamic proxy of the BookRepository interface.
+     * Mockito intercepts all calls to this object and DOES NOT execute any real repository code.
      */
     @Mock
     private BookRepository bookRepository;
 
     /**
-     * @InjectMocks creates a real instance of 'BookService'
-     * and automatically injects the '@Mock private BookRepository bookRepository' into its constructor.
+     * @InjectMocks creates a real instance of BookService and injects the fake 'bookRepository' mock into it.
      */
     @InjectMocks
     private BookService bookService;
 
     /**
-     * TEST CASE 1: Testing Function 1 (getBookById)
-     * Goal: Verify that when getBookById(1) is called on Service, it delegates to
-     * Repository.findById(1) and returns the correct title.
+     * TEST CASE 1: Testing Function 1 (getBookById) with Mocking
      */
     @Test
     void testGetBookById() {
-        // =========================================================================
-        // STEP 1: ARRANGE (Setup expectations / stubbing)
-        // "When the service calls bookRepository.findById(1), return 'Clean Code'"
-        // =========================================================================
+        System.out.println("\n-------------------------------------------------------------------------");
+        System.out.println(" [UNIT TEST] Running testGetBookById() using Mockito Mock...");
+        System.out.println(" Notice: NO '[REAL REPOSITORY]' logs and NO 2-second delay!");
+        System.out.println("-------------------------------------------------------------------------");
+
+        long start = System.currentTimeMillis();
+
+        // 1. ARRANGE: Stub mock repository to return "Clean Code" for ID 1
         when(bookRepository.findById(1)).thenReturn("Clean Code");
 
-        // =========================================================================
-        // STEP 2: ACT (Execute the actual service method being tested)
-        // =========================================================================
+        // 2. ACT: Call service method
         String result = bookService.getBookById(1);
 
-        // =========================================================================
-        // STEP 3: ASSERT (Verify output matches expectations)
-        // Check that the service returned "Clean Code"
-        // =========================================================================
+        // 3. ASSERT: Check that service returns expected title
         assertEquals("Clean Code", result);
 
-        // =========================================================================
-        // STEP 4: VERIFY (Confirm Mock interaction)
-        // Ensure that bookRepository.findById(1) was executed exactly as expected
-        // =========================================================================
+        // 4. VERIFY: Verify that repository findById(1) was invoked on the mock
         verify(bookRepository).findById(1);
+
+        long end = System.currentTimeMillis();
+        System.out.println(">>> SUCCESS: Test completed in ONLY " + (end - start) + " ms! (Fast because of Mocking)\n");
     }
 
     /**
-     * TEST CASE 2: Testing Function 2 (addBook)
-     * Goal: Verify that when addBook("Effective Java") is called on Service, it calls
-     * Repository.save("Effective Java") and returns true.
+     * TEST CASE 2: Testing Function 2 (addBook) with Mocking
      */
     @Test
     void testAddBook() {
-        // =========================================================================
-        // STEP 1: ARRANGE (Setup expectations / stubbing)
-        // "When the service calls bookRepository.save("Effective Java"), return true"
-        // =========================================================================
+        System.out.println("\n-------------------------------------------------------------------------");
+        System.out.println(" [UNIT TEST] Running testAddBook() using Mockito Mock...");
+        System.out.println(" Notice: NO '[REAL REPOSITORY]' logs and NO 2-second delay!");
+        System.out.println("-------------------------------------------------------------------------");
+
+        long start = System.currentTimeMillis();
+
+        // 1. ARRANGE: Stub mock repository to return true for "Effective Java"
         when(bookRepository.save("Effective Java")).thenReturn(true);
 
-        // =========================================================================
-        // STEP 2: ACT (Execute the service method being tested)
-        // =========================================================================
+        // 2. ACT: Call service method
         boolean isAdded = bookService.addBook("Effective Java");
 
-        // =========================================================================
-        // STEP 3: ASSERT (Verify output matches expectations)
-        // Check that the service returned true
-        // =========================================================================
+        // 3. ASSERT: Check that service returned true
         assertTrue(isAdded);
 
-        // =========================================================================
-        // STEP 4: VERIFY (Confirm Mock interaction)
-        // Ensure that bookRepository.save("Effective Java") was executed by the service
-        // =========================================================================
+        // 4. VERIFY: Verify that repository save("Effective Java") was invoked on the mock
         verify(bookRepository).save("Effective Java");
+
+        long end = System.currentTimeMillis();
+        System.out.println(">>> SUCCESS: Test completed in ONLY " + (end - start) + " ms! (Fast because of Mocking)\n");
     }
 }
