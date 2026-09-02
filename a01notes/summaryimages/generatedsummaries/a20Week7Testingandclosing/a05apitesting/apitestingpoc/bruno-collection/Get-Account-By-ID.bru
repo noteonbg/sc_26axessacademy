@@ -1,0 +1,17 @@
+meta {
+  name: Get Account By ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/v1/accounts/101
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body.id: eq 101
+  res.body.accountNumber: eq ACC1001
+}

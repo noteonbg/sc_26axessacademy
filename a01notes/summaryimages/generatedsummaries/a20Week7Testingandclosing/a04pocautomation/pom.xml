@@ -67,14 +67,11 @@
                 </configuration>
             </plugin>
 
-            <!-- Exec Maven Plugin to run Java main classes directly -->
+            <!-- Exec Maven Plugin to run Java main classes dynamically -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.2.0</version>
-                <configuration>
-                    <mainClass>com.axess.automation.TC001_LaunchBrowser</mainClass>
-                </configuration>
             </plugin>
         </plugins>
     </build>

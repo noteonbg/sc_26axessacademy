@@ -1,0 +1,15 @@
+meta {
+  name: Delete Bank Account
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/accounts/101
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 204
+}

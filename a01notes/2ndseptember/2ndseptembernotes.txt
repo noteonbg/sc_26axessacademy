@@ -1,0 +1,161 @@
+Relax .. and stay focused on the project. 
+Don't invest emotions on the project.
+A)working. go to the next thing..
+B)not working... think what to change... 
+
+Today
+12.00PM to 1.00PM ( I wont be there.. Jerad will be there , continue to work on the project)
+1.00PM to 2.00Pm lunch
+2.00Pm to 5.30PM ..( I will be there..  )
+
+Approach for any demo to stakeholders ..  every team member should be able to show..
+1. here is my api. ( watch out for the names... keep it decent... )  ( JSON+ http status --ResponseEntity )
+2. look at swagger. 
+3. look at the json and http status
+4. look at this component, here the json created above is used .
+5. come the controller, show the service and repo .. dto and entity if need be.
+6. show the h2 table structure...
+7. tasks of ado boards description must be filled and  story must have description and acceptance criteria.
+8. watch out for your PR...s
+
+checklist for ...
+a07SpringBoot_React_Integration.pdf
+a08rest_api_naming_conventions.pdf
+both are present in folder of the repo in\a01notes\summaryimages\maybeproject
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Today 2nd September adventure.
+0.  you will get time for project completion. so concentrate on testing..
+1.  ensure unit tests are running..
+2.  ensure automation testing is done..
+3.  continue working on the project...
+
+
+
+Let us automated testing..
+hope people have understood unit testing..
+
+1. testing is a broad topic.. we must know... that is important from a project point of view. to know
+what is approach team is taking towards testing.. Imitate first and then you think of Improving.
+
+i think a developer must know unit testing and integration testing and participate in other kinds of testing as spectator..
+Unit testing.. we are testing individual parts.. example only controller. only service, only dao ... which ever part is
+slow and if we are depending on that part.. we simulate that or mock that..
+
+we are testing not repostitory we are doing unit testing of service.. servcie functions will call repoistory functions
+I dont my service funtion to be slow.. so that we will mock repoistory.. while testing service..
+
+
+reemmber in the cloud there is no intellij.. inside docker container there is no intellij or vs code... 
+command line is only way we should have an idea how to run it..
+
+
+Have view on unit tesing and why mocking is needed..
+
+Automation testing..
+we want to test a browser based software without we launching the browser.. selenium.. automate
+lauching of browser entering some values there.. and clicking on the button taking a screen shot and close the browser.
+automate..
+
+when we ran a selenium java program.. it will open the browser and start doing things whatever we have told
+in our java program. the way it it does by using json or using interats with http..
+
+
+
+selenium contacts  a website.. (this is ghost... because in real life what is meaning of this word, we are contacting
+a web page in a web site.. ) .. you are looking at a page..
+
+selenium gives lot of syntax for telling what to locate in the page, should you click on the button. or should you fill a
+text box.. you got lot of syntax.. similar to you have javscript ...  querySElector..
+
+"OpinionS" we are drowned with this in IT industry.. so enjoy sanctify by leanring cncepts and by hearting their opinions..
+
+we are automating how we are interacting with a web page by  using selenium syntax..
+
+Any system you need different kind of skills... every skill is important we should know what skill we bring in.
+
+you can select something in the page via our usal stuff.. id, css classes etc.
+or we can use xpath is another style of doing things. 
+
+some 1000 years ago we discussed XML, XPath  system thinking helps.. ghost.. we are not zero in any thing
+at same time we are not aiming for 5/5 in everything.. we have to moerate 
+
+
+anything which is repetive should be automated...
+
+
+coding does not require lot of intelligence..  design needs tonnes of intelligence because we have to accept htis force
+called "Tradeoff"
+
+web applciations.. (slower )  everything has to come
+from serer .. or you lookmobile apps in your mobile( faster)  -- app is installed locally on mobile
+
+
+web applications 100% be sure it will be slow...when compared to a mobile app or desktop app
+
+
+
+to make things useful in real life will never happen by accident..
+
+
+if we are in java or in any language good bye to a project which does not use a build tool
+in react our build tool is npm... npm install, npm start, npm test  
+
+in our java world our build tool is maven.
+how do you compile
+how do you run
+how do you test
+how to you clean up and recompile.
+
+
+different styles of running java program using maven itself but one concept will not change, no matter
+whatever you want to run your program?   -->  you must have a class that contains main function.
+
+
+
+Testing
+1. people should find relevance for it... ( if we can get convinced it is needed that is good start)
+2. as a programmer unit testing and integration testing ( we should know how to code and test it) other testing we can participate.
+3. selenium .. interact with a web page in an automated way...( you must know the browser)
+selenium has lot of opinions in terms of syntax..
+
+
+
+10.55 to 11.10AM you take a break
+and join back continue your backend adventure...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

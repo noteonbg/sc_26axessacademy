@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Spring Boot Account API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

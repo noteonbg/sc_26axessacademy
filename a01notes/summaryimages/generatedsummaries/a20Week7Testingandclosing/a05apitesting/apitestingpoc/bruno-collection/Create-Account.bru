@@ -1,0 +1,30 @@
+meta {
+  name: Create Bank Account
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/v1/accounts
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "accountNumber": "ACC1003",
+    "accountHolderName": "Charlie Brown",
+    "balance": 5000.00,
+    "accountType": "SAVINGS"
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.body.id: isDefined
+  res.body.accountHolderName: eq Charlie Brown
+}

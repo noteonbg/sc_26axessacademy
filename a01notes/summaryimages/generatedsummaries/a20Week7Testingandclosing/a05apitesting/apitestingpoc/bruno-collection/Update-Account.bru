@@ -1,0 +1,30 @@
+meta {
+  name: Update Bank Account
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/accounts/101
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "accountNumber": "ACC1001",
+    "accountHolderName": "Alice Smith Updated",
+    "balance": 3500.75,
+    "accountType": "SAVINGS"
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body.accountHolderName: eq Alice Smith Updated
+  res.body.balance: eq 3500.75
+}
