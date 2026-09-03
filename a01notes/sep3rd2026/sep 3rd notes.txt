@@ -1,6 +1,5 @@
 Intent first, language next..
 
-
 Relax .. and stay focused on the project. 
 Don't invest emotions on the project.
 A)working. go to the next thing..
@@ -15,6 +14,27 @@ Approach for any demo to stakeholders ..  every team member should be able to sh
 6. show the h2 table structure...
 7. tasks of ado boards description must be filled and  story must have description and acceptance criteria.
 8. watch out for your PR...s
+
+
+quick summary
+
+1. focus on the project.. and don't invest emotions.. try to be organized..
+2. theory has got value... architecture is the boss. functions and variables are still in fashion..
+3. testing perspective, programmer must know unit testing and integration testing..
+4  automation point of view.. ( Selenium to test browser based ui) .. API testing what are the parts of it, Bruno or SpringBoot
+or whatever the company prefers..
+
+Coming Monday is final review of the project from the "trainer /academic lead " point of view"...
+
+
+
+
+
+
+
+
+
+
 
 
 coming Monday will the final review of the project from the triner point of view..
@@ -64,7 +84,6 @@ analogy is like a
 metaphors and analogy != science..
 
 react .. axios .. controller function... service function .. repo and return journey begins..
-
 once upon a time... there was something called SOAP and today whatever you built controller functions it is called as REST API
 
 .. http protocol.. and we are using json.
@@ -84,28 +103,16 @@ delete is for removing..
 
 we can automate our api by using Bruno..
 
-wheneer we get json..
+whenever we get json..
 we should know how to covert that onto language object.
 
-axiosconvert json into javacript and vice versa.
-object mapper in springboot.. convertin jsonto java object and vice versa.
+axios converts json into JavaScript and vice versa.
+object mapper in spring boot.. converting json to java object and vice versa.
 
-
-developrs must know how to do unit testing and integration testing..
-
-
-quick summary
-
-1. focus on the project.. and dont invest emotions.. try to be organized..
-2. theory has got value... architecture is the boss. functions and variables are still in fashion..
-3. testing perspective, programmer must know unit testing and integration testing..
-4  automation point of view.. ( Selenium to test browser based ui) .. API testing wht are the parts of it, Bruno or sringoboot
-or whatever the company prefers..
+developers must know how to do unit testing and integration testing..
 
 
 Coming Monday is final review of the project from the "trainer /academic lead " point of view"...
-
-get started with your project integration.
 
 
 
