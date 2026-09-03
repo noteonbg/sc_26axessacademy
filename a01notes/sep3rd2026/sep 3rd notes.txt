@@ -1,0 +1,144 @@
+Intent first, language next..
+
+
+Relax .. and stay focused on the project. 
+Don't invest emotions on the project.
+A)working. go to the next thing..
+B)not working... think what to change... 
+
+Approach for any demo to stakeholders ..  every team member should be able to show..
+1. here is my api. ( watch out for the names... keep it decent... )  ( JSON+ http status --ResponseEntity )
+2. look at swagger. 
+3. look at the json and http status
+4. look at this component, here the json created above is used .
+5. come the controller, show the service and repo .. dto and entity if need be.
+6. show the h2 table structure...
+7. tasks of ado boards description must be filled and  story must have description and acceptance criteria.
+8. watch out for your PR...s
+
+
+coming Monday will the final review of the project from the triner point of view..
+Decision making quality always improves if you put a factor of time..
+
+business is always a tough thing.. to get a customer who pays needs lot of intelligence because we have to show value to him
+or her..
+
+
+
+checklist for ...
+a07SpringBoot_React_Integration.pdf
+a08rest_api_naming_conventions.pdf
+both are present in folder of the repo in\a01notes\summaryimages\maybeproject
+
+Todays focus
+api testing.. you will get time to code your project relax and focus on the topic..
+
+api testing..
+1. you are talking controller funtdion testing..
+2. importance of controller function I dont know how many of them know.. that is boss.
+controller function is key thing in any project.. 
+
+
+controller function what things comes to your mind other than controller function?
+
+request .. response..  json  ..  http response status codes.. Distributed computing
+
+api testing.
+1. status code.
+2. json content.
+3. mode of request.
+4. validation.
+5. naming...
+
+
+ecommerce market is 100 rupees
+
+95 rupees is irctc.co.in
+ama, flip 5 rs.
+
+
+methphors , analogies..
+metaphor is like a phrase. =
+analogy is like a 
+
+metaphors and analogy != science..
+
+react .. axios .. controller function... service function .. repo and return journey begins..
+
+once upon a time... there was something called SOAP and today whatever you built controller functions it is called as REST API
+
+.. http protocol.. and we are using json.
+
+2001 to 2010 .. world SOAp was popular why... there was no REST..
+after 2010 REST is still used predominatly.... it is not SOAP is not good it is over engineering for most projects.
+
+
+for http requests  , you have registered for the event.. and what you are getting is when the event occurs, taht function
+is getting called. what you write inside the function nobody cares.. but convention is 
+
+
+post is for adding
+put is for updating
+delete is for removing..
+
+
+we can automate our api by using Bruno..
+
+wheneer we get json..
+we should know how to covert that onto language object.
+
+axiosconvert json into javacript and vice versa.
+object mapper in springboot.. convertin jsonto java object and vice versa.
+
+
+developrs must know how to do unit testing and integration testing..
+
+
+quick summary
+
+1. focus on the project.. and dont invest emotions.. try to be organized..
+2. theory has got value... architecture is the boss. functions and variables are still in fashion..
+3. testing perspective, programmer must know unit testing and integration testing..
+4  automation point of view.. ( Selenium to test browser based ui) .. API testing wht are the parts of it, Bruno or sringoboot
+or whatever the company prefers..
+
+
+Coming Monday is final review of the project from the "trainer /academic lead " point of view"...
+
+get started with your project integration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

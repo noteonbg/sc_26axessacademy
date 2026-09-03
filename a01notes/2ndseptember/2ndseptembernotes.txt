@@ -3,11 +3,6 @@ Don't invest emotions on the project.
 A)working. go to the next thing..
 B)not working... think what to change... 
 
-Today
-12.00PM to 1.00PM ( I wont be there.. Jerad will be there , continue to work on the project)
-1.00PM to 2.00Pm lunch
-2.00Pm to 5.30PM ..( I will be there..  )
-
 Approach for any demo to stakeholders ..  every team member should be able to show..
 1. here is my api. ( watch out for the names... keep it decent... )  ( JSON+ http status --ResponseEntity )
 2. look at swagger. 

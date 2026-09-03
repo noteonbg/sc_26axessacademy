@@ -54,7 +54,7 @@ A **Web Service** is any API exposed over the internet. Common web service archi
 
 A REST request consists of **four primary components**:
 
-1. **The Endpoint (URL)**: The unique address of the resource.
+1. **The Endpoint (URL)**: The unique address of the resource. URI
    - Example: `https://api.bank.com/v1/accounts`
 2. **The HTTP Method (Action)**: Indicates the CRUD operation to perform.
    - `GET`: Read resource(s)
