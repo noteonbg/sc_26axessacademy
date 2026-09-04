@@ -119,17 +119,17 @@ For all the testing.. processs... Imitite and Improving..
 quick summary...
 
 1. hope all you know the importance of knowing folder structure..
-2. hope people are convinced that we need to be good functions and vairables..
+2. hope people are convinced that we need to be good functions and variables..
 3. hope people realize once upon a time we did jdbc with architecture.. architecture to code and never vice versa.
 4. hope people remember the git, docker .. cloud ... this adventure... ( tools adventure)
 5. database .. hope you understand tables greatness..( physical and logical independence of data..), primary key,
 foreign key..
 6. web...  for presentation ( react) , web for logic. ( distributed computing, controller, api ... )
-7. in both , you must know request, you must know response. who is processing the reqwuest..( the controller function )
+7. in both , you must know request, you must know response. who is processing the request..( the controller function )
 8. react.. ( how did component appear..  what is changing, what is event handling.. , routing, api call )
-9. the silent thing which we did a shoddy job of completing becuase that is what was expected. in the course
+9. the silent thing which we did a shoddy job of completing because that is what was expected. in the course
 and it is killing us till today ...  css)
-10. http headers how many are you focussing.. that is important thing to focus..
+10. http headers how many are you focusing.. that is important thing to focus..
 12. spring boot..  what is controller what is service, what is dto, what is entity, what is repository. what is security. what is validation.
 
 last three things.
@@ -142,7 +142,7 @@ returning ResponseEntity from controller functions.. ( DTO)... is nothing but Mo
 are called controllers. our class which has controller functions is called as RestController..
 
 
-Controller functions return View + Model..  ( show me hello.html and show me emplist in hello.html) ... Controlelr functions
+Controller functions return View + Model..  ( show me hello.html and show me emplist in hello.html) ... Controller functions
 are not called as RestControllers ..  WebControllers 
 
 
@@ -154,14 +154,14 @@ are not called as RestControllers ..  WebControllers
 
 
 Service.. is actual Logic..
-SErvice should be a core java code... I can service from my local system not in a distributed way in spring boot
+Service should be a core java code... I can service from my local system not in a distributed way in spring boot
 to check my logic out..
 
 Service like  chocolate..
-Controller like a chocolateCover
+Controller like a chocolate Cover
 
 if you did not write service,  you will call repo functions from controller. if we do it is  bad idea.. we are telling
-to check whther my databes part works I need http.. controller funtions need http...
+to check whether my database part works I need http.. controller functions need http...
 
 Controller  -- Distributed world begins
 Service -- corejava 
@@ -170,7 +170,7 @@ Entity  --corejava
 Repo. --corejava
 
 
-I have to my Constriants Tradeoff C...
+I have  my Constraints Tradeoff C...
 
 
 
