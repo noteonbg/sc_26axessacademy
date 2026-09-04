@@ -2,7 +2,7 @@ import axios from 'axios'; // Import Axios HTTP client library
 
 // Create centralized Axios instance with default configuration for contacting Spring Boot backend
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/api', // Prepend base URL to all relative API endpoint paths
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:4500/api', // Prepend base URL to all relative API endpoint paths (Spring Boot on port 4500)
   headers: {
     'Content-Type': 'application/json', // Send JSON content-type header with all HTTP requests
   },

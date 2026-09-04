@@ -22,7 +22,7 @@ import java.util.List; // Import java.util.List collection interface
  * Requirements Met:
  * 1. Return type uses explicit ResponseEntity<T> (not raw data).
  * 2. Explicit HTTP status codes are returned (HttpStatus.OK).
- * 3. CORS enabled for React frontend at http://localhost:3000.
+ * 3. CORS enabled for React frontend at http://localhost:4800.
  */
 @RestController // Marks class as REST controller; automatically serializes return objects into JSON
 @RequestMapping("/api/customers") // Base route URL path for all customer endpoints

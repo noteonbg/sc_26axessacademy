@@ -80,7 +80,7 @@ To start the Spring Boot application server locally:
 ```bash
 mvn spring-boot:run
 ```
-The server will start on port `8080` (e.g. `http://localhost:8080/api/v1/accounts`).
+The server will start on port `8085` (e.g. `http://localhost:8085/api/v1/accounts`).
 
 ---
 

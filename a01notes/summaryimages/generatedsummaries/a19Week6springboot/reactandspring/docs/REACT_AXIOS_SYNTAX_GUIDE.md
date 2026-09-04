@@ -53,7 +53,7 @@ import axios from 'axios';
 
 ```javascript
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:4500/api',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -61,7 +61,7 @@ const apiClient = axios.create({
 });
 ```
 - **`axios.create()`**: Creates a customized Axios instance with default settings:
-  - `baseURL`: Automatically prepended to all relative request paths (e.g. `/customers` becomes `http://localhost:8080/api/customers`).
+  - `baseURL`: Automatically prepended to all relative request paths (e.g. `/customers` becomes `http://localhost:4500/api/customers`). Configurable via `REACT_APP_API_BASE_URL` in `.env`.
   - `headers`: Sets default request header `Content-Type: application/json` so Spring Boot knows we are sending JSON data.
   - `timeout: 10000`: Cancels request if backend takes more than 10 seconds to respond.
 
@@ -107,7 +107,7 @@ export const getAllCustomers = async () => {
 };
 ```
 - **`async / await`**: Modern JavaScript syntax for asynchronous code handling.
-- **`apiClient.get('/customers')`**: Sends HTTP `GET` request to `http://localhost:8080/api/customers`.
+- **`apiClient.get('/customers')`**: Sends HTTP `GET` request to `http://localhost:4500/api/customers`.
 - `response.data.data`: `response.data` accesses Spring Boot's `ApiResponse` object, and `.data` extracts the actual array of `CustomerResponseDto` objects.
 
 ```javascript
@@ -122,7 +122,7 @@ export const updateCustomer = async (id, updatePayload) => {
 };
 ```
 - **Payload Sanitization**: Explicitly constructs `payload` object with **ONLY `email` and `location`**, ensuring no unexpected extra fields are sent.
-- **`apiClient.put(...)`**: Sends HTTP `PUT` request to `http://localhost:8080/api/customers/{id}` with JSON body `payload`.
+- **`apiClient.put(...)`**: Sends HTTP `PUT` request to `http://localhost:4500/api/customers/{id}` with JSON body `payload`.
 
 ---
 

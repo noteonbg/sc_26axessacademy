@@ -25,7 +25,7 @@ No external database installation or setup is required! The application uses an 
 - **Driver**: `org.h2.Driver`
 - **Username**: `sa`
 - **Password**: *(empty)*
-- **H2 Console**: Accessible in browser at `http://localhost:8080/h2-console` when backend is running.
+- **H2 Console**: Accessible in browser at `http://localhost:4500/h2-console` when backend is running.
 
 ---
 
@@ -37,10 +37,11 @@ reactandspring
 │   ├── HOW_TO_RUN.md              <-- This guide
 │   ├── SPRING_BOOT_SYNTAX_GUIDE.md<-- Spring Boot code & syntax guide
 │   └── REACT_AXIOS_SYNTAX_GUIDE.md<-- React & Axios code & syntax guide
-├── customer-backend/              <-- Spring Boot Maven REST API (H2 Embedded DB)
+├── customer-backend/              <-- Spring Boot Maven REST API (H2 Embedded DB, Port 4500)
 │   ├── pom.xml
 │   └── src/
-└── customer-frontend/             <-- React Single Page Application
+└── customer-frontend/             <-- React Single Page Application (Port 4800)
+    ├── .env
     ├── package.json
     ├── public/
     └── src/
@@ -66,10 +67,10 @@ reactandspring
    mvn spring-boot:run
    ```
 5. **Expected Output**:
-   - Spring Boot will connect to PostgreSQL at `jdbc:postgresql://localhost:5432/bankdb`.
+   - Spring Boot connects to H2 database at `jdbc:h2:file:./data/bankdb`.
    - Hibernate automatically creates/updates the `customers` table (`ddl-auto=update`).
-   - Initial seed data (Alice, Bob, Charlie, Diana) is automatically inserted into PostgreSQL if the table is empty.
-   - Tomcat web server starts on **`http://localhost:8080`**.
+   - Initial seed data (Alice, Bob, Charlie, Diana) is automatically inserted if the table is empty.
+   - Tomcat web server starts on **`http://localhost:4500`**.
 
 ---
 
@@ -78,7 +79,7 @@ reactandspring
 1. Open a **new / separate** terminal window.
 2. Navigate to the `customer-frontend` folder:
    ```bash
-   cd f:\poc\customer-frontend
+   cd customer-frontend
    ```
 3. Install required npm packages (first time only):
    ```bash
@@ -89,15 +90,15 @@ reactandspring
    npm start
    ```
 5. **Expected Output**:
-   - React application will open in browser at **`http://localhost:3000`**.
-   - Contacts `http://localhost:8080/api/customers` via Axios and renders customer directory.
+   - React application will open in browser at **`http://localhost:4800`**.
+   - Contacts `http://localhost:4500/api/customers` via Axios and renders customer directory.
 
 ---
 
 ## 🧪 How to Use the Application
 
 ### 1. Select / View All Customers
-- On opening `http://localhost:3000`, the table displays all existing customers fetched from PostgreSQL via Spring Boot:
+- On opening `http://localhost:4800`, the table displays all existing customers fetched via Spring Boot:
   - **Customer ID** (e.g. `#1`)
   - **Name** (e.g. `Alice Johnson`)
   - **Email** (e.g. `alice@example.com`)

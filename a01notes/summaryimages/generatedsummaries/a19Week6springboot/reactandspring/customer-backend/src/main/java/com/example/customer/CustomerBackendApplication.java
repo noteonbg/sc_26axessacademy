@@ -15,7 +15,7 @@ public class CustomerBackendApplication {
      * @param args Command line arguments passed to application.
      */
     public static void main(String[] args) {
-        // Launches the Spring application container and starts embedded Tomcat web server on port 8080
+        // Launches the Spring application container and starts embedded Tomcat web server on port 4500
         SpringApplication.run(CustomerBackendApplication.class, args);
     }
 }

@@ -5,18 +5,18 @@
  * 
  * Purpose:
  * This module isolates all HTTP network requests made to the Spring Boot
- * backend API (http://localhost:8080/api). It encapsulates Axios configuration,
+ * backend API (http://localhost:6080/api). It encapsulates Axios configuration,
  * HTTP Basic Authentication header formatting, and standardized error handling.
  */
 
 import axios from 'axios';
 
-// Base URL of the Spring Boot backend server
-const API_BASE_URL = 'http://localhost:8080/api';
+// Base URL of the Spring Boot backend server (Port 6080)
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:6080/api';
 
 /**
  * Creates an Axios instance with base configuration.
- * - baseURL: Pre-appends http://localhost:8080/api to all relative request paths.
+ * - baseURL: Pre-appends http://localhost:6080/api to all relative request paths.
  * - timeout: Cancels request if server takes longer than 5000ms (5 seconds).
  * - withCredentials: Set to true to allow sending cross-origin cookies/credentials.
  */
@@ -157,7 +157,7 @@ const handleAxiosError = (error) => {
       success: false,
       status: 0,
       data: null,
-      error: 'Network Error: Cannot connect to Spring Boot backend server at http://localhost:8080. Ensure backend is running and CORS is enabled.',
+      error: 'Network Error: Cannot connect to Spring Boot backend server at http://localhost:6080. Ensure backend is running and CORS is enabled.',
     };
   } else {
     // Something happened in setting up the request that triggered an error

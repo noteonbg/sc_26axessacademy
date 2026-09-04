@@ -32,7 +32,7 @@ mvn spring-boot:run
 
 ### Step 2.2: Open Swagger UI
 Open your web browser and navigate to:
-👉 `http://localhost:8080/swagger-ui.html`
+👉 `http://localhost:6080/swagger-ui.html`
 
 You will see the Swagger UI page header **"Spring Security In-Memory Demo API"** with a green **"Authorize"** button at the top right.
 
@@ -115,7 +115,7 @@ Bruno is an open-source, offline desktop API client. Follow these steps to manua
    - **Request Type**: `HTTP`
    - **Name**: `1. Public Endpoint f3`
    - **Method**: `GET`
-   - **URL**: `http://localhost:8080/api/f3`
+   - **URL**: `http://localhost:6080/api/f3`
 3. Click **Create**.
 4. Go to the **Auth** tab and ensure it is set to **No Auth** (or *Inherit*).
 5. Click the blue **Send** button (or press `Ctrl + Enter`).
@@ -129,7 +129,7 @@ Bruno is an open-source, offline desktop API client. Follow these steps to manua
 1. Click **+ Add Request**.
    - **Name**: `2. Admin calling f1`
    - **Method**: `GET`
-   - **URL**: `http://localhost:8080/api/f1`
+   - **URL**: `http://localhost:6080/api/f1`
 2. Go to the **Auth** tab:
    - Select **Basic Auth** from the dropdown.
    - **Username**: `admin`
@@ -145,7 +145,7 @@ Bruno is an open-source, offline desktop API client. Follow these steps to manua
 1. Click **+ Add Request**.
    - **Name**: `3. User calling f1 (Forbidden)`
    - **Method**: `GET`
-   - **URL**: `http://localhost:8080/api/f1`
+   - **URL**: `http://localhost:6080/api/f1`
 2. Go to the **Auth** tab:
    - Select **Basic Auth**.
    - **Username**: `user`
@@ -161,7 +161,7 @@ Bruno is an open-source, offline desktop API client. Follow these steps to manua
 1. Click **+ Add Request**.
    - **Name**: `4. User calling f2`
    - **Method**: `GET`
-   - **URL**: `http://localhost:8080/api/f2`
+   - **URL**: `http://localhost:6080/api/f2`
 2. Go to the **Auth** tab:
    - Select **Basic Auth**.
    - **Username**: `user`
@@ -177,7 +177,7 @@ Bruno is an open-source, offline desktop API client. Follow these steps to manua
 1. Click **+ Add Request**.
    - **Name**: `5. Admin calling f2 (Forbidden)`
    - **Method**: `GET`
-   - **URL**: `http://localhost:8080/api/f2`
+   - **URL**: `http://localhost:6080/api/f2`
 2. Go to the **Auth** tab:
    - Select **Basic Auth**.
    - **Username**: `admin`
@@ -195,17 +195,17 @@ You can also run these exact test cases directly from your terminal or command p
 
 ```bash
 # 1. Test Public Endpoint f3 (Unauthenticated) -> Returns 200 OK "f3 at work"
-curl -i http://localhost:8080/api/f3
+curl -i http://localhost:6080/api/f3
 
 # 2. Test f1 with Admin Credentials -> Returns 200 OK "f1 at work"
-curl -i -u admin:admin123 http://localhost:8080/api/f1
+curl -i -u admin:admin123 http://localhost:6080/api/f1
 
 # 3. Test f1 with Normal User Credentials -> Returns 403 Forbidden
-curl -i -u user:user123 http://localhost:8080/api/f1
+curl -i -u user:user123 http://localhost:6080/api/f1
 
 # 4. Test f2 with Normal User Credentials -> Returns 200 OK "f2 at work"
-curl -i -u user:user123 http://localhost:8080/api/f2
+curl -i -u user:user123 http://localhost:6080/api/f2
 
 # 5. Test f2 with Admin Credentials -> Returns 403 Forbidden
-curl -i -u admin:admin123 http://localhost:8080/api/f2
+curl -i -u admin:admin123 http://localhost:6080/api/f2
 ```

@@ -67,7 +67,7 @@ public class SecurityConfig {
 
     /**
      * Configures CORS (Cross-Origin Resource Sharing) allowing React frontend
-     * running on localhost dev servers (e.g. ports 3000, 5173) to call backend APIs.
+     * running on localhost dev server (e.g. port 6100) to call backend APIs.
      *
      * @return CorsConfigurationSource instance
      */

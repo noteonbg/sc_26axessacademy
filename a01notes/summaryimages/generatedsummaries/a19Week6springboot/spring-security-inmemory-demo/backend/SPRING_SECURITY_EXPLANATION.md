@@ -206,7 +206,7 @@ Here is the exact evaluation logic executed by Spring Security's `AuthorizationF
 
 ## 5. How Swagger OpenAPI Integration Works
 
-To enable interactive API testing directly within Swagger UI (`http://localhost:8080/swagger-ui.html`):
+To enable interactive API testing directly within Swagger UI (`http://localhost:6080/swagger-ui.html`):
 
 1. **Permit Swagger Endpoint Access**:
    ```java

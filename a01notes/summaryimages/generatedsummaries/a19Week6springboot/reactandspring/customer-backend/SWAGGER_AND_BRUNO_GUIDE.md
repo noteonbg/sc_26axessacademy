@@ -2,7 +2,7 @@
 
 ## 📌 Project Details
 * **Spring Boot Module**: Customer Management Spring Boot Backend API (for React Frontend integration)
-* **Server Port**: `8080`
+* **Server Port**: `4500`
 
 ---
 
@@ -15,8 +15,8 @@
    ```
 
 2. **Open in Browser**:
-   * **Interactive Swagger UI**: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
-   * **OpenAPI v3 JSON Spec**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+   * **Interactive Swagger UI**: [http://localhost:4500/swagger-ui/index.html](http://localhost:4500/swagger-ui/index.html)
+   * **OpenAPI v3 JSON Spec**: [http://localhost:4500/v3/api-docs](http://localhost:4500/v3/api-docs)
 
 3. **What You Will See in Swagger**:
    * CRUD endpoints for Customer entity management (`GET /api/customers`, `POST /api/customers`, `DELETE /api/customers/{id}`).
@@ -27,10 +27,10 @@
 
 1. **Launch Bruno UI**.
 2. Click **Import Collection** on Bruno home screen -> Choose **OpenAPI V3 Spec**.
-3. Select **URL** -> Enter `http://localhost:8080/v3/api-docs` -> Click **Import**.
+3. Select **URL** -> Enter `http://localhost:4500/v3/api-docs` -> Click **Import**.
 4. Test generated requests:
-   * **Get All Customers**: Send `GET http://localhost:8080/api/customers`.
-   * **Add Customer**: Send `POST http://localhost:8080/api/customers` with JSON payload:
+   * **Get All Customers**: Send `GET http://localhost:4500/api/customers`.
+   * **Add Customer**: Send `POST http://localhost:4500/api/customers` with JSON payload:
      ```json
      {
        "name": "John Doe",

@@ -66,17 +66,20 @@ To clean previous build artifacts and compile all Java source files:
 mvn clean compile
 ```
 
-### B. Run the Live Demo Application (With Simulated Latency)
-To execute `MainApplication.java` and observe the live 2-second database delay:
+### B. Run the Live Demo Application & HTTP Server
+To execute `MainApplication.java` and start the HTTP server on port **7000**:
 ```bash
 mvn exec:java
 ```
 *Output snippet:*
 ```
-[Action 1] Fetching Account details for ACC1001...
-[Repo Layer] Simulating slow database lookup for ACC1001... (2000ms delay)
+[Demo 1] Fetching Account details for ACC1001...
 Result: Account{accountId='ACC1001', holderName='Alice Smith', balance=5000.0, ...}
-Total Execution Time (With Repo Latency): ~6000 ms
+
+🚀 HTTP Server started successfully on port 7000
+👉 Health Check URL : http://localhost:7000/health
+👉 All Accounts URL : http://localhost:7000/api/accounts
+👉 Single Account   : http://localhost:7000/api/accounts/ACC1001
 ```
 
 ### C. Execute Unit Tests (Bypassing Latency via Mocking)

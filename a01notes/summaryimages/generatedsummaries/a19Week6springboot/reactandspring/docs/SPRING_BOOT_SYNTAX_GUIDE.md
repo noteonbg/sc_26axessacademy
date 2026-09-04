@@ -105,9 +105,9 @@ This document provides a line-by-line explanation of every line of code, annotat
 ## 2. `application.properties`
 
 ```properties
-server.port=8080
+server.port=4500
 ```
-- Configures Tomcat to listen on HTTP port `8080`.
+- Configures Tomcat to listen on HTTP port `4500`.
 
 ```properties
 spring.datasource.url=jdbc:h2:mem:customerdb
@@ -120,7 +120,7 @@ spring.datasource.password=
 ```properties
 spring.h2.console.enabled=true
 ```
-- Enables the web-based H2 database console UI at `http://localhost:8080/h2-console`.
+- Enables the web-based H2 database console UI at `http://localhost:4500/h2-console`.
 
 ```properties
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
@@ -160,7 +160,7 @@ public class CustomerBackendApplication {
 }
 ```
 - `public static void main`: Standard Java entry point.
-- `SpringApplication.run()`: Boots up Spring container, initializes Tomcat server on port 8080, and loads application beans.
+- `SpringApplication.run()`: Boots up Spring container, initializes Tomcat server on port 4500, and loads application beans.
 
 ---
 
@@ -464,7 +464,7 @@ public class CustomerController {
 ```
 - **`@RestController`**: Marks class as RESTful controller where return values are serialized directly into JSON HTTP responses.
 - **`@RequestMapping("/api/customers")`**: Base URL route for all endpoints in this controller.
-- **`@CrossOrigin(origins = "*")`**: Enables Cross-Origin Resource Sharing (CORS) so React frontend at `http://localhost:3000` can communicate with backend at `http://localhost:8080`.
+- **`@CrossOrigin(origins = "*")`**: Enables Cross-Origin Resource Sharing (CORS) so React frontend at `http://localhost:4800` can communicate with backend at `http://localhost:4500`.
 
 ```java
     @GetMapping

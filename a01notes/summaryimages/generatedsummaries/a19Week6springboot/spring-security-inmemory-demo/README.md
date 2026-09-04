@@ -60,7 +60,7 @@ The Spring Boot backend defines two hardcoded in-memory users and three REST end
 
 ## 2. CORS (Cross-Origin Resource Sharing) Setup
 
-When a browser running the React app on `http://localhost:3000` calls Spring Boot on `http://localhost:8080`, the browser executes a **CORS preflight OPTIONS request**.
+When a browser running the React app on `http://localhost:6100` calls Spring Boot on `http://localhost:6080`, the browser executes a **CORS preflight OPTIONS request**.
 
 In `backend/src/main/java/com/example/security/config/SecurityConfig.java`, CORS is explicitly enabled:
 
@@ -94,7 +94,7 @@ Axios provides a built-in `auth` configuration option that automatically handles
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:6080/api',
   timeout: 5000,
 });
 
@@ -145,7 +145,7 @@ cd F:\scproject\sc_26axessacademy\a01notes\summaryimages\generatedsummaries\a19W
 # Compile and launch Spring Boot application
 mvn spring-boot:run
 ```
-*Backend will start on port 8080:* `http://localhost:8080`
+*Backend will start on port 6080:* `http://localhost:6080`
 
 ---
 
@@ -161,7 +161,7 @@ npm install
 # Start Create React App development server
 npm start
 ```
-*Frontend will start on port 3000:* `http://localhost:3000`
+*Frontend will start on port 6100:* `http://localhost:6100`
 
 ---
 
