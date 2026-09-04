@@ -14,17 +14,18 @@ Approach for any demo to stakeholders ..  every team member should be able to sh
 6. show the h2 table structure...
 7. tasks of ado boards description must be filled and  story must have description and acceptance criteria.
 8. watch out for your PR...s
+9. before demonstrating, keep everything running and then go, 
+   please don't start server or react in front of the stake holder.
 
 
 quick summary
-
 1. focus on the project.. and don't invest emotions.. try to be organized..
 2. theory has got value... architecture is the boss. functions and variables are still in fashion..
 3. testing perspective, programmer must know unit testing and integration testing..
 4  automation point of view.. ( Selenium to test browser based ui) .. API testing what are the parts of it, Bruno or SpringBoot
 or whatever the company prefers..
 
-Coming Monday is final review of the project from the "trainer /academic lead " point of view"...
+Coming Monday is final review of the project from the "trainer /academic lead " point of view...
 
 
 

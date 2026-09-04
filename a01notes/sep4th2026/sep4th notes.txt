@@ -1,0 +1,210 @@
+Today adventure..  4th sep 2026
+1. standup
+2. 9.00 to 10.00 plenary
+3. performance ..testing 
+4. quick summary and what is expected on Monday..
+5. continue working on project
+6. Monday there is assessment...  + review of all your projects individually projects should work in your system..
+
+Relax .. and stay focused on the project. 
+Don't invest emotions on the project.
+A)working. go to the next thing..
+B)not working... think what to change... 
+
+Approach for any demo to stakeholders ..  every team member should be able to show..
+1. here is my api. ( watch out for the names... keep it decent... )  ( JSON+ http status --ResponseEntity )
+2. look at swagger. 
+3. look at the json and http status
+4. look at this component, here the json created above is used .
+5. come the controller, show the service and repo .. dto and entity if need be.
+6. show the h2 table structure...
+7. tasks of ado boards description must be filled and  story must have description and acceptance criteria.
+8. watch out for your PR...s
+9. before demonstrating, keep everything running and then go, 
+   please don't start server or react in front of the stake holder.
+
+
+Feedbacks are best thing that can happen to any project we can check relevance..
+be clear about prioritie...
+
+
+making things work in real life.. takes a lot of effort.
+
+
+
+12.00PM i will have theory complete.. a quick summary ..
+
+
+we close things by Tuesday and keep testing and practice presentation on the remaining days..
+
+overall summary. Review is a great thing to have and we should try to priotize how to have it frequently..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. performance testing..
+2. quick summary about what we should have known in the last 7 weeks.
+3. quick summary about testing.. on Monday you have a test adventure.. ( horrible .. fate we have to do it..)
+4. Contraints, Tradeoffs and Contradictions.. I have to force you to understand some projectxs an come...
+I am not looking at syntax byhearting..
+
+
+
+X was very slow and somebody thought horrible thing X is very slow let me make Y, Y is fast and X making companies
+went out of business. because Y came  --> Y...  Git
+
+
+how well was the requirements captured..
+no 1 reason for project failure is poor requirements gathering..
+
+IO.. expand IO.. Input and Output
+
+what is important thing about IO..  it is slowest thing in computer ...
+
+
+
+if a resource is expensive to create, we do tradeoff by creating some resources before hand and use it..
+to create X is expensive at runtime.. expensive it takes time. so what we do we precreate x .. 10 or 20 depending
+on requirement when you actually need X we dont need to creates X.. rather we pick X from teh pool.
+X= Connectin in jdbc.
+
+
+welcome to real contraditions.
+assumptions are bad. without assumptions nothing will work..
+
+
+you must have been seen two category of functions in all the code, in X.
+
+<button onclick="f1()">  know  </button>
+
+based on who is calling it
+1. system is calling the functdion ( watch out.. .ensure this is fast.. measure it.. this is major reason
+why things will become slow)
+
+2. we are calling the funtion
+
+
+
+ok nice English hardware... but in our code, still again things will come down to function..
+
+To make things useful in real life will never happen by accident .. there is a long way to go..
+
+Never trust we understood the cause of the problem and try to collect on data why the problem is happening..
+
+No question of monitoring anything, until we have the decency of doing "logging"Logging and Debugging..
+
+what happens in real life.. is.. we commit the code, immediately unit testing, integration testing, all the remaining testing
+gets triggered.... and it passes only then it goes to deployment automatically...
+
+Contingous Integration
+continuous Deployment..
+
+
+in the it industry we are flooded with opinions .. so relax and until the need is there ignore it..
+
+For all the testing.. processs... Imitite and Improving..
+
+
+quick summary...
+
+1. hope all you know the importance of knowing folder structure..
+2. hope people are convinced that we need to be good functions and vairables..
+3. hope people realize once upon a time we did jdbc with architecture.. architecture to code and never vice versa.
+4. hope people remember the git, docker .. cloud ... this adventure... ( tools adventure)
+5. database .. hope you understand tables greatness..( physical and logical independence of data..), primary key,
+foreign key..
+6. web...  for presentation ( react) , web for logic. ( distributed computing, controller, api ... )
+7. in both , you must know request, you must know response. who is processing the reqwuest..( the controller function )
+8. react.. ( how did component appear..  what is changing, what is event handling.. , routing, api call )
+9. the silent thing which we did a shoddy job of completing becuase that is what was expected. in the course
+and it is killing us till today ...  css)
+10. http headers how many are you focussing.. that is important thing to focus..
+12. spring boot..  what is controller what is service, what is dto, what is entity, what is repository. what is security. what is validation.
+
+last three things.
+1. what is controller.
+
+View.. react page.. Photoframe
+Model.. data that comes into state, props. route ..  (Photo)
+controller.. who provides Model to View..  ( who provides Photo to PhotoFrame )
+returning ResponseEntity from controller functions.. ( DTO)... is nothing but Model.. since functions which return model
+are called controllers. our class which has controller functions is called as RestController..
+
+
+Controller functions return View + Model..  ( show me hello.html and show me emplist in hello.html) ... Controlelr functions
+are not called as RestControllers ..  WebControllers 
+
+
+
+2. what is service.. 
+3. what is expected on Monday... ( I will ask anybody to write one line of code, but you should explain code by line numbers)
+
+
+
+
+Service.. is actual Logic..
+SErvice should be a core java code... I can service from my local system not in a distributed way in spring boot
+to check my logic out..
+
+Service like  chocolate..
+Controller like a chocolateCover
+
+if you did not write service,  you will call repo functions from controller. if we do it is  bad idea.. we are telling
+to check whther my databes part works I need http.. controller funtions need http...
+
+Controller  -- Distributed world begins
+Service -- corejava 
+DTO  --corejava
+Entity  --corejava
+Repo. --corejava
+
+
+I have to my Constriants Tradeoff C...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
