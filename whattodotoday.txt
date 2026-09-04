@@ -25,6 +25,10 @@ on the system.
 
 Sep 4th 2026 may be what to do for the exam...
 
+
+Not looking at syntax.. do we know what is happening where... basics..
+
+
 1. your project should be working on your system.. keep the project running on the system
 
 Time Box yourself .. ( X  hours ), my opinion x = 3 Hrs.
