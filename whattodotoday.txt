@@ -24,14 +24,13 @@ on the system.
 ---------------------------------
 
 Sep 4th 2026 may be what to do for the exam...
+Comin Monday 8th September..
 
-
-Not looking at syntax.. do we know what is happening where... basics..
+Not looking at syntax.. Dont byheart anything  look at syntax...
 
 
 1. your project should be working on your system.. keep the project running on the system
 know your portno of react and psring boot.
-
 
 
 all the below projects have changed the porno , technically all the projects
