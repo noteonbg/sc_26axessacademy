@@ -38,10 +38,7 @@ a01notes\summaryimages\generatedsummaries\a19Week6springboot\spring-security-inm
 to know what mocking is make this work in your system and understand it.
 5. a01notes\summaryimages\generatedsummaries\a20Week7Testingandclosing\a05apitesting
 is running in your sytem.
-
-6. your project is running on 8003, react 4000
-
-you can run all the projects at once and enter the evaluation room.
+6.you can run all the projects at once and enter the evaluation room.
 
 
 
